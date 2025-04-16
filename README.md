@@ -19,3 +19,7 @@ Estudantes iniciantes em programação, ou profissionais que queiram revisar con
 - Exercícios resolvidos com comentários
 - Projetos simples com interface em terminal
 - Scripts organizados por tema ou aula
+
+---
+
+> ✨ Sinta-se à vontade para explorar, adaptar e contribuir com o repositório para fortalecer o aprendizado colaborativo.
