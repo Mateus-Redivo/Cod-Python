@@ -1,5 +1,5 @@
 """
-Exercício 3 - Matriz Transposta
+Exercício 21 - Matriz Transposta
 
 Objetivo: Criar a transposta de uma matriz (trocar linhas por colunas).
 
