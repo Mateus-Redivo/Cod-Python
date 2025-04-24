@@ -12,8 +12,8 @@ Desenvolva um programa que:
 import random
 
 
-#def criar_matriz(tamanho):
-#    return [[random.randint(0, 50) for _ in range(tamanho)] for _ in range(tamanho)]
+def criar_matriz(tamanho):
+    return [[random.randint(0, 50) for _ in range(tamanho)] for _ in range(tamanho)]
 
 
 
@@ -42,12 +42,8 @@ def maiores_valores_linhas(matriz):
 
 # Programa principal
 tamanho = 4
-#matriz = criar_matriz(tamanho)
+matriz = criar_matriz(tamanho)
 
-matriz = [[1,2,3,4],
-          [5,6,7,8],
-          [9,10,11,12],
-          [13,14,15,16]]
 
 # Exibe a matriz
 exibir_matriz(matriz)

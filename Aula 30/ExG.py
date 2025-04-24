@@ -16,12 +16,19 @@ import random
 # - _ é usado como variável descartável já que não precisamos da variável do loop
 matrix = [[random.randint(1, 100) for _ in range(3)] for _ in range(3)]
 
+for i in range(3):
+    ale= random.randint(1,100)
+    print(ale)
+    for j in range(3):
+        matrix[i][j] = ale
+
 # Exibindo a matriz em formato de grade:
 print("Matriz 3x3 em grade:")
 for row in matrix:
     for num in row:
         print(f"[{num:3d}]", end=" ")
     print()
+    
 
 # Exibindo a matriz em linha, sem formatação:
 print("\nMatriz 3x3 em linha, sem formatação: ")

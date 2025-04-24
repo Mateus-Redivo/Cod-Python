@@ -29,18 +29,13 @@ B = [[9, 8, 7],
 # O primeiro loop (i) percorre as linhas
 # O segundo loop (j) percorre as colunas
 
-
 soma = [[A[i][j] + B[i][j] for j in range(len(A[0]))] for i in range(len(A))]
-
-# soma = [A[i][j] + B[i][j] for i in range(1) for j in range(2)]
 
 # Exibe o resultado da soma das matrizes
 print("Resultado da soma das matrizes:")
 print(soma)  # Resultado esperado: [[6, 8], [10, 12]]
 
-
-
 for i in range(len(A)):
-    for j in range(len(A[0])):
+    for j in range((len(A[0]))):
      print(f"A[{i}][{j}] + B[{i}][{j}] = {A[i][j]} + {B[i][j]}")
 
