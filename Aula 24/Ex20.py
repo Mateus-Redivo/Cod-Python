@@ -1,5 +1,5 @@
 """
-Exercício 2 - Soma das Diagonais
+Exercício 20 - Soma das Diagonais
 
 Objetivo: Calcular e comparar a soma das diagonais principal e secundária.
 
