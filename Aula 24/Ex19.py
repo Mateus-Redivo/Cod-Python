@@ -1,5 +1,5 @@
 """
-Exercício 1 - Multiplicação por Escalar
+Exercício 19 - Multiplicação por Escalar
 
 Objetivo: Criar um programa que multiplique cada elemento de uma matriz por um número.
 
