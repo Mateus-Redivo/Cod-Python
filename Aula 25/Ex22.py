@@ -1,5 +1,5 @@
 """
-Exercício 4 - Matriz Espelhada
+Exercício 22 - Matriz Espelhada
 
 Objetivo: Criar uma matriz e gerar sua versão espelhada horizontalmente.
 
