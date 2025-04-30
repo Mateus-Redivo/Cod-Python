@@ -66,7 +66,6 @@ CONCEITOS-CHAVE:
 
 EXERCÍCIOS PRÁTICOS:
 1) Crie uma matriz 3x3 e substitua todos os elementos da borda por zeros.
-2) Implemente uma função que rotacione uma matriz 90 graus no sentido horário.
 3) Desenvolva um programa que receba coordenadas e um valor, e atualize esse elemento na matriz.
 
 --------------------------------------------------------------------------------
@@ -95,8 +94,6 @@ CONCEITOS-CHAVE:
 
 EXERCÍCIOS PRÁTICOS:
 1) Use list comprehension para criar uma lista com os quadrados dos números de 1 a 20.
-2) Crie uma list comprehension que filtre apenas as palavras com mais de 5 letras de uma lista.
-3) Implemente uma list comprehension aninhada para criar uma matriz identidade.
 
 --------------------------------------------------------------------------------
 
@@ -108,8 +105,7 @@ CONCEITOS-CHAVE:
 - Captura de exceções específicas
 
 EXERCÍCIOS PRÁTICOS:
-1) Crie um programa de divisão que trate a divisão por zero.
-2) Implemente um programa que leia um arquivo e trate a exceção caso o arquivo não exista.
+1) Crie um programa de divisão que trate a divisão por zero
 3) Desenvolva uma função que converta texto em número, tratando exceções de formatação inválida.
 
 --------------------------------------------------------------------------------
@@ -124,8 +120,6 @@ CONCEITOS-CHAVE:
 EXERCÍCIOS PRÁTICOS:
 1) Crie uma função que encontre o menor e maior valor de uma matriz inteira.
 2) Implemente uma função que identifique a coluna com a maior soma em uma matriz.
-3) Desenvolva um programa que normalize cada linha de uma matriz (subtraia o mínimo
-   e divida pela diferença entre máximo e mínimo).
 
 --------------------------------------------------------------------------------
 
