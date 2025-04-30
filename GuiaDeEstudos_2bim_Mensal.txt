@@ -12,7 +12,6 @@ CONCEITOS-CHAVE:
 EXERCÍCIOS PRÁTICOS:
 1) Crie uma matriz 4x4 e preencha-a com valores de 1 a 16. Imprima a matriz formatada na tela.
 2) Escreva uma função que transponha uma matriz (troque linhas por colunas).
-3) Crie uma função que multiplique duas matrizes seguindo as regras da álgebra linear.
 
 --------------------------------------------------------------------------------
 
@@ -26,8 +25,6 @@ CONCEITOS-CHAVE:
 EXERCÍCIOS PRÁTICOS:
 1) Crie uma função que retorne a soma dos elementos da diagonal principal.
 2) Crie uma função que retorne a soma dos elementos da diagonal secundária.
-3) Implemente um programa que verifica se uma matriz é simétrica em relação à diagonal principal.
-
 --------------------------------------------------------------------------------
 
 ## 3. OPERAÇÕES COM LISTAS
