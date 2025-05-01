@@ -16,8 +16,6 @@ Matriz:     Escalar: 2    Resultado:
 [7 8 9]                   [14 16 18]
 """
 
-
-
 def criar_matriz():
     matriz = []
     print("Digite os valores para a matriz 3x3:")
@@ -64,7 +62,6 @@ def main():
 
     print("\nMatriz Resultado:")
     exibir_matriz(matriz_resultado)
-
 
 if __name__ == "__main__":
     main()
