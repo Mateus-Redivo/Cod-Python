@@ -11,7 +11,7 @@ CONCEITOS-CHAVE:
 
 EXERCÍCIOS PRÁTICOS:
 1) Crie uma matriz 4x4 e preencha-a com valores de 1 a 16. Imprima a matriz formatada na tela.
-2) Escreva uma função que transponha uma matriz (troque linhas por colunas).
+
 
 --------------------------------------------------------------------------------
 
