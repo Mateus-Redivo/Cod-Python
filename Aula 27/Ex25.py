@@ -1,61 +1,57 @@
-def encontrar_min_max_matriz(matriz):
-    """
-    Encontra os valores mínimos e máximos da matriz manualmente,
-    sem usar funções prontas como min() e max()
-    """
-    # Inicializa com o primeiro elemento da matriz
-    menor = matriz[0][0]
-    maior = matriz[0][0]
-    pos_menor = (0, 0)
-    pos_maior = (0, 0)
-    
-    # Percorre a matriz
-    for i in range(len(matriz)):
-        for j in range(len(matriz[0])):
-            # Verifica se encontrou um valor menor
-            if matriz[i][j] < menor:
-                menor = matriz[i][j]
-                pos_menor = (i, j)
-            # Verifica se encontrou um valor maior    
-            if matriz[i][j] > maior:
-                maior = matriz[i][j]
-                pos_maior = (i, j)
-    
-    return menor, pos_menor, maior, pos_maior
+"""
+Exercício  - Análise de Matriz
+Desenvolva um programa que:
+1. Crie uma matriz 4x4 com números aleatórios entre 0 e 50
+2. Calcule e mostre:
+   - A soma da diagonal principal
+   - A soma da diagonal secundária
+   - O maior valor de cada linha
+3. Exiba a matriz de forma organizada
+"""
 
-def criar_matriz():
-    """Cria uma matriz 3x3 com valores digitados pelo usuário"""
-    matriz = []
-    for i in range(3):
-        linha = []
-        for j in range(3):
-            valor = int(input(f"Digite o valor para posição [{i}][{j}]: "))
-            linha.append(valor)
-        matriz.append(linha)
-    return matriz
+import random
+
+
+def criar_matriz(tamanho):
+    return [[random.randint(0, 50) for _ in range(tamanho)] for _ in range(tamanho)]
+
 
 def exibir_matriz(matriz):
-    """Exibe a matriz de forma organizada"""
-    print("\nMatriz:")
+    print("\nMatriz 4x4:")
+    print("-" * 25)
     for linha in matriz:
-        for valor in linha:
-            print(f"{valor:4}", end="")
+        for num in linha:
+            print(f"|{num:3d}|", end=" ")
         print()
+    print("-" * 25)
 
-def main():
-    # Cria a matriz
-    print("Digite os valores para a matriz 3x3:")
-    matriz = criar_matriz()
-    
-    # Exibe a matriz
-    exibir_matriz(matriz)
-    
-    # Encontra os valores mínimos e máximos
-    menor, pos_menor, maior, pos_maior = encontrar_min_max_matriz(matriz)
-    
-    # Exibe os resultados
-    print(f"\nMenor valor: {menor} na posição {pos_menor}")
-    print(f"Maior valor: {maior} na posição {pos_maior}")
 
-if __name__ == "__main__":
-    main()
+def soma_diagonal_principal(matriz):
+    return sum(matriz[i][i] for i in range(len(matriz)))
+
+
+def soma_diagonal_secundaria(matriz):
+    tamanho = len(matriz)
+    return sum(matriz[i][tamanho-1-i] for i in range(tamanho))
+
+
+def maiores_valores_linhas(matriz):
+    return [max(linha) for linha in matriz]
+
+
+# Programa principal
+tamanho = 4
+matriz = criar_matriz(tamanho)
+
+
+# Exibe a matriz
+exibir_matriz(matriz)
+
+# Calcula e exibe os resultados
+print(f"\nSoma da diagonal principal: {soma_diagonal_principal(matriz)}")
+print(f"Soma da diagonal secundária: {soma_diagonal_secundaria(matriz)}")
+
+# Exibe o maior valor de cada linha
+maiores = maiores_valores_linhas(matriz)
+for i, valor in enumerate(maiores):
+    print(f"Maior valor da linha {i+1}: {valor}")

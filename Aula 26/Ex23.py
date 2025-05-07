@@ -1,69 +1,72 @@
-# Conceitos avançados de manipulação de strings
-texto = "Python Programming"
-texto_espacado = "    Python com espaços    "
+"""
+Exercício 23 - Valores Extremos em Matriz
+Desenvolva um programa em Python que:
 
-# 1. Acessando caracteres por índice
-primeiro_caractere = texto[0]  # P
-ultimo_caractere = texto[-1]   # g
+Crie uma matriz 3x3 com valores inteiros digitados pelo usuário
+Encontre o valor mínimo e o valor máximo presentes na matriz, bem como suas respectivas posições
+Exiba a matriz formatada na tela
+Mostre o menor e o maior valor encontrados, junto com suas posições na matriz no formato (linha, coluna)
+Observação: Implemente a busca pelos valores mínimos e máximos sem utilizar as funções prontas min() e max() do Python.
+"""
 
-# 2. Fatiamento (slicing)
-primeiras_letras = texto[0:6]  # Python
+def encontrar_min_max_matriz(matriz):
+    """
+    Encontra os valores mínimos e máximos da matriz manualmente,
+    sem usar funções prontas como min() e max()
+    """
+    # Inicializa com o primeiro elemento da matriz
+    menor = matriz[0][0]
+    maior = matriz[0][0]
+    pos_menor = (0, 0)
+    pos_maior = (0, 0)
+    
+    # Percorre a matriz
+    for i in range(len(matriz)):
+        for j in range(len(matriz[0])):
+            # Verifica se encontrou um valor menor
+            if matriz[i][j] < menor:
+                menor = matriz[i][j]
+                pos_menor = (i, j)
+            # Verifica se encontrou um valor maior    
+            if matriz[i][j] > maior:
+                maior = matriz[i][j]
+                pos_maior = (i, j)
+    
+    return menor, pos_menor, maior, pos_maior
 
-# 3. Métodos básicos de string
-texto_maiusculo = texto.upper()      # Converte para maiúsculo
-texto_minusculo = texto.lower()      # Converte para minúsculo
-texto_titulo = texto.title()         # Primeira letra de cada palavra em maiúsculo
+def criar_matriz():
+    """Cria uma matriz 3x3 com valores digitados pelo usuário"""
+    matriz = []
+    for i in range(3):
+        linha = []
+        for j in range(3):
+            valor = int(input(f"Digite o valor para posição [{i}][{j}]: "))
+            linha.append(valor)
+        matriz.append(linha)
+    return matriz
 
-# 4. Verificação de conteúdo
-contem_python = "Python" in texto    # Verifica se contém a palavra
-comeca_com = texto.startswith("Py")  # Verifica se começa com
+def exibir_matriz(matriz):
+    """Exibe a matriz de forma organizada"""
+    print("\nMatriz:")
+    for linha in matriz:
+        for valor in linha:
+            print(f"{valor:4}", end="")
+        print()
 
-# 5. Remoção de espaços em branco
-texto_sem_espacos = texto_espacado.strip()       # Remove espaços no início e fim
-texto_sem_espacos_esq = texto_espacado.lstrip()  # Remove espaços à esquerda
-texto_sem_espacos_dir = texto_espacado.rstrip()  # Remove espaços à direita
+def main():
+    # Cria a matriz
+    print("Digite os valores para a matriz 3x3:")
+    matriz = criar_matriz()
+    
+    # Exibe a matriz
+    exibir_matriz(matriz)
+    
+    # Encontra os valores mínimos e máximos
+    menor, pos_menor, maior, pos_maior = encontrar_min_max_matriz(matriz)
+    
+    # Exibe os resultados
+    print(f"\nMenor valor: {menor} na posição {pos_menor}")
+    print(f"Maior valor: {maior} na posição {pos_maior}")
 
-# 6. Substituição de caracteres
-texto_substituido = texto.replace("Python", "Java")
-
-# 7. Dividindo strings
-palavras = texto.split()  # Divide por espaços
-caracteres = list(texto)  # Converte string em lista de caracteres
-
-# 8. Encontrando posições
-# Retorna o índice onde começa "Programming"
-posicao = texto.find("Programming")
-contagem = texto.count("m")          # Conta quantas vezes 'm' aparece
-
-# 9. Junção de strings
-lista_palavras = ["Python", "é", "incrível"]
-texto_junto = " ".join(lista_palavras)
-
-# 10. Verificações adicionais
-e_alfanumerico = texto.isalnum()     # Verifica se são só letras e números
-e_alfabetico = texto.isalpha()       # Verifica se são só letras
-e_decimal = "123".isdecimal()        # Verifica se são só números decimais
-
-# Exibindo os resultados
-print(f"Texto original: {texto}")
-print(f"Primeiro caractere: {primeiro_caractere}")
-print(f"Último caractere: {ultimo_caractere}")
-print(f"Primeiras letras: {primeiras_letras}")
-print(f"Maiúsculas: {texto_maiusculo}")
-print(f"Minúsculas: {texto_minusculo}")
-print(f"Título: {texto_titulo}")
-print(f"Contém 'Python'?: {contem_python}")
-print(f"Começa com 'Py'?: {comeca_com}")
-
-# Exibindo os novos resultados
-print("\nResultados adicionais:")
-print(f"Texto sem espaços: '{texto_sem_espacos}'")
-print(f"Texto substituído: {texto_substituido}")
-print(f"Palavras separadas: {palavras}")
-print(f"Lista de caracteres: {caracteres}")
-print(f"Posição de 'Programming': {posicao}")
-print(f"Quantidade de 'm': {contagem}")
-print(f"Palavras unidas: {texto_junto}")
-print(f"É alfanumérico?: {e_alfanumerico}")
-print(f"É alfabético?: {e_alfabetico}")
-print(f"'123' é decimal?: {e_decimal}")
+if __name__ == "__main__":
+    main()

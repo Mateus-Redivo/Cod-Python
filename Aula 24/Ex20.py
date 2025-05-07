@@ -42,7 +42,6 @@ soma_secundaria = 0
 for i in range(4):
     diagonal_secundaria.append(matriz[i][3-i])
     soma_secundaria += matriz[i][3-i]
-
 # Exibir resultados
 print("\nMatriz:")
 imprimir_matriz(matriz)
