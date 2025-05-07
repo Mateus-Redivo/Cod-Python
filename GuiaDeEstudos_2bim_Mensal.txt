@@ -132,9 +132,6 @@ CONCEITOS-CHAVE:
 
 EXERCÍCIOS PRÁTICOS:
 1) Crie um programa que valide se a entrada é um número inteiro entre 1 e 100.
-2) Implemente uma validação de formato para um e-mail (deve conter @ e um domínio válido).
-3) Desenvolva um sistema que valide entrada de CPF, verificando o formato e os dígitos verificadores.
-
 --------------------------------------------------------------------------------
 
 DICAS DE ESTUDO:
