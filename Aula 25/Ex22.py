@@ -19,11 +19,12 @@ Original (3x4):    Espelhada (3x4):
 
 def criar_matriz():
     matriz = []
+    valor = 0
     print("Digite os valores para a matriz 3x4:")
     for i in range(3):
         linha = []
         for j in range(4):
-            valor = int(input(f"Digite o valor para posição [{i}][{j}]: "))
+            valor += 1
             linha.append(valor)
         matriz.append(linha)
     return matriz

@@ -1,4 +1,5 @@
-# Enunciado 1: Crie um programa que leia 5 números inteiros e os armazene em uma lista. Em seguida, exiba a lista na ordem inversa.
+# Enunciado 1: Crie um programa que leia 5 números inteiros e os armazene em uma lista. 
+# Em seguida, exiba a lista na ordem inversa.
 
 # Criação da lista usando list comprehension:
 # - Executa o loop 5 vezes (range(5))

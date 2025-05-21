@@ -1,4 +1,5 @@
-# Implemente uma calculadora simples utilizando a estrutura match-case do Python 3.10+ com as seguintes especificações:
+# Implemente uma calculadora simples utilizando a estrutura match-case do Python 
+# 3.10+ com as seguintes especificações:
 
 # 1. O programa deve apresentar um menu com 4 operações básicas:
 #  - Soma
@@ -12,7 +13,6 @@
 #  - Divisão por zero
 #  - Opções de menu inválidas
 # 5. Use f-strings para formatar a saída dos resultados
-
 
 
 def calculadora():

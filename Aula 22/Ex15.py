@@ -17,9 +17,7 @@ listas Python puras e arrays NumPy.
 import numpy as np
 
 matriz = [
-    [[7,8,9], 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
+    [1, 2, 3], [4, 5, 6], [7, 8, 9]
 ]
 
 print(matriz)  # Saida: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]

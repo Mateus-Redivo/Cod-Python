@@ -170,14 +170,18 @@ if __name__ == "__main__":
 
 # Exemplos das funções usando as ferramentas inclusas no python:
 
+
 # def ordenar_vetor(vetor):
 #    return sorted(vetor)  # Usa a ferramenta inclusa no python para ordenar o vetor
+
 
 # def encontrar_max_min(vetor):
 #    return max(vetor), min(vetor)  # Retorna uma tupla com os valores máximo e mínimo
 
+
 # def dobrar_elementos(vetor):
 #    return [elemento * 2 for elemento in vetor]
+
 
 # def dobrar_elementos(vetor):
 #    return [x * 2 for x in vetor]  # Compreensão de lista para multiplicar cada elemento por 2
