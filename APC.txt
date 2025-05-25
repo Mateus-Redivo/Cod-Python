@@ -1,0 +1,39 @@
+1. (1,0) 
+Como podemos criar uma matriz em Python usando listas dentro de listas? Mostre um exemplo de uma matriz 3x3. 
+Qual é uma vantagem e uma desvantagem desse jeito?
+
+2. (1,0) 
+O que são as diagonais principal e secundária de uma matriz quadrada?
+Escreva um pseudocódigo que calcule a diferença entre a soma das duas diagonais.
+
+3. (1,0) 
+Como somar todos os elementos de uma lista em Python? 
+Escreva um exemplo simples com uma lista de 5 números.
+
+4. (1,0) 
+O que significa modularizar um programa? 
+Cite duas vantagens de usar funções separadas no código.
+
+5. (1,0) 
+Como acessar e modificar um valor específico em uma matriz? 
+Escreva um pseudocódigo simples que altera um elemento específico em uma matriz e depois imprime a matriz atualizada.
+
+6. (1,0) 
+Qual a diferença entre if-elif e match-case no Python? 
+Quando é melhor usar um ou outro?
+
+7. (1,0)
+O que é list comprehension (Compreensão de listas)? 
+Por que ela é útil para trabalhar com listas?
+
+8. (1,0) 
+O que é tratamento de erro? 
+Para que serve o bloco try-except? Dê um exemplo simples.
+
+9. (1,0)
+Como encontrar o valor mínimo e máximo de cada linha de uma matriz em Python? 
+Dê um exemplo simples feito "na mão", sem usar funções prontas como min() ou max().
+
+10. (1,0) 
+Por que é importante verificar o que o usuário digita em um programa? 
+Dê dois exemplos de validações comuns.
