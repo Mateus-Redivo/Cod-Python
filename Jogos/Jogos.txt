@@ -1,0 +1,22 @@
+Text-Based Games (Beginner)
+
+Hangman - Word guessing game with limited attempts
+Rock Paper Scissors - Simple game against computer with random choices
+Quiz Game - Multiple choice quiz with scoring system
+Word Scramble - Unscrambling jumbled words
+Math Challenge - Arithmetic problems with increasing difficulty
+
+Intermediate Games
+
+Battleship - Grid-based ship hunting game using matrices
+Connect Four - Vertical version of tic-tac-toe with gravity
+Blackjack/21 - Card game teaching probability concepts
+Simon Says - Pattern memory game with increasing sequences
+Minesweeper - Grid-based logic game with adjacency counting
+
+More Advanced Projects
+Snake Game - Simple graphical game using Pygame or Turtle
+Text Adventure - Interactive story with decisions and inventory
+Memory Match Game - Card matching game with GUI
+Maze Generator/Solver - Create and solve random mazes
+Chess/Checkers - Board games with complex rule implementation
