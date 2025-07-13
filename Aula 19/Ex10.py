@@ -1,3 +1,6 @@
+# Enunciado 2: Ordene uma lista de 6 números inteiros digitados
+# pelo usuário utilizando Selection Sort.
+
 # Enunciado 2: Ordene uma lista de 6 números inteiros digitados pelo usuário utilizando Selection Sort.
 
 def selection_sort(lista):

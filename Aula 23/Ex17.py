@@ -17,12 +17,19 @@ Conceitos abordados:
 
 # Definição das matrizes de entrada
 A = [[1, 2, 3],  
+<<<<<<< HEAD
+     [3, 4, 5]]  # Matriz A 2x2
+
+B = [[5, 6, 7],  
+     [7, 8, 9]] # Matriz B 2x2
+=======
      [4, 5, 6], 
      [7, 8, 9]]  # Matriz A 2x2
 
 B = [[9, 8, 7],  
      [6, 5, 4], 
      [3, 2, 1]]  # Matriz B 2x2
+>>>>>>> 680283a4c776b59b73511f223aa6e8984191356d
 
 # Soma das matrizes usando list comprehension
 # Para cada linha i e coluna j, soma os elementos correspondentes de A e B
