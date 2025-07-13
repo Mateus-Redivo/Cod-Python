@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 # Enunciado 2: Ordene uma lista de 6 números inteiros digitados 
 # pelo usuário utilizando Selection Sort.
+=======
+# Enunciado 2: Ordene uma lista de 6 números inteiros digitados pelo usuário utilizando Selection Sort.
+>>>>>>> 680283a4c776b59b73511f223aa6e8984191356d
 
 def selection_sort(lista):
     # Percorre toda a lista do início até o penúltimo elemento

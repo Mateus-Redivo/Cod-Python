@@ -84,4 +84,7 @@ print(f"É maiúsculo? {texto1.isupper()}")
 print("\n=== Comparação encadeada ===")
 print(f"'A' <= 'Python' <= 'Z': {'A' <= texto1 <= 'Z'}")
 print(f"Comparação múltipla: {3 < len(texto1) < 10}")
+<<<<<<< HEAD
 
+=======
+>>>>>>> 680283a4c776b59b73511f223aa6e8984191356d

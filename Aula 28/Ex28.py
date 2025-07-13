@@ -2,7 +2,10 @@
 texto = "Python Programming"
 texto_espacado = "    Python com espaços    "
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 680283a4c776b59b73511f223aa6e8984191356d
 # 1. Acessando caracteres por índice
 primeiro_caractere = texto[0]  # P
 ultimo_caractere = texto[-1]   # g
@@ -18,7 +21,11 @@ texto_titulo = texto.title()         # Primeira letra de cada palavra em maiúsc
 # 4. Verificação de conteúdo
 contem_python = "Python" in texto    # Verifica se contém a palavra
 comeca_com = texto.startswith("Py")  # Verifica se começa com
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 680283a4c776b59b73511f223aa6e8984191356d
 # 5. Remoção de espaços em branco
 texto_sem_espacos = texto_espacado.strip()       # Remove espaços no início e fim
 texto_sem_espacos_esq = texto_espacado.lstrip()  # Remove espaços à esquerda
