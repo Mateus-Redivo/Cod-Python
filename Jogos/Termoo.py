@@ -8,7 +8,7 @@ def escolher_palavra():
         "janela", "kinder", "limpar", "manter", "navios", "objeto",
         "pacote", "quarto", "relevo", "senado", "triste", "urbano",
         "viagem", "xamego", "zeloso", "amores", "buscar", "cinema",
-        "danado", "errado", "frente", "geladp", "humano", "indice",
+        "danado", "errado", "frente", "gelado", "humano", "indice",
         "jornal", "logica", "manual", "nitido", "operar", "plural",
         "quieto", "rapido", "sombra", "trator", "unicos", "vagoes",
         "widget", "xingar"
