@@ -1,8 +1,10 @@
 # Sistema de Loja de Doces
-produtos = []
+# Gerencia produtos, vendas e controle de estoque
+produtos = []  # Lista de produtos cadastrados
 
 
 def exibir_menu():
+    """Exibe o menu principal da loja"""
     print("\n" + "="*30)
     print("     LOJA DE DOCES")
     print("="*30)
@@ -15,6 +17,7 @@ def exibir_menu():
 
 
 def cadastrar_produto():
+    """Cadastra um novo produto na loja"""
     print("\n--- CADASTRAR PRODUTO ---")
     nome = input("Digite o nome do doce: ").strip()
 
@@ -43,7 +46,7 @@ def cadastrar_produto():
         }
 
         produtos.append(produto)
-        print(f"✅ Produto '{nome}' cadastrado com sucesso!")
+        print(f"Produto '{nome}' cadastrado com sucesso!")
 
     except ValueError:
         print("Digite valores válidos!")
@@ -59,12 +62,13 @@ def listar_produtos():
     print("-" * 45)
 
     for i, produto in enumerate(produtos, 1):
-        status = "✅" if produto['estoque'] > 0 else "❌"
+        status = "Disponível" if produto['estoque'] > 0 else "Indisponível"
         print(
             f"{i:<3} {produto['nome']:<20} R${produto['preco']:<9.2f} {produto['estoque']:<3} {status}")
 
 
 def fazer_venda():
+    """Processa uma venda e atualiza o estoque"""
     print("\n--- FAZER VENDA ---")
     if not produtos:
         print("Nenhum produto cadastrado.")
@@ -96,7 +100,7 @@ def fazer_venda():
             total = quantidade * produto['preco']
             produto['estoque'] -= quantidade
 
-            print(f"\n🛒 VENDA REALIZADA:")
+            print("\nVENDA REALIZADA:")
             print(f"   Produto: {produto['nome']}")
             print(f"   Quantidade: {quantidade}")
             print(f"   Valor unitário: R$ {produto['preco']:.2f}")
@@ -128,7 +132,7 @@ def repor_estoque():
                 return
 
             produtos[indice]['estoque'] += quantidade
-            print(f"✅ Estoque de '{produtos[indice]['nome']}' atualizado!")
+            print(f"Estoque de '{produtos[indice]['nome']}' atualizado!")
             print(f"   Novo estoque: {produtos[indice]['estoque']}")
 
         else:
@@ -155,13 +159,13 @@ def main():
             elif opcao == 4:
                 repor_estoque()
             elif opcao == 5:
-                print("\n🍭 Obrigado por usar a loja! 🍭")
+                print("\nObrigado por usar a loja!")
                 break
             else:
-                print("⚠️  Opção inválida! Escolha entre 1 e 5.")
+                print("Opção inválida! Escolha entre 1 e 5.")
 
         except ValueError:
-            print("⚠️  Por favor, digite apenas números!")
+            print("Por favor, digite apenas números!")
 
         input("\nPressione ENTER para continuar...")
 

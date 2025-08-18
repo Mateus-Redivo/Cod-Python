@@ -1,8 +1,10 @@
 # Sistema de Playlist Musical
-musicas = []
+# Gerencia coleção de músicas com funcionalidades de busca e reprodução
+musicas = []  # Lista de músicas da playlist
 
 
 def exibir_menu():
+    """Exibe o menu principal da playlist"""
     print("\n" + "="*30)
     print("    PLAYLIST MUSICAL")
     print("="*30)
@@ -16,6 +18,7 @@ def exibir_menu():
 
 
 def adicionar_musica():
+    """Adiciona uma nova música à playlist"""
     print("\n--- ADICIONAR MÚSICA ---")
     titulo = input("Título da música: ").strip()
     artista = input("Artista: ").strip()
@@ -40,7 +43,7 @@ def adicionar_musica():
         }
 
         musicas.append(musica)
-        print(f"🎵 Música '{titulo}' adicionada à playlist!")
+        print(f"Música '{titulo}' adicionada à playlist!")
 
     except ValueError:
         print("Digite uma duração válida!")
@@ -71,6 +74,7 @@ def listar_musicas():
 
 
 def buscar_por_genero():
+    """Busca músicas por gênero específico"""
     print("\n--- BUSCAR POR GÊNERO ---")
     if not musicas:
         print("Nenhuma música na playlist.")
@@ -91,7 +95,7 @@ def buscar_por_genero():
         print(f"Nenhuma música encontrada do gênero '{genero_busca}'.")
         return
 
-    print(f"\n🎵 Músicas do gênero '{genero_busca}':")
+    print(f"\nMúsicas do gênero '{genero_busca}':")
     for i, musica in enumerate(encontradas, 1):
         duracao_formatada = formatar_duracao(musica['duracao'])
         print(
@@ -99,6 +103,7 @@ def buscar_por_genero():
 
 
 def tocar_musica():
+    """Simula a reprodução de uma música"""
     print("\n--- TOCAR MÚSICA ---")
     if not musicas:
         print("Nenhuma música na playlist.")
@@ -113,12 +118,12 @@ def tocar_musica():
             musica = musicas[indice]
             duracao_formatada = formatar_duracao(musica['duracao'])
 
-            print(f"\n🎵 Tocando agora:")
+            print("\nTocando agora:")
             print(f"   Título: {musica['titulo']}")
             print(f"   Artista: {musica['artista']}")
             print(f"   Gênero: {musica['genero']}")
             print(f"   Duração: {duracao_formatada}")
-            print("   ♪♪♪ Enjoy the music! ♪♪♪")
+            print("   Enjoy the music!")
 
         else:
             print("Música inválida!")
@@ -140,7 +145,7 @@ def remover_musica():
         if 0 <= indice < len(musicas):
             musica_removida = musicas.pop(indice)
             print(
-                f"🗑️ Música '{musica_removida['titulo']}' removida da playlist!")
+                f"Música '{musica_removida['titulo']}' removida da playlist!")
         else:
             print("Música inválida!")
     except ValueError:
@@ -167,13 +172,13 @@ def main():
             elif opcao == 5:
                 remover_musica()
             elif opcao == 6:
-                print("\n🎵 Obrigado por usar a playlist! 🎵")
+                print("\nObrigado por usar a playlist!")
                 break
             else:
-                print("⚠️  Opção inválida! Escolha entre 1 e 6.")
+                print("Opção inválida! Escolha entre 1 e 6.")
 
         except ValueError:
-            print("⚠️  Por favor, digite apenas números!")
+            print("Por favor, digite apenas números!")
 
         input("\nPressione ENTER para continuar...")
 

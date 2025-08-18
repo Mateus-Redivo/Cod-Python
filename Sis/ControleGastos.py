@@ -1,9 +1,11 @@
 # Sistema de Controle de Gastos
-receitas = []
-despesas = []
+# Gerencia receitas e despesas pessoais com relatórios financeiros
+receitas = []  # Lista de receitas registradas
+despesas = []  # Lista de despesas registradas
 
 
 def exibir_menu():
+    """Exibe o menu principal do sistema financeiro"""
     print("\n" + "="*30)
     print("   CONTROLE DE GASTOS")
     print("="*30)
@@ -17,6 +19,7 @@ def exibir_menu():
 
 
 def adicionar_receita():
+    """Registra uma nova receita no sistema"""
     print("\n--- ADICIONAR RECEITA ---")
     descricao = input("Descrição da receita: ").strip()
 
@@ -37,13 +40,14 @@ def adicionar_receita():
         }
 
         receitas.append(receita)
-        print(f"✅ Receita '{descricao}' de R$ {valor:.2f} adicionada!")
+        print(f"Receita '{descricao}' de R$ {valor:.2f} adicionada!")
 
     except ValueError:
         print("Digite um valor válido!")
 
 
 def adicionar_despesa():
+    """Registra uma nova despesa no sistema"""
     print("\n--- ADICIONAR DESPESA ---")
     descricao = input("Descrição da despesa: ").strip()
     categoria = input("Categoria (alimentação, transporte, etc.): ").strip()
@@ -66,7 +70,7 @@ def adicionar_despesa():
         }
 
         despesas.append(despesa)
-        print(f"✅ Despesa '{descricao}' de R$ {valor:.2f} adicionada!")
+        print(f"Despesa '{descricao}' de R$ {valor:.2f} adicionada!")
 
     except ValueError:
         print("Digite um valor válido!")
@@ -81,20 +85,21 @@ def calcular_totais():
 
 
 def ver_relatorio():
+    """Gera relatório completo das finanças"""
     print("\n--- RELATÓRIO FINANCEIRO ---")
 
     total_receitas, total_despesas, saldo = calcular_totais()
 
-    print(f"💰 Total de receitas: R$ {total_receitas:.2f}")
-    print(f"💸 Total de despesas: R$ {total_despesas:.2f}")
+    print(f"Total de receitas: R$ {total_receitas:.2f}")
+    print(f"Total de despesas: R$ {total_despesas:.2f}")
     print("-" * 30)
 
     if saldo > 0:
-        print(f"✅ Saldo positivo: R$ {saldo:.2f}")
+        print(f"Saldo positivo: R$ {saldo:.2f}")
     elif saldo < 0:
-        print(f"❌ Saldo negativo: R$ {saldo:.2f}")
+        print(f"Saldo negativo: R$ {saldo:.2f}")
     else:
-        print("⚖️  Saldo zerado: R$ 0.00")
+        print("Saldo zerado: R$ 0.00")
 
     # Despesas por categoria
     if despesas:
@@ -158,13 +163,13 @@ def main():
             elif opcao == 5:
                 listar_despesas()
             elif opcao == 6:
-                print("\n💰 Obrigado por usar o sistema! 💰")
+                print("\nObrigado por usar o sistema!")
                 break
             else:
-                print("⚠️  Opção inválida! Escolha entre 1 e 6.")
+                print("Opção inválida! Escolha entre 1 e 6.")
 
         except ValueError:
-            print("⚠️  Por favor, digite apenas números!")
+            print("Por favor, digite apenas números!")
 
         input("\nPressione ENTER para continuar...")
 

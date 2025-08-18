@@ -1,8 +1,10 @@
 # Sistema de To-Do List (Lista de Tarefas)
-tarefas = []
+# Gerencia tarefas pessoais com controle de status
+tarefas = []  # Lista de tarefas cadastradas
 
 
 def exibir_menu():
+    """Exibe o menu principal do sistema de tarefas"""
     print("\n" + "="*30)
     print("     LISTA DE TAREFAS")
     print("="*30)
@@ -15,6 +17,7 @@ def exibir_menu():
 
 
 def adicionar_tarefa():
+    """Adiciona uma nova tarefa à lista"""
     print("\n--- ADICIONAR TAREFA ---")
     descricao = input("Digite a descrição da tarefa: ").strip()
 
@@ -28,10 +31,11 @@ def adicionar_tarefa():
     }
 
     tarefas.append(tarefa)
-    print(f"✅ Tarefa '{descricao}' adicionada com sucesso!")
+    print(f"Tarefa '{descricao}' adicionada com sucesso!")
 
 
 def listar_tarefas():
+    """Lista todas as tarefas com seus status"""
     print("\n--- LISTA DE TAREFAS ---")
     if not tarefas:
         print("Nenhuma tarefa cadastrada.")
@@ -42,16 +46,17 @@ def listar_tarefas():
 
     for i, tarefa in enumerate(tarefas, 1):
         if tarefa['concluida']:
-            print(f"{i}. ✅ {tarefa['descricao']} (CONCLUÍDA)")
+            print(f"{i}. {tarefa['descricao']} (CONCLUÍDA)")
             concluidas += 1
         else:
-            print(f"{i}. ⏳ {tarefa['descricao']} (PENDENTE)")
+            print(f"{i}. {tarefa['descricao']} (PENDENTE)")
             pendentes += 1
 
     print(f"\nResumo: {pendentes} pendente(s), {concluidas} concluída(s)")
 
 
 def marcar_concluida():
+    """Marca uma tarefa como concluída"""
     print("\n--- MARCAR COMO CONCLUÍDA ---")
     if not tarefas:
         print("Nenhuma tarefa cadastrada.")
@@ -74,7 +79,7 @@ def marcar_concluida():
         if 0 <= indice < len(pendentes):
             pendentes[indice]['concluida'] = True
             print(
-                f"✅ Tarefa '{pendentes[indice]['descricao']}' marcada como concluída!")
+                f"Tarefa '{pendentes[indice]['descricao']}' marcada como concluída!")
         else:
             print("Número inválido!")
     except ValueError:
@@ -82,6 +87,7 @@ def marcar_concluida():
 
 
 def remover_tarefa():
+    """Remove uma tarefa da lista"""
     print("\n--- REMOVER TAREFA ---")
     if not tarefas:
         print("Nenhuma tarefa cadastrada.")
@@ -94,7 +100,7 @@ def remover_tarefa():
 
         if 0 <= indice < len(tarefas):
             tarefa_removida = tarefas.pop(indice)
-            print(f"🗑️  Tarefa '{tarefa_removida['descricao']}' removida!")
+            print(f"Tarefa '{tarefa_removida['descricao']}' removida!")
         else:
             print("Número inválido!")
     except ValueError:
@@ -102,6 +108,7 @@ def remover_tarefa():
 
 
 def main():
+    """Função principal que executa o sistema de tarefas"""
     print("Bem-vindo ao Sistema de Tarefas!")
 
     while True:
@@ -119,13 +126,13 @@ def main():
             elif opcao == 4:
                 remover_tarefa()
             elif opcao == 5:
-                print("\n✅ Obrigado por usar o sistema! ✅")
+                print("\nObrigado por usar o sistema!")
                 break
             else:
-                print("⚠️  Opção inválida! Escolha entre 1 e 5.")
+                print("Opção inválida! Escolha entre 1 e 5.")
 
         except ValueError:
-            print("⚠️  Por favor, digite apenas números!")
+            print("Por favor, digite apenas números!")
 
         input("\nPressione ENTER para continuar...")
 
