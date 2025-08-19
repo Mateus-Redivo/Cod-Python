@@ -24,6 +24,15 @@ Estudantes iniciantes em programação, ou profissionais que queiram revisar con
 
 O repositório foi estruturado de forma sequencial para facilitar o aprendizado progressivo:
 
+### **Fundamentos_Python/**
+Base essencial para iniciantes em programação:
+- **01_tipos_variaveis/** - Tipos de dados básicos (int, float, str, bool) e declaração de variáveis
+- **02_operadores/** - Operadores aritméticos, comparação e lógicos
+- **03_entrada_saida/** - Funções print() e input(), formatação de strings
+- **04_conversoes/** - Conversões entre tipos de dados (casting)
+- **05_primeiros_programas/** - Programas completos básicos (calculadora, conversor, sistema de notas)
+- **06_introducao_vetores/** - Conceitos básicos de listas/vetores e operações fundamentais
+
 ### **Estruturas_De_Controle/**
 Conceitos fundamentais de controle de fluxo em Python:
 - **condicionais/** - Estruturas if-elif-else
@@ -35,18 +44,20 @@ Manipulação de diferentes tipos de dados:
 - **listas/** - Trabalho com listas e vetores
 - **matrizes/** - Operações com matrizes bidimensionais
 - **strings/** - Manipulação e processamento de strings
+- **algoritmos_ordenacao/** - Algoritmos de ordenação (Bubble Sort, Selection Sort, Insertion Sort, QuickSort)
 
 ### **Projetos_Praticos/**
 Aplicações práticas e projetos completos:
 - **calculadoras/** - Calculadoras diversas (Bhaskara, IMC, etc.)
 - **jogos/** - Jogos interativos (Adivinhação, Blackjack, Jogo da Velha, etc.)
 - **sistemas_propostos/** - Propostas de sistemas para desenvolvimento
+- **sistemas_desenvolvidos/** - Implementações completas de sistemas
 
 ### **Exercicios_Sequenciais/**
 Exercícios organizados por nível de dificuldade:
-- **iniciante/** - Exercícios 1-10 (conceitos básicos)
-- **intermediario/** - Exercícios 11-18 (conceitos intermediários)
-- **avancado/** - Exercícios 29-30 (conceitos avançados)
+- **iniciante/** - Exercícios básicos com listas, vetores e estruturas fundamentais (8 exercícios)
+- **intermediario/** - Exercícios com algoritmos de busca e manipulação avançada (2 exercícios)
+- **avancado/** - Exercícios com sistemas complexos e estruturas de dados (2 exercícios)
 
 ### **Revisao_Conteudo/**
 Material de revisão e preparação para avaliações:
