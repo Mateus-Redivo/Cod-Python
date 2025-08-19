@@ -18,7 +18,41 @@ Estudantes iniciantes em programação, ou profissionais que queiram revisar con
 - Conceitos de Programação Orientada a Objetos (POO)
 - Exercícios resolvidos com comentários
 - Projetos simples com interface em terminal
-- Scripts organizados por tema ou aula
+- Scripts organizados por tema e conceito
+
+## 📁 Organização das Pastas
+
+O repositório foi estruturado de forma sequencial para facilitar o aprendizado progressivo:
+
+### **Estruturas_De_Controle/**
+Conceitos fundamentais de controle de fluxo em Python:
+- **condicionais/** - Estruturas if-elif-else
+- **loops/** - Estruturas de repetição
+- **match_case/** - Estrutura match-case (Python 3.10+)
+
+### **Estruturas_De_Dados/**
+Manipulação de diferentes tipos de dados:
+- **listas/** - Trabalho com listas e vetores
+- **matrizes/** - Operações com matrizes bidimensionais
+- **strings/** - Manipulação e processamento de strings
+
+### **Projetos_Praticos/**
+Aplicações práticas e projetos completos:
+- **calculadoras/** - Calculadoras diversas (Bhaskara, IMC, etc.)
+- **jogos/** - Jogos interativos (Adivinhação, Blackjack, Jogo da Velha, etc.)
+- **sistemas_propostos/** - Propostas de sistemas para desenvolvimento
+
+### **Exercicios_Sequenciais/**
+Exercícios organizados por nível de dificuldade:
+- **iniciante/** - Exercícios 1-10 (conceitos básicos)
+- **intermediario/** - Exercícios 11-18 (conceitos intermediários)
+- **avancado/** - Exercícios 29-30 (conceitos avançados)
+
+### **Revisao_Conteudo/**
+Material de revisão e preparação para avaliações:
+- Listas de exercícios com soluções
+- Exercícios de funções e procedimentos
+- Manipulação de matrizes e dados
 
 ---
 
