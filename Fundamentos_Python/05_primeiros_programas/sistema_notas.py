@@ -26,14 +26,14 @@ print(f"Média: {media:.2f}")
 # Determinando a situação do aluno
 if media >= 7.0:
     situacao = "APROVADO"
-    print(f"Situação: {situacao} ✅")
+    print(f"Situação: {situacao}")
 elif media >= 5.0:
     situacao = "RECUPERAÇÃO"
-    print(f"Situação: {situacao} ⚠️")
+    print(f"Situação: {situacao}")
     print("Você precisa fazer a prova de recuperação.")
 else:
     situacao = "REPROVADO"
-    print(f"Situação: {situacao} ❌")
+    print(f"Situação: {situacao}")
 
 # Informações adicionais
 print()

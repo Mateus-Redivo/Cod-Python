@@ -28,7 +28,7 @@ print()
 # =============================
 print("=== REGRAS PARA NOMES ===")
 
-# ✅ CORRETO - Nomes válidos
+# CORRETO - Nomes válidos
 primeiro_nome = "João"
 idade_usuario = 25
 valor2 = 100
@@ -37,7 +37,7 @@ CONSTANTE = 3.14
 
 print("Nomes válidos criados com sucesso!")
 
-# ❌ INCORRETO - Estes dariam erro:
+# INCORRETO - Estes dariam erro:
 # 2nome = "erro"          # Não pode começar com número
 # primeiro-nome = "erro"  # Não pode ter hífen
 # class = "erro"          # Não pode usar palavras reservadas

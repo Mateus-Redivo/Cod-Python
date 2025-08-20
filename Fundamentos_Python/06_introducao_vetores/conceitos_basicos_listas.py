@@ -133,6 +133,6 @@ print(f"\nTotal de itens na lista: {total_itens}")
 # Verificando se tem um item específico
 item_procurado = input("\nDigite um item para procurar na lista: ")
 if item_procurado in lista_compras:
-    print(f"✅ '{item_procurado}' está na sua lista!")
+    print(f"ENCONTRADO: '{item_procurado}' está na sua lista!")
 else:
-    print(f"❌ '{item_procurado}' não está na sua lista.")
+    print(f"NÃO ENCONTRADO: '{item_procurado}' não está na sua lista.")

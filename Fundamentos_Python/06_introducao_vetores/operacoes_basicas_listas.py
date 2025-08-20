@@ -160,9 +160,9 @@ if tarefas:
 
     if tarefa_concluida in tarefas:
         tarefas.remove(tarefa_concluida)
-        print(f"✅ Tarefa '{tarefa_concluida}' removida!")
+        print(f"SUCESSO: Tarefa '{tarefa_concluida}' removida!")
     else:
-        print("❌ Tarefa não encontrada.")
+        print("ERRO: Tarefa não encontrada.")
 
 # Lista final
 print(f"\nTarefas restantes: {tarefas}")
