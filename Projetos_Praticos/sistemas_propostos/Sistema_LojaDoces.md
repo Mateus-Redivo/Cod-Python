@@ -63,7 +63,6 @@ Desenvolver um sistema para gerenciar uma loja de doces, controlando produtos, e
 #### Sistema de Vendas
 - Calcular valor total da venda
 - Verificar quantidade disponível
-- Registrar venda no histórico
 - Atualizar estoque automaticamente
 - Não permitir venda de quantidade maior que estoque
 

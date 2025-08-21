@@ -27,8 +27,6 @@ Desenvolver um sistema para organizar churrascos, gerenciando participantes e co
 - Mostrar para cada participante: nome, carne que trará, bebida que trará
 - Listar todos os tipos de carne disponíveis
 - Listar todas as bebidas disponíveis
-- Contar total de participantes
-- Verificar variedade de itens
 
 #### 3. UPDATE (Alterar Contribuição)
 - Permitir que participante altere tipo de carne (carnes[índice])
@@ -42,7 +40,6 @@ Desenvolver um sistema para organizar churrascos, gerenciando participantes e co
 - Excluir dos três vetores simultaneamente (nome, carne, bebida)
 - Confirmar operação antes de excluir
 - Reorganizar índices após remoção
-- Atualizar contagem total de participantes
 
 ### Funcionalidades Específicas
 
@@ -50,27 +47,18 @@ Desenvolver um sistema para organizar churrascos, gerenciando participantes e co
 - Menu principal com todas as opções
 - Interface amigável e intuitiva
 - Opção de sair do sistema
-- Navegação clara entre opções
 
 #### Controle de Itens
 - Cada índice representa um participante e suas contribuições
 - Formato de exibição: "Nome: Carne + Bebida"
 - Evitar duplicação de participantes
 - Garantir que cada pessoa contribua com 2 itens
-- Listar itens únicos disponíveis no evento
 
 #### Relatórios do Churrasco
 - Lista completa de participantes
 - Inventário de carnes disponíveis
 - Inventário de bebidas disponíveis
 - Resumo total do evento
-- Verificação de variedade de itens
-
-#### Organização do Evento
-- Contagem total de participantes
-- Verificar se há variedade suficiente
-- Listar itens por categoria
-- Identificar possíveis faltas ou excessos
 
 ### Validações Necessárias
 - Nome do participante não pode estar vazio
@@ -83,6 +71,5 @@ Desenvolver um sistema para organizar churrascos, gerenciando participantes e co
 - Menu claro e organizado
 - Mensagens de boas-vindas para novos participantes
 - Confirmações de cadastro
-- Listagens organizadas por categoria
 - Tratamento de erros amigável
 

@@ -21,7 +21,6 @@ Desenvolver um sistema para gerenciar uma coleção de músicas, permitindo orga
 - Campos opcionais: gênero (padrão: "Não informado"), duração
 - Adicionar simultaneamente nos quatro vetores
 - Validação: duração deve ser positiva (em segundos)
-- Não permitir músicas duplicadas (mesmo título e artista)
 - Manter sincronização dos índices
 
 #### 2. READ (Listar/Buscar Músicas)
@@ -57,20 +56,11 @@ Desenvolver um sistema para gerenciar uma coleção de músicas, permitindo orga
 - Simular "reprodução" de músicas
 - Selecionar música por índice
 - Exibir informações durante "reprodução"
-- Registrar no histórico (se implementado)
-- Mostrar progresso ou tempo de duração
 
 #### Busca e Filtros
 - Buscar por gênero musical
 - Listar músicas de artista específico
-- Filtrar por duração
 - Busca por título parcial
-
-#### Controle de Biblioteca
-- Estatísticas da playlist (total de músicas, duração total)
-- Gêneros disponíveis na coleção
-- Artistas únicos na playlist
-- Música mais longa/mais curta
 
 ### Validações Necessárias
 - Título e artista são obrigatórios

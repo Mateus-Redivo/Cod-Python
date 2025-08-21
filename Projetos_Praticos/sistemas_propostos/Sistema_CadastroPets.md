@@ -9,7 +9,6 @@ Desenvolver um sistema para gerenciar informações de animais de estimação, i
 1. **nomes_pets[]** - Vetor para armazenar nomes dos pets
 2. **especies[]** - Vetor para armazenar espécies dos pets
 3. **idades[]** - Vetor para armazenar idades dos pets
-4. **vacinas[]** - Vetor de listas, onde cada posição contém a lista de vacinas do pet correspondente
 
 *Nota: Os quatro vetores trabalham com índices sincronizados*
 
@@ -20,7 +19,6 @@ Desenvolver um sistema para gerenciar informações de animais de estimação, i
 - Campo obrigatório: nome
 - Campos opcionais: espécie (padrão: "Não informado"), idade
 - Adicionar simultaneamente nos quatro vetores
-- Inicializar lista vazia de vacinas para cada pet (vacinas[índice] = [])
 - Validação: nome não pode estar vazio, idade deve ser positiva
 - Manter sincronização dos índices
 
@@ -32,15 +30,16 @@ Desenvolver um sistema para gerenciar informações de animais de estimação, i
 - Tratar caso de lista vazia
 
 #### 3. UPDATE (Vacinar Pet/Editar Informações)
-- **Aplicar vacinas**: adicionar vacina na lista vacinas[índice] do pet específico
-- **Editar informações**: alterar nome, espécie ou idade em seus respectivos vetores
-- Validar se o pet existe (verificar índice válido)
-- Não permitir vacinas vazias ou duplicadas no mesmo pet
-- Manter consistência entre todos os vetores
+- **Alterar Pet**: alterar informações do pet
+- Permitir alteração de nome, espécie e idade
+- Localizar pet por nome ou índice
+- Atualizar vetores correspondentes
+- Manter consistência entre os quatro vetores
+
 
 #### 4. DELETE (Remover Pet)
 - Remover pets do sistema
-- Excluir dos quatro vetores simultaneamente (nome, espécie, idade, vacinas)
+- Excluir dos quatro vetores simultaneamente (nome, espécie, idade)
 - Confirmar operação antes de excluir
 - Mostrar informações do pet antes da exclusão
 - Reorganizar índices após remoção
@@ -53,22 +52,14 @@ Desenvolver um sistema para gerenciar informações de animais de estimação, i
 - Opção de sair do sistema
 - Tratamento de opções inválidas
 
-#### Controle de Vacinação
-- Ver vacinas aplicadas em cada pet
-- Histórico completo de vacinação
-- Validar nome da vacina antes de aplicar
-- Permitir múltiplas vacinas por pet
-
 #### Busca e Consulta
 - Buscar pet por nome
 - Ver detalhes completos de um pet específico
 - Listar pets por espécie
-- Relatório de vacinação
 
 ### Validações Necessárias
 - Nome do pet é obrigatório
 - Idade deve ser um número positivo
-- Nome da vacina não pode estar vazio
 - Verificar existência do pet antes das operações
 - Validar índices de seleção
 

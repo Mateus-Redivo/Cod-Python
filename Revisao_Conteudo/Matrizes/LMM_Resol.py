@@ -1,3 +1,4 @@
+from encodings.base64_codec import base64_encode
 import random
 
 # =============================
@@ -299,7 +300,6 @@ def ex21(notas):
     """
     return sum(notas) / len(notas) if notas else 0
 
-
 def ex22(banco_dados, nome):
     """
     Exercício 22:
@@ -311,7 +311,6 @@ def ex22(banco_dados, nome):
       - list ou None: lista de notas do aluno ou None se não encontrado
     """
     return banco_dados.get(nome)
-
 
 def ex23(produtos):
     """
