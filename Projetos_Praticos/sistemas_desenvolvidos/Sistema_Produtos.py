@@ -53,49 +53,61 @@ def listar_produtos():
     if not nomes:
         print("Nenhum produto cadastrado.")
         return
-
+    status = ""
     for i in range(len(nomes)):
+        if quantidades[i] == 0:
+            status = "Produto esgotado"
+        elif quantidades[i] < 5:
+            status = "Estoque baixo"
+        else:
+            status = "Em estoque"
         print(
             f"{i + 1}. Nome: {nomes[i]}, Preço: R$ {precos[i]:.2f}, Quantidade: {quantidades[i]}, {status}")
 
 
 def menu():
-    while True:
-        print("\n" + "=" * 40)
-        print("SISTEMA DE CONTROLE DE PRODUTOS")
-        print("=" * 40)
-        print("1. Cadastrar produto")
-        print("2. Listar produtos")
-        print("3. Atualizar produto")
-        print("4. Entrada de estoque")
-        print("5. Saída de estoque")
-        print("6. Remover produto")
-        print("7. Relatório do inventário")
-        print("8. Popular produtos de exemplo")
-        print("0. Sair")
-        print("=" * 40)
+    print("\n" + "=" * 40)
+    print("SISTEMA DE CONTROLE DE PRODUTOS")
+    print("=" * 40)
+    print("1. Cadastrar produto")
+    print("2. Listar produtos")
+    print("3. Atualizar produto")
+    print("4. Entrada de estoque")
+    print("5. Saída de estoque")
+    print("6. Remover produto")
+    print("7. Relatório do inventário")
+    print("8. Popular produtos de exemplo")
+    print("0. Sair")
+    print("=" * 40)
 
-        opcao = input("Escolha uma opção: ").strip()
+
+def main():
+    while True:
+        menu()
+        try:
+            opcao = int(input("Escolha uma opção: "))
+        except ValueError:
+            print("Opção inválida! Tente novamente.")
 
         match opcao:
-            case "1":
+            case 1:
                 cadastrar_produto()
-            case "2":
+            case 2:
                 listar_produtos()
-            case "3":
+            case 3:
                 print("Função ainda não implementada.")
-            case "4":
+            case 4:
                 print("Função ainda não implementada.")
-            case "5":
+            case 5:
                 print("Função ainda não implementada.")
-            case "6":
+            case 6:
                 print("Função ainda não implementada.")
-            case "7":
+            case 7:
                 print("Função ainda não implementada.")
-            case "8":
+            case 8:
                 popular_exemplo()
                 print("Produtos de exemplo adicionados com sucesso!")
-            case "0":
+            case 0:
                 print("Saindo do sistema...")
                 break
             case _:
@@ -103,4 +115,4 @@ def menu():
 
 
 if __name__ == "__main__":
-    menu()
+    main()
