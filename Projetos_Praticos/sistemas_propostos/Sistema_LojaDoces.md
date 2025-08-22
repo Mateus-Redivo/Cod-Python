@@ -11,7 +11,7 @@ Desenvolver um sistema para gerenciar uma loja de doces, controlando produtos, e
 3. **estoques[]** - Vetor para armazenar quantidades em estoque
 4. **vendas_produto[]** - Vetor para registrar total de vendas por produto (opcional)
 
-*Nota: Os três primeiros vetores trabalham com índices sincronizados*
+*Nota: Os quatro vetores trabalham com índices sincronizados*
 
 ### Operações CRUD Obrigatórias
 

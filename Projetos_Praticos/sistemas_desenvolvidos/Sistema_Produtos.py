@@ -1,6 +1,3 @@
-from curses.ascii import isalpha
-
-
 nomes = []
 precos = []
 quantidades = []
@@ -51,6 +48,17 @@ def cadastrar_produto():
         print("Erro: Digite valores numéricos válidos!")
 
 
+def listar_produtos():
+    print("\n--- LISTA DE PRODUTOS ---")
+    if not nomes:
+        print("Nenhum produto cadastrado.")
+        return
+
+    for i in range(len(nomes)):
+        print(
+            f"{i + 1}. Nome: {nomes[i]}, Preço: R$ {precos[i]:.2f}, Quantidade: {quantidades[i]}, {status}")
+
+
 def menu():
     while True:
         print("\n" + "=" * 40)
@@ -73,7 +81,7 @@ def menu():
             case "1":
                 cadastrar_produto()
             case "2":
-                print("Função ainda não implementada.")
+                listar_produtos()
             case "3":
                 print("Função ainda não implementada.")
             case "4":

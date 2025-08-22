@@ -27,7 +27,6 @@ Desenvolver um sistema para gerenciar uma coleção de músicas, permitindo orga
 - Listar todas as músicas da playlist
 - Buscar músicas por gênero específico
 - Exibir informações completas: título, artista, gênero, duração
-- Formatar duração em minutos e segundos
 - Contar total de músicas na playlist
 
 #### 3. UPDATE (Editar Informações da Música)

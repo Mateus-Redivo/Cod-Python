@@ -10,7 +10,7 @@ Desenvolver um sistema para controle de estoque de um mercado/loja, gerenciando 
 2. **precos[]** - Lista para armazenar preços dos produtos
 3. **quantidades[]** - Lista para armazenar quantidades em estoque
 
-*Nota: As três listas trabalham com índices sincronizados*
+*Nota: Os três vetores trabalham com índices sincronizados*
 
 ### Operações CRUD Obrigatórias
 

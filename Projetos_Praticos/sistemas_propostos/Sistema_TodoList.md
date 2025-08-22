@@ -10,7 +10,7 @@ Desenvolver um sistema para gerenciar tarefas pessoais, permitindo adicionar, li
 2. **status_tarefas[]** - Vetor para armazenar status (True=concluída, False=pendente)
 3. **datas_criacao[]** - Vetor para armazenar datas de criação (opcional)
 
-*Nota: Os vetores trabalham com índices sincronizados*
+*Nota: Os três vetores trabalham com índices sincronizados*
 
 ### Operações CRUD Obrigatórias
 

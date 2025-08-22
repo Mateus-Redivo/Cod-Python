@@ -11,7 +11,7 @@ Desenvolver um sistema para controle financeiro pessoal, permitindo o registro d
 3. **descricoes_despesas[]** - Vetor para armazenar descrições das despesas  
 4. **valores_despesas[]** - Vetor para armazenar valores das despesas
 
-*Nota: Os vetores de receitas trabalham com índices sincronizados entre si, assim como os vetores de despesas*
+*Nota: Os quatro vetores trabalham com índices sincronizados*
 
 ### Operações CRUD Obrigatórias
 

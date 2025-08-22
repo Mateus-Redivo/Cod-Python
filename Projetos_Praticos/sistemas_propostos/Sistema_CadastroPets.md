@@ -10,7 +10,7 @@ Desenvolver um sistema para gerenciar informações de animais de estimação, i
 2. **especies[]** - Vetor para armazenar espécies dos pets
 3. **idades[]** - Vetor para armazenar idades dos pets
 
-*Nota: Os quatro vetores trabalham com índices sincronizados*
+*Nota: Os três vetores trabalham com índices sincronizados*
 
 ### Operações CRUD Obrigatórias
 

@@ -10,7 +10,7 @@ Desenvolver um sistema para organizar churrascos, gerenciando participantes e co
 2. **carnes[]** - Vetor para armazenar tipos de carne que cada participante trará
 3. **bebidas[]** - Vetor para armazenar tipos de bebida que cada participante trará
 
-*Nota: Os três vetores trabalham com índices sincronizados, onde participantes[i] trará carnes[i] e bebidas[i]*
+*Nota: Os três vetores trabalham com índices sincronizados*
 
 ### Operações CRUD Obrigatórias
 
