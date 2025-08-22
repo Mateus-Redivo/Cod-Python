@@ -180,6 +180,8 @@ def remover_produto():
 def relatorio_inventario():
     pass  # Função ainda não implementada
 
+# Implementação da função principal do sistema(A função main() é o ponto de entrada do programa)
+
 
 def main():
     # Implementação da função principal do sistema
