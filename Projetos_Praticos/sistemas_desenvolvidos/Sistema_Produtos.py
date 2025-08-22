@@ -1,6 +1,10 @@
-nomes = []
-precos = []
-quantidades = []
+# Inicia os vetores para armazenar os dados dos produtos
+nomes = []  # Lista para armazenar os nomes dos produtos
+precos = []  # Lista para armazenar os preços dos produtos
+quantidades = []  # Lista para armazenar as quantidades dos produtos
+
+# Função para exibir o menu principal do sistema
+
 
 def menu():
     print("\n" + "=" * 40)
@@ -17,12 +21,28 @@ def menu():
     print("0. Sair")
     print("=" * 40)
 
+# Funçoes reutilizáveis
+
+
 def receber_op_valida():
     try:
         opcao = int(input("Escolha uma opção: "))
         return opcao
     except ValueError:
         return -1
+
+
+def listar_produtos():
+    print("\n--- LISTA DE PRODUTOS ---")
+    if not nomes:
+        print("Nenhum produto cadastrado.")
+        return
+    for i in range(len(nomes)):
+        print(
+            f"{i + 1}. Nome: {nomes[i]}, Preço: R$ {precos[i]:.2f}, Quantidade: {quantidades[i]}")
+
+# Implementação das funcionalidades do sistema
+
 
 def popular_exemplo():
     produtos_exemplo = [
@@ -42,11 +62,12 @@ def popular_exemplo():
         precos.append(preco)
         quantidades.append(quantidade)
 
+
 def cadastrar_produto():
     print("\n--- CADASTRAR PRODUTO ---")
 
     nome = input("Nome do produto: ").strip()
-    if not nome or not nome.isalpha():
+    if not nome or not nome.replace(" ", "").isalpha():
         print("Erro: Nome do produto não pode estar vazio ou conter caracteres inválidos!")
         return
 
@@ -67,7 +88,8 @@ def cadastrar_produto():
     except ValueError:
         print("Erro: Digite valores numéricos válidos!")
 
-def listar_produtos():
+
+def listar_produtos_status():
     print("\n--- LISTA DE PRODUTOS ---")
     if not nomes:
         print("Nenhum produto cadastrado.")
@@ -83,14 +105,13 @@ def listar_produtos():
         print(
             f"{i + 1}. Nome: {nomes[i]}, Preço: R$ {precos[i]:.2f}, Quantidade: {quantidades[i]}, {status}")
 
+
 def atualizar_produto():
 
     if not nomes:
         print("Nenhum produto cadastrado")
         return
-
-    for i in range(len(nomes)):
-        print(f"{i+1} Produto: {nomes[i]}, Preço {precos[i]}, Quantidade {quantidades[i]}")
+    listar_produtos()
 
     idx = int(input("Digite o número do produto que deseja atualizar: ")) - 1
     if idx < 0 or idx >= len(nomes):
@@ -108,7 +129,7 @@ def atualizar_produto():
 
         case 1:
             novo_nome = input("Digite o novo nome do produto: ").strip()
-            if not novo_nome or not novo_nome.isalpha():
+            if not novo_nome or not novo_nome.replace(" ", "").isalpha():
                 print("Erro: Nome inválido!")
                 return
             nomes[idx] = novo_nome
@@ -116,49 +137,71 @@ def atualizar_produto():
 
         case 2:
             try:
-                novo_preco = float(input("Digite o novo preço do produto: R$ "))
+                novo_preco = float(
+                    input("Digite o novo preço do produto: R$ "))
                 if novo_preco < 0:
                     print("Erro: Preço não pode ser negativo!")
                     return
                 precos[idx] = novo_preco
-                print(f"Preço do produto {nomes[idx]} atualizado para R$ {novo_preco:.2f}.")
+                print(
+                    f"Preço do produto {nomes[idx]} atualizado para R$ {novo_preco:.2f}.")
             except ValueError:
                 print("Erro: Digite um valor numérico válido!")
 
         case 3:
             try:
-                nova_quantidade = int(input("Digite a nova quantidade do produto: "))
+                nova_quantidade = int(
+                    input("Digite a nova quantidade do produto: "))
                 if nova_quantidade < 0:
                     print("Erro: Quantidade não pode ser negativa!")
                     return
                 quantidades[idx] = nova_quantidade
-                print(f"Quantidade do produto {nomes[idx]} atualizada para {nova_quantidade}.")
+                print(
+                    f"Quantidade do produto {nomes[idx]} atualizada para {nova_quantidade}.")
             except ValueError:
                 print("Erro: Digite um valor numérico válido!")
-        
+
         case _:
             print("Opção inválida! Tente novamente.")
 
+
+def entrada_estoque():
+    pass  # Função ainda não implementada
+
+
+def saida_estoque():
+    pass  # Função ainda não implementada
+
+
+def remover_produto():
+    pass  # Função ainda não implementada
+
+
+def relatorio_inventario():
+    pass  # Função ainda não implementada
+
+
 def main():
+    # Implementação da função principal do sistema
     while True:
         menu()
-        
+
         opcao = receber_op_valida()
         match opcao:
             case 1:
                 cadastrar_produto()
             case 2:
-                listar_produtos()
-            case 3:
+                listar_produtos_status()
+
                 atualizar_produto()
             case 4:
-                print("Função ainda não implementada.")
+                entrada_estoque()
             case 5:
-                print("Função ainda não implementada.")
+                saida_estoque()
             case 6:
-                print("Função ainda não implementada.")
+                remover_produto()
             case 7:
-                print("Função ainda não implementada.")
+                relatorio_inventario()
             case 8:
                 popular_exemplo()
                 print("Produtos de exemplo adicionados com sucesso!")
@@ -167,6 +210,7 @@ def main():
                 break
             case _:
                 print("Opção inválida! Tente novamente.")
+
 
 if __name__ == "__main__":
     main()
