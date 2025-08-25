@@ -4,7 +4,7 @@ notas = []
 
 
 def menu():
-    pass
+    pass # Função de menu (a ser implementada)
 
 
 def cadastrar_aluno():
@@ -74,7 +74,7 @@ def atualizar_nota():
 
 
 def main():
-    pass
+    pass # Função principal (a ser implementada)
 
 
 if __name__ == "__main__":
