@@ -24,6 +24,25 @@ def menu():
 # Funçoes reutilizáveis
 
 
+def verifica_lista_vazia():
+    if not nomes:
+        print("Nenhum produto cadastrado")
+        return True
+    return False
+
+
+def receber_produto():
+    try:
+        idx = int(input("Digite o número do produto que deseja atualizar: ")) - 1
+        if idx < 0 or idx >= len(nomes):
+            print("Produto inválido!")
+            return None
+        return idx
+    except ValueError:
+        print("Digite um valor numérico válido!")
+        return None
+
+
 def receber_op_valida():
     try:
         opcao = int(input("Escolha uma opção: "))
@@ -34,9 +53,10 @@ def receber_op_valida():
 
 def listar_produtos():
     print("\n--- LISTA DE PRODUTOS ---")
-    if not nomes:
-        print("Nenhum produto cadastrado.")
+
+    if verifica_lista_vazia():
         return
+
     for i in range(len(nomes)):
         print(
             f"{i + 1}. Nome: {nomes[i]}, Preço: R$ {precos[i]:.2f}, Quantidade: {quantidades[i]}")
@@ -91,9 +111,10 @@ def cadastrar_produto():
 
 def listar_produtos_status():
     print("\n--- LISTA DE PRODUTOS ---")
-    if not nomes:
-        print("Nenhum produto cadastrado.")
+
+    if verifica_lista_vazia():
         return
+
     status = ""
     for i in range(len(nomes)):
         if quantidades[i] == 0:
@@ -108,14 +129,15 @@ def listar_produtos_status():
 
 def atualizar_produto():
 
-    if not nomes:
-        print("Nenhum produto cadastrado")
+    if verifica_lista_vazia():
         return
+
     listar_produtos()
 
-    idx = int(input("Digite o número do produto que deseja atualizar: ")) - 1
-    if idx < 0 or idx >= len(nomes):
-        print("Produto inválido!")
+    id_produto = receber_produto()
+
+    if id_produto is None:  
+        print("Operação cancelada.") 
         return
 
     print("--- Atualizar Produto--- ")
@@ -132,7 +154,7 @@ def atualizar_produto():
             if not novo_nome or not novo_nome.replace(" ", "").isalpha():
                 print("Erro: Nome inválido!")
                 return
-            nomes[idx] = novo_nome
+            nomes[id_produto] = novo_nome
             print(f"Nome do produto atualizado para '{novo_nome}'.")
 
         case 2:
@@ -142,9 +164,9 @@ def atualizar_produto():
                 if novo_preco < 0:
                     print("Erro: Preço não pode ser negativo!")
                     return
-                precos[idx] = novo_preco
+                precos[id_produto] = novo_preco
                 print(
-                    f"Preço do produto {nomes[idx]} atualizado para R$ {novo_preco:.2f}.")
+                    f"Preço do produto {nomes[id_produto]} atualizado para R$ {novo_preco:.2f}.")
             except ValueError:
                 print("Erro: Digite um valor numérico válido!")
 
@@ -155,9 +177,9 @@ def atualizar_produto():
                 if nova_quantidade < 0:
                     print("Erro: Quantidade não pode ser negativa!")
                     return
-                quantidades[idx] = nova_quantidade
+                quantidades[id_produto] = nova_quantidade
                 print(
-                    f"Quantidade do produto {nomes[idx]} atualizada para {nova_quantidade}.")
+                    f"Quantidade do produto {nomes[id_produto]} atualizada para {nova_quantidade}.")
             except ValueError:
                 print("Erro: Digite um valor numérico válido!")
 
@@ -166,7 +188,32 @@ def atualizar_produto():
 
 
 def entrada_estoque():
-    pass  # Função ainda não implementada
+    print("Entrada em estoque")
+
+    if verifica_lista_vazia():
+        return
+
+    listar_produtos()
+
+    id_produto = receber_produto()
+    
+    if id_produto is None:  
+        print("Operação cancelada.") 
+        return
+
+    try:
+        quantidade_entrada = int(input("Digite a quantidade da entrada: "))
+        if quantidade_entrada < 0:
+            print("Erro: Quantidade não pode ser negativa!")
+            return
+    except ValueError:
+        print("Informe um valor válido")
+        return
+
+    quantidades[id_produto] += quantidade_entrada
+
+    print(
+        f"Quantidade {quantidade_entrada} adicionada ao produto {nomes[id_produto]}")
 
 
 def saida_estoque():
@@ -194,7 +241,7 @@ def main():
                 cadastrar_produto()
             case 2:
                 listar_produtos_status()
-
+            case 3:
                 atualizar_produto()
             case 4:
                 entrada_estoque()
