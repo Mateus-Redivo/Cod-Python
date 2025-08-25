@@ -84,7 +84,9 @@ def popular_exemplo():
 
 
 def cadastrar_produto():
-    print("\n--- CADASTRAR PRODUTO ---")
+    print("\n" + "=" * 50)
+    print(" " * 12 + "CADASTRAR PRODUTO")
+    print("=" * 50)
 
     nome = input("Nome do produto: ").strip()
     if not nome or not nome.replace(" ", "").isalpha():
@@ -110,7 +112,9 @@ def cadastrar_produto():
 
 
 def listar_produtos_status():
-    print("\n--- LISTA DE PRODUTOS ---")
+    print("\n" + "=" * 50)
+    print(" " * 12 + "LISTA DE PRODUTOS")
+    print("=" * 50)
 
     if verifica_lista_vazia():
         return
@@ -128,6 +132,9 @@ def listar_produtos_status():
 
 
 def atualizar_produto():
+    print("\n" + "=" * 50)
+    print(" " * 12 + "ALTERAÇÃO DE PRODUTOS")
+    print("=" * 50)
 
     if verifica_lista_vazia():
         return
@@ -136,8 +143,8 @@ def atualizar_produto():
 
     id_produto = receber_produto()
 
-    if id_produto is None:  
-        print("Operação cancelada.") 
+    if id_produto is None:
+        print("Alteração cancelada.")
         return
 
     print("--- Atualizar Produto--- ")
@@ -175,7 +182,7 @@ def atualizar_produto():
                 nova_quantidade = int(
                     input("Digite a nova quantidade do produto: "))
                 if nova_quantidade < 0:
-                    print("Erro: Quantidade não pode ser negativa!")
+                    print("Quantidade não pode ser negativa!")
                     return
                 quantidades[id_produto] = nova_quantidade
                 print(
@@ -188,7 +195,9 @@ def atualizar_produto():
 
 
 def entrada_estoque():
-    print("Entrada em estoque")
+    print("\n" + "=" * 50)
+    print(" " * 12 + "ENTRADA DE PRODUTOS")
+    print("=" * 50)
 
     if verifica_lista_vazia():
         return
@@ -196,9 +205,9 @@ def entrada_estoque():
     listar_produtos()
 
     id_produto = receber_produto()
-    
-    if id_produto is None:  
-        print("Operação cancelada.") 
+
+    if id_produto is None:
+        print("Entrada cancelada.")
         return
 
     try:
@@ -217,21 +226,110 @@ def entrada_estoque():
 
 
 def saida_estoque():
-    pass  # Função ainda não implementada
+    print("\n" + "=" * 50)
+    print(" " * 12 + "SAÍDA DE PRODUTOS")
+    print("=" * 50)
+
+    if verifica_lista_vazia():
+        return
+
+    listar_produtos()
+
+    id_produto = receber_produto()
+
+    if id_produto is None:
+        print("Saída cancelada.")
+        return
+
+    try:
+        quantidade_saida = int(input("Digite a quantidade de saida: "))
+        if quantidade_saida < 0:
+            print("Erro: Quantidade não pode ser negativa!")
+            return
+    except ValueError:
+        print("Informe um valor válido")
+        return
+
+    if quantidade_saida > quantidades[id_produto]:
+        print("Quantidade insuficiente em estoque!")
+        return
+    quantidades[id_produto] -= quantidade_saida
+
+    print(
+        f"Quantidade {quantidade_saida} removida do produto {nomes[id_produto]}")
 
 
 def remover_produto():
-    pass  # Função ainda não implementada
+    # Declaração global deve vir no início da função
+    global nomes, precos, quantidades
+    print("\n" + "=" * 50)
+    print(" " * 12 + "REMOVER PRODUTO")
+    print("=" * 50)
+
+    if verifica_lista_vazia():
+        return
+
+    listar_produtos()
+
+    id_produto = receber_produto()
+
+    if id_produto is None:
+        print("Remoção cancelada.")
+        return
+
+    # Armazena o nome do produto que será removido para ser impresso pos remoção
+    nome_removido = nomes[id_produto]
+
+    # Criar listas temporárias para receber os produtos que vão permanecer
+    novos_nomes = []
+    novos_precos = []
+    novas_quantidades = []
+
+    # Copia todos os produtos exceto o que queremos remover
+    for i in range(len(nomes)):
+        if i != id_produto:
+            novos_nomes.append(nomes[i])
+            novos_precos.append(precos[i])
+            novas_quantidades.append(quantidades[i])
+
+    # Reatribui listas vazias as listas globais que estão no sistema
+    nomes = []
+    precos = []
+    quantidades = []
+
+    # Reconstrói as listas com os produtos restantes(não removidos)
+    for i in range(len(novos_nomes)):
+        nomes.append(novos_nomes[i])
+        precos.append(novos_precos[i])
+        quantidades.append(novas_quantidades[i])
+
+    print(f"Produto '{nome_removido}' removido com sucesso!")
 
 
 def relatorio_inventario():
-    pass  # Função ainda não implementada
+    print("\n" + "=" * 50)
+    print(" " * 12 + "RELATÓRIO DO INVENTÁRIO")
+    print("=" * 50)
+
+    if verifica_lista_vazia():
+        return
+
+    print(f"\nTotal de produtos cadastrados: {len(nomes)}")
+    print(
+        f"Valor total do inventário: R$ {sum(precos[i] * quantidades[i] for i in range(len(nomes))):.2f}")
+    print(f"Produtos em estoque: {sum(1 for q in quantidades if q > 0)}")
+    print(f"Produtos esgotados: {sum(1 for q in quantidades if q == 0)}")
+    print(
+        f"Produtos com estoque baixo: {sum(1 for q in quantidades if 0 < q < 5)}")
+
+    listar_produtos_status()
+
 
 # Implementação da função principal do sistema(A função main() é o ponto de entrada do programa)
 
 
 def main():
-    # Implementação da função principal do sistema
+
     while True:
         menu()
 
