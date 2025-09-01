@@ -2,68 +2,148 @@ alunos = []  # Lista para armazenar os nomes dos alunos
 # Lista para armazenar as notas dos alunos (cada elemento é uma lista de notas)
 notas = []
 
+# Funçoes auxiliares
+
+
+def verifica_lista_vazia():
+    if not alunos:
+        print("Nenhum aluno cadastrado")
+        return True
+    return False
+
+
+def receber_aluno():
+    try:
+        idx = int(input("Digite o número do aluno que deseja alterar: ")) - 1
+        if idx < 0 or idx >= len(alunos):
+            print("Aluno inválido!")
+            return None
+        return idx
+    except ValueError:
+        print("Digite um valor numérico válido!")
+        return None
+
+
+def receber_op_valida():
+    try:
+        opcao = int(input("Escolha uma opção: "))
+        return opcao
+    except ValueError:
+        return -1
+
+
+def listar_alunos():
+    if verifica_lista_vazia():
+        return
+
+    print("\nLista de Alunos e Notas:")
+    for i in range(len(alunos)):
+        aluno = alunos[i]
+        if notas[i]:
+            total_notas = sum(notas[i])
+            quantidade_notas = len(notas[i])
+            media = total_notas / quantidade_notas
+        else:
+            media = 0
+
+        print(f"{i+1}. {aluno} - Notas: {notas[i]} - Média: {media:.2f}")
+
+# Funções do sistema
+
 
 def menu():
-    pass # Função de menu (a ser implementada)
+    print("\n" + "=" * 40)
+    print("Sistema de Notas")
+    print("=" * 40)
+    print("1. Cadastrar Aluno")
+    print("2. Listar Alunos e Notas")
+    print("3. Adicionar Nota")
+    print("4. Calcular Média")
+    print("5. Excluir Aluno")
+    print("6. Popular com Exemplo")
+    print("0. Sair")
+    print("=" * 40)
+
+
+def popular_exemplo():
+    nomes = ["Mateus", "Isaac", "Henrique", "Henry"]
+    notas_exemplo = [[8, 7.5, 9], [6, 7, 8.5], [9, 6.5, 10], [8, 6, 7]]
+
+    for i in range(len(nomes)):
+        alunos.append(nomes[i])
+        notas.append(notas_exemplo[i])
 
 
 def cadastrar_aluno():
     nome = input("Digite o nome do aluno: ").strip()
 
-    # Verifica se o nome não está vazio
     if not nome:
         print("Nome não pode estar vazio!")
         return
 
-    # Verifica se o aluno já existe
     if nome in alunos:
         print(f"Aluno '{nome}' já está cadastrado!")
         return
 
-    # Cadastra o aluno
     alunos.append(nome)
-    notas.append([])  # Inicia com lista vazia de notas
+    notas.append([])
     print(f"Aluno '{nome}' cadastrado com sucesso!")
 
 
-def atualizar_nota():
+def calcular_media():
+    if verifica_lista_vazia():
+        return
+
+    print("\nLista de situação dos alunos:")
+    for i in range(len(alunos)):
+        aluno = alunos[i]
+        if notas[i]:
+            total_notas = sum(notas[i])
+            quantidade_notas = len(notas[i])
+            media = total_notas / quantidade_notas
+            if media >= 6:
+                status = "Aprovado"
+            else:
+                status = "Reprovado"
+        else:
+            media = 0
+            status = "Sem notas"
+        print(f"{i + 1}. Nome: {aluno} - Média: {media:.2f} - Status: {status}")
+
+
+def adicionar_nota():
     if not alunos:
         print("Nenhum aluno cadastrado!")
         return
 
-    # Exibe os alunos cadastrados
     print("\nAlunos cadastrados:")
     for i in range(len(alunos)):
         aluno = alunos[i]
-        # Calcula a média das notas do aluno
-        if notas[i]:  # Se o aluno tem notas
+
+        if notas[i]:
             total_notas = sum(notas[i])
             quantidade_notas = len(notas[i])
             media = total_notas / quantidade_notas
-        else:  # Se o aluno não tem notas ainda
+        else:
             media = 0
 
         print(f"{i+1}. {aluno} - Notas: {notas[i]} - Média: {media:.2f}")
 
     try:
-        # Recebe a escolha do usuário
+
         escolha = int(input("\nEscolha o número do aluno: ")) - 1
 
-        # Verifica se a escolha é válida
         if escolha < 0 or escolha >= len(alunos):
             print("Opção inválida!")
             return
 
-        # Recebe a nova nota
         nova_nota = float(
             input(f"Digite uma nova nota para {alunos[escolha]}: "))
 
-        # Verifica se a nota está no intervalo válido
         if nova_nota < 0 or nova_nota > 10:
             print("Nota deve estar entre 0 e 10!")
             return
 
-        # Adiciona a nova nota à lista de notas do aluno
         notas[escolha].append(nova_nota)
         media = sum(notas[escolha]) / len(notas[escolha])
         print(f"Nota {nova_nota} adicionada para '{alunos[escolha]}'!")
@@ -73,8 +153,40 @@ def atualizar_nota():
         print("Por favor, digite um número válido!")
 
 
-def main():
-    pass # Função principal (a ser implementada)
+def alterar_aluno():
+    pass  # TODO Funcionalidade a ser desenvolvida
+
+
+def deletar_aluno():
+    pass  # TODO Funcionalidade a ser desenvolvida
+
+
+def main():  # REVIEW: Revisar o main
+    while True:
+
+        menu()
+
+        opcao = receber_op_valida()
+        match opcao:
+            case 1:
+                cadastrar_aluno()
+            case 2:
+                listar_alunos()
+            case 3:
+                adicionar_nota()
+            case 4:
+                calcular_media()
+            case 5:
+                alterar_aluno()
+            case 6:
+                deletar_aluno()
+            case 7:
+                popular_exemplo()
+            case 0:
+                print("Saindo do sistema...")
+                break
+            case _:
+                print("Opção inválida! Tente novamente.")
 
 
 if __name__ == "__main__":

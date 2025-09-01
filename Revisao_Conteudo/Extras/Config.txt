@@ -1,0 +1,52 @@
+// Tags de comentários que o Todo Tree vai reconhecer
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "BUG",
+        "HACK",
+        "XXX",
+        "NOTE",
+        "WARNING",
+        "DEPRECATED",
+        "OPTIMIZE",
+        "REVIEW",
+        "CHANGED",
+        "IDEA",
+        "QUESTION",
+        "REFACTOR",
+        "TEST",
+        "DOC",
+        "SECURITY"
+    ],
+
+    // Regex para identificar os comentários
+    "todo-tree.regex.regex": "\\b(TODO|FIXME|BUG|HACK|XXX|NOTE|WARNING|DEPRECATED|OPTIMIZE|REVIEW|CHANGED|IDEA|QUESTION|REFACTOR|TEST|DOC|SECURITY)\\b",
+
+    // Cores personalizadas
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {"icon": "check", "type": "text", "foreground": "#FFEB3B"},
+        "FIXME": {"icon": "alert", "type": "text", "foreground": "#F44336"},
+        "BUG": {"icon": "bug", "type": "text", "foreground": "#E91E63"},
+        "HACK": {"icon": "gear", "type": "text", "foreground": "#FF9800"},
+        "XXX": {"icon": "question", "type": "text", "foreground": "#9C27B0"},
+        "NOTE": {"icon": "info", "type": "text", "foreground": "#03A9F4"},
+        "DEPRECATED": {"icon": "circle-slash", "type": "text", "foreground": "#607D8B"},
+        "OPTIMIZE": {"icon": "rocket", "type": "text", "foreground": "#8BC34A"},
+        "REVIEW": {"icon": "eye", "type": "text", "foreground": "#00BCD4"},
+        "CHANGED": {"icon": "git-commit", "type": "text", "foreground": "#FFEB3B"},
+        "QUESTION": {"icon": "question", "type": "text", "foreground": "#FFC107"},
+        "REFACTOR": {"icon": "code", "type": "text", "foreground": "#795548"},
+        "TEST": {"icon": "beaker", "type": "text", "foreground": "#9E9E9E"},
+        "DOC": {"icon": "book", "type": "text", "foreground": "#2196F3"},
+        "SECURITY": {"icon": "lock", "type": "text", "foreground": "#F44336"},
+        "WARNING": {"icon": "alert", "type": "text", "foreground": "#FF5722"},
+        "IDEA": {"icon": "star", "type": "text", "foreground": "#CDDC39"}
+    },
+    "todo-tree.general.statusBar": "total",
+    "todo-tree.filtering.excludeGlobs": [
+        "**/node_modules/*/**",
+        "**/*.txt",
+        "**/*.md",
+        "**/*.json"
+    ],
+    "todo-tree.filtering.ignoreGitSubmodules": true,
