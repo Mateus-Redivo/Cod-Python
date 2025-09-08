@@ -4,7 +4,6 @@ def analisar_cadeia_transacoes(transacoes, profundidade=0, limite=100, visitados
 
     if profundidade > 10 or not transacoes:
         return 0
-
     total_suspeitas = 0
 
     for i, transacao in enumerate(transacoes):
@@ -33,7 +32,7 @@ def analisar_cadeia_transacoes(transacoes, profundidade=0, limite=100, visitados
 
             if transacao['categoria'] == 'alto_risco':
                 if transacao['valor'] > limite * 5:
-                    if transacao.get('verificado', False) == False:
+                    if not transacao.get('verificado', False):
                         pontuacao_risco *= 2
                 elif transacao['canal'] == 'anonimo':
                     pontuacao_risco *= 1.7
