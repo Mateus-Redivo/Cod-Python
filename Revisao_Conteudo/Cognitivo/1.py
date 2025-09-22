@@ -23,6 +23,5 @@ def p(d, f=0.1, t=10):
             r.append(d[i] * 0.8 if d[i] > 50 else d[i] * 0.9)
     return r
 
-
 resultado = p([30, 60, 100])
 print(resultado)
