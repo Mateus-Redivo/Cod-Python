@@ -1,42 +1,96 @@
-def analisar_cadeia_transacoes(transacoes, profundidade=0, limite=100, visitados=None):
-    if visitados is None:
-        visitados = set()
-
-    if profundidade > 10 or not transacoes:
+def calcular_status_pets(p, c, r, b=None, d=3):
+    if not p or len(p) == 0:
         return 0
-    total_suspeitas = 0
 
-    for i, transacao in enumerate(transacoes):
-        if transacao['id'] in visitados:
+    total_pontos = 0
+
+    for i in range(len(p)):
+        pet = p[i]
+        ativo = pet[0]
+        especie = pet[1]
+        idade = pet[2]
+        vacinas = pet[3]
+        dono = pet[4]
+        atv_extra = pet[5] if len(pet) > 5 else None
+
+        if not ativo:
             continue
 
-        visitados.add(transacao['id'])
+        if especie not in c[0]:
+            continue
 
-        if transacao['valor'] > limite:
-            pontuacao_risco = transacao['valor'] / 1000
+        if idade < c[1]:
+            continue
 
-            if transacao.get('estrangeiro', False):
-                pontuacao_risco *= 1.5
+        pontos = idade
 
-            if transacao['data'].weekday() in [5, 6]:  # fim de semana
-                pontuacao_risco *= 1.2
+        if vacinas > 0:
+            if vacinas > 10:
+                pontos += 25
+            elif vacinas > 5:
+                pontos += 15
+            elif vacinas > 2:
+                pontos += 8
 
-            if i > 0 and transacoes[i-1]['conta'] == transacao['conta']:
-                relacionadas = analisar_cadeia_transacoes(
-                    transacao.get('transacoes_relacionadas', []),
-                    profundidade + 1,
-                    limite * 0.8,
-                    visitados
-                )
-                pontuacao_risco += relacionadas
+        if atv_extra:
+            tipo = atv_extra[0]
+            nota = atv_extra[1]
+            if tipo == 'adestramento':
+                if nota > 80:
+                    pontos += 20
+                elif nota > 60:
+                    pontos += 10
+                else:
+                    pontos += 5
+            elif tipo == 'competicao':
+                pontos += nota * 0.2
 
-            if transacao['categoria'] == 'alto_risco':
-                if transacao['valor'] > limite * 5:
-                    if not transacao.get('verificado', False):
-                        pontuacao_risco *= 2
-                elif transacao['canal'] == 'anonimo':
-                    pontuacao_risco *= 1.7
+        if b and i < len(b) and b[i]:
+            tipo_bonus = b[i]
+            if tipo_bonus == 'premiado':
+                pontos *= 1.3
+            elif tipo_bonus == 'adocao':
+                pontos += 10
+            elif tipo_bonus == 'resgate':
+                pontos *= 1.1
 
-            total_suspeitas += pontuacao_risco
+        if pontos > 100:
+            pontos = 100
 
-    return total_suspeitas
+        if r[0] and idade < c[1]:
+            if len(r) > 1 and r[1]:
+                idade_bonus = min(idade + 5, c[1])
+                pontos = max(pontos, idade_bonus)
+            elif len(r) > 2 and r[2] and vacinas > d:
+                pontos += 5
+
+        total_pontos += pontos
+
+    media = total_pontos / len(p)
+
+    if media > 90:
+        media = min(media * 1.05, 100)
+    elif media > 70:
+        media *= 1.02
+
+    return media
+
+
+if __name__ == "__main__":
+
+    pets_teste = [
+        [True, 'cachorro', 5, 8, 'Carlos', ['adestramento', 90]],
+        [True, 'gato', 3, 12, 'Ana', ['competicao', 70]],
+        [False, 'passaro', 1, 2, 'Joao', None],
+        [True, 'cachorro', 2, 0, 'Marina', ['adestramento', 65]]
+    ]
+
+    config_teste = [['cachorro', 'gato', 'passaro'], 2]
+
+    regras_teste = [True, True, True]
+
+    bonus_teste = ['premiado', 'resgate', None, 'adocao']
+
+    resultado = calcular_status_pets(
+        pets_teste, config_teste, regras_teste, bonus_teste)
+    print("Média calculada:", resultado)
