@@ -72,5 +72,8 @@ if __name__ == "__main__":
     print("Resultado do teste:")
     print(f"Prêmio calculado: R$ {resultado:.2f}")
 
-
+# Estrutura dos parâmetros:
+# cliente: [idade, genero, possui_licenca, casado, possui_filhos, anos_fidelidade]
+# cobertura: [tipo, franquia]
+# historico: [acidentes, violacoes]
 
