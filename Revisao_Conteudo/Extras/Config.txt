@@ -24,23 +24,23 @@
 
     // Cores personalizadas
     "todo-tree.highlights.customHighlight": {
-        "TODO": {"icon": "check", "type": "text", "foreground": "#FFEB3B"},
-        "FIXME": {"icon": "alert", "type": "text", "foreground": "#F44336"},
-        "BUG": {"icon": "bug", "type": "text", "foreground": "#E91E63"},
-        "HACK": {"icon": "gear", "type": "text", "foreground": "#FF9800"},
-        "XXX": {"icon": "question", "type": "text", "foreground": "#9C27B0"},
-        "NOTE": {"icon": "info", "type": "text", "foreground": "#03A9F4"},
-        "DEPRECATED": {"icon": "circle-slash", "type": "text", "foreground": "#607D8B"},
-        "OPTIMIZE": {"icon": "rocket", "type": "text", "foreground": "#8BC34A"},
-        "REVIEW": {"icon": "eye", "type": "text", "foreground": "#00BCD4"},
-        "CHANGED": {"icon": "git-commit", "type": "text", "foreground": "#FFEB3B"},
-        "QUESTION": {"icon": "question", "type": "text", "foreground": "#FFC107"},
-        "REFACTOR": {"icon": "code", "type": "text", "foreground": "#795548"},
-        "TEST": {"icon": "beaker", "type": "text", "foreground": "#9E9E9E"},
-        "DOC": {"icon": "book", "type": "text", "foreground": "#2196F3"},
-        "SECURITY": {"icon": "lock", "type": "text", "foreground": "#F44336"},
-        "WARNING": {"icon": "alert", "type": "text", "foreground": "#FF5722"},
-        "IDEA": {"icon": "star", "type": "text", "foreground": "#CDDC39"}
+        "TODO": {"icon": "check", "type": "text", "foreground": "#4CAF50"},
+        "FIXME": {"icon": "alert", "type": "text", "foreground": "#FF1744"},
+        "BUG": {"icon": "bug", "type": "text", "foreground": "#D32F2F"},
+        "HACK": {"icon": "gear", "type": "text", "foreground": "#FF6F00"},
+        "XXX": {"icon": "question", "type": "text", "foreground": "#7B1FA2"},
+        "NOTE": {"icon": "info", "type": "text", "foreground": "#1976D2"},
+        "DEPRECATED": {"icon": "circle-slash", "type": "text", "foreground": "#546E7A"},
+        "OPTIMIZE": {"icon": "rocket", "type": "text", "foreground": "#689F38"},
+        "REVIEW": {"icon": "eye", "type": "text", "foreground": "#00ACC1"},
+        "CHANGED": {"icon": "git-commit", "type": "text", "foreground": "#FBC02D"},
+        "QUESTION": {"icon": "question", "type": "text", "foreground": "#F57C00"},
+        "REFACTOR": {"icon": "code", "type": "text", "foreground": "#5D4037"},
+        "TEST": {"icon": "beaker", "type": "text", "foreground": "#616161"},
+        "DOC": {"icon": "book", "type": "text", "foreground": "#0277BD"},
+        "SECURITY": {"icon": "lock", "type": "text", "foreground": "#C62828"},
+        "WARNING": {"icon": "alert", "type": "text", "foreground": "#E65100"},
+        "IDEA": {"icon": "star", "type": "text", "foreground": "#AFB42B"}
     },
     "todo-tree.general.statusBar": "total",
     "todo-tree.filtering.excludeGlobs": [
@@ -50,3 +50,6 @@
         "**/*.json"
     ],
     "todo-tree.filtering.ignoreGitSubmodules": true,
+    "todo-tree.general.tagGroups": {
+    
+    },
