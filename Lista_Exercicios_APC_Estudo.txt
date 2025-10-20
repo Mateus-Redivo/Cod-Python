@@ -173,7 +173,7 @@ idade = validar_entrada("Idade: ", validar_idade, "Idade inválida!")
 EXERCÍCIO 10 
 Compare as duas versões do código e explique qual é melhor e por quê:
 
-**Versão A:**
+Versão A:
 
 def calcular_bonus(cargo, salario):
     if cargo == "gerente":
@@ -186,7 +186,7 @@ def calcular_bonus(cargo, salario):
         return 0
 
 
-**Versão B:**
+Versão B:
 
 BONUS_POR_CARGO = {
     "gerente": 0.20,
@@ -410,4 +410,5 @@ Problemas identificados:
 6. 
 
 Código refatorado (versão completa):
+
 
