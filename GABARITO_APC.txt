@@ -1,0 +1,295 @@
+GABARITO - LISTA APC (ANÁLISE E PROJETO DE CÓDIGO)
+
+EXERCÍCIO 1 - CODE SMELLS
+a) Magic Numbers: Números literais sem significado claro (ex: if idade > 18)
+b) Código Duplicado: Blocos idênticos em diferentes lugares
+c) Função com múltiplas responsabilidades: Uma função fazendo validação, cálculo e persistência
+d) Falta de tratamento de exceções: Código sem try/catch para erros previsíveis
+
+EXERCÍCIO 2 - ANÁLISE DE AFIRMATIVAS
+( F ) É sempre necessário adicionar novos recursos ao refatorar
+( V ) A refatoração deve manter o comportamento funcional do código
+( V ) Magic numbers devem ser substituídos por constantes nomeadas
+( F ) Duplicação de código é aceitável se for pequena
+( V ) O princípio DRY deve ser aplicado sempre que possível
+
+EXERCÍCIO 3 - TÉCNICAS PARA ELIMINAR DUPLICAÇÃO
+1. Extrair função/método comum
+2. Criar funções auxiliares
+3. Usar variáveis/constantes compartilhadas
+4. Agrupar código similar em uma função
+5. Organizar código repetido em blocos reutilizáveis
+
+EXERCÍCIO 4 - PRINCÍPIOS DE CÓDIGO LIMPO
+a) SRP: Uma classe/função deve ter apenas um motivo para mudar
+   Exemplo: Classe UsuarioValidator apenas para validação
+
+b) DRY: Não repetir código/lógica
+   Exemplo: Função calcularDesconto() reutilizada
+
+c) KISS: Manter simplicidade, evitar complexidade desnecessária
+   Exemplo: if simples ao invés de lógica complexa
+
+d) YAGNI: Não implementar funcionalidade até ser necessária
+   Exemplo: Não criar sistema de cache se não há necessidade
+
+EXERCÍCIO 5 - CÓDIGO REFATORADO
+DESCONTO_PERCENTUAL = 0.10
+LIMITE_DESCONTO = 100
+
+def obter_dados_pedido():
+    nome = input("Nome: ")
+    preco = float(input("Preço: "))
+    return nome, preco
+
+def calcular_desconto(preco):
+    return preco * DESCONTO_PERCENTUAL if preco > LIMITE_DESCONTO else 0
+
+def processar_pedido():
+    nome, preco = obter_dados_pedido()
+    desconto = calcular_desconto(preco)
+    total = preco - desconto
+    print(f"Cliente: {nome}, Total: R$ {total}")
+    return total
+
+EXERCÍCIO 6 - CODE SMELLS E MELHORIAS
+Code smells identificados:
+1. Magic numbers (percentuais hardcoded)
+2. Lógica duplicada (cálculo de bônus/IR)
+3. Condicional complexa
+
+Código melhorado:
+def obter_percentuais_cargo(cargo):
+    cargo_lower = cargo.lower()
+    if cargo_lower == "gerente":
+        return 0.20, 0.275
+    elif cargo_lower == "supervisor":
+        return 0.15, 0.15
+    elif cargo_lower == "operador":
+        return 0.10, 0.075
+    else:
+        return 0, 0
+
+def calcular_beneficios(cargo, salario):
+    bonus_pct, ir_pct = obter_percentuais_cargo(cargo)
+    bonus = salario * bonus_pct
+    ir = salario * ir_pct
+    return bonus, ir
+
+EXERCÍCIO 7 - ESTRATÉGIAS DE REFATORAÇÃO
+a) Extract Function: Quando função é muito longa ou faz múltiplas tarefas
+
+b) Replace Conditional with Functions: Quando há muitos if/elif com lógica similar
+
+c) Introduce Parameter Object: Quando função tem muitos parâmetros relacionados
+
+d) Replace Magic Number: Quando há números literais sem significado claro
+
+EXERCÍCIO 8 - VIOLAÇÕES SRP
+Violações identificadas:
+1. Validação de entrada misturada com lógica
+2. Acesso a banco de dados na mesma função
+3. Geração de relatório junto com cadastro
+4. Envio de email misturado
+
+Proposta de refatoração:
+def validar_nome(nome):
+    # validação específica
+
+def validar_email(email):
+    # validação específica
+
+def salvar_usuario(usuario):
+    # persistência
+
+def gerar_relatorio(usuario):
+    # relatório
+
+def enviar_confirmacao(email):
+    # email
+
+def cadastrar_usuario():
+    # orquestra as funções
+
+EXERCÍCIO 9 - FUNÇÃO GENÉRICA DE VALIDAÇÃO
+def validar_entrada(prompt, validador, mensagem_erro):
+    while True:
+        entrada = input(prompt)
+        if validador(entrada):
+            return entrada
+        print(mensagem_erro)
+
+EXERCÍCIO 10 - COMPARAÇÃO DE VERSÕES
+Versão melhor: B
+
+Justificativas:
+1. Elimina duplicação de percentuais
+2. Facilita manutenção (mudanças centralizadas)
+3. Mais legível e extensível
+
+EXERCÍCIO 11 - TRATAMENTO DE EXCEÇÕES
+Problemas identificados:
+1. Não trata ValueError na conversão
+2. Não trata ZeroDivisionError
+
+Código corrigido:
+def dividir_numeros():
+    try:
+        a = int(input("Primeiro número: "))
+        b = int(input("Segundo número: "))
+        if b == 0:
+            print("Divisão por zero não é permitida!")
+            return
+        resultado = a / b
+        print(f"Resultado: {resultado}")
+    except ValueError:
+        print("Entrada inválida! Digite apenas números.")
+
+EXERCÍCIO 12 - SEPARAÇÃO DE RESPONSABILIDADES
+Funções extraídas:
+1. validar_produto(produto): Valida nome do produto
+2. validar_preco(preco): Valida valor positivo
+3. calcular_desconto(preco, desconto_pct): Calcula desconto
+4. exibir_venda(produto, preco, desconto, final): Mostra resultado
+5. salvar_relatorio(total): Grava arquivo
+
+EXERCÍCIO 13 - SEPARATION OF CONCERNS
+Camadas identificadas:
+1. Apresentação (UI): Menu, inputs, prints
+2. Lógica de Negócio: Validações, cálculos
+3. Dados: Armazenamento, relatórios
+
+Estrutura proposta:
+class ProdutoService:  # Lógica de negócio
+class ProdutoRepository:  # Acesso a dados
+class MenuUI:  # Interface do usuário
+
+EXERCÍCIO 14 - STRATEGY PATTERN
+class CalculadoraFrete:
+    def calcular(self, distancia, tipo_entrega):
+        if tipo_entrega == "normal":
+            return self.frete_normal(distancia)
+        elif tipo_entrega == "expressa":
+            return self.frete_expresso(distancia)
+        elif tipo_entrega == "premium":
+            return self.frete_premium(distancia)
+        else:
+            return 0
+    
+    def frete_normal(self, distancia):
+        return distancia * 2.5
+    
+    def frete_expresso(self, distancia):
+        return distancia * 4.0
+    
+    def frete_premium(self, distancia):
+        return distancia * 6.0
+
+EXERCÍCIO 15 - ANÁLISE COMPLETA
+Problemas identificados:
+1. Função muito longa (múltiplas responsabilidades)
+2. Magic numbers (idades, salários, percentuais)
+3. Lógica condicional complexa
+4. Falta de tratamento de exceções
+5. Uso de lista ao invés de estrutura adequada
+6. Arquivo não fechado adequadamente
+
+Código refatorado:
+from dataclasses import dataclass
+from typing import List
+
+IDADE_ADULTO = 18
+SALARIO_CATEGORIA_A = 5000
+SALARIO_CATEGORIA_B = 2000
+
+DESCONTO_CATEGORIA_A = 0.2
+DESCONTO_CATEGORIA_B = 0.1
+DESCONTO_CATEGORIA_C = 0.05
+DESCONTO_MENOR = 0
+
+@dataclass
+class Usuario:
+    nome: str
+    idade: int
+    salario: float
+    categoria: str
+    liquido: float
+
+def obter_dados_usuario():
+    try:
+        nome = input("Nome (ou 'sair'): ")
+        if nome == "sair":
+            return None
+        idade = int(input("Idade: "))
+        salario = float(input("Salário: "))
+        return nome, idade, salario
+    except ValueError:
+        print("Dados inválidos!")
+        return None
+
+def determinar_categoria(idade, salario):
+    if idade < IDADE_ADULTO:
+        return "Menor"
+    elif salario > SALARIO_CATEGORIA_A:
+        return "A"
+    elif salario > SALARIO_CATEGORIA_B:
+        return "B"
+    else:
+        return "C"
+
+def obter_desconto_por_categoria(categoria):
+    if categoria == "A":
+        return DESCONTO_CATEGORIA_A
+    elif categoria == "B":
+        return DESCONTO_CATEGORIA_B
+    elif categoria == "C":
+        return DESCONTO_CATEGORIA_C
+    elif categoria == "Menor":
+        return DESCONTO_MENOR
+    else:
+        return 0
+
+def calcular_liquido(salario, categoria):
+    desconto_pct = obter_desconto_por_categoria(categoria)
+    desconto = salario * desconto_pct
+    return salario - desconto
+
+def processar_usuario(dados):
+    if not dados:
+        return None
+    
+    nome, idade, salario = dados
+    categoria = determinar_categoria(idade, salario)
+    liquido = calcular_liquido(salario, categoria)
+    
+    usuario = Usuario(nome, idade, salario, categoria, liquido)
+    print(f"{nome} - Categoria {categoria} - Líquido: R$ {liquido}")
+    return usuario
+
+def gerar_relatorio(usuarios: List[Usuario]):
+    print("\n=== RELATÓRIO FINAL ===")
+    for usuario in usuarios:
+        print(f"Nome: {usuario.nome}, Idade: {usuario.idade}, Líquido: R$ {usuario.liquido}")
+
+def salvar_arquivo(usuarios: List[Usuario]):
+    try:
+        with open("usuarios.txt", "w") as arquivo:
+            for usuario in usuarios:
+                arquivo.write(f"{usuario.nome};{usuario.idade};{usuario.liquido}\n")
+    except IOError:
+        print("Erro ao salvar arquivo!")
+
+def sistema():
+    usuarios = []
+    
+    while True:
+        dados = obter_dados_usuario()
+        if dados and dados[0] == "sair":
+            break
+        
+        usuario = processar_usuario(dados)
+        if usuario:
+            usuarios.append(usuario)
+    
+    gerar_relatorio(usuarios)
+    salvar_arquivo(usuarios)
