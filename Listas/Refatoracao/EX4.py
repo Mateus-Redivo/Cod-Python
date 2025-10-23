@@ -1,6 +1,9 @@
 # Problemas: Repetição complexa, lógica embaralhada, falta de tratamento de erros,
 # validações inconsistentes, estrutura de dados inadequada
 
+from narwhals import DataFrame
+
+
 print("Sistema de Controle de Estoque - Farmácia")
 
 # Medicamento 1
@@ -24,9 +27,9 @@ while categoria_med1 not in ["antibiotico", "analgesico", "vitamina"]:
     print("Categoria inválida!")
     categoria_med1 = input(
         "Categoria (antibiotico/analgesico/vitamina): ").lower()
-
-if categoria_med1 == "antibiotico":
-    desconto_med1 = 0.05
+DESCONTO_ANALGESICO = 0.10
+if categoria_med1 == "A":
+    d = DESCONTO_ANALGESICO 
 elif categoria_med1 == "analgesico":
     desconto_med1 = 0.10
 else:

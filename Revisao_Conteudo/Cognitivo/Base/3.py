@@ -11,7 +11,7 @@ def calcular_premio_seguro(cliente, cobertura, historico):
         fator_risco = 2.0
     elif cliente[0] >= 65 and (historico[0] > 0 or historico[1] > 2):
         if cobertura[0] == 'completo':
-            fator_risco = 2.8
+            fator_risco = 2.8   
         elif cobertura[0] == 'colisao':
             fator_risco = 2.5
         else:
