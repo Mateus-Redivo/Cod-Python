@@ -1,0 +1,36 @@
+1. Nomes de Variáveis
+Os parâmetros da função calcular_nota_estudante(e, c, p, b=None, d=5) 
+têm nomes muito curtos. Que nomes melhores você daria para cada parâmetro?
+
+2. Responsabilidade Única
+A função faz muitas coisas ao mesmo tempo. 
+Liste 3 coisas diferentes que ela faz e como dividir em funções separadas.
+
+3. Magic Numbers
+O código tem números "soltos" como 15, 10, 5, 80, 60. 
+Como você criaria constantes com nomes claros para esses valores?
+
+4. Estrutura de Dados
+Os dados dos estudantes estão numa lista assim: ["João", 85, 90, 78, "presencial", True].
+Como você organizaria isso de forma mais clara?
+
+5. Complexidade do Código
+A função tem muitos if/elif aninhados. 
+Dê 2 ideias para simplificar e deixar mais fácil de ler.
+
+6. Validação de Entrada
+O código não verifica se os dados estão corretos. 
+Que verificações básicas você adicionaria?
+
+7. Cálculo de Bônus
+O código repete a mesma lógica para calcular bônus de diferentes matérias. 
+Como você eliminaria essa repetição?
+
+8. Código Duplicado
+Onde você vê código repetido e como corrigir?
+
+9. Testes
+Como você mudaria o código para ficar mais fácil de testar?
+
+10. Padrões de Design
+Que padrão simples (como Factory, Strategy, etc) ajudaria a organizar melhor este código?
