@@ -1,4 +1,3 @@
-# Lista para histórico de comandos (Command Pattern)
 HISTORICO_COMANDOS = []
 
 
@@ -6,8 +5,7 @@ def comando_calcular_nota(estudante_dados, config_avaliacao):
     """Comando para calcular nota"""
     def executar():
         nome, notas = estudante_dados[0], estudante_dados[1]
-        nota_final = sum(n * p for n, p in zip(notas,
-                         config_avaliacao['pesos']))
+        nota_final = sum(n * p for n, p in zip(notas, config_avaliacao['pesos']))
         resultado = [nome, nota_final, notas.copy()]
         HISTORICO_COMANDOS.append(['calcular_nota', resultado])
         return resultado
@@ -37,7 +35,6 @@ def comando_aplicar_bonus(estudante_dados, bonus_valor):
 
     return {'executar': executar, 'desfazer': desfazer}
 
-
 def executar_comando(comando):
     """Executa um comando"""
     return comando['executar']()
@@ -49,3 +46,4 @@ def desfazer_ultimo_comando():
         # Encontra o comando correspondente e executa desfazer
         ultimo_tipo = HISTORICO_COMANDOS[-1][0]
         print(f"Desfazendo comando: {ultimo_tipo}")
+
