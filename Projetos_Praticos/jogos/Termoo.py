@@ -2,6 +2,7 @@ import random
 import os
 
 
+
 def limpar_console():
     """Limpa o console"""
     os.system('cls' if os.name == 'nt' else 'clear')

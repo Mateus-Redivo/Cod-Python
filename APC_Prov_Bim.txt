@@ -1,0 +1,187 @@
+1. Analisando o código abaixo, qual é o principal "code smell" (sinal de código problemático)?
+
+tipo_cliente = input("Tipo (bronze/prata/ouro): ").lower()
+while tipo_cliente not in ["bronze", "prata", "ouro"]:
+    print("Tipo inválido!")
+    tipo_cliente = input("Tipo (bronze/prata/ouro): ").lower()
+
+if tipo_cliente == "bronze":
+    desconto_final = valor_compra * 0.03
+elif tipo_cliente == "prata":
+    desconto_final = valor_compra * 0.08
+else:
+    desconto_final = valor_compra * 0.15
+
+A) Números mágicos sem contexto claro (0.03, 0.08, 0.15)
+B) Estrutura condicional inadequada com elif desnecessários
+C) Falta de comentários explicando a lógica de negócio
+D) Validação com while desnecessária neste contexto
+
+
+
+2. No contexto de refatoração, qual é a melhor estratégia para eliminar repetições de validação como no código abaixo?
+
+# Cliente 1
+email1 = input("E-mail: ").strip()
+while "@" not in email1 or len(email1) < 5:
+    print("E-mail inválido!")
+    email1 = input("E-mail: ").strip()
+
+# Cliente 2
+email2 = input("E-mail: ").strip()
+while "@" not in email2 or len(email2) < 5:
+    print("E-mail inválido!")
+    email2 = input("E-mail: ").strip()
+
+A) Manter duplicado facilita manutenção de cada validação
+B) Criar uma função reutilizável para validação
+C) Usar expressões regulares complexas em cada local
+D) Remover a validação do segundo e-mail completamente
+
+
+
+3. Observe este código com problemas estruturais:
+
+def processar_pedido():
+    item = input("Item: ")
+    quantidade = int(input("Quantidade: "))
+    if quantidade <= 5:
+        desconto = 0
+    elif quantidade <= 20:
+        desconto = quantidade * preco * 0.05
+    else:
+        desconto = quantidade * preco * 0.12
+    frete = 15.00 if quantidade < 10 else 0
+    total = (quantidade * preco) - desconto + frete
+    print(f"Item: {item}, Total: R$ {total:.2f}")
+    return total
+
+Qual é a principal violação dos princípios de código limpo?
+A) Uso inadequado de operador ternário no cálculo do frete
+B) Falta de documentação explicando o funcionamento da função
+C) Mistura entrada, processamento e saída (múltiplas responsabilidades)
+D) Variável preco não foi definida antes do uso na função
+
+
+
+4. Em refatoração, qual técnica é mais adequada para resolver o problema do código da questão anterior?
+A) Converter tudo em uma única expressão matemática complexa
+B) Adicionar tratamento de exceções para entradas inválidas
+C) Usar apenas variáveis globais compartilhadas no código
+D) Separar responsabilidades em funções menores e específicas
+
+
+
+5. Analisando este padrão repetitivo complexo:
+
+if forma_pagamento == "credito":
+    taxa = 0.03
+elif forma_pagamento == "debito":
+    taxa = 0.01
+elif forma_pagamento == "pix":
+    taxa = 0.0
+else:
+    taxa = 0.05
+
+Qual é a melhor abordagem para refatorar este código repetido em vários locais?
+A) Usar dicionário mapeando formas de pagamento e taxas
+B) Criar constantes separadas para cada taxa de pagamento
+C) Usar apenas o else com taxa padrão para simplificar
+D) Repetir o código em cada módulo que precisar utilizar
+
+
+
+6. Qual problema crítico existe neste código de validação?
+
+telefone = input("Telefone: ")
+while len(telefone) != 11 or not telefone.isdigit():
+    print("Telefone deve ter 11 dígitos!")
+    telefone = input("Telefone: ")
+
+idade = int(input("Idade: "))
+if idade < 18:
+    print("Menor de idade!")
+
+A) O while deveria validar também a maioridade do usuário
+B) Validação de idade não impede continuação com dados inválidos
+C) Falta usar try/except para capturar erros no telefone
+D) O código está perfeito e segue todas as boas práticas
+
+
+
+7. Analise o código abaixo e identifique qual princípio de refatoração está sendo violado:
+
+numeros = []
+for i in range(5):
+    num = int(input(f"Número {i+1}: "))
+    numeros.append(num)
+
+soma = 0
+for n in numeros:
+    soma += n
+
+media = soma / len(numeros)
+
+if media >= 7:
+    status = "Aprovado"
+    print(f"Parabéns! Média: {media:.2f}")
+else:
+    status = "Reprovado"
+    print(f"Estude mais! Média: {media:.2f}")
+
+arquivo = open("resultado.txt", "w")
+arquivo.write(f"Média: {media}, Status: {status}")
+arquivo.close()
+
+A) DRY - Don't Repeat Yourself
+B) YAGNI - You Aren't Gonna Need It 
+C) SRP - Single Responsibility Principle 
+D) KISS - Keep It Simple, Stupid 
+
+
+
+8. Observe este código com tratamento inadequado de dados:
+
+total_dia = 0
+for i in range(5):
+    valor_venda = float(input("Valor da venda: "))
+    taxa_cartao = float(input("Taxa %: "))
+    valor_liquido = valor_venda - (valor_venda * taxa_cartao / 100)
+    total_dia = total_dia + valor_liquido
+    lucro = valor_liquido * 0.15
+
+Qual é o maior problema estrutural deste código?
+A) Uso incorreto de loop for quando deveria ser while
+B) Variável lucro recalculada sem uso (sobrescrita sempre)
+C) Falta de comentários explicando o propósito do código
+D) Mistura lógica de negócio com interface do usuário
+
+
+
+9. Para refatorar validações complexas e repetitivas como a mostrada abaixo, qual é a melhor estratégia?
+
+senha = input("Senha: ").strip()
+while len(senha) < 8 or not any(c.isdigit() for c in senha) or not any(c.isupper() for c in senha):
+    print("Senha fraca!")
+    senha = input("Senha: ").strip()
+
+A) Criar função genérica validar_entrada(prompt, validador, erro)
+B) Manter validação inline para ter controle preciso do código
+C) Remover verificações de segurança para simplificar o código
+D) Usar apenas verificação de tamanho mínimo de 8 caracteres
+
+
+
+10. Qual das alternativas representa a melhor refatoração para códigos com múltiplos cálculos similares repetidos?
+
+# Produto 1
+if categoria1 == "eletronico":
+    imposto1 = preco1 * 0.18
+elif categoria1 == "alimento":
+    imposto1 = preco1 * 0.07
+# ... mais cálculos repetidos para produto 2, 3, etc.
+
+A) Usar apenas valores fixos sem verificação de categoria
+B) Criar função calcular_imposto(preco, categoria) com dicionário
+C) Criar variável global separada para cada categoria de produto
+D) Manter repetido pois os produtos são de contextos diferentes
