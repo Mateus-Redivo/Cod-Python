@@ -101,7 +101,7 @@ def mostrar_palpites_anteriores(palpites, palavra_secreta):
 def menu_principal():
     limpar_console()
     print("="*18)
-    print("ADIVINHE A PALAVRA")
+    print("ADIVINHE A PALAVRA ")
     print("="*18)
     print("- Letras na posição correta aparecem entre colchetes [A]")
     print("- Letras na palavra mas na posição errada são listadas separadamente")
