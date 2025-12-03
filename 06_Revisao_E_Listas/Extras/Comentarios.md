@@ -149,6 +149,7 @@ Este arquivo contém exemplos de diferentes tipos de comentários que podem ser 
 ```
 
 ## **Comentários de Segurança**
+
 ```python
 # SECURITY: Sanitizar input antes de usar
 # SECURITY: Usar HTTPS em vez de HTTP
