@@ -19,12 +19,13 @@ Desenvolver um sistema para controle financeiro pessoal, permitindo o registro d
 
 #### 1. CREATE (Adicionar Receita/Despesa)
 
-- **Adicionar Receita**: 
+- **Adicionar Receita**:
   - Campos: descrição, valor
   - Adicionar simultaneamente em descricoes_receitas[] e valores_receitas[]
   - Validação: valor deve ser positivo
-- **Adicionar Despesa**: 
-  - Campos: descrição, valor  
+
+- **Adicionar Despesa**:
+  - Campos: descrição, valor
   - Adicionar simultaneamente em descricoes_despesas[] e valores_despesas[]
   - Validação: valor deve ser positivo
 - Descrição não pode estar vazia

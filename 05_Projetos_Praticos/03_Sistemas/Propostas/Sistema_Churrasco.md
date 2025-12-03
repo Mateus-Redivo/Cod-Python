@@ -83,4 +83,3 @@ Desenvolver um sistema para organizar churrascos, gerenciando participantes e co
 - Mensagens de boas-vindas para novos participantes
 - Confirmações de cadastro
 - Tratamento de erros amigável
-

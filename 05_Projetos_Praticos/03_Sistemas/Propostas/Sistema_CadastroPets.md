@@ -41,7 +41,6 @@ Desenvolver um sistema para gerenciar informações de animais de estimação, i
 - Atualizar vetores correspondentes
 - Manter consistência entre os quatro vetores
 
-
 #### 4. DELETE (Remover Pet)
 
 - Remover pets do sistema

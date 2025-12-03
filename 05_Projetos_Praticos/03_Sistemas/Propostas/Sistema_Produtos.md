@@ -92,4 +92,3 @@ Desenvolver um sistema para controle de estoque de um mercado/loja, gerenciando 
 - Mensagens de confirmação para operações
 - Tratamento de erros com orientações
 - Listagem organizada e numerada
-

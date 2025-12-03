@@ -98,4 +98,3 @@ Desenvolver um sistema para gerenciar uma loja de doces, controlando produtos, e
 - Alertas para estoque baixo
 - Formatação de valores monetários
 - Tratamento de erros amigável
-

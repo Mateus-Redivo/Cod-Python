@@ -88,4 +88,3 @@ Desenvolver um sistema para controlar as notas dos alunos, gerenciando informaç
 - Mensagens de boas-vindas para novos alunos
 - Confirmações de cadastro
 - Tratamento de erros amigável
-
