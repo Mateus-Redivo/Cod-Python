@@ -18,7 +18,7 @@ print()
 # Print com múltiplos valores
 nome = "João"
 idade = 25
-print("Nome:", nome, "| Idade:", idade)
+print("Nome:", nome, "| Idade:", idade , 5)
 print()
 
 # Controlando o separador
