@@ -72,6 +72,6 @@ def calculadora():
 
 # Executar a calculadora
 if __name__ == "__main__":
-    sair = False
+    sair = True
     while not sair:
         sair = calculadora()
