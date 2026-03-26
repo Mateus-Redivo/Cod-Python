@@ -109,7 +109,6 @@ print("=== ATIVIDADE 4 — Media com validacao ===")
 
 # Escreva sua solucao aqui:
 
-
 print()
 
 # ============================================================

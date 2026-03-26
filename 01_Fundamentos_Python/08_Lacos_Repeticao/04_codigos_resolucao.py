@@ -54,7 +54,7 @@ print()
 print("=== ATIVIDADE 4 — Media com validacao ===")
 
 soma = 0
-
+        
 for i in range(1, 6):
     nota = float(input(f"Digite a {i}a nota (0 a 10): "))
 
@@ -86,8 +86,6 @@ while anterior <= n:
     proximo = anterior + atual
     anterior = atual
     atual = proximo
-
-print()
 
 print()
 
