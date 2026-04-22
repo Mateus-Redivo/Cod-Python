@@ -244,3 +244,319 @@ Crie um programa que:
 """
 
 # Seu código aqui:
+
+# ─────────────────────────────────────────
+# QUESTÃO 14 — TEORIA: Verdadeiro ou Falso
+# ─────────────────────────────────────────
+"""
+Analise cada afirmação e escreva, nos comentários, se é VERDADEIRA ou FALSA.
+Se for falsa, corrija-a em uma linha adicional.
+
+a) Em Python, o índice do primeiro elemento de uma lista é 1.
+b) O índice -1 sempre se refere ao último elemento da lista.
+c) A função len() retorna o maior valor da lista.
+"""
+
+# Suas respostas:
+# a)
+# b)
+# c)
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 15 — ANÁLISE DE CÓDIGO
+# ─────────────────────────────────────────
+"""
+Leia o trecho abaixo e responda às perguntas SEM executar o código:
+
+  animais = ["gato", "cachorro", "peixe", "pássaro", "hamster"]
+  print(animais[1])
+  print(animais[-2])
+  print(len(animais))
+
+a) O que cada print exibe? Escreva o resultado esperado ao lado de cada linha.
+b) Se adicionarmos animais.append("tartaruga"), qual será o novo len(animais)?
+c) Qual seria o índice negativo para acessar "cachorro" nessa lista?
+"""
+
+# Suas respostas:
+# a)
+# b)
+# c)
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 16 — ANÁLISE DE CÓDIGO: slicing
+# ─────────────────────────────────────────
+"""
+Dada a lista abaixo, qual é a saída de cada linha?
+Responda nos comentários SEM executar o código.
+
+  numeros = [10, 20, 30, 40, 50, 60, 70, 80]
+
+  print(numeros[2:5])
+  print(numeros[:3])
+  print(numeros[5:])
+
+a) O que numeros[2:5] exibe?
+b) O que numeros[:3] exibe?
+c) O que numeros[5:] exibe?
+"""
+
+# Suas respostas:
+# a)
+# b)
+# c)
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 17 — TEORIA: Lacunas conceituais
+# ─────────────────────────────────────────
+"""
+Preencha as lacunas com o termo ou símbolo correto:
+
+a) Para acessar o segundo elemento de uma lista `x`, usamos x[___].
+b) O método ___________ retorna quantas vezes um valor aparece na lista.
+c) O método ___________ retorna o índice da primeira ocorrência de um valor.
+"""
+
+# Suas respostas:
+# a)
+# b)
+# c)
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 18 — ANÁLISE DE CÓDIGO: for
+# ─────────────────────────────────────────
+"""
+Analise o código abaixo e responda às perguntas:
+
+  valores = [3, 7, 2, 9, 5, 1, 8]
+  total = 0
+  contador = 0
+
+  for v in valores:
+      if v > 4:
+          total += v
+          contador += 1
+
+  print(total)
+  print(contador)
+
+a) Quais elementos da lista são maiores que 4?
+b) Qual é o valor impresso por print(total)?
+c) Qual é o valor impresso por print(contador)?
+"""
+
+# Suas respostas:
+# a)
+# b)
+# c)
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 19 — Prática: construção com for e append
+# ─────────────────────────────────────────
+"""
+  a) Crie uma lista vazia chamada `quadrados`
+  b) Use um for com range(1, 11) para adicionar com append()
+     o quadrado de cada número (1², 2², 3², ..., 10²)
+  c) Imprima a lista completa
+"""
+
+# Seu código aqui:
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 20 — Prática: filtragem com for
+# ─────────────────────────────────────────
+"""
+Dada a lista:
+  temperaturas = [36.5, 37.0, 38.2, 35.9, 39.1, 36.8, 40.0, 37.5]
+
+  a) Use um for para imprimir apenas as temperaturas acima de 37.5
+     no formato: "Febre alta: X°C"
+  b) Conte quantas temperaturas estão abaixo de 37.5 (estado normal)
+  c) Calcule a temperatura média da lista
+"""
+
+temperaturas = [36.5, 37.0, 38.2, 35.9, 39.1, 36.8, 40.0, 37.5]
+
+# Seu código aqui:
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 21 — ANÁLISE DE CÓDIGO: append e for
+# ─────────────────────────────────────────
+"""
+O que a lista `resultado` contém ao final deste código?
+Responda nos comentários SEM executar.
+
+  numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  resultado = []
+
+  for n in numeros:
+      if n % 3 == 0:
+          resultado.append(n)
+
+  print(resultado)
+  print(len(resultado))
+
+a) Qual é o conteúdo de `resultado`?
+b) Qual é o valor de len(resultado)?
+c) Qual é o critério usado para filtrar os números?
+"""
+
+# Suas respostas:
+# a)
+# b)
+# c)
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 22 — Prática: índices e modificação
+# ─────────────────────────────────────────
+"""
+Dada a lista:
+  notas = [5, 7, 4, 9, 6, 3, 8, 7]
+
+  a) Substitua a primeira nota por 6
+  b) Substitua a última nota por 10 (use índice negativo)
+  c) Imprima a nota do meio da lista usando len()//2 como índice
+"""
+
+notas = [5, 7, 4, 9, 6, 3, 8, 7]
+
+# Seu código aqui:
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 23 — TEORIA: corrija os erros
+# ─────────────────────────────────────────
+"""
+Cada trecho abaixo contém UM erro. Identifique e corrija cada um.
+
+a)  lista = [1, 2, 3]
+    print(lista[3])          # erro aqui
+
+b)  frutas = ["maçã", "pera"]
+    frutas.append["uva"]     # erro aqui
+
+c)  nomes = ["Ana", "Bia", "Carlos"]
+    print(len[nomes])        # erro aqui
+"""
+
+# Suas correções:
+# a)
+# b)
+# c)
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 24 — Prática: count() e index() com lógica
+# ─────────────────────────────────────────
+"""
+Dada a lista:
+  respostas = ["A", "B", "A", "C", "A", "B", "D", "A", "C", "B"]
+
+  a) Quantas vezes cada alternativa aparece? (A, B, C e D)
+  b) Qual alternativa foi mais marcada?
+  c) Em qual índice está a primeira resposta "D"?
+"""
+
+respostas = ["A", "B", "A", "C", "A", "B", "D", "A", "C", "B"]
+
+# Seu código aqui:
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 25 — ANÁLISE DE CÓDIGO: slicing com passo
+# ─────────────────────────────────────────
+"""
+Analise o código e responda SEM executar:
+
+  letras = ["a", "b", "c", "d", "e", "f", "g", "h"]
+
+  print(letras[1::2])
+  print(letras[::3])
+  print(letras[6:1:-2])
+
+a) O que cada print exibe?
+b) O que o passo negativo em letras[6:1:-2] significa?
+c) Por que letras[6:1:-2] não inclui o elemento do índice 1?
+"""
+
+# Suas respostas:
+# a) letras[1::2]    →
+#    letras[::3]     →
+#    letras[6:1:-2]  →
+# b)
+# c)
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 26 — Prática: for com range(len())
+# ─────────────────────────────────────────
+"""
+Dadas as listas:
+  produtos = ["Arroz", "Feijão", "Macarrão", "Óleo", "Sal"]
+  precos   = [5.49, 8.90, 3.25, 6.70, 2.10]
+
+  a) Use for com range(len(produtos)) para imprimir cada produto
+     e seu preço no formato: "1. Arroz — R$ 5.49"
+  b) Calcule e imprima o total da compra
+  c) Imprima o nome do produto mais barato (use index() sobre a lista precos)
+"""
+
+produtos = ["Arroz", "Feijão", "Macarrão", "Óleo", "Sal"]
+precos = [5.49, 8.90, 3.25, 6.70, 2.10]
+
+# Seu código aqui:
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 27 — TEORIA: preveja a saída
+# ─────────────────────────────────────────
+"""
+Escreva exatamente o que cada bloco imprime, sem executar.
+
+Bloco A:
+  x = [1, 2, 3, 4, 5]
+  print(x[len(x) - 1])
+
+Bloco B:
+  y = ["sol", "lua", "estrela"]
+  y.append("cometa")
+  print(y[-2])
+
+Bloco C:
+  z = [10, 20, 30, 40, 50]
+  print(z.count(30))
+  print(z.index(40))
+"""
+
+# Suas respostas:
+# Bloco A →
+# Bloco B →
+# Bloco C →
+
+
+# ─────────────────────────────────────────
+# QUESTÃO 28 — Desafio: votação
+# ─────────────────────────────────────────
+"""
+Crie um programa de votação simples:
+
+  a) Comece com candidatos = ["Alice", "Bruno", "Carla"] e votos = []
+     Use um for com range(8) pedindo ao usuário um nome a cada rodada.
+     - Se o nome estiver em candidatos, adicione a votos
+     - Caso contrário: exiba "Voto inválido!"
+
+  b) Ao final, exiba quantos votos cada candidato recebeu (use count())
+
+  c) Exiba o nome do candidato vencedor
+     (dica: use count() para comparar e uma variável acumuladora)
+"""
+
+# Seu código aqui:
