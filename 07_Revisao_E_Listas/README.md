@@ -11,6 +11,7 @@ Material de revisão com exercícios mais exigentes, focados em leitura e análi
 Exercícios de análise de código. Cada arquivo da pasta `Base/` apresenta um código com problemas de clareza ou estrutura. O objetivo é entender o que o código faz e propor melhorias. A pasta `Refatorado/` mostra uma versão corrigida de cada um.
 
 Os temas abordados nos exercícios:
+
 - `01_calculo_precos` - cálculo com impostos e descontos
 - `02_processamento_clientes` - processamento de dados de clientes com descontos
 - `03_calculo_seguro` - cálculo de prêmio de seguro com múltiplos critérios
