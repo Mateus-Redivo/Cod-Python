@@ -29,9 +29,9 @@ def multiplicar_por_escalar(matriz, escalar):
     if not matriz:
         return None
     resultado = []
-    for i in range(3):
+    for i in range(len(matriz)):
         linha = []
-        for j in range(3):
+        for j in range(len(matriz[0])):
             linha.append(matriz[i][j] * escalar)
         resultado.append(linha)
     return resultado

@@ -1,8 +1,6 @@
 # Problemas: Repetição complexa, lógica embaralhada, falta de tratamento de erros,
 # validações inconsistentes, estrutura de dados inadequada
 
-from narwhals import DataFrame
-
 
 print("Sistema de Controle de Estoque - Farmácia")
 
@@ -155,8 +153,8 @@ print(f"\nVALOR TOTAL DO ESTOQUE: R$ {total_geral:.2f}")
 # Alertas
 print("\nALERTAS:")
 if status_med1 == "ESTOQUE BAIXO":
-    print(f"⚠️  {nome_med1} precisa ser reposto!")
+    print(f"AVISO: {nome_med1} precisa ser reposto!")
 if status_med2 == "ESTOQUE BAIXO":
-    print(f"⚠️  {nome_med2} precisa ser reposto!")
+    print(f"AVISO: {nome_med2} precisa ser reposto!")
 if status_med3 == "ESTOQUE BAIXO":
-    print(f"⚠️  {nome_med3} precisa ser reposto!")
+    print(f"AVISO: {nome_med3} precisa ser reposto!")

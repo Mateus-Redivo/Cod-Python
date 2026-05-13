@@ -1,12 +1,12 @@
 """
-=============================
+==============================
 ATIVIDADES — LACOS DE REPETICAO
-=============================
+==============================
 Resolva cada atividade no espaco indicado.
 Nao use listas — apenas variaveis simples e lacos.
 
 Nivel: Iniciante -> Intermediario
-=============================
+==============================
 """
 
 # ============================================================
@@ -164,22 +164,7 @@ print()
 print("=== ATIVIDADE 6 — Adivinhe o numero ===")
 
 # Escreva sua solucao aqui:
-"""
-numsec = 3
-tentativas = 0
 
-print("Adinhe o numero secreto entre 0 e 100")
-while True:
-    chute = int(input("Chute: "))
-    tentativas += 1
-    if(chute > numsec):
-        print("Muito alto")
-    elif (chute <numsec):
-        print("Muito baixo")
-    else:
-        print(f"Voce acertou em {tentativas} tentativas")
-        break
-"""
 print()
 
 # ============================================================
@@ -205,22 +190,7 @@ print("=== ATIVIDADE 7 — Somador seletivo ===")
 
 # Escreva sua solucao aqui:
 # Escreva o comportamento do codigo se eu informar os numeros 1 2 5 8 9 10 12
-"""
-soma = 0
-quantidade = 0
 
-for i in range(1, 9):
-    numero = int(input(f"Digite o {i} numero: "))
-
-    if numero % 3 != 0:
-        continue
-
-    soma = soma + numero
-    quantidade = quantidade + 1
-
-print(f"A soma dos multiplos de 3 é: {soma}")
-print(f"A quantidade de multiplos de 3 é: {quantidade}")
-"""
 print()
 
 # ============================================================
@@ -251,24 +221,6 @@ print()
 print("=== ATIVIDADE 8 — Numero perfeito ===")
 
 # Escreva sua solucao aqui:
-
-numero = int(input("Digite um numero: "))
-
-soma_divisores = 0
-divisores_encontrados = ""
-#Resposta dos numero 20 10 50 4
-for i in range(1, numero):
-    if numero % i == 0:
-        soma_divisores += i
-        divisores_encontrados = divisores_encontrados + str(i) + " "
-
-print(f"Divisores: {soma_divisores}")
-print(f"Soma dos divisores: {divisores_encontrados}")
-
-if soma_divisores == numero:
-    print(f"{numero} e um numero perfeito")
-else: 
-    print(f"{numero} nao e um numero perfeito")
 
 
 
