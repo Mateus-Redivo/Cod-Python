@@ -1,83 +1,87 @@
-# 🐍 Repositório de Códigos Python para Estudo e Ensino
+# Repositorio de Codigos Python para Estudo e Ensino
 
-Este repositório contém códigos desenvolvidos em Python com o objetivo de auxiliar no ensino e na aprendizagem de conceitos fundamentais de programação. Os códigos são usados nas aulas e também organizados pra estudo individual.
+Este repositório contém códigos desenvolvidos em Python para auxiliar no ensino e na aprendizagem de lógica de programação. Os materiais são usados em aula e organizados para estudo individual.
 
-## 📚 Objetivo
+## Objetivo
 
-Disponibilizar exemplos práticos, simples e didáticos pra apoiar o ensino de lógica de programação, algoritmos e fundamentos da linguagem Python.
+Disponibilizar exemplos práticos, simples e didáticos para apoiar o ensino de lógica de programação, algoritmos e fundamentos da linguagem Python.
 
-## 🎓 Público-alvo
+## Publico-alvo
 
-Estudantes iniciantes em programação, ou profissionais que queiram revisar conceitos da linguagem de forma simples e bem explicada.
+Estudantes iniciantes em programação ou profissionais que queiram revisar conceitos da linguagem de forma simples e progressiva.
 
-## 🧠 O que você vai encontrar aqui?
+## Organizacao das Pastas
 
-- Exemplos de sintaxe básica em Python
-- Algoritmos clássicos (estrutura de decisão, repetição, listas, etc.)
-- Práticas com funções e modularização
-- Conceitos de Programação Orientada a Objetos (POO)
-- Exercícios resolvidos com comentários
-- Projetos simples com interface em terminal
-- Scripts organizados por tema e conceito
+O repositório é sequencial: cada pasta parte do que foi visto na anterior. Siga a ordem numérica.
 
-## 📁 Organização das Pastas
+### 01_Fundamentos_Python
 
-O repositório foi estruturado de forma sequencial pra facilitar o aprendizado progressivo:
+Base essencial para quem está começando do zero.
 
-### **01_Fundamentos_Python/**
+- `01_Tipos_E_Variaveis` - tipos de dados básicos e declaração de variáveis
+- `02_Operadores` - operadores aritméticos, de comparação e lógicos
+- `03_Entrada_Saida` - print(), input() e formatação de strings
+- `04_Conversoes` - conversão entre tipos de dados
+- `05_Condicionais` - if, elif, else
+- `06_Primeiros_Programas` - programas completos básicos (calculadora, conversor, notas)
+- `07_Introducao_Listas` - conceitos básicos de listas e operações fundamentais
+- `08_Lacos_Repeticao` - while, for, break e continue
+- `09_Tratamento_De_Erros` - try, except e os erros mais comuns do Python
 
-Base essencial para iniciantes em programação:
+### 02_Estruturas_De_Controle
 
-- **01_Tipos_E_Variaveis/** - Tipos de dados básicos (int, float, str, bool) e declaração de variáveis
-- **02_Operadores/** - Operadores aritméticos, comparação e lógicos
-- **03_Entrada_Saida/** - Funções print() e input(), formatação de strings
-- **04_Conversoes/** - Conversões entre tipos de dados (casting)
-- **05_Primeiros_Programas/** - Programas completos básicos (calculadora, conversor, sistema de notas)
-- **06_Introducao_Listas/** - Conceitos básicos de listas/vetores e operações fundamentais
+Aplicação prática das estruturas de controle em programas com menu e fluxo mais elaborado.
 
-### **02_Estruturas_De_Controle/**
+- `01_Condicionais` - calculadora construída com if/elif/else
+- `02_Loops` - a mesma calculadora usando laço de repetição
+- `03_Match_Case` - versão com match/case (Python 3.10+)
 
-Conceitos fundamentais de controle de fluxo em Python:
+### 03_Estruturas_De_Dados
 
-- **01_Condicionais/** - Estruturas if-elif-else
-- **02_Loops/** - Estruturas de repetição
-- **03_Match_Case/** - Estrutura match-case (Python 3.10+)
+Trabalho com estruturas de dados além das listas básicas.
 
-### **03_Estruturas_De_Dados/**
+- `01_Listas` - manipulação de listas com mais profundidade
+- `02_Strings` - comparação e manipulação de texto
+- `03_Matrizes` - listas de listas e operações matriciais
+- `04_Algoritmos_Ordenacao` - Bubble Sort, Selection Sort, Insertion Sort, QuickSort
 
-Manipulação de diferentes tipos de dados:
+### 04_Funcoes
 
-- **01_Listas/** - Trabalho com listas e vetores
-- **02_Strings/** - Manipulação e processamento de strings
-- **03_Matrizes/** - Operações com matrizes bidimensionais
-- **04_Algoritmos_Ordenacao/** - Algoritmos de ordenação (Bubble Sort, Selection Sort, Insertion Sort, QuickSort)
+Como criar e usar funções para organizar e reutilizar código.
 
-### **04_Exercicios_Praticos/**
+- `01_introducao_funcoes.py` - o que são funções e por que usar
+- `02_parametros_retorno.py` - parâmetros, valores padrão e retorno
+- `03_escopo_variaveis.py` - variáveis locais e globais
+- `04_exercicios_funcoes.py` - prática com os conceitos vistos
 
-Exercícios organizados por nível de dificuldade:
+### 05_Exercicios_Praticos
 
-- **01_Nivel_Iniciante/** - Exercícios básicos com listas, vetores e estruturas fundamentais
-- **02_Nivel_Intermediario/** - Exercícios com algoritmos de busca e manipulação avançada
-- **03_Nivel_Avancado/** - Exercícios com sistemas complexos e estruturas de dados
+Exercícios organizados por nível de dificuldade para consolidar o aprendizado.
 
-### **05_Projetos_Praticos/**
+- `01_Nivel_Iniciante` - exercícios com listas, laços e condicionais básicos
+- `02_Nivel_Intermediario` - busca e manipulação com mais raciocínio
+- `03_Nivel_Avancado` - programas completos com múltiplas funcionalidades
 
-Aplicações práticas e projetos completos:
+### 06_Projetos_Praticos
 
-- **01_Calculadoras/** - Calculadoras diversas (Bhaskara, IMC, etc.)
-- **02_Jogos/** - Jogos interativos (Adivinhação, Blackjack, Jogo da Velha, Forca, etc.)
-- **03_Sistemas/** - Propostas e implementações de sistemas completos
+Programas completos que combinam tudo que foi aprendido.
 
-### **06_Revisao_E_Listas/**
+- `01_Calculadoras` - IMC, Bhaskara, sorteio
+- `02_Jogos` - adivinhação, pedra-papel-tesoura, forca, jogo da velha, blackjack, termoo
+- `03_Sistemas` - sistemas prontos para estudo e propostas para implementar do zero
 
-Material de revisão e preparação para avaliações:
+### 07_Revisao_E_Listas
 
-- **Cognitivo/** - Exercícios e padrões de pensamento computacional
-- **Funcoes_e_Procedimentos/** - Listas de exercícios sobre funções
-- **Listas/** - Exercícios diversos com análise e refatoração
-- **Matrizes/** - Exercícios focados em manipulação de matrizes
-- **Extras/** - Material complementar e configurações
+Material de revisão com exercícios mais exigentes de análise e refatoração.
 
----
+- `Cognitivo` - exercícios de leitura e melhoria de código (Base e Refatorado)
+- `Funcoes_e_Procedimentos` - lista com 20 exercícios sobre funções
+- `Listas` - análise e refatoração de exercícios com listas
+- `Matrizes` - exercícios de matrizes
+- `Extras` - guia de comentários de código
 
-> ✨ Sinta-se à vontade pra explorar, adaptar e contribuir com o repositório. A ideia é fortalecer o aprendizado colaborativo.
+### 08_Avancado
+
+Conteúdo complementar, fora do escopo de lógica básica. Recomendado após completar todas as seções anteriores.
+
+- `Padroes_De_Projeto` - Builder, Factory, Strategy e outros padrões de design de software
