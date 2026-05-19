@@ -1,5 +1,5 @@
 """
-Exercício 21 - Matriz Transposta
+Matriz Transposta
 
 Objetivo: Criar a transposta de uma matriz (trocar linhas por colunas).
 
@@ -24,58 +24,39 @@ Tarefas:
 4. Verificar que cada elemento foi corretamente transposto
 """
 
-
-def criar_matriz(linhas, colunas):
-    """Cria uma matriz M x N com valores sequenciais a partir de 1."""
-    matriz = []
-    valor = 1
-    for _ in range(linhas):
-        linha = []
-        for _ in range(colunas):
-            linha.append(valor)
-            valor += 1
-        matriz.append(linha)
-    return matriz
-
-
-def transpor_matriz(matriz):
-    """Retorna a transposta: A[i][j] → Aᵀ[j][i]."""
-    linhas = len(matriz)
-    colunas = len(matriz[0])
-    transposta = []
-
-    for j in range(colunas):
-        nova_linha = []
-        for i in range(linhas):
-            nova_linha.append(matriz[i][j])
-        transposta.append(nova_linha)
-
-    return transposta
-
-
-def exibir_matriz(matriz):
-    """Exibe a matriz com alinhamento de colunas."""
-    for linha in matriz:
-        print("  " + "  ".join(f"{num:4d}" for num in linha))
-    print()
-
-
-# --- Criar e exibir a matriz original 2x3 ---
-matriz_original = criar_matriz(2, 3)
+# --- Criar a matriz original 2x3 com valores sequenciais ---
+matriz_original = []
+valor = 1
+for _ in range(2):
+    linha = []
+    for _ in range(3):
+        linha.append(valor)
+        valor += 1
+    matriz_original.append(linha)
 
 print("Matriz Original (2 linhas x 3 colunas):")
-exibir_matriz(matriz_original)
+for linha in matriz_original:
+    print("  " + "  ".join(f"{num:4d}" for num in linha))
+print()
 
-# --- Gerar e exibir a transposta 3x2 ---
-matriz_transposta = transpor_matriz(matriz_original)
+# --- Gerar a transposta 3x2: A[i][j] → Aᵀ[j][i] ---
+linhas = len(matriz_original)
+colunas = len(matriz_original[0])
+matriz_transposta = []
+
+for j in range(colunas):
+    nova_linha = []
+    for i in range(linhas):
+        nova_linha.append(matriz_original[i][j])
+    matriz_transposta.append(nova_linha)
 
 print("Matriz Transposta (3 linhas x 2 colunas):")
-exibir_matriz(matriz_transposta)
+for linha in matriz_transposta:
+    print("  " + "  ".join(f"{num:4d}" for num in linha))
+print()
 
 # --- Verificação: Aᵀ[j][i] deve ser igual a A[i][j] ---
 print("Verificação da regra  Aᵀ[j][i] == A[i][j]:")
-linhas = len(matriz_original)
-colunas = len(matriz_original[0])
 for i in range(linhas):
     for j in range(colunas):
         original = matriz_original[i][j]

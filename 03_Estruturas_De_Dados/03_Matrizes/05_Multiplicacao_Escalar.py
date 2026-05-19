@@ -1,5 +1,5 @@
 """
-Exercício 19 - Multiplicação por Escalar
+Multiplicação por Escalar
 
 Objetivo: Multiplicar cada elemento de uma matriz por um número (escalar).
 
@@ -23,51 +23,33 @@ Tarefas:
 4. Exibir a matriz original e o resultado
 """
 
+print("=== Multiplicação de Matriz por Escalar ===\n")
 
-def criar_matriz():
-    """Lê os valores do usuário e retorna uma matriz 3x3."""
-    matriz = []
-    print("Digite os valores para a matriz 3x3:")
-    for i in range(3):
-        linha = []
-        for j in range(3):
-            valor = int(input(f"  Posição [{i}][{j}]: "))
-            linha.append(valor)
-        matriz.append(linha)
-    return matriz
+# --- Leitura da matriz 3x3 ---
+matriz_original = []
+print("Digite os valores para a matriz 3x3:")
+for i in range(3):
+    linha = []
+    for j in range(3):
+        valor = int(input(f"  Posição [{i}][{j}]: "))
+        linha.append(valor)
+    matriz_original.append(linha)
 
+escalar = int(input("\nDigite o escalar: "))
 
-def multiplicar_por_escalar(matriz, escalar):
-    """Retorna uma nova matriz com cada elemento multiplicado pelo escalar."""
-    resultado = []
-    for i in range(len(matriz)):
-        linha = []
-        for j in range(len(matriz[i])):
-            linha.append(matriz[i][j] * escalar)
-        resultado.append(linha)
-    return resultado
+# --- Multiplicação por escalar ---
+matriz_resultado = []
+for i in range(len(matriz_original)):
+    linha = []
+    for j in range(len(matriz_original[i])):
+        linha.append(matriz_original[i][j] * escalar)
+    matriz_resultado.append(linha)
 
+# --- Exibição dos resultados ---
+print("\nMatriz Original:")
+for linha in matriz_original:
+    print("  " + "  ".join(f"{num:4d}" for num in linha))
 
-def exibir_matriz(matriz):
-    """Exibe a matriz com alinhamento de colunas."""
-    for linha in matriz:
-        print("  " + "  ".join(f"{num:4d}" for num in linha))
-
-
-def main():
-    print("=== Multiplicação de Matriz por Escalar ===\n")
-
-    matriz_original = criar_matriz()
-    escalar = int(input("\nDigite o escalar: "))
-
-    matriz_resultado = multiplicar_por_escalar(matriz_original, escalar)
-
-    print("\nMatriz Original:")
-    exibir_matriz(matriz_original)
-
-    print(f"\nMatriz × {escalar}:")
-    exibir_matriz(matriz_resultado)
-
-
-if __name__ == "__main__":
-    main()
+print(f"\nMatriz × {escalar}:")
+for linha in matriz_resultado:
+    print("  " + "  ".join(f"{num:4d}" for num in linha))

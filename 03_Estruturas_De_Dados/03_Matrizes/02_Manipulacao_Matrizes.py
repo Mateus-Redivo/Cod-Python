@@ -1,5 +1,5 @@
 """
-Exercício 15 - Manipulação de Matrizes
+Manipulação de Matrizes
 
 Objetivo: Demonstrar diferentes formas de criar e manipular matrizes em Python,
 utilizando tanto listas aninhadas quanto a biblioteca NumPy.
@@ -64,7 +64,8 @@ matriz_numpy = np.array([
     [7, 8, 9],
 ])
 
-print(f"\nDimensões (shape): {matriz_numpy.shape}  → {matriz_numpy.shape[0]} linhas x {matriz_numpy.shape[1]} colunas")
+print(
+    f"\nDimensões (shape): {matriz_numpy.shape}  → {matriz_numpy.shape[0]} linhas x {matriz_numpy.shape[1]} colunas")
 print(f"Tipo dos dados:    {matriz_numpy.dtype}")
 
 print("\nRepresentação NumPy (exibição formatada automaticamente):")

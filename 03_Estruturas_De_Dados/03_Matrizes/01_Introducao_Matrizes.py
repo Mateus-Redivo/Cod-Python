@@ -1,5 +1,5 @@
 """
-Exercício 16 - Introdução a Matrizes
+Introdução a Matrizes
 
 Objetivo: Criar, acessar e modificar elementos de uma matriz simples.
 
@@ -27,13 +27,6 @@ Tarefas:
 4. Calcular a soma de todos os elementos
 """
 
-
-def exibir_matriz(matriz):
-    """Exibe a matriz com alinhamento de colunas."""
-    for linha in matriz:
-        print("  " + "  ".join(f"{num:4d}" for num in linha))
-
-
 # --- 1. Criação da matriz 3x3 ---
 matriz = [
     [1, 2, 3],
@@ -42,7 +35,8 @@ matriz = [
 ]
 
 print("=== Matriz Original (3x3) ===")
-exibir_matriz(matriz)
+for linha in matriz:
+    print("  " + "  ".join(f"{num:4d}" for num in linha))
 
 # --- 2. Acessando elementos por [linha][coluna] ---
 print("\n--- Acessando elementos ---")
@@ -55,7 +49,8 @@ print("\n--- Modificando matriz[0][0]: de 1 para 10 ---")
 matriz[0][0] = 10
 
 print("\n=== Matriz Após Modificação ===")
-exibir_matriz(matriz)
+for linha in matriz:
+    print("  " + "  ".join(f"{num:4d}" for num in linha))
 
 # --- 4. Calculando a soma com loop aninhado ---
 soma = 0

@@ -1,5 +1,5 @@
 """
-Exercício 26 - Multiplicação por Escalar com Menu Interativo
+Multiplicação por Escalar com Menu Interativo
 
 Objetivo: Multiplicar cada elemento de uma matriz por um número (escalar),
 com uma interface de menu que permite ao usuário escolher as operações.
@@ -15,94 +15,71 @@ Conceito:
 """
 
 
-def criar_matriz():
-    """Lê dimensões e valores do usuário, retorna a matriz criada."""
-    linhas = int(input("Número de linhas: "))
-    colunas = int(input("Número de colunas: "))
+matriz_atual = None
 
-    if linhas <= 0 or colunas <= 0:
-        print("  Erro: dimensões devem ser maiores que zero!")
-        return None
-
-    matriz = []
-    print(f"\nDigite os valores para a matriz {linhas}x{colunas}:")
-    for i in range(linhas):
-        linha = []
-        for j in range(colunas):
-            valor = int(input(f"  Posição [{i}][{j}]: "))
-            linha.append(valor)
-        matriz.append(linha)
-    return matriz
-
-
-def multiplicar_por_escalar(matriz, escalar):
-    """Retorna nova matriz com cada elemento multiplicado pelo escalar."""
-    resultado = []
-    for i in range(len(matriz)):
-        linha = []
-        for j in range(len(matriz[0])):
-            linha.append(matriz[i][j] * escalar)
-        resultado.append(linha)
-    return resultado
-
-
-def exibir_matriz(matriz):
-    """Exibe a matriz com alinhamento de colunas, ou mensagem se vazia."""
-    if not matriz:
-        print("  (nenhuma matriz criada)")
-        return
-    for linha in matriz:
-        print("  " + "  ".join(f"{num:4d}" for num in linha))
-
-
-def mostrar_menu():
+while True:
+    # --- Menu ---
     print("\n=== Menu de Operações ===")
     print("  1. Criar nova matriz")
     print("  2. Multiplicar matriz por escalar")
     print("  3. Exibir matriz atual")
     print("  4. Sair")
-    return input("Escolha uma opção: ").strip()
+    opcao = input("Escolha uma opção: ").strip()
 
+    match opcao:
+        case "1":
+            print("\n--- Criando nova matriz ---")
+            linhas = int(input("Número de linhas: "))
+            colunas = int(input("Número de colunas: "))
+            if linhas <= 0 or colunas <= 0:
+                print("  Erro: dimensões devem ser maiores que zero!")
+            else:
+                matriz_atual = []
+                print(f"\nDigite os valores para a matriz {linhas}x{colunas}:")
+                for i in range(linhas):
+                    linha = []
+                    for j in range(colunas):
+                        valor = int(input(f"  Posição [{i}][{j}]: "))
+                        linha.append(valor)
+                    matriz_atual.append(linha)
+                print("\nMatriz criada:")
+                for linha in matriz_atual:
+                    print("  " + "  ".join(f"{num:4d}" for num in linha))
 
-def main():
-    matriz_atual = None
-
-    while True:
-        opcao = mostrar_menu()
-
-        match opcao:
-            case "1":
-                print("\n--- Criando nova matriz ---")
-                matriz_atual = criar_matriz()
-                if matriz_atual:
-                    print("\nMatriz criada:")
-                    exibir_matriz(matriz_atual)
-
-            case "2":
-                if matriz_atual is None:
-                    print("\n  Primeiro crie uma matriz (opção 1)!")
-                else:
-                    print("\nMatriz atual:")
-                    exibir_matriz(matriz_atual)
-                    escalar = int(input("\nDigite o escalar: "))
-                    matriz_atual = multiplicar_por_escalar(matriz_atual, escalar)
-                    print(f"\nMatriz após multiplicar por {escalar}:")
-                    exibir_matriz(matriz_atual)
-
-            case "3":
+        case "2":
+            if matriz_atual is None:
+                print("\n  Primeiro crie uma matriz (opção 1)!")
+            else:
                 print("\nMatriz atual:")
-                exibir_matriz(matriz_atual)
+                for linha in matriz_atual:
+                    print("  " + "  ".join(f"{num:4d}" for num in linha))
+                escalar = int(input("\nDigite o escalar: "))
+                resultado = []
+                for i in range(len(matriz_atual)):
+                    linha = []
+                    for j in range(len(matriz_atual[0])):
+                        linha.append(matriz_atual[i][j] * escalar)
+                    resultado.append(linha)
+                matriz_atual = resultado
+                print(f"\nMatriz após multiplicar por {escalar}:")
+                for linha in matriz_atual:
+                    print("  " + "  ".join(f"{num:4d}" for num in linha))
 
-            case "4":
-                if matriz_atual is not None:
-                    print("\nMatriz final:")
-                    exibir_matriz(matriz_atual)
-                print("\nEncerrando o programa.")
-                break
+        case "3":
+            print("\nMatriz atual:")
+            if matriz_atual is None:
+                print("  (nenhuma matriz criada)")
+            else:
+                for linha in matriz_atual:
+                    print("  " + "  ".join(f"{num:4d}" for num in linha))
 
-            case _:
-                print("\n  Opção inválida! Escolha entre 1 e 4.")
+        case "4":
+            if matriz_atual is not None:
+                print("\nMatriz final:")
+                for linha in matriz_atual:
+                    print("  " + "  ".join(f"{num:4d}" for num in linha))
+            print("\nEncerrando o programa.")
+            break
 
-
-if __name__ == "__main__":
-    main()
+        case _:
+            print("\n  Opção inválida! Escolha entre 1 e 4.")

@@ -1,5 +1,5 @@
 """
-Exercício - Análise de Matriz
+Análise de Matriz
 
 Objetivo: Analisar uma matriz quadrada 4x4 calculando:
   1. A soma da diagonal principal
@@ -21,64 +21,38 @@ Conceito — Diagonais de uma matriz quadrada N x N:
 
     (quando N é ímpar, o elemento central pertence às duas diagonais)
 """
-
 import random
 
-
-def criar_matriz(tamanho):
-    """Cria uma matriz quadrada tamanho x tamanho com valores aleatórios 0–50."""
-    return [[random.randint(0, 50) for _ in range(tamanho)] for _ in range(tamanho)]
-
-
-def exibir_matriz(matriz):
-    """Exibe a matriz com bordas e alinhamento de colunas."""
-    n = len(matriz)
-    separador = "  +" + "-----+" * n
-    print(separador)
-    for linha in matriz:
-        print("  |" + "".join(f" {num:3d} |" for num in linha))
-    print(separador)
-
-
-def soma_diagonal_principal(matriz):
-    """Soma os elementos A[i][i] (diagonal principal)."""
-    return sum(matriz[i][i] for i in range(len(matriz)))
-
-
-def soma_diagonal_secundaria(matriz):
-    """Soma os elementos A[i][N-1-i] (diagonal secundária)."""
-    n = len(matriz)
-    return sum(matriz[i][n - 1 - i] for i in range(n))
-
-
-def maiores_por_linha(matriz):
-    """Retorna o maior valor de cada linha."""
-    return [max(linha) for linha in matriz]
-
-
-# --- Programa principal ---
+# --- Criação da matriz 4x4 com valores aleatórios ---
 tamanho = 4
-matriz = criar_matriz(tamanho)
+matriz = [[random.randint(0, 50) for _ in range(tamanho)]
+          for _ in range(tamanho)]
 
 print("=== Matriz 4x4 (valores aleatórios 0–50) ===")
-exibir_matriz(matriz)
+separador = "  +" + "-----+" * tamanho
+print(separador)
+for linha in matriz:
+    print("  |" + "".join(f" {num:3d} |" for num in linha))
+print(separador)
 
-# Diagonais
-print(f"\nSoma da diagonal principal  (↘): {soma_diagonal_principal(matriz)}")
-print(f"Soma da diagonal secundária (↙): {soma_diagonal_secundaria(matriz)}")
+# --- Diagonais ---
+soma_principal = sum(matriz[i][i] for i in range(tamanho))
+soma_secundaria = sum(matriz[i][tamanho - 1 - i] for i in range(tamanho))
+
+print(f"\nSoma da diagonal principal  (↘): {soma_principal}")
+print(f"Soma da diagonal secundária (↙): {soma_secundaria}")
 
 # Elementos de cada diagonal para visualização
 print("\nElementos da diagonal principal  (A[i][i]):")
 for i in range(tamanho):
     print(f"  A[{i}][{i}] = {matriz[i][i]}")
 
-print("\nElementos da diagonal secundária (A[i][{N-1-i}]):")
+print("\nElementos da diagonal secundária (A[i][N-1-i]):")
 for i in range(tamanho):
     j = tamanho - 1 - i
     print(f"  A[{i}][{j}] = {matriz[i][j]}")
 
-# Maior valor por linha
+# --- Maior valor por linha ---
 print("\nMaior valor por linha:")
-maiores = maiores_por_linha(matriz)
-for i, valor in enumerate(maiores):
-    print(f"  Linha {i}: {valor}")
+for i, linha in enumerate(matriz):
+    print(f"  Linha {i}: {max(linha)}")
