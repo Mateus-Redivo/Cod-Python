@@ -1,4 +1,3 @@
-from encodings.base64_codec import base64_encode
 import random
 
 # =============================

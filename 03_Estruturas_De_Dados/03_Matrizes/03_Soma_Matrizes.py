@@ -1,39 +1,55 @@
 """
 Exercício 17 - Soma de Matrizes
 
-Objetivo: Implementar a soma de duas matrizes 2x2 utilizando list comprehension.
+Objetivo: Implementar a soma de duas matrizes 2x3 utilizando list comprehension.
 
-Descrição:
-- Criar duas matrizes A e B de dimensão 2x2
-- Realizar a soma elemento por elemento das matrizes
-- Utilizar list comprehension para uma implementação concisa
-- Exibir o resultado da soma
+Conceito:
+    Na soma de matrizes, somamos os elementos que estão na MESMA posição.
+    Por isso, só é possível somar matrizes com as mesmas dimensões (M x N).
 
-Conceitos abordados:
-- Matrizes como listas aninhadas
-- List comprehension
-- Operações com matrizes
+    Regra:  C[i][j] = A[i][j] + B[i][j]
+
+    Exemplo com matrizes 2x3:
+
+    A:               B:               C = A + B:
+    [ 1   2   3 ]    [ 5   6   7 ]    [  6   8  10 ]
+    [ 3   4   5 ]    [ 7   8   9 ]    [ 10  12  14 ]
+
+Tarefas:
+1. Criar duas matrizes A e B de dimensão 2x3
+2. Realizar a soma elemento por elemento usando list comprehension
+3. Exibir o passo a passo da operação
+4. Exibir o resultado final
 """
 
-# Definição das matrizes de entrada
-A = [[1, 2, 3],  
-     [3, 4, 5]]  # Matriz A 2x2
 
-B = [[5, 6, 7],  
-     [7, 8, 9]] # Matriz B 2x2
+def exibir_matriz(nome, matriz):
+    """Exibe a matriz com rótulo e alinhamento de colunas."""
+    print(f"\nMatriz {nome}:")
+    for linha in matriz:
+        print("  " + "  ".join(f"{num:4d}" for num in linha))
 
-# Soma das matrizes usando list comprehension
-# Para cada linha i e coluna j, soma os elementos correspondentes de A e B
-# O primeiro loop (i) percorre as linhas
-# O segundo loop (j) percorre as colunas
 
-soma = [[A[i][j] + B[i][j] for j in range(len(A[0]))] for i in range(len(A))]
+# --- Definição das matrizes (2 linhas x 3 colunas) ---
+A = [[1, 2, 3],
+     [3, 4, 5]]
 
-# Exibe o resultado da soma das matrizes
-print("Resultado da soma das matrizes:")
-print(soma)  # Resultado esperado: [[6, 8], [10, 12]]
+B = [[5, 6, 7],
+     [7, 8, 9]]
 
+exibir_matriz("A", A)
+exibir_matriz("B", B)
+
+# --- Soma usando list comprehension ---
+# Loop externo (i): percorre as linhas
+# Loop interno (j): percorre as colunas de cada linha
+C = [[A[i][j] + B[i][j] for j in range(len(A[0]))] for i in range(len(A))]
+
+exibir_matriz("C = A + B", C)
+
+# --- Passo a passo da soma ---
+print("\n--- Passo a passo ---")
 for i in range(len(A)):
-    for j in range((len(A[0]))):
-     print(f"A[{i}][{j}] + B[{i}][{j}] = {A[i][j]} + {B[i][j]}")
-
+    for j in range(len(A[0])):
+        resultado = A[i][j] + B[i][j]
+        print(f"  C[{i}][{j}] = A[{i}][{j}] + B[{i}][{j}] = {A[i][j]} + {B[i][j]} = {resultado}")
