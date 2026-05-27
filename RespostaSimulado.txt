@@ -1,0 +1,426 @@
+========================================================
+        GABARITO — SIMULADO DE MATRIZES EM PYTHON V2
+========================================================
+
+--------------------------------------------------------
+QUESTÃO 1 — TEORIA
+--------------------------------------------------------
+a) A estrutura mais adequada é uma MATRIZ (lista de listas).
+
+   Uma lista simples não consegue representar as duas
+   dimensões do problema de forma natural — seria preciso
+   usar índices calculados manualmente, o que dificulta
+   a leitura e manutenção do código.
+
+   Com uma matriz:
+   - As LINHAS representam as cidades (0, 1, 2)
+   - As COLUNAS representam os dias (0, 1, 2, 3)
+   - Cada elemento mat[cidade][dia] guarda a temperatura
+
+b) Acesso à temperatura da cidade 2 no dia 3:
+
+      mat[2][3]
+
+   (lembrando que índices começam em 0, então cidade 2
+   é o índice 2 e dia 3 é o índice 3)
+
+
+--------------------------------------------------------
+QUESTÃO 2 — TEORIA
+--------------------------------------------------------
+a) FALSA — Uma lista com 5 itens tem índices de 0 a 4.
+   O último índice é 4 (ou -1), nunca 5. Acessar índice 5
+   causaria IndexError.
+
+b) VERDADEIRA — len(mat) conta o número de elementos na
+   lista externa, ou seja, as linhas. len(mat[0]) conta
+   os elementos da primeira linha, ou seja, as colunas.
+
+c) VERDADEIRA — Em uma matriz 4×4 (n=4), a diagonal
+   secundária ocorre quando i + j == n - 1 == 3.
+   Posições: [0][3], [1][2], [2][1], [3][0]. Correto.
+
+d) FALSA — "for linha in matriz" itera sobre as LINHAS
+   (cada linha é uma lista inteira). Para acessar cada
+   elemento individualmente, é necessário um segundo loop:
+   "for elem in linha".
+
+
+--------------------------------------------------------
+QUESTÃO 3 — TEORIA
+--------------------------------------------------------
+a) Saída real:
+
+      [[7, 0, 7], [7, 0, 7], [7, 0, 7]]
+
+   O estudante esperava apenas a linha 0 modificada, mas
+   as três linhas foram alteradas.
+
+b) O operador * 3 na lista externa não cria três listas
+   independentes — ele cria três REFERÊNCIAS para o mesmo
+   objeto na memória. Alterar qualquer linha altera todas,
+   pois são o mesmo objeto.
+
+   Forma correta com list comprehension:
+
+      mat = [[7 for j in range(3)] for i in range(3)]
+
+   Agora cada linha é um objeto independente na memória.
+
+
+--------------------------------------------------------
+QUESTÃO 4 — TEORIA
+--------------------------------------------------------
+a) O loop externo executa 4 vezes (linhas).
+   O loop interno executa 6 vezes para cada linha.
+   Total: 4 × 6 = 24 iterações.
+
+b) Loop para percorrer apenas a coluna 5:
+
+      for i in range(4):
+          print(matriz[i][5])
+
+   Ou com "for linha":
+
+      for linha in matriz:
+          print(linha[5])
+
+c) Sim, é possível combinar "for linha in matriz" com
+   índice fixo:
+
+      for linha in matriz:
+          print(linha[5])
+
+   Aqui não precisamos do índice i, pois "linha" já é
+   a lista da iteração atual e linha[5] acessa a coluna
+   diretamente.
+
+
+--------------------------------------------------------
+QUESTÃO 5 — TEORIA
+--------------------------------------------------------
+a) Operação A: encontra o MAIOR elemento da matriz.
+   Operação B: calcula a MÉDIA de todos os elementos.
+
+b) O valor inicial None é usado para garantir que qualquer
+   elemento da matriz seja aceito na primeira comparação,
+   independentemente do seu valor.
+
+   Se o valor inicial fosse 0 e todos os elementos da
+   matriz fossem negativos (ex: [[-5, -3], [-8, -1]]),
+   o resultado seria 0, que não existe na matriz — erro
+   lógico silencioso.
+
+c) len(mat) retorna apenas o número de linhas. Para obter
+   o total de elementos de uma matriz retangular, é preciso
+   multiplicar pelo número de colunas: len(mat[0]).
+   Ex: matriz 3×4 tem 12 elementos, não 3.
+
+
+--------------------------------------------------------
+QUESTÃO 6 — CÓDIGO
+--------------------------------------------------------
+ERRO 1: range(len(notas)) no loop interno.
+   len(notas) retorna 3 (número de linhas), mas a matriz
+   tem 3 colunas também — neste caso não causaria erro,
+   MAS é semanticamente errado e quebraria em matrizes
+   não quadradas. O correto é range(len(notas[i])).
+
+ERRO 2: não há erro de execução neste caso específico
+   por ser quadrada, mas o erro conceitual está em usar
+   len(notas) para as colunas em vez de len(notas[i])
+   ou len(notas[0]).
+
+   Versão corrigida:
+
+      for i in range(len(notas)):
+          for j in range(len(notas[i])):
+              print(f"mat[{i}][{j}] = {notas[i][j]}")
+
+Saída correta:
+   mat[0][0] = 7
+   mat[0][1] = 8
+   mat[0][2] = 9
+   mat[1][0] = 5
+   mat[1][1] = 6
+   mat[1][2] = 7
+   mat[2][0] = 9
+   mat[2][1] = 8
+   mat[2][2] = 6
+
+
+--------------------------------------------------------
+QUESTÃO 7 — CÓDIGO
+--------------------------------------------------------
+Código completo:
+
+   mat = [
+       [1,  2,  3,  4],
+       [5,  6,  7,  8],
+       [9, 10, 11, 12],
+       [13, 14, 15, 16]
+   ]
+   n = len(mat)
+   soma_sec = 0
+   for i in range(n):
+       soma_sec += mat[i][n - i - 1]
+   print(soma_sec)
+
+Blanks: mat, 0, n, +=, i, n, i, 1
+
+Elementos da diagonal secundária (i + j == 3):
+   mat[0][3] = 4
+   mat[1][2] = 7
+   mat[2][1] = 10
+   mat[3][0] = 13
+
+Saída: 34
+
+
+--------------------------------------------------------
+QUESTÃO 8 — CÓDIGO
+--------------------------------------------------------
+Código completo:
+
+   identidade = [[1 if i == j else 0
+                  for j in range(3)]
+                 for i in range(3)]
+   for linha in identidade:
+       print(linha)
+
+Blanks: 1, i, j, 0, 3, 3
+
+Saída:
+   [1, 0, 0]
+   [0, 1, 0]
+   [0, 0, 1]
+
+
+--------------------------------------------------------
+QUESTÃO 9 — CÓDIGO
+--------------------------------------------------------
+Código completo:
+
+   mat = [
+       [14,  3, 22],
+       [ 8, 17,  5],
+       [19,  1, 11]
+   ]
+   menor = mat[0][0]
+   pos_lin, pos_col = 0, 0
+   for i in range(len(mat)):
+       for j in range(len(mat[i])):
+           if mat[i][j] < menor:
+               menor = mat[i][j]
+               pos_lin, pos_col = i, j
+   print(f"Menor valor: {menor} na posição [{pos_lin}][{pos_col}]")
+
+Blanks: 0, 0, 0, 0, mat, i, <, mat[i][j], i, j
+
+Menor elemento da matriz: 1 em mat[2][1]
+
+Saída:
+   Menor valor: 1 na posição [2][1]
+
+
+--------------------------------------------------------
+QUESTÃO 10 — CÓDIGO
+--------------------------------------------------------
+Código completo:
+
+   A = [[3, 1, 4], [1, 5, 9], [2, 6, 5]]
+   B = [[2, 7, 1], [8, 2, 8], [4, 5, 9]]
+
+   C = [[A[i][j] + B[i][j]
+         for j in range(3)]
+        for i in range(3)]
+
+   count = 0
+   for linha in C:
+       for val in linha:
+           if val > 10:
+               count += 1
+   print(f"Elementos maiores que 10: {count}")
+
+Blanks: A, B, 3, 3, 0, C, linha, >, += 1
+
+Matriz C resultante:
+   [ 5,  8,  5]
+   [ 9,  7, 17]
+   [ 6, 11, 14]
+
+Elementos > 10: 17, 11, 14 → count = 3
+
+Saída:
+   Elementos maiores que 10: 3
+
+
+--------------------------------------------------------
+QUESTÃO 11 — TEORIA
+--------------------------------------------------------
+a) A transposta de uma matriz 3×4 tem dimensão 4×3.
+   A transposição troca linhas por colunas: a matriz
+   original tem 3 linhas e 4 colunas; a transposta
+   terá 4 linhas e 3 colunas.
+
+b) List comprehension que gera a transposta:
+
+      mat_T = [[mat[i][j] for i in range(len(mat))]
+               for j in range(len(mat[0]))]
+
+   O loop externo itera sobre os índices de coluna (j)
+   da original, que se tornam os índices de LINHA da
+   transposta. O loop interno itera sobre os índices de
+   linha (i), que se tornam os índices de COLUNA.
+
+c) Por definição, mat_T[j][i] = mat[i][j].
+   Ao transpor, o elemento que estava na linha i e
+   coluna j da original passa para a linha j e coluna i
+   da transposta. Portanto, acessar mat_T[j][i] é
+   exatamente o mesmo valor que mat[i][j] — apenas a
+   forma de endereçá-lo mudou.
+
+
+--------------------------------------------------------
+QUESTÃO 12 — TEORIA
+--------------------------------------------------------
+a) VERDADEIRA — O loop fixa a coluna k e varia apenas
+   a linha i de 0 até len(mat)-1, somando mat[i][k]
+   para cada linha. Isso acessa exatamente todos os
+   elementos da coluna k.
+
+b) FALSA — mat[-1][-1] acessa o elemento do canto
+   INFERIOR DIREITO (última linha, última coluna).
+   Em Python, o índice -1 referencia o último elemento,
+   não o primeiro.
+
+c) FALSA — Em uma matriz irregular (jagged array), cada
+   linha pode ter um número diferente de colunas.
+   len(mat[0]) retorna apenas o comprimento da primeira
+   linha, que pode não representar as demais.
+
+d) VERDADEIRA — Como a relação é simétrica (mat[i][j]
+   == mat[j][i]), checar cada par (i, j) com i < j já
+   cobre o par espelhado (j, i). A diagonal (i == j)
+   é sempre igual a si mesma. Não há necessidade de
+   checar os elementos abaixo da diagonal.
+
+
+--------------------------------------------------------
+QUESTÃO 13 — TEORIA
+--------------------------------------------------------
+a) Sim, as duas versões produzem exatamente o mesmo
+   resultado. A Versão 1 acumula a soma de cada linha
+   com um loop explícito; a Versão 2 faz o mesmo usando
+   a função embutida sum() dentro de uma list
+   comprehension. O algoritmo é equivalente.
+
+b) A Versão 2 é mais "Pythonica" porque é concisa e
+   usa as ferramentas idiomáticas da linguagem: list
+   comprehension e a função sum() embutida, evitando
+   código repetitivo e variáveis auxiliares.
+
+c) mat = [[2,4],[1,3],[5,0]]:
+   - Linha 0: 2 + 4 = 6
+   - Linha 1: 1 + 3 = 4
+   - Linha 2: 5 + 0 = 5
+
+   somas = [6, 4, 5]
+
+d) Para calcular a soma de cada COLUNA, é preciso fixar
+   o índice de coluna j e somar ao longo das linhas:
+
+      somas_col = [sum(mat[i][j] for i in range(len(mat)))
+                   for j in range(len(mat[0]))]
+
+   Alternativa com zip (mais Pythonica):
+
+      somas_col = [sum(col) for col in zip(*mat)]
+
+   Para mat = [[2,4],[1,3],[5,0]]:
+   somas_col = [2+1+5, 4+3+0] = [8, 7]
+
+
+--------------------------------------------------------
+QUESTÃO 14 — CÓDIGO
+--------------------------------------------------------
+Código completo:
+
+   mat = [
+       [1,  2,  3,  4],
+       [5,  6,  7,  8],
+       [9, 10, 11, 12]
+   ]
+   linhas = len(mat)
+   colunas = len(mat[0])
+
+   transposta = [[mat[i][j] for i in range(linhas)]
+                 for j in range(colunas)]
+
+   for linha in transposta:
+       print(linha)
+
+Blanks (em ordem):
+   mat | 0 | i | j | i | linhas | j | colunas | transposta | linha
+
+a) Saída completa:
+   [1, 5, 9]
+   [2, 6, 10]
+   [3, 7, 11]
+   [4, 8, 12]
+
+b) Dimensão da transposta: 4×3
+   (a original era 3×4; após transpor, linhas e colunas
+   se invertem)
+
+
+--------------------------------------------------------
+QUESTÃO 15 — CÓDIGO
+--------------------------------------------------------
+Código completo:
+
+   mat = [
+       [1,  2,  3,  4,  5],
+       [6,  7,  8,  9, 10],
+       [11, 12, 13, 14, 15],
+       [16, 17, 18, 19, 20]
+   ]
+   linhas = len(mat)
+   colunas = len(mat[0])
+   count_borda = 0
+
+   for i in range(linhas):
+       for j in range(colunas):
+           if i == 0 or i == linhas - 1 \
+              or j == 0 or j == colunas - 1:
+               count_borda += 1
+
+   print(f"Elementos na borda: {count_borda}")
+
+Blanks (em ordem):
+   mat | 0 | 0 | linhas | colunas | 0 | linhas | 1 | 0 | colunas | 1 | += 1
+
+a) Saída:
+   Elementos na borda: 14
+
+   Cálculo manual (4×5 = 20 elementos no total):
+   - Linha 0 (topo):          5 elementos
+   - Linha 3 (base):          5 elementos
+   - Coluna 0, linhas 1-2:    2 elementos
+   - Coluna 4, linhas 1-2:    2 elementos
+   Total: 5 + 5 + 2 + 2 = 14
+
+b) Fórmula direta para uma matriz L×C:
+
+      borda = 2 * (L + C) - 4
+
+   Derivação: topo (C) + base (C) + lateral esq. (L-2)
+              + lateral dir. (L-2) = 2C + 2L - 4
+
+   Verificação com L=4, C=5:
+      2 * (4 + 5) - 4 = 18 - 4 = 14 ✓
+
+
+========================================================
+                     FIM DO GABARITO
+========================================================
