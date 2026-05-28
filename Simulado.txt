@@ -191,6 +191,138 @@ maior que 10 e conta quantos são:
 
 Qual será a saída?
 
+--------------------------------------------------------
+QUESTÃO 11 — TEORIA
+--------------------------------------------------------
+A transposta de uma matriz é obtida trocando suas linhas
+por colunas: o elemento que estava na posição [i][j] da
+original passa para a posição [j][i] da transposta.
+
+a) Se uma matriz original tem dimensão 3×4 (3 linhas e
+   4 colunas), qual será a dimensão da sua transposta?
+   Justifique.
+
+b) Escreva uma list comprehension que gere a transposta
+   de uma matriz "mat" qualquer (não precisa criar a
+   matriz, apenas a expressão que gera mat_T).
+
+c) Explique por que a relação mat_T[j][i] == mat[i][j]
+   é sempre verdadeira em uma transposição.
+
+--------------------------------------------------------
+QUESTÃO 12 — TEORIA
+--------------------------------------------------------
+Analise as quatro afirmações e classifique cada uma como
+VERDADEIRA ou FALSA, justificando em uma linha:
+
+a) O trecho de código abaixo soma corretamente todos os
+   elementos da coluna k de uma matriz:
+
+      soma_col = 0
+      for i in range(len(mat)):
+          soma_col += mat[i][k]
+
+b) Em uma matriz mat, a expressão mat[-1][-1] acessa o
+   elemento do canto superior esquerdo (primeira linha,
+   primeira coluna).
+
+c) Em uma matriz irregular (com linhas de tamanhos
+   diferentes), len(mat[0]) sempre retorna corretamente
+   o número de colunas de qualquer linha da matriz.
+
+d) Para verificar se uma matriz quadrada é simétrica
+   (mat[i][j] == mat[j][i] para todo i, j), basta
+   percorrer apenas os pares onde i < j, pois os demais
+   já estão cobertos pela própria definição de simetria.
+
+--------------------------------------------------------
+QUESTÃO 13 — TEORIA
+--------------------------------------------------------
+Considere duas versões de código que calculam a soma
+dos elementos de cada linha de uma matriz "mat":
+
+   Versão 1:
+      somas = []
+      for linha in mat:
+          s = 0
+          for elem in linha:
+              s += elem
+          somas.append(s)
+
+   Versão 2:
+      somas = [sum(linha) for linha in mat]
+
+a) As duas versões produzem o mesmo resultado? Justifique.
+
+b) Qual versão é considerada mais "Pythonica" e por quê?
+
+c) Para a matriz mat = [[2,4],[1,3],[5,0]], qual será
+   o valor da lista "somas" em cada versão?
+
+d) Como você adaptaria a Versão 2 para calcular a soma
+   de cada COLUNA em vez de cada linha? Escreva apenas
+   a expressão.
+
+--------------------------------------------------------
+QUESTÃO 14 — CÓDIGO
+--------------------------------------------------------
+Complete o código abaixo que gera a transposta de uma
+matriz retangular usando list comprehension e imprime
+o resultado linha por linha:
+
+   mat = [
+       [1,  2,  3,  4],
+       [5,  6,  7,  8],
+       [9, 10, 11, 12]
+   ]
+   linhas = len(____)
+   colunas = len(mat[____])
+
+   transposta = [[mat[____][____]
+                  for ____ in range(____)]
+                 for ____ in range(____)]
+
+   for linha in ____:
+       print(____)
+
+a) Escreva a saída completa do código.
+
+b) Qual a dimensão da matriz transposta? Justifique
+   comparando com a original.
+
+--------------------------------------------------------
+QUESTÃO 15 — CÓDIGO
+--------------------------------------------------------
+Complete o código abaixo que conta quantos elementos
+estão na BORDA de uma matriz (primeira/última linha
+ou primeira/última coluna):
+
+   mat = [
+       [1,  2,  3,  4,  5],
+       [6,  7,  8,  9, 10],
+       [11, 12, 13, 14, 15],
+       [16, 17, 18, 19, 20]
+   ]
+   linhas = len(____)
+   colunas = len(mat[____])
+   count_borda = ____
+
+   for i in range(____):
+       for j in range(____):
+           if i == ____ or i == ____ - ____ \
+              or j == ____ or j == ____ - ____:
+               count_borda ____
+
+   print(f"Elementos na borda: {count_borda}")
+
+a) Qual será a saída? Mostre o cálculo manual contando
+   topo, base e laterais.
+
+b) Existe uma fórmula direta para o número de elementos
+   na borda de uma matriz L×C (sem precisar percorrer)?
+   Escreva a fórmula e verifique com os valores do
+   exercício.
+
 ========================================================
                      FIM DO SIMULADO
 ========================================================
