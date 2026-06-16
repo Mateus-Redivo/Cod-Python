@@ -1,0 +1,98 @@
+Lista de Questões — Tópicos Gerais de Python
+============================================================
+
+1. Analise o código abaixo e explique o que será exibido no terminal, justificando cada etapa
+   da execução:
+x = "Python"
+print(x.upper() + str(len(x)))
+
+2. Explique o que é tipagem dinâmica em Python. O que retorna a função type() quando
+   aplicada ao valor "42"? E ao valor 42? Qual a diferença entre os dois?
+
+3. Analise a função abaixo e explique o que são parâmetros com valor padrão. O que acontece
+   quando a função é chamada sem fornecer o argumento msg?
+def saudacao(nome, msg="Olá"):
+    return f"{msg}, {nome}!"
+print(saudacao("Carlos"))
+
+4. Analise o código abaixo e explique qual será o tipo do resultado e por quê ocorre essa
+   conversão automática:
+resultado = int("15") + float("3.5")
+print(type(resultado))
+
+5. Analise o código abaixo e explique o que o método split() faz e qual será o resultado
+   impresso por len(palavras):
+frase = "aprender python é divertido"
+palavras = frase.split()
+print(len(palavras))
+
+6. Explique o que faz o método pop() em uma lista Python. Qual a diferença entre chamar
+   pop() sem argumentos e pop(0)? Dê um exemplo mostrando o estado da lista antes e
+   depois de cada chamada.
+
+7. Explique a diferença entre os operadores // e % em Python. Em seguida, indique o que
+   será impresso pelo código abaixo e justifique:
+x = 5
+y = 2
+print(x // y, x % y)
+
+8. Explique o papel dos comentários no código Python. Como eles são escritos? Eles afetam
+   a execução do programa? Cite exemplos de boas práticas no uso de comentários.
+
+9. Analise o código abaixo e explique o que o método replace() faz. Qual será o valor
+   final de s e por quê?
+s = "hello"
+s = s.replace("l", "r")
+print(s)
+
+10. Explique o que é uma função em Python e qual a diferença entre parâmetro e argumento.
+    Analise o código abaixo e descreva passo a passo o que ocorre quando ele é executado:
+def dobro(n):
+    return n * 2
+resultado = dobro(7)
+print(resultado)
+
+11. Analise o código abaixo e explique o que o operador in faz em Python. O que será
+    impresso e por quê?
+frutas = ["maçã", "banana", "uva"]
+print("banana" in frutas)
+print("laranja" in frutas)
+
+12. Explique o que é a função range() em Python. Quais são seus três argumentos possíveis
+    (início, fim, passo)? Analise o código abaixo e descreva quais valores i assume a cada
+    iteração e qual será o resultado impresso:
+total = 0
+for i in range(2, 10, 2):
+    total += i
+print(total)
+
+13. Explique o que faz a instrução continue dentro de um laço. Como ela difere do break?
+    Analise o código abaixo e descreva o que será impresso, explicando por que alguns
+    valores são pulados:
+for i in range(1, 8):
+    if i % 3 == 0:
+        continue
+    print(i)
+
+14. Explique o funcionamento de um laço while em Python. Qual a diferença entre while
+    com uma condição normal e while True com break? Analise o código abaixo e descreva
+    o que acontece a cada iteração e quando o laço termina:
+contador = 10
+while True:
+    contador -= 3
+    if contador < 0:
+        break
+print(contador)
+
+15. Explique o que é fatiamento (slicing) de listas em Python. Qual a sintaxe geral?
+    O que representam os valores de início, fim e passo? Analise o código abaixo e indique
+    o que será impresso, justificando cada posição selecionada:
+dados = [10, 20, 30, 40, 50, 60, 70, 80]
+print(dados[1:6:2])
+
+16. Explique o que é indexação negativa em Python. Como ela funciona? Analise o código
+    abaixo e indique o valor de cada print, justificando qual posição cada índice negativo
+    representa:
+cores = ["vermelho", "verde", "azul", "amarelo", "branco"]
+print(cores[-1])
+print(cores[-3])
