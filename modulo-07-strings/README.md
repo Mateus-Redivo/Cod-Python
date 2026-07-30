@@ -129,7 +129,7 @@ frase = "Python é uma linguagem"
 
 "uma" in frase              # True   — o mais simples, e o preferido
 frase.find("uma")           # 9      — a posição, ou -1 se não achar
-frase.count("a")            # 3      — quantas vezes aparece
+frase.count("a")            # 2      — quantas vezes aparece
 frase.startswith("Py")      # True
 frase.endswith("gem")       # True
 ```
