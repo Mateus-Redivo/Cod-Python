@@ -1,8 +1,16 @@
 # Funcoes e Procedimentos
 
+> **Não comece por aqui.** Esta pasta ainda está no formato antigo e o conteúdo dela continua
+> válido — mas ela não é o ponto de entrada do curso.
+>
+> **Comece pelo [Módulo 00 — Preparação](../modulo-00-preparacao/)** e siga a trilha do
+> [README principal](../README.md), na ordem numerada.
+>
+> Vira o **Módulo 08 — Funções** na próxima fase da reestruturação.
+
 Aqui você vai aprender a criar e usar funções em Python. Funções são blocos de código com nome próprio que podem ser chamados várias vezes, evitando repetição e tornando o código mais organizado.
 
-**Pré-requisitos:** 01_Fundamentos_Python e 02_Estruturas_De_Controle e 03_Estruturas_De_Dados.
+**Pré-requisitos:** os módulos 01 a 07 da trilha nova.
 
 ## O que você vai aprender
 

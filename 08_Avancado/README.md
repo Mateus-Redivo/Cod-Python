@@ -1,5 +1,13 @@
 # Avancado
 
+> **Não comece por aqui.** Esta pasta ainda está no formato antigo e o conteúdo dela continua
+> válido — mas ela não é o ponto de entrada do curso.
+>
+> **Comece pelo [Módulo 00 — Preparação](../modulo-00-preparacao/)** e siga a trilha do
+> [README principal](../README.md), na ordem numerada.
+>
+> Vira **apendice-padroes-de-projeto/** na próxima fase da reestruturação.
+
 Conteúdo complementar, fora do escopo de lógica de programação para iniciantes.
 
 Se você está aqui depois de completar as seções 01 a 06, ótimo. Se ainda está no começo, volte aqui mais tarde.

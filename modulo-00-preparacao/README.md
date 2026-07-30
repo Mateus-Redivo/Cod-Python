@@ -1,10 +1,47 @@
 # Módulo 00 — Preparação
 
+**Você está no começo do curso. É por aqui mesmo.**
+
 Antes de aprender a programar, você precisa conseguir **rodar** um programa. Este módulo existe
 para resolver isso e mais nada: no fim dele você terá o Python instalado, um arquivo seu
 funcionando e — o que mais importa — não terá medo da tela vermelha de erro.
 
 É o módulo mais curto da trilha. Também é o único que, se você pular, trava todos os outros.
+
+## Como este curso funciona
+
+Antes de qualquer coisa, entenda o mapa. Todo módulo daqui em diante tem exatamente a mesma forma:
+
+```text
+modulo-NN-nome-do-tema/
+├── README.md       <- A AULA. Leia primeiro, inteiro.
+├── exemplos/       <- Códigos curtos para RODAR, na ordem numerada.
+└── exercicios/     <- Enunciados para VOCÊ escrever. Nunca a resposta.
+```
+
+E as respostas ficam em [gabaritos/](../gabaritos/), fora da pasta do módulo — de propósito, para
+você não esbarrar nelas sem querer.
+
+**O ciclo de cada módulo, na ordem:**
+
+1. **Leia o `README.md` inteiro.** A aula está ali, não no código. Não pule para os arquivos `.py`.
+2. **Rode os exemplos** na ordem numerada, um por vez.
+3. **Faça o *Experimento*** que fecha cada exemplo — ele pede que você quebre o código de
+   propósito. Essa é a parte que mais ensina, e é a que todo mundo pula.
+4. **Resolva os exercícios** sem abrir o gabarito. Cada módulo tem três, em dificuldade crescente:
+   nível 1 fixa, nível 2 aplica, nível 3 desafia.
+5. **Marque a auto-avaliação** no fim do README. Caixinha em branco é sinal de voltar, não de
+   seguir.
+
+**A ordem dos módulos não é sugestão.** Cada um assume o anterior: o módulo 06 (listas) só faz
+sentido depois do 05 (laços), e o 05 depende do 04 (condicionais). Pular etapa cobra o preço duas
+ou três aulas adiante, quando o erro já não parece ter relação com o que foi pulado.
+
+Um módulo por sessão de estudo, em média duas horas contando os exercícios.
+
+> **Pastas com nome numerado tipo `01_Fundamentos_Python`?** São material antigo, em desmonte.
+> Ignore-as: tudo que interessa está nas pastas `modulo-NN-*`. A
+> [trilha completa está no README principal](../README.md).
 
 ## Objetivos de aprendizagem
 

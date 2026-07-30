@@ -1,5 +1,13 @@
 # Revisao e Listas
 
+> **Não comece por aqui.** Esta pasta ainda está no formato antigo e o conteúdo dela continua
+> válido — mas ela não é o ponto de entrada do curso.
+>
+> **Comece pelo [Módulo 00 — Preparação](../modulo-00-preparacao/)** e siga a trilha do
+> [README principal](../README.md), na ordem numerada.
+>
+> Vira os **Módulos 08 e 12** na próxima fase da reestruturação.
+
 Material de revisão com exercícios mais exigentes, focados em leitura e análise de código, refatoração e funções.
 
 **Pré-requisitos:** todas as seções anteriores.

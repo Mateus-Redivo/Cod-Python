@@ -1,5 +1,13 @@
 # Projetos Praticos
 
+> **Não comece por aqui.** Esta pasta ainda está no formato antigo e o conteúdo dela continua
+> válido — mas ela não é o ponto de entrada do curso.
+>
+> **Comece pelo [Módulo 00 — Preparação](../modulo-00-preparacao/)** e siga a trilha do
+> [README principal](../README.md), na ordem numerada.
+>
+> Vira **projetos/** e os **Módulos 13 e 14** na próxima fase da reestruturação.
+
 Aqui você vai construir programas completos. A ideia é juntar tudo que você aprendeu e criar algo que funciona de verdade, não só exercícios isolados.
 
 **Pré-requisitos:** todas as seções anteriores.

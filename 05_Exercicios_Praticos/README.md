@@ -1,8 +1,16 @@
 # Exercicios Praticos
 
+> **Não comece por aqui.** Esta pasta ainda está no formato antigo e o conteúdo dela continua
+> válido — mas ela não é o ponto de entrada do curso.
+>
+> **Comece pelo [Módulo 00 — Preparação](../modulo-00-preparacao/)** e siga a trilha do
+> [README principal](../README.md), na ordem numerada.
+>
+> Vira o **banco-de-exercicios/** na próxima fase da reestruturação.
+
 Hora de colocar tudo em prática. Os exercícios aqui estão separados por nível de dificuldade e cobrem os temas das seções anteriores.
 
-**Pré-requisitos:** 01, 02 e 03 completos.
+**Pré-requisitos:** os módulos 01 a 07 da trilha nova.
 
 ## Níveis de dificuldade
 

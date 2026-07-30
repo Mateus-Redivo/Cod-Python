@@ -1,33 +1,27 @@
-# Fundamentos do Python
+# 01_Fundamentos_Python — pasta em desmonte
 
-Ponto de partida do repositório. Aqui você vai aprender os conceitos essenciais antes de avançar para qualquer outra seção.
+> **Não comece por aqui.** Esta pasta era o antigo ponto de partida, mas o conteúdo dela já foi
+> reescrito no novo formato.
+>
+> **Comece pelo [Módulo 00 — Preparação](../modulo-00-preparacao/)** e siga a trilha do
+> [README principal](../README.md), na ordem numerada.
 
-**Pré-requisitos:** nenhum. Comece aqui.
+O que havia aqui foi para:
 
-## O que você vai aprender
+| Conteúdo antigo | Agora está em |
+| --- | --- |
+| `01_Tipos_E_Variaveis` | [Módulo 01 — Tipos e variáveis](../modulo-01-tipos-e-variaveis/) |
+| `02_Operadores` | [Módulo 02 — Operadores](../modulo-02-operadores/) |
+| `03_Entrada_Saida` + `04_Conversoes` | [Módulo 03 — Entrada e saída](../modulo-03-entrada-e-saida/) |
+| `05_Condicionais` | [Módulo 04 — Condicionais](../modulo-04-condicionais/) |
+| `07_Introducao_Listas` | [Módulo 06 — Listas](../modulo-06-listas/) |
+| `08_Lacos_Repeticao` | [Módulo 05 — Laços de repetição](../modulo-05-lacos-de-repeticao/) |
 
-- Como declarar variáveis e trabalhar com os tipos básicos (números, texto, booleanos)
-- Operadores aritméticos, de comparação e lógicos
-- Como ler dados do usuário com `input()` e exibir resultados com `print()`
-- Conversão entre tipos (`int()`, `float()`, `str()`)
-- Estruturas condicionais com `if`, `elif` e `else`
-- Seus primeiros programas completos (calculadora, conversor, sistema de notas)
-- Introdução a listas e como percorrê-las
-- Laços de repetição com `while` e `for`
-- Tratamento de erros com `try` e `except`
+## O que ainda não foi convertido
 
-## Ordem sugerida
+Estas duas pastas continuam válidas até serem migradas:
 
-```text
-01_Tipos_E_Variaveis
-02_Operadores
-03_Entrada_Saida
-04_Conversoes
-05_Condicionais
-06_Primeiros_Programas
-07_Introducao_Listas
-08_Lacos_Repeticao
-09_Tratamento_De_Erros
-```
+- `06_Primeiros_Programas` — calculadora, conversor e sistema de notas. Vira `projetos/`.
+- `09_Tratamento_De_Erros` — vira o Módulo 10.
 
-Siga essa ordem. Cada pasta parte do que foi aprendido na anterior.
+Quando as duas saírem, esta pasta é apagada.

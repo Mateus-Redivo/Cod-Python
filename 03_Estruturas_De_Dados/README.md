@@ -1,20 +1,22 @@
-# Estruturas de Dados
+# 03_Estruturas_De_Dados — pasta em desmonte
 
-Aqui você vai aprofundar o trabalho com dados: listas com mais profundidade, texto, matrizes e os principais algoritmos de ordenação.
+> **Não comece por aqui.** Parte do conteúdo desta pasta já foi reescrita no novo formato.
+>
+> **Comece pelo [Módulo 00 — Preparação](../modulo-00-preparacao/)** e siga a trilha do
+> [README principal](../README.md), na ordem numerada.
 
-**Pré-requisitos:** 01_Fundamentos_Python e 02_Estruturas_De_Controle.
+O que já saiu daqui:
 
-## O que você vai encontrar
+| Conteúdo antigo | Agora está em |
+| --- | --- |
+| `01_Listas` | [Módulo 06 — Listas](../modulo-06-listas/) |
+| `02_Strings` | [Módulo 07 — Strings](../modulo-07-strings/) |
 
-- `01_Listas` - manipulação de listas além do básico (fatiamento, cópia, listas dentro de listas)
-- `02_Strings` - comparação e manipulação de texto
-- `03_Matrizes` - listas de listas (matrizes 2D), operações e análise
-- `04_Algoritmos_Ordenacao` - Bubble Sort, Selection Sort, Insertion Sort e QuickSort
+## O que ainda não foi convertido
 
-## Sobre a pasta Listas
+Estas duas pastas continuam válidas até serem migradas:
 
-Você pode estar se perguntando: já vi listas em `01_Fundamentos_Python/07_Introducao_Listas`. Sim, a diferença é que lá foi uma introdução. Aqui o assunto é tratado com mais profundidade: slicing, cópia, ordenação, listas aninhadas e exercícios mais exigentes.
+- `03_Matrizes` (com `extras/`) — vira o Módulo 09
+- `04_Algoritmos_Ordenacao` — vira o Módulo 11
 
-## Sobre os algoritmos de ordenação
-
-Os algoritmos de ordenação ensinam a pensar sobre performance e lógica passo a passo. Não são usados no dia a dia (o Python já tem `sort()`), mas entender como funcionam vai melhorar a sua forma de pensar em soluções.
+Quando as duas saírem, esta pasta é apagada.
