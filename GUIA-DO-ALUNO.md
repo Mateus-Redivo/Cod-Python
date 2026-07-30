@@ -55,9 +55,9 @@ de erro antes mesmo de você rodar.
 
 ### Pelo VS Code
 
-1. `Arquivo → Abrir Pasta` e escolha a pasta deste repositório.
+1. `Arquivo -> Abrir Pasta` e escolha a pasta deste repositório.
 2. Clique em qualquer arquivo `.py` na barra lateral.
-3. Clique no **▷** no canto superior direito.
+3. Clique no **>** no canto superior direito.
 4. A saída aparece no painel **Terminal**, embaixo.
 
 ### Pelo terminal
