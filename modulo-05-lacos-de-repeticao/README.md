@@ -162,10 +162,11 @@ Todo exemplo termina com uma seção **Experimento**. Ela não é opcional: é o
 
 ## Exercícios
 
-1. [EXERCICIO-01-tabuada.md](exercicios/EXERCICIO-01-tabuada.md) — fixação de `for` e `range`.
-2. [EXERCICIO-02-media-com-validacao.md](exercicios/EXERCICIO-02-media-com-validacao.md) — `while` a serviço da validação.
-3. [EXERCICIO-03-acumulador-com-sentinela.md](exercicios/EXERCICIO-03-acumulador-com-sentinela.md) — somar até o usuário mandar parar.
-4. [EXERCICIO-04-analise-de-codigo.md](exercicios/EXERCICIO-04-analise-de-codigo.md) — prever saída e caçar bug em código dos outros.
+1. [EXERCICIO-01-tabuada.md](exercicios/EXERCICIO-01-tabuada.md) — *nível 1*: fixação de `for` e `range`.
+2. [EXERCICIO-02-media-com-validacao.md](exercicios/EXERCICIO-02-media-com-validacao.md) — *nível 2*: `while` a serviço da validação.
+3. [EXERCICIO-03-analise-de-codigo.md](exercicios/EXERCICIO-03-analise-de-codigo.md) — *nível 3*: prever saída e caçar bug em código dos outros.
+
+Quer mais prática? [banco-de-exercicios/nivel-2-intermediario/EXERCICIO-acumulador-com-sentinela.md](../banco-de-exercicios/nivel-2-intermediario/EXERCICIO-acumulador-com-sentinela.md)
 
 ## Auto-avaliação
 

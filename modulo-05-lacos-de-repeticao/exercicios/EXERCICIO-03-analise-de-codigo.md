@@ -2,7 +2,7 @@
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 2 de 3 | 40 min | leitura de código, previsão de saída, depuração |
+| 3 de 3 | 40 min | leitura de código, previsão de saída, depuração |
 
 ## Objetivo
 
@@ -140,6 +140,6 @@ else:
 
 ---
 
-Gabarito: [gabaritos/modulo-05-ex04-analise-de-codigo/](../../gabaritos/modulo-05-ex04-analise-de-codigo/) —
+Gabarito: [gabaritos/modulo-05-ex03-analise-de-codigo/](../../gabaritos/modulo-05-ex03-analise-de-codigo/) —
 depois de tentar, não antes. Este exercício em particular perde todo o valor se você ler a resposta
 primeiro: o objetivo é justamente descobrir onde a sua leitura de código falha.

@@ -173,10 +173,12 @@ python 01_tipos_basicos.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-ficha-cadastral.md](exercicios/EXERCICIO-01-ficha-cadastral.md) — criar variáveis
-   dos quatro tipos e exibi-las formatadas.
-2. [EXERCICIO-02-prevendo-tipos.md](exercicios/EXERCICIO-02-prevendo-tipos.md) — prever tipo e
-   resultado antes de rodar.
+1. [EXERCICIO-01-ficha-cadastral.md](exercicios/EXERCICIO-01-ficha-cadastral.md) — *nível 1*: criar
+   variáveis dos quatro tipos e exibi-las formatadas.
+2. [EXERCICIO-02-prevendo-tipos.md](exercicios/EXERCICIO-02-prevendo-tipos.md) — *nível 2*: prever
+   tipo e resultado antes de rodar.
+3. [EXERCICIO-03-simulador-de-troco.md](exercicios/EXERCICIO-03-simulador-de-troco.md) — *nível 3*:
+   por que dinheiro não se guarda em `float`.
 
 ## Auto-avaliação
 

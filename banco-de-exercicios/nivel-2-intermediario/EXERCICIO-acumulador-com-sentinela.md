@@ -1,8 +1,8 @@
-# Exercício 03 — Acumulador com sentinela
+# Acumulador com sentinela
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 2 de 3 | 30 min | `while`, valor sentinela, acumulador, contador |
+| Intermediário | 30 min | `while`, valor sentinela, acumulador, contador |
 
 ## Objetivo
 
@@ -62,5 +62,7 @@ começar ambas em zero dá resposta errada se o usuário digitar só negativos.
 
 ---
 
-Gabarito: [gabaritos/modulo-05-ex03-acumulador-com-sentinela/](../../gabaritos/modulo-05-ex03-acumulador-com-sentinela/) —
+Gabarito: [gabaritos/banco-acumulador-com-sentinela/](../../gabaritos/banco-acumulador-com-sentinela/) —
 depois de tentar, não antes.
+
+Pré-requisito: [Módulo 05 — Laços de repetição](../../modulo-05-lacos-de-repeticao/).

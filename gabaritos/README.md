@@ -16,7 +16,8 @@ começar. Cada resolução está comentada explicando as decisões, não só o r
 ## Como as pastas são nomeadas
 
 ```text
-gabaritos/modulo-NN-exNN-tema/
+gabaritos/modulo-NN-exNN-tema/          <- exercícios dos módulos
+gabaritos/banco-tema/                   <- exercícios do banco de exercícios
 ```
 
 Por exemplo, a resolução do exercício 01 do módulo 05 está em

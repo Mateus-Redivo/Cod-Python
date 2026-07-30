@@ -1,6 +1,6 @@
-# Gabarito — Módulo 05, Exercício 04: Análise de código
+# Gabarito — Módulo 05, Exercício 03: Análise de código
 
-Enunciado: [EXERCICIO-04-analise-de-codigo.md](../../modulo-05-lacos-de-repeticao/exercicios/EXERCICIO-04-analise-de-codigo.md)
+Enunciado: [EXERCICIO-03-analise-de-codigo.md](../../modulo-05-lacos-de-repeticao/exercicios/EXERCICIO-03-analise-de-codigo.md)
 
 > Se você chegou aqui sem ter escrito suas previsões primeiro, feche este arquivo. Este exercício
 > mede onde a sua leitura de código falha — ler a resposta antes apaga justamente a informação que

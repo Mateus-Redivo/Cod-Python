@@ -1,8 +1,8 @@
 """
-Gabarito — Módulo 05, Exercício 03: Acumulador com sentinela
+Gabarito — Banco de exercícios: Acumulador com sentinela
 
 Enunciado:
-  modulo-05-lacos-de-repeticao/exercicios/EXERCICIO-03-acumulador-com-sentinela.md
+  banco-de-exercicios/nivel-2-intermediario/EXERCICIO-acumulador-com-sentinela.md
 
 Como executar:
   python acumulador_com_sentinela.py
