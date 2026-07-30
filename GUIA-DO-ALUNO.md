@@ -29,8 +29,9 @@ Abra o terminal (no Windows: tecle `Win`, digite "cmd" e abra o Prompt de Comand
 python --version
 ```
 
-Você deve ver algo como `Python 3.12.4`. Qualquer versão **3.10 ou superior** serve para este
-material — o módulo de condicionais usa `match/case`, que só existe a partir da 3.10.
+Você deve ver algo como `Python 3.14.0`. Use a versão **3.14 ou superior**, que é a usada em aula.
+O material ainda roda a partir da **3.10** — abaixo disso não, porque o módulo de condicionais usa
+`match/case`, que só existe da 3.10 em diante.
 
 Se aparecer erro, tente `python3 --version`. Em vários sistemas o comando é esse, e aí é `python3`
 que você vai usar no lugar de `python` no resto do guia.
