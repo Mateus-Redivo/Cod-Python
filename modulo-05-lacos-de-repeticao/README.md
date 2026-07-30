@@ -17,12 +17,9 @@ Ao final deste módulo você será capaz de:
 
 ## Pré-requisitos
 
-Módulo 04 — Condicionais concluído, exercícios feitos. Você precisa estar confortável com
-`if/elif/else` e com os operadores `and`, `or` e `not` — dentro de um laço, tudo isso aparece de
-novo.
-
-> O módulo 04 ainda não foi convertido para este formato. Por enquanto ele está em
-> [01_Fundamentos_Python/05_Condicionais/](../01_Fundamentos_Python/05_Condicionais/).
+[Módulo 04 — Condicionais](../modulo-04-condicionais/) concluído, exercícios feitos. Você precisa
+estar confortável com `if/elif/else` e com os operadores `and`, `or` e `not` — dentro de um laço,
+tudo isso aparece de novo.
 
 ## Conceito
 
@@ -179,11 +176,9 @@ Todo exemplo termina com uma seção **Experimento**. Ela não é opcional: é o
 - [ ] Sei explicar a diferença entre `break` e `continue` com um exemplo meu
 - [ ] Escrevo uma validação com `while` sem que ela vire loop infinito
 
-Sobrou caixinha em branco? Volte ao exemplo correspondente antes de seguir para o módulo 06 —
-listas são percorridas com laço, e um `for` mal entendido cobra o preço lá.
-
-> O módulo 06 ainda não foi convertido para este formato. Por enquanto ele está em
-> [01_Fundamentos_Python/07_Introducao_Listas/](../01_Fundamentos_Python/07_Introducao_Listas/).
+Sobrou caixinha em branco? Volte ao exemplo correspondente antes de seguir para o
+[módulo 06](../modulo-06-listas/) — listas são percorridas com laço, e um `for` mal entendido cobra
+o preço lá.
 
 ## Erros comuns
 
@@ -200,7 +195,4 @@ listas são percorridas com laço, e um `for` mal entendido cobra o preço lá.
 
 ---
 
-Anterior: [Módulo 04 — Condicionais](../01_Fundamentos_Python/05_Condicionais/) | Próximo: [Módulo 06 — Listas](../01_Fundamentos_Python/07_Introducao_Listas/)
-
-*Os links de navegação apontam para as pastas antigas enquanto os módulos vizinhos não são
-convertidos. Serão atualizados na Fase 6 da [reestruturação](../PLANO-REESTRUTURACAO.md).*
+Anterior: [Módulo 04 — Condicionais](../modulo-04-condicionais/) | Próximo: [Módulo 06 — Listas](../modulo-06-listas/)
