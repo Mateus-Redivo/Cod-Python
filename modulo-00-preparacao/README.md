@@ -29,7 +29,7 @@ você não esbarrar nelas sem querer.
 3. **Faça o *Experimento*** que fecha cada exemplo — ele pede que você quebre o código de
    propósito. Essa é a parte que mais ensina, e é a que todo mundo pula.
 4. **Resolva os exercícios** sem abrir o gabarito. Cada módulo tem três, em dificuldade crescente:
-   nível 1 fixa, nível 2 aplica, nível 3 desafia.
+   nível 1 fixa, nível 2 aplica, nível 3 desafia. (Este módulo 00 é a exceção: tem dois.)
 5. **Marque a auto-avaliação** no fim do README. Caixinha em branco é sinal de voltar, não de
    seguir.
 
@@ -169,8 +169,13 @@ Python no PATH — volte à seção 1 do [Guia do aluno](../GUIA-DO-ALUNO.md).
 
 ## Exercícios
 
-1. [EXERCICIO-01-cartao-de-visita.md](exercicios/EXERCICIO-01-cartao-de-visita.md) — seu primeiro
-   programa escrito do zero.
+1. [EXERCICIO-01-cartao-de-visita.md](exercicios/EXERCICIO-01-cartao-de-visita.md) —
+   *nível 1*: seu primeiro programa escrito do zero.
+2. [EXERCICIO-02-decifrando-erros.md](exercicios/EXERCICIO-02-decifrando-erros.md) —
+   *nível 2*: ler cinco mensagens de erro e consertar os programas.
+
+Este é o único módulo com dois exercícios em vez de três. Ele ensina `print`, comentários e leitura
+de erro — um terceiro nível aqui seria enchimento. Os desafios de nível 3 começam no módulo 01.
 
 ## Auto-avaliação
 
