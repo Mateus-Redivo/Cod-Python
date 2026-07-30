@@ -59,8 +59,9 @@ def menu():
     print("2. Listar Alunos e Notas")
     print("3. Adicionar Nota")
     print("4. Calcular Média")
-    print("5. Excluir Aluno")
-    print("6. Popular com Exemplo")
+    print("5. Alterar Aluno")
+    print("6. Excluir Aluno")
+    print("7. Popular com Exemplo")
     print("0. Sair")
     print("=" * 40)
 
@@ -112,22 +113,10 @@ def calcular_media():
 
 
 def adicionar_nota():
-    if not alunos:
-        print("Nenhum aluno cadastrado!")
+    if verifica_lista_vazia():
         return
 
-    print("\nAlunos cadastrados:")
-    for i in range(len(alunos)):
-        aluno = alunos[i]
-
-        if notas[i]:
-            total_notas = sum(notas[i])
-            quantidade_notas = len(notas[i])
-            media = total_notas / quantidade_notas
-        else:
-            media = 0
-
-        print(f"{i+1}. {aluno} - Notas: {notas[i]} - Média: {media:.2f}")
+    listar_alunos()
 
     try:
 
@@ -154,14 +143,55 @@ def adicionar_nota():
 
 
 def alterar_aluno():
-    pass  # TODO Funcionalidade a ser desenvolvida
+    if verifica_lista_vazia():
+        return
+
+    print("\nAlunos cadastrados:")
+
+    listar_alunos()
+
+    idx = receber_aluno()
+    if idx is None:
+        return
+
+    novo_nome = input(f"Digite o novo nome para '{alunos[idx]}': ").strip()
+    if not novo_nome:
+        print("Nome não pode estar vazio!")
+        return
+
+    if novo_nome in alunos:
+        print(f"Aluno '{novo_nome}' já está cadastrado!")
+        return
+
+    nome_antigo = alunos[idx]
+    alunos[idx] = novo_nome
+    print(f"Aluno '{nome_antigo}' alterado para '{novo_nome}' com sucesso!")
 
 
 def deletar_aluno():
-    pass  # TODO Funcionalidade a ser desenvolvida
+    if verifica_lista_vazia():
+        return
+
+    print("\nAlunos cadastrados:")
+    listar_alunos()
+
+    idx = receber_aluno()
+    if idx is None:
+        return
+
+    nome = alunos[idx]
+    confirmacao = input(
+        f"Tem certeza que deseja excluir '{nome}'? (s/n): ").strip().lower()
+    if confirmacao != 's':
+        print("Exclusão cancelada.")
+        return
+
+    alunos.pop(idx)
+    notas.pop(idx)
+    print(f"Aluno '{nome}' excluído com sucesso!")
 
 
-def main():  # REVIEW: Revisar o main
+def main():
     while True:
 
         menu()
