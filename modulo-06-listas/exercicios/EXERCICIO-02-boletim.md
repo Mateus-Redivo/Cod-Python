@@ -1,4 +1,4 @@
-# Exercício 01 — Boletim
+# Exercício 02 — Boletim
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
@@ -71,5 +71,5 @@ Cuidado: `notas.sort()` modifica a lista no lugar. Qual é a função que devolv
 
 ---
 
-Gabarito: [gabaritos/modulo-06-ex01-boletim/](../../gabaritos/modulo-06-ex01-boletim/) —
+Gabarito: [gabaritos/modulo-06-ex02-boletim/](../../gabaritos/modulo-06-ex02-boletim/) —
 depois de tentar, não antes.

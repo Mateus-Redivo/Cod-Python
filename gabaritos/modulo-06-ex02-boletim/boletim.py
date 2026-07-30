@@ -1,8 +1,8 @@
 """
-Gabarito — Módulo 06, Exercício 01: Boletim
+Gabarito — Módulo 06, Exercício 02: Boletim
 
 Enunciado:
-  modulo-06-listas/exercicios/EXERCICIO-01-boletim.md
+  modulo-06-listas/exercicios/EXERCICIO-02-boletim.md
 
 Como executar:
   python boletim.py

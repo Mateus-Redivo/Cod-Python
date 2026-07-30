@@ -211,10 +211,12 @@ python 01_if_else.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-classificador-de-imc.md](exercicios/EXERCICIO-01-classificador-de-imc.md) — faixas
-   com `elif`, na ordem certa.
-2. [EXERCICIO-02-calculadora-com-menu.md](exercicios/EXERCICIO-02-calculadora-com-menu.md) — menu com
-   `match/case` e proteção contra divisão por zero.
+1. [EXERCICIO-01-classificador-de-imc.md](exercicios/EXERCICIO-01-classificador-de-imc.md) —
+   *nível 1*: faixas com `elif`, na ordem certa.
+2. [EXERCICIO-02-calculadora-com-menu.md](exercicios/EXERCICIO-02-calculadora-com-menu.md) —
+   *nível 2*: menu com `match/case` e proteção contra divisão por zero.
+3. [EXERCICIO-03-validador-de-data.md](exercicios/EXERCICIO-03-validador-de-data.md) —
+   *nível 3*: ano bissexto e validação em cadeia.
 
 ## Auto-avaliação
 

@@ -1,6 +1,6 @@
-# Gabarito — Módulo 06, Exercício 02: Manipulando listas
+# Gabarito — Módulo 06, Exercício 01: Manipulando listas
 
-Enunciado: [EXERCICIO-02-manipulando-listas.md](../../modulo-06-listas/exercicios/EXERCICIO-02-manipulando-listas.md)
+Enunciado: [EXERCICIO-01-manipulando-listas.md](../../modulo-06-listas/exercicios/EXERCICIO-01-manipulando-listas.md)
 
 > Escreva as previsões antes de abrir. Sem isso, o exercício vira leitura passiva.
 

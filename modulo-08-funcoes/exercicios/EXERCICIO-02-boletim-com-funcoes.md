@@ -12,7 +12,7 @@ faz**. É a sua primeira refatoração de verdade.
 ## Ponto de partida
 
 Use a sua própria solução do
-[EXERCICIO-01-boletim.md do módulo 06](../../modulo-06-listas/exercicios/EXERCICIO-01-boletim.md).
+[EXERCICIO-02-boletim.md do módulo 06](../../modulo-06-listas/exercicios/EXERCICIO-02-boletim.md).
 Se não a tiver mais, o gabarito de lá serve.
 
 Ele hoje é um bloco corrido: lê as notas, valida, calcula soma, média, maior, menor, conta quantas

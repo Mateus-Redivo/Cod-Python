@@ -195,10 +195,12 @@ python 01_criando_e_acessando.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-boletim.md](exercicios/EXERCICIO-01-boletim.md) — ler notas para uma lista e
-   resumi-las.
-2. [EXERCICIO-02-manipulando-listas.md](exercicios/EXERCICIO-02-manipulando-listas.md) — previsão de
-   saída e caça ao bug.
+1. [EXERCICIO-01-manipulando-listas.md](exercicios/EXERCICIO-01-manipulando-listas.md) —
+   *nível 1*: previsão de saída e caça ao bug.
+2. [EXERCICIO-02-boletim.md](exercicios/EXERCICIO-02-boletim.md) —
+   *nível 2*: ler notas para uma lista e resumi-las.
+3. [EXERCICIO-03-apuracao-de-votos.md](exercicios/EXERCICIO-03-apuracao-de-votos.md) —
+   *nível 3*: contar votos, achar o vencedor e detectar empate.
 
 ## Auto-avaliação
 

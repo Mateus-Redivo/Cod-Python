@@ -2,7 +2,7 @@
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 2 de 3 | 35 min | `len`, `count`, `split`, `upper`, `for` em string |
+| 1 de 3 | 35 min | `len`, `count`, `split`, `upper`, `for` em string |
 
 ## Objetivo
 

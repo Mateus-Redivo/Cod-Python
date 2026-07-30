@@ -1,8 +1,8 @@
-# Exercício 02 — Manipulando listas
+# Exercício 01 — Manipulando listas
 
 | Nível | Tempo estimado | Conceitos |
 | --- | --- | --- |
-| 2 de 3 | 35 min | índices, fatias, métodos de lista, leitura de código |
+| 1 de 3 | 35 min | índices, fatias, métodos de lista, leitura de código |
 
 ## Objetivo
 
@@ -83,5 +83,5 @@ for i in range(len(numeros)):
 
 ---
 
-Gabarito: [gabaritos/modulo-06-ex02-manipulando-listas/](../../gabaritos/modulo-06-ex02-manipulando-listas/) —
+Gabarito: [gabaritos/modulo-06-ex01-manipulando-listas/](../../gabaritos/modulo-06-ex01-manipulando-listas/) —
 depois de tentar, não antes.

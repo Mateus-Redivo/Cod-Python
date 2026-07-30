@@ -5,7 +5,7 @@ Enunciado:
   modulo-08-funcoes/exercicios/EXERCICIO-02-boletim-com-funcoes.md
 
 Mesma saída do gabarito do módulo 06, byte a byte. Confira:
-  printf '5\\n8\\n12\\n7.5\\n9\\n6.5\\n10\\n' | python ../modulo-06-ex01-boletim/boletim.py
+  printf '5\\n8\\n12\\n7.5\\n9\\n6.5\\n10\\n' | python ../modulo-06-ex02-boletim/boletim.py
   printf '5\\n8\\n12\\n7.5\\n9\\n6.5\\n10\\n' | python boletim_com_funcoes.py
 
 Como executar:

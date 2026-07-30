@@ -189,10 +189,12 @@ python 01_aritmeticos.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-calculadora-de-tempo.md](exercicios/EXERCICIO-01-calculadora-de-tempo.md) — `//` e
-   `%` resolvendo um problema real.
-2. [EXERCICIO-02-regras-de-acesso.md](exercicios/EXERCICIO-02-regras-de-acesso.md) — traduzir regras
-   em português para expressões lógicas.
+1. [EXERCICIO-01-calculadora-de-tempo.md](exercicios/EXERCICIO-01-calculadora-de-tempo.md) —
+   *nível 1*: `//` e `%` resolvendo um problema real.
+2. [EXERCICIO-02-regras-de-acesso.md](exercicios/EXERCICIO-02-regras-de-acesso.md) —
+   *nível 2*: traduzir regras em português para expressões lógicas.
+3. [EXERCICIO-03-anatomia-de-um-numero.md](exercicios/EXERCICIO-03-anatomia-de-um-numero.md) —
+   *nível 3*: desmontar um número só com aritmética.
 
 ## Auto-avaliação
 

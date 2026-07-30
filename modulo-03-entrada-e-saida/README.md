@@ -186,10 +186,12 @@ propósito, que é onde o aprendizado mora.
 
 ## Exercícios
 
-1. [EXERCICIO-01-conversor-de-medidas.md](exercicios/EXERCICIO-01-conversor-de-medidas.md) — ler,
-   calcular e formatar.
-2. [EXERCICIO-02-nota-fiscal.md](exercicios/EXERCICIO-02-nota-fiscal.md) — formatação alinhada e
-   escolha de tipos.
+1. [EXERCICIO-01-conversor-de-medidas.md](exercicios/EXERCICIO-01-conversor-de-medidas.md) —
+   *nível 1*: ler, calcular e formatar.
+2. [EXERCICIO-02-nota-fiscal.md](exercicios/EXERCICIO-02-nota-fiscal.md) —
+   *nível 2*: formatação alinhada e escolha de tipos.
+3. [EXERCICIO-03-planejador-de-viagem.md](exercicios/EXERCICIO-03-planejador-de-viagem.md) —
+   *nível 3*: sete entradas, nove cálculos e um relatório em três blocos.
 
 ## Auto-avaliação
 

@@ -189,10 +189,12 @@ python 01_indices_e_fatias.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-analisador-de-frases.md](exercicios/EXERCICIO-01-analisador-de-frases.md) — contar,
-   transformar e dividir.
+1. [EXERCICIO-01-analisador-de-frases.md](exercicios/EXERCICIO-01-analisador-de-frases.md) —
+   *nível 1*: contar, transformar e dividir.
 2. [EXERCICIO-02-validador-de-cadastro.md](exercicios/EXERCICIO-02-validador-de-cadastro.md) —
-   limpar e conferir dados digitados.
+   *nível 2*: limpar e conferir dados digitados.
+3. [EXERCICIO-03-cifra-de-cesar.md](exercicios/EXERCICIO-03-cifra-de-cesar.md) —
+   *nível 3*: criptografia com `ord`, `chr` e aritmética modular.
 
 ## Auto-avaliação
 
