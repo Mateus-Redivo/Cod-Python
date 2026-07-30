@@ -1,4 +1,15 @@
-.vscode
+# Editor
+.vscode/
 
-Test
+# Rascunhos locais (fora do material didatico)
+Test/
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
