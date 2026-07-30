@@ -55,35 +55,13 @@ flowchart LR
 | 05 | **[Laços de repetição](modulo-05-lacos-de-repeticao/)** | repetir sem copiar e colar: `while`, `for`, `range`, acumuladores |
 | 06 | **[Listas](modulo-06-listas/)** | guardar muitos valores em uma variável só |
 | 07 | **[Strings](modulo-07-strings/)** | tratar texto: buscar, fatiar, comparar e transformar |
-| 08 | Funções | escrever uma vez e reaproveitar; parâmetros, retorno e escopo |
-| 09 | Matrizes | listas de listas para representar tabelas e grades |
-| 10 | Tratamento de erros | impedir que uma digitação errada derrube o programa |
-| 11 | Algoritmos de ordenação | Bubble, Selection, Insertion e Quick Sort por dentro |
-| 12 | Leitura e refatoração | ler código dos outros e melhorar o seu sem quebrá-lo |
-| 13 | Estudo de caso CRUD | um sistema completo, comentado linha a linha |
-| 14 | Projeto integrador | seu próprio sistema, do enunciado à entrega |
-
-> **Migração em andamento.** Os módulos **00 a 07 já estão no formato novo** e podem ser usados em
-> aula. Os módulos 08 a 14 continuam nas pastas antigas listadas abaixo e seguem plenamente
-> utilizáveis. A ordem de conversão está em [PLANO-REESTRUTURACAO.md](PLANO-REESTRUTURACAO.md).
-
-### Onde está o conteúdo ainda não convertido
-
-| Pasta atual | Vira |
-| --- | --- |
-| [04_Funcoes/](04_Funcoes/) e [07_Revisao_E_Listas/](07_Revisao_E_Listas/) | módulo 08 — Funções |
-| [03_Estruturas_De_Dados/03_Matrizes/](03_Estruturas_De_Dados/03_Matrizes/) | módulo 09 — Matrizes |
-| [01_Fundamentos_Python/09_Tratamento_De_Erros/](01_Fundamentos_Python/09_Tratamento_De_Erros/) | módulo 10 — Tratamento de erros |
-| [03_Estruturas_De_Dados/04_Algoritmos_Ordenacao/](03_Estruturas_De_Dados/04_Algoritmos_Ordenacao/) | módulo 11 — Ordenação |
-| [07_Revisao_E_Listas/Cognitivo/](07_Revisao_E_Listas/Cognitivo/) | módulo 12 — Leitura e refatoração |
-| [06_Projetos_Praticos/03_Sistemas/](06_Projetos_Praticos/03_Sistemas/) | módulos 13 e 14 |
-| [05_Exercicios_Praticos/](05_Exercicios_Praticos/) | `banco-de-exercicios/` |
-| [06_Projetos_Praticos/](06_Projetos_Praticos/) | `projetos/` |
-| [08_Avancado/](08_Avancado/) | `apendice-padroes-de-projeto/` |
-
-As pastas antigas dos módulos já convertidos (`01_Fundamentos_Python/01` a `08`,
-`02_Estruturas_De_Controle/`, `03_Estruturas_De_Dados/01` e `02`) continuam no repositório até a
-validação em sala, e depois serão removidas.
+| 08 | **[Funções](modulo-08-funcoes/)** | escrever uma vez e reaproveitar; parâmetros, retorno e escopo |
+| 09 | **[Matrizes](modulo-09-matrizes/)** | listas de listas para representar tabelas e grades |
+| 10 | **[Tratamento de erros](modulo-10-tratamento-de-erros/)** | impedir que uma digitação errada derrube o programa |
+| 11 | **[Algoritmos de ordenação](modulo-11-algoritmos-de-ordenacao/)** | Bubble, Selection, Insertion e Quick Sort por dentro |
+| 12 | **[Leitura e refatoração](modulo-12-leitura-e-refatoracao/)** | ler código dos outros e melhorar o seu sem quebrá-lo |
+| 13 | **[Estudo de caso CRUD](modulo-13-estudo-de-caso-crud/)** | um sistema completo, comentado linha a linha |
+| 14 | **[Projeto integrador](modulo-14-projeto-integrador/)** | seu próprio sistema, do enunciado à entrega |
 
 ---
 
@@ -92,10 +70,10 @@ validação em sala, e depois serão removidas.
 | Pasta | Para que serve |
 | --- | --- |
 | [gabaritos/](gabaritos/) | resoluções comentadas de todos os exercícios |
-| `banco-de-exercicios/` | prática extra por nível, quando um módulo não bastou |
-| `projetos/` | jogos e calculadoras — desafios opcionais, e os mais divertidos |
+| [banco-de-exercicios/](banco-de-exercicios/) | prática extra por nível, quando um módulo não bastou |
+| [projetos/](projetos/) | jogos e calculadoras — desafios opcionais, e os mais divertidos |
 | [material-apoio/](material-apoio/) | [resumo de sintaxe](material-apoio/resumo-sintaxe.md), [guia de comentários](material-apoio/guia-de-comentarios.md) e [rubrica de avaliação](material-apoio/rubrica-avaliacao.md) |
-| `apendice-padroes-de-projeto/` | fora do escopo de lógica básica; só depois do módulo 14 |
+| [apendice-padroes-de-projeto/](apendice-padroes-de-projeto/) | fora do escopo de lógica básica; só depois do módulo 14 |
 
 Documentos de referência: [Guia do aluno](GUIA-DO-ALUNO.md) · [Glossário](GLOSSARIO.md)
 

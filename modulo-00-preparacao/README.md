@@ -39,9 +39,7 @@ ou três aulas adiante, quando o erro já não parece ter relação com o que fo
 
 Um módulo por sessão de estudo, em média duas horas contando os exercícios.
 
-> **Pastas com nome numerado tipo `01_Fundamentos_Python`?** São material antigo, em desmonte.
-> Ignore-as: tudo que interessa está nas pastas `modulo-NN-*`. A
-> [trilha completa está no README principal](../README.md).
+> A [trilha completa, com os 15 módulos, está no README principal](../README.md).
 
 ## Objetivos de aprendizagem
 

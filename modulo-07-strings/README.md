@@ -220,4 +220,4 @@ python 01_indices_e_fatias.py
 
 ---
 
-Anterior: [Módulo 06 — Listas](../modulo-06-listas/) | Próximo: Módulo 08 — Funções *(ainda em [04_Funcoes/](../04_Funcoes/))*
+Anterior: [Módulo 06 — Listas](../modulo-06-listas/) | Próximo: [Módulo 08 — Funções](../modulo-08-funcoes/)
