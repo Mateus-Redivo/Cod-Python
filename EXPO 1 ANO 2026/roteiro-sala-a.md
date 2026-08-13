@@ -54,11 +54,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Victor Nascimento | |
-| 2 | Victor Carmo | |
-| 3 | Cauã Ballarin | |
-| 4 | Daniel Souza | |
-| 5 | Erick Shaft | |
+| 1 | Victor Nascimento | Sexta Manha |
+| 2 | Victor Carmo | Sexta Tarde |
+| 3 | Cauã Ballarin | Sabado Manha |
+| 4 | Daniel Souza | Sexta Tarde |
+| 5 | Erick Shaft | Sexta Manha |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra como o Guardião do Brejo; os outros cuidam do computador e recebem o próximo visitante.
@@ -87,11 +87,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Eduardo Almeida | |
-| 2 | Lucas Mascia | |
-| 3 | João Davi | |
-| 4 | Davi Campos | |
-| 5 | Vinicius Gouvea | |
+| 1 | Eduardo Almeida | Sexta Tarde |
+| 2 | Lucas Mascia | Sabado Manha |
+| 3 | João Davi | Sexta Manha |
+| 4 | Davi Campos | Sexta Tarde |
+| 5 | Vinicius Gouvea | Sabado Manha |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra como serviçal do castelo que cuidava do quarto de Nessa.
@@ -120,10 +120,10 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Vinicius Henrique Santos | |
-| 2 | Rihan Alves | |
+| 1 | Vinicius Henrique Santos | Sexta Manha |
+| 2 | Rihan Alves | Sexta Manha |
 | 3 | Miguel Capriolli | |
-| 4 | Cario Henrique | |
+| 4 | Caio Henrique | |
 | 5 | | |
 | 6 | | |
 
@@ -152,11 +152,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Matheus Favaro | |
-| 2 | Enzo Barufi | |
-| 3 | João Geraldes | |
-| 4 | Lucas Morais | |
-| 5 | Murilo Rossini | |
+| 1 | Matheus Favaro | Sexta Manha |
+| 2 | Enzo Barufi | Sabado Manha |
+| 3 | João Geraldes | Sexta Manha |
+| 4 | Lucas Morais | Sexta Tarde |
+| 5 | Murilo Rossini | Sabado Manha |
 | 6 | | |
 
 **Personagem do grupo:** um integrante interpreta a própria Bean Nigh — tom baixo, teatral, quase sussurrando.
@@ -184,11 +184,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Artur Ramaloh | |
-| 2 | Vinicius Hiroshi | |
-| 3 | Nayran Paes | |
-| 4 | Luan Figueiredo | |
-| 5 | Murilo Fink | |
+| 1 | Artur Ramaloh | Sabado Manha |
+| 2 | Vinicius Hiroshi | Sabado Manha |
+| 3 | Nayran Paes | Sexta Manha - Tarde |
+| 4 | Luan Figueiredo | Sexta Manha - Tarde |
+| 5 | | |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra como zelador do castelo.
@@ -214,11 +214,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Matheus Rezende | |
-| 2 | Guilherme Capozzi | |
-| 3 | Gabriel Coimbra | |
-| 4 | Gabriel Ferraz | |
-| 5 | Giovani Pereira | |
+| 1 | Matheus Rezende | Sexta Tarde - Sabado Manha |
+| 2 | Guilherme Capozzi | Sabado Manha |
+| 3 | Gabriel Coimbra | Sexta Manha |
+| 4 | Gabriel Ferraz | Sexta Manha |
+| 5 | Giovani Pereira | Sexta Tarde |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra a cena; outro pode interpretar "a mulher ao longe".
