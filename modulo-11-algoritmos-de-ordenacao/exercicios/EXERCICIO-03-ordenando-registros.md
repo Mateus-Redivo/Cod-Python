@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Ordenar uma tabela de registros por **qualquer coluna** que o usuário escolher — e descobrir, no
+Ordenar uma tabela de registros por **qualquer coluna** que o usuário escolher, e descobrir, no
 caminho, um conceito que ninguém explica no começo: **estabilidade**.
 
 ## Os dados
@@ -68,7 +68,7 @@ como critério de desempate. Sem estabilidade, a primeira ordenação é perdida
 **Descubra experimentalmente:** ordene os alunos por idade usando os três algoritmos do exercício 01
 e compare a ordem de Bruno e Elena em cada um. Anote qual é estável e qual não é.
 
-> Dica: dois dos três costumam ser estáveis; um não é. Não confie na minha palavra — meça.
+> Dica: dois dos três costumam ser estáveis; um não é. Não confie na minha palavra: meça.
 
 ## Critérios de aceitação
 
@@ -88,15 +88,14 @@ registros[i], registros[j] = registros[j], registros[i]      # certo
 registros[i][coluna], registros[j][coluna] = ...             # ERRADO
 ```
 
-A segunda forma troca só o campo comparado e deixa o resto no lugar — o aluno fica com a nota de
+A segunda forma troca só o campo comparado e deixa o resto no lugar: o aluno fica com a nota de
 outro. É exatamente o problema das listas paralelas do módulo 08, reaparecendo por outro caminho.
 
 ## Desafio dentro do desafio
 
 Ordene por **dois critérios**: nota decrescente e, em caso de empate, nome crescente. Com um
-algoritmo estável, isso se resolve ordenando duas vezes — mas em qual ordem? Descubra e explique.
+algoritmo estável, isso se resolve ordenando duas vezes, mas em qual ordem? Descubra e explique.
 
 ---
 
-Gabarito: [gabaritos/modulo-11-ex03-ordenando-registros/](../../gabaritos/modulo-11-ex03-ordenando-registros/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-11-ex03-ordenando-registros/](../../gabaritos/modulo-11-ex03-ordenando-registros/), depois de tentar, não antes.

@@ -2,7 +2,7 @@
 
 Uma trilha de estudo do zero até um sistema completo, feita para ser percorrida **em ordem**. Cada
 módulo é uma aula: a explicação mora no `README.md`, os exemplos rodáveis em `exemplos/` e os
-enunciados em `exercicios/`. As respostas ficam em [gabaritos/](gabaritos/) — longe dos enunciados,
+enunciados em `exercicios/`. As respostas ficam em [gabaritos/](gabaritos/), longe dos enunciados,
 de propósito.
 
 **Nunca programou antes?** Comece pelo [Guia do aluno](GUIA-DO-ALUNO.md): instalar o Python, rodar
@@ -71,7 +71,7 @@ flowchart LR
 | --- | --- |
 | [gabaritos/](gabaritos/) | resoluções comentadas de todos os exercícios |
 | [banco-de-exercicios/](banco-de-exercicios/) | prática extra por nível, quando um módulo não bastou |
-| [projetos/](projetos/) | jogos e calculadoras — desafios opcionais, e os mais divertidos |
+| [projetos/](projetos/) | jogos e calculadoras (desafios opcionais, e os mais divertidos) |
 | [material-apoio/](material-apoio/) | [resumo de sintaxe](material-apoio/resumo-sintaxe.md), [guia de comentários](material-apoio/guia-de-comentarios.md) e [rubrica de avaliação](material-apoio/rubrica-avaliacao.md) |
 | [apendice-padroes-de-projeto/](apendice-padroes-de-projeto/) | fora do escopo de lógica básica; só depois do módulo 14 |
 
@@ -82,18 +82,18 @@ Documentos de referência: [Guia do aluno](GUIA-DO-ALUNO.md) · [Glossário](GLO
 ## Como estudar
 
 1. **Leia o README do módulo inteiro** antes de abrir qualquer `.py`. A aula está lá.
-2. **Rode os exemplos na ordem numerada** e faça o *Experimento* que fecha cada arquivo — mexer no
+2. **Rode os exemplos na ordem numerada** e faça o *Experimento* que fecha cada arquivo. Mexer no
    código ensina o que ler não ensina.
 3. **Faça os exercícios sem gabarito.** Vinte minutos travado valem mais que a resposta pronta.
 4. **Marque a auto-avaliação** no fim do README. Caixinha em branco é sinal de voltar, não de seguir.
 
-Um módulo por sessão de estudo. Dois no mesmo dia rende menos do que parece — o segundo depende do
+Um módulo por sessão de estudo. Dois no mesmo dia rende menos do que parece: o segundo depende do
 primeiro estar assentado.
 
 ## Requisitos
 
 Python **3.14 ou superior**. O mínimo absoluto para o material rodar é a 3.10, por causa do
-`match/case` do módulo 04 — mas instale a versão mais recente, que é a usada em aula.
+`match/case` do módulo 04, mas instale a versão mais recente, que é a usada em aula.
 
 Nenhuma biblioteca externa é necessária na trilha principal; a única exceção é o NumPy, opcional,
 na seção "Para ir além" do módulo 09.

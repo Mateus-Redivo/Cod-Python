@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Julgar refatorações feitas por outras pessoas — inclusive as deste próprio módulo. É o exercício em
+Julgar refatorações feitas por outras pessoas, inclusive as deste próprio módulo. É o exercício em
 que você para de aplicar regras e começa a avaliá-las.
 
 ## Parte 1 — Audite os cinco pares
@@ -49,7 +49,7 @@ o comportamento?
 **b)** Uma função devolve os mesmos valores, mas ficou 40% mais lenta. Mudou o comportamento?
 
 **c)** Uma função devolve os mesmos valores para todas as entradas testadas, mas ninguém testou
-lista vazia — e nela as duas versões divergem. Foi refatoração?
+lista vazia, e nela as duas versões divergem. Foi refatoração?
 
 ## Parte 3 — Refatore uma refatoração
 
@@ -60,13 +60,13 @@ Regras:
 - a saída tem que continuar idêntica à do `_depois.py`
 - justifique cada mudança em comentário
 - se você achar que a versão oficial já está boa e não há o que melhorar, **diga isso** e
-  justifique — é uma resposta legítima, e mais difícil de defender que a outra
+  justifique: é uma resposta legítima, e mais difícil de defender que a outra
 
 ## Parte 4 — O limite
 
 Escreva um parágrafo respondendo: **existe código que não vale a pena refatorar?**
 
-Dê um exemplo concreto — pode ser de um dos exemplos deste módulo, de um exercício seu de módulos
+Dê um exemplo concreto: pode ser de um dos exemplos deste módulo, de um exercício seu de módulos
 anteriores, ou inventado. Explique o critério que você usou para decidir.
 
 ## Critérios de aceitação
@@ -88,5 +88,4 @@ que qualquer exercício em que tudo fecha certinho.
 
 ---
 
-Gabarito: [gabaritos/modulo-12-ex03-auditoria-de-refatoracao/](../../gabaritos/modulo-12-ex03-auditoria-de-refatoracao/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-12-ex03-auditoria-de-refatoracao/](../../gabaritos/modulo-12-ex03-auditoria-de-refatoracao/), depois de tentar, não antes.

@@ -61,7 +61,7 @@ print("Maior: "+n+" "+str(m))
 
 ## A regra que não pode ser quebrada
 
-A saída tem que ficar **byte a byte idêntica** — inclusive os espaços entre as colunas, que hoje
+A saída tem que ficar **byte a byte idêntica**, inclusive os espaços entre as colunas, que hoje
 saem tortos por causa da concatenação.
 
 Vai dar vontade de alinhar a tabela. **Não alinhe.** Alinhar é melhorar a saída, e melhorar a saída
@@ -87,7 +87,7 @@ atualizadas juntas, sempre. O que isso sugere sobre elas?
 - [ ] Nenhuma variável de uma letra sobrou (exceto contador de laço)
 - [ ] Existem pelo menos três funções, todas com `return`
 - [ ] O subtotal é calculado uma vez por produto, não duas
-- [ ] Nenhuma concatenação com `+` e `str()` — tudo f-string
+- [ ] Nenhuma concatenação com `+` e `str()`: tudo f-string
 - [ ] O `5` do "estoque baixo" está numa constante nomeada
 - [ ] As três perguntas estão respondidas
 
@@ -102,5 +102,4 @@ comportamento congelado. Depois comportamento, com estrutura já limpa.
 
 ---
 
-Gabarito: [gabaritos/modulo-12-ex02-refatorando-com-prova/](../../gabaritos/modulo-12-ex02-refatorando-com-prova/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-12-ex02-refatorando-com-prova/](../../gabaritos/modulo-12-ex02-refatorando-com-prova/), depois de tentar, não antes.

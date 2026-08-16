@@ -46,8 +46,8 @@ saldo_fora_da_faixa = saldo < 100 or saldo > 1000                    # False
 
 **O par 4 e 8 é o ponto do exercício.** As duas descrevem a mesma faixa:
 
-- A 4 pergunta "está **dentro**?" — precisa das duas condições ao mesmo tempo, então é `and`.
-- A 8 pergunta "está **fora**?" — basta furar por um lado, então é `or`.
+- A 4 pergunta "está **dentro**?": precisa das duas condições ao mesmo tempo, então é `and`.
+- A 8 pergunta "está **fora**?": basta furar por um lado, então é `or`.
 
 E repare que uma é exatamente a negação da outra. Dá para escrever a 8 assim:
 
@@ -56,7 +56,7 @@ saldo_fora_da_faixa = not (saldo > 100 and saldo < 1000)
 ```
 
 Isso não é coincidência: é a **lei de De Morgan**. Negar um `and` vira um `or` com as partes
-negadas. Você não precisa decorar o nome, mas vale reconhecer o padrão — ele explica por que trocar
+negadas. Você não precisa decorar o nome, mas vale reconhecer o padrão: ele explica por que trocar
 `and` por `or` sem inverter as comparações produz um programa que aceita tudo.
 
 **Sobre a regra 5:** `trabalho_entregue` entra sozinho, sem `== True`. Escrever
@@ -73,7 +73,7 @@ booleano com `True` é como perguntar "é verdade que é verdade?".
 | 2 | `(True or False) and False` | `False` | os parênteses forçam a outra ordem: `True and False` |
 | 3 | `not True and False` | `False` | `not` vem primeiro: `(not True) and False` = `False and False` |
 | 4 | `not (True and False)` | `True` | o parêntese resolve antes: `not False` |
-| 5 | `5 > 3 or 10 / 0 > 1` | `True` | **não dá erro** — veja abaixo |
+| 5 | `5 > 3 or 10 / 0 > 1` | `True` | **não dá erro** (veja abaixo) |
 
 **A pegadinha da 5.** A divisão por zero nunca acontece.
 
@@ -110,14 +110,14 @@ nota_valida = nota >= 0 or nota <= 10
 **a) Por que 50 é considerada válida?**
 
 Porque `50 >= 0` é `True`, e para o `or` basta isso. A segunda condição (`50 <= 10`, que é `False`)
-nem importa mais — inclusive nem é avaliada, pelo curto-circuito da Parte 2.
+nem importa mais (inclusive nem é avaliada, pelo curto-circuito da Parte 2).
 
 **b) Testando com -30**
 
 `-30 >= 0` é `False`, mas `-30 <= 10` é `True`. O `or` devolve `True` de novo.
 
 **Não existe número que esse código recuse.** Todo número real ou é maior ou igual a 0, ou é menor
-ou igual a 10 — muitos são as duas coisas, e nenhum não é nenhuma das duas. A condição é sempre
+ou igual a 10. Muitos são as duas coisas, e nenhum não é nenhuma das duas. A condição é sempre
 verdadeira, o que a torna inútil.
 
 É o espelho exato do erro `numero < 1 and numero > 5` visto no README: lá o `and` tornava a
@@ -143,7 +143,7 @@ print("Nota válida?", nota_valida)          # False
 ```
 
 A segunda forma é preferível sempre que houver um intervalo: ela se parece com a notação
-matemática, e não dá margem para trocar o operador lógico — porque não há nenhum.
+matemática, e não dá margem para trocar o operador lógico, porque não há nenhum.
 
 ---
 
@@ -154,5 +154,5 @@ matemática, e não dá margem para trocar o operador lógico — porque não h�
 | Parte 1, regras 4 e 8 | seção "A armadilha do intervalo" do [README](../../modulo-02-operadores/) |
 | Parte 1, regra 5 (usou `== True`) | seção "Comparação" do [README](../../modulo-02-operadores/) |
 | Parte 2, itens 1 a 4 | [exemplos/04_logicos.py](../../modulo-02-operadores/exemplos/04_logicos.py), bloco de precedência |
-| Parte 2, item 5 | curto-circuito — está explicado só aqui; vale reler antes do módulo 06 |
+| Parte 2, item 5 | curto-circuito: está explicado só aqui; vale reler antes do módulo 06 |
 | Parte 3 | [exemplos/04_logicos.py](../../modulo-02-operadores/exemplos/04_logicos.py), variável `nunca` |

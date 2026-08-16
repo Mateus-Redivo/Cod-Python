@@ -1,7 +1,7 @@
 # Rubrica de avaliação
 
 Como os exercícios e projetos deste repositório são corrigidos. Está aqui, aberto, **antes** de você
-entregar — nota não deve ser surpresa.
+entregar: nota não deve ser surpresa.
 
 A rubrica vale para qualquer entrega: exercício de módulo, sistema do banco de exercícios ou o
 projeto integrador. O que muda é o peso, não os critérios.
@@ -12,7 +12,7 @@ projeto integrador. O que muda é o peso, não os critérios.
 
 ### 1. Funciona (peso 40)
 
-O programa faz o que o enunciado pediu, para qualquer entrada válida — não só para o exemplo.
+O programa faz o que o enunciado pediu, para qualquer entrada válida, não só para o exemplo.
 
 | Nível | O que significa |
 | --- | --- |
@@ -31,7 +31,7 @@ A solução resolve o problema pelo raciocínio certo, não por coincidência.
 | --- | --- |
 | **Excelente (18–20)** | Escolhas coerentes: `for` onde o número de repetições é conhecido, `while` onde depende de condição. Sem cálculo redundante. |
 | **Bom (14–17)** | Lógica correta, com alguma volta desnecessária. |
-| **Suficiente (10–13)** | Chega ao resultado, mas por caminho confuso — valores fixos onde deveria ter variável, por exemplo. |
+| **Suficiente (10–13)** | Chega ao resultado, mas por caminho confuso (valores fixos onde deveria ter variável, por exemplo). |
 | **Insuficiente (0–9)** | O resultado certo sai por acaso, ou só para a entrada de exemplo. |
 
 ### 3. Legibilidade (peso 20)
@@ -91,7 +91,7 @@ Nota = Funciona (40) + Lógica (20) + Legibilidade (20) + Conceitos (10) + Entra
 Três situações que anulam a entrega, independentemente da qualidade do código:
 
 - **Código copiado de `gabaritos/`** sem tentativa própria. O gabarito existe para conferir, e a
-  correção reconhece a cópia — as decisões arbitrárias do gabarito reaparecem idênticas.
+  correção reconhece a cópia: as decisões arbitrárias do gabarito reaparecem idênticas.
 - **Arquivo que não executa** por erro de sintaxe. Isso é conferível em cinco segundos, antes de
   entregar.
 - **Entrega em branco** ou fora do formato pedido (`.py` executável, não print de tela, não `.docx`).

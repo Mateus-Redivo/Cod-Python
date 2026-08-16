@@ -35,10 +35,10 @@ Idênticos. O `50.00` da tela é o `:.2f` do `print`, não um cálculo diferente
 O mesmo vale para o 04: o valor é `30.05` nas duas versões; mudou a palavra do rótulo.
 
 O 02 é o caso mais discutível: a versão nova não só mudou mensagens, como **acrescentou casos de
-teste**. Isso não é refatoração — é escrever testes, que é outra tarefa boa, feita no mesmo commit.
+teste**. Isso não é refatoração: é escrever testes, que é outra tarefa boa, feita no mesmo commit.
 
 **Veredito geral:** as cinco funções foram refatoradas de verdade. Três autores aproveitaram a
-passagem para mexer também no bloco de demonstração — o que é compreensível e mesmo assim
+passagem para mexer também no bloco de demonstração, o que é compreensível e mesmo assim
 indisciplinado, porque destrói a possibilidade de provar a equivalência com `diff`.
 
 ---
@@ -47,7 +47,7 @@ indisciplinado, porque destrói a possibilidade de provar a equivalência com `d
 
 **a) A função devolve `50.0` antes e depois, mas o print mudou de `50.0` para `50.00`.**
 
-Depende de quem é o usuário — e essa é a resposta, não uma evasiva.
+Depende de quem é o usuário, e essa é a resposta, não uma evasiva.
 
 Se o usuário é **outro programa**, que chama a função e usa o valor devolvido, nada mudou: ele
 recebe `50.0` nos dois casos.
@@ -60,19 +60,19 @@ Na prática: para a função, foi refatoração. Para o programa como um todo, n
 
 **b) Mesmos valores, 40% mais lenta.**
 
-Mudou o comportamento? Formalmente não — a resposta é a mesma para toda entrada.
+Mudou o comportamento? Formalmente não: a resposta é a mesma para toda entrada.
 
 Na prática, depende da escala. Numa função chamada uma vez com cinco itens, 40% de nada é nada.
 Numa chamada num laço sobre um milhão de registros, é a diferença entre um relatório que sai e um
 que não sai.
 
 Desempenho é um requisito como qualquer outro: só é problema quando alguém percebe. Mas piorar
-40% "sem querer" durante uma refatoração é sinal de que você mudou mais do que pretendia — vale
+40% "sem querer" durante uma refatoração é sinal de que você mudou mais do que pretendia: vale
 investigar o que aconteceu.
 
 **c) Mesmos valores nos casos testados, mas divergem em lista vazia, que ninguém testou.**
 
-**Não foi refatoração** — foi uma mudança de comportamento que passou despercebida.
+**Não foi refatoração**: foi uma mudança de comportamento que passou despercebida.
 
 O fato de ninguém ter testado não muda o que o código faz; muda só o que se sabe sobre ele. O bug
 já está lá, esperando o primeiro usuário com lista vazia.
@@ -87,12 +87,12 @@ Isto é o argumento mais forte a favor de testar casos-limite antes de refatorar
 O par que eu escolheria é o **02 (processamento de clientes)**, e não por ele estar mal escrito: por
 ele ser o único cuja mudança de saída **não dá para justificar como apresentação**.
 
-A melhoria que eu faria não é no código da função — é na disciplina: separar o que virou dois
+A melhoria que eu faria não é no código da função, é na disciplina: separar o que virou dois
 trabalhos em um. A versão `_depois2.py` seria idêntica ao `_depois.py` na função, com o bloco de
 demonstração **restaurado ao original**. Aí sim, os casos de teste novos entrariam num segundo
 arquivo ou num segundo commit.
 
-Se a sua resposta foi "a versão oficial já está boa e não há o que melhorar", ela é aceitável — mas
+Se a sua resposta foi "a versão oficial já está boa e não há o que melhorar", ela é aceitável, mas
 precisa enfrentar a pergunta: como você provaria isso, se o `diff` não fecha?
 
 ---
@@ -101,7 +101,7 @@ precisa enfrentar a pergunta: como você provaria isso, se o `diff` não fecha?
 
 Existe, e o critério não é a qualidade do código: é **quanto ele ainda vai mudar**.
 
-Exemplo concreto deste próprio repositório: o `01_calculo_precos_antes.py`. Ele é péssimo — nomes
+Exemplo concreto deste próprio repositório: o `01_calculo_precos_antes.py`. Ele é péssimo: nomes
 de uma letra, cinco níveis de indentação, uma recursão ilegível. E não vale a pena refatorá-lo,
 porque a única função dele hoje é **ser péssimo**: é material didático, existe para ser lido como
 exemplo negativo. Refatorá-lo destruiria o motivo de ele existir.
@@ -110,8 +110,8 @@ O critério geral que eu uso, em três perguntas:
 
 1. **Alguém vai mexer nisso de novo?** Se não, o atrito custa zero.
 2. **Eu consigo provar que não quebrei?** Se não há como comparar a saída, o risco supera o ganho.
-3. **Eu entendo o que ele faz?** Se não, o primeiro trabalho é entender — e às vezes esse trabalho
+3. **Eu entendo o que ele faz?** Se não, o primeiro trabalho é entender, e às vezes esse trabalho
    já resolve a necessidade, sem tocar numa linha.
 
 Refatoração é investimento, e investimento se avalia pelo retorno. Código estável, que ninguém lê e
-ninguém muda, tem retorno zero por definição — por pior que seja.
+ninguém muda, tem retorno zero por definição (por pior que seja).

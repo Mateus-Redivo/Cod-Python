@@ -12,7 +12,7 @@ Escrever um programa que mostra a tabuada de um número escolhido pelo usuário.
 
 1. Peça ao usuário um número inteiro.
 2. Mostre a tabuada desse número, de 1 até 10, uma linha por multiplicação.
-3. Use `for` com `range` — nada de dez `print` copiados.
+3. Use `for` com `range`: nada de dez `print` copiados.
 4. Formate a saída exatamente como no exemplo abaixo (use f-string).
 
 ## Exemplo de saída
@@ -46,5 +46,4 @@ Pergunte também até quanto a tabuada deve ir (até 10? até 20?) e respeite a 
 
 ---
 
-Gabarito: [gabaritos/modulo-05-ex01-tabuada/](../../gabaritos/modulo-05-ex01-tabuada/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-05-ex01-tabuada/](../../gabaritos/modulo-05-ex01-tabuada/), depois de tentar, não antes.

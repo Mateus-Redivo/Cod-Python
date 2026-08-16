@@ -3,7 +3,7 @@
 Enunciado: [EXERCICIO-03-analise-de-codigo.md](../../modulo-05-lacos-de-repeticao/exercicios/EXERCICIO-03-analise-de-codigo.md)
 
 > Se você chegou aqui sem ter escrito suas previsões primeiro, feche este arquivo. Este exercício
-> mede onde a sua leitura de código falha — ler a resposta antes apaga justamente a informação que
+> mede onde a sua leitura de código falha: ler a resposta antes apaga justamente a informação que
 > ele produziria.
 
 ---
@@ -27,7 +27,7 @@ print(total)
 
 As duas versões estão corretas. A segunda costuma ler melhor para quem está começando, porque diz
 o que **acontece** em vez de dizer o que é pulado. O `continue` ganha valor quando o bloco a ser
-pulado é longo — evita indentar dez linhas dentro de um `if`.
+pulado é longo: evita indentar dez linhas dentro de um `if`.
 
 ---
 
@@ -39,7 +39,7 @@ pulado é longo — evita indentar dez linhas dentro de um `if`.
 
 **c)** Porque o acumulador precisa começar no **elemento neutro da operação**. Na soma, o neutro é
 0; na multiplicação, é 1. Se `resultado` começasse em 0, toda multiplicação daria 0 e o resultado
-final seria 0 — o clássico "acumulador zerado na operação errada".
+final seria 0: o clássico "acumulador zerado na operação errada".
 
 **d)** Com N informado e validado:
 
@@ -64,7 +64,7 @@ Repare no `numero + 1` do `range`: sem ele o fatorial sai errado, faltando o úl
 ## Questão 3 — Senha: o bug da chance única
 
 **a)** O `if` executa **uma vez só**. Ele dá exatamente uma segunda chance e depois segue em frente
-com o que vier — válido ou não.
+com o que vier (válido ou não).
 
 Sequência que expõe o problema: digite `12` e depois `7`. As duas são inválidas, mas o programa
 imprime `Senha aceita: 7` e continua. O `if` testa uma vez; ele não insiste.
@@ -88,14 +88,14 @@ uma tentativa é `while`.
 
 ## Questão 4 — O operador lógico errado
 
-**a)** Digitando 99, o programa imprime `Número válido: 99` na hora — sem reclamar. O `while` nunca
+**a)** Digitando 99, o programa imprime `Número válido: 99` na hora, sem reclamar. O `while` nunca
 executa.
 
 **b)** O operador errado é o `and`. A condição `numero < 1 and numero > 5` exige que o número seja
 menor que 1 **e**, ao mesmo tempo, maior que 5. Nenhum número no universo satisfaz as duas coisas
 juntas, então a condição é sempre `False` e o laço nunca roda.
 
-O correto é `or`: um valor é inválido se está abaixo de 1 **ou** acima de 5 — basta uma das duas.
+O correto é `or`: um valor é inválido se está abaixo de 1 **ou** acima de 5, basta uma das duas.
 
 Regra prática que evita o erro: quando você descreve um intervalo **proibido** (fora de), o
 conector é `or`. Quando descreve um intervalo **permitido** (dentro de), é `and`.
@@ -116,7 +116,7 @@ print("Número válido:", numero)
 
 ## Questão 5 — Laço dentro de laço
 
-**a)** 9 vezes — 3 voltas do laço externo × 3 voltas do interno.
+**a)** 9 vezes: 3 voltas do laço externo × 3 voltas do interno.
 
 **b)** Saída completa:
 
@@ -141,7 +141,7 @@ Vale rodar com `j = 1` movido para fora, para ver acontecer.
 
 **a)** `primo` é uma **flag**: uma variável booleana que registra se algo foi encontrado. Ela começa
 `True` porque a suposição inicial é "é primo até que se prove o contrário". Achar um divisor é
-essa prova — aí ela vira `False`.
+essa prova: aí ela vira `False`.
 
 **b)** Porque todo número é divisível por 1. Começar em 1 encontraria um divisor sempre, e nenhum
 número seria classificado como primo.
@@ -158,7 +158,7 @@ programa afirmaria que 1 é primo. O `and` no `if` final é o remendo desse caso
 | 2 | `range(2, 2)` → vazio | nenhuma | `True` | `True` | "2 é primo" ✔ |
 
 Os dois casos acertam, mas por caminhos diferentes: o 1 é salvo pela condição extra, e o 2 acerta
-porque de fato não tem divisor no intervalo. Um `range` vazio não é erro — é um laço que roda zero
+porque de fato não tem divisor no intervalo. Um `range` vazio não é erro: é um laço que roda zero
 vezes, e vale conhecer esse comportamento.
 
 **e)** Com validação:
@@ -193,6 +193,6 @@ continuar procurando é trabalho jogado fora. Para 1.000.000 a diferença é vis
 | --- | --- |
 | 1 | [exemplos/03_break_continue.py](../../modulo-05-lacos-de-repeticao/exemplos/03_break_continue.py) |
 | 2 | seção "O padrão acumulador" do [README do módulo](../../modulo-05-lacos-de-repeticao/) |
-| 3 e 4 | seção "Validar entrada com `while`" do README — as duas são o mesmo erro com roupas diferentes |
+| 3 e 4 | seção "Validar entrada com `while`" do README: as duas são o mesmo erro com roupas diferentes |
 | 5 | [exemplos/01_while.py](../../modulo-05-lacos-de-repeticao/exemplos/01_while.py), com atenção às três partes |
 | 6 | [exemplos/03_break_continue.py](../../modulo-05-lacos-de-repeticao/exemplos/03_break_continue.py) e a tabela de erros comuns |

@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Acrescentar funcionalidades a um sistema que você não escreveu — sem quebrar nada do que já
+Acrescentar funcionalidades a um sistema que você não escreveu: sem quebrar nada do que já
 funcionava. É o trabalho mais comum da profissão.
 
 ## Antes de começar
@@ -29,7 +29,7 @@ remover se a resposta for sim.
 maiúsculas) e avise.
 
 **5. Ordenar a listagem.** Nova opção que lista os alunos ordenados por média, do maior para o
-menor. Use `sorted()` ou um dos algoritmos do módulo 11 — e mantenha a ordem de cadastro intacta na
+menor. Use `sorted()` ou um dos algoritmos do módulo 11, e mantenha a ordem de cadastro intacta na
 listagem normal.
 
 ## A regra que não pode ser quebrada
@@ -56,7 +56,7 @@ quebrou.
 O sistema original usa listas globais (`alunos`, `notas`) que as funções alteram diretamente. Isso
 contraria o que o módulo 08 recomendou.
 
-**Não conserte isso agora.** Siga o padrão que o arquivo já usa — misturar "acrescentar
+**Não conserte isso agora.** Siga o padrão que o arquivo já usa: misturar "acrescentar
 funcionalidade" com "mudar a arquitetura" é exatamente o que o módulo 12 desaconselha. Reescrever a
 estrutura é assunto do exercício 03.
 
@@ -69,5 +69,4 @@ acontece se o usuário pedir para desfazer sem ter excluído nada.
 
 ---
 
-Gabarito: [gabaritos/modulo-13-ex02-estendendo-o-sistema/](../../gabaritos/modulo-13-ex02-estendendo-o-sistema/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-13-ex02-estendendo-o-sistema/](../../gabaritos/modulo-13-ex02-estendendo-o-sistema/), depois de tentar, não antes.

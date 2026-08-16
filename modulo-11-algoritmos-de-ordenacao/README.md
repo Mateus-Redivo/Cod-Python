@@ -2,8 +2,8 @@
 
 Desde o módulo 06 você ordena listas com `sort()`. Uma palavra, e pronto.
 
-Este módulo abre essa caixa. Não porque você vá escrever seu próprio `sort` na vida real — não vai
-—, mas porque **ordenar é o exemplo mais claro de que existe mais de um jeito de resolver o mesmo
+Este módulo abre essa caixa. Não porque você vá escrever seu próprio `sort` na vida real (não vai),
+mas porque **ordenar é o exemplo mais claro de que existe mais de um jeito de resolver o mesmo
 problema, e de que alguns são muito melhores que outros**.
 
 É o primeiro módulo em que a pergunta deixa de ser "funciona?" e passa a ser "quanto custa?".
@@ -29,7 +29,7 @@ importa aqui são os módulos 05, 06 e 08: laços aninhados, índices de lista e
 ### O problema: ordenar parece trivial até você tentar
 
 Peça a alguém para ordenar cinco cartas na mão e a pessoa faz sem pensar. Agora descreva **o
-procedimento exato**, passo a passo, sem usar a palavra "ordene". É aí que fica difícil — e é por
+procedimento exato**, passo a passo, sem usar a palavra "ordene". É aí que fica difícil, e é por
 isso que existem vários algoritmos: são descrições diferentes da mesma tarefa.
 
 Todos usam duas operações só:
@@ -74,7 +74,7 @@ def selection_sort(lista):
         lista[i], lista[indice_do_menor] = lista[indice_do_menor], lista[i]
 ```
 
-É o padrão "achar o maior" do módulo 06, repetido — só que procurando o **menor** e guardando o
+É o padrão "achar o maior" do módulo 06, repetido: só que procurando o **menor** e guardando o
 **índice**, não o valor.
 
 Faz o mesmo número de comparações que o Bubble, mas **muito menos trocas**: no máximo uma por
@@ -95,7 +95,7 @@ def insertion_sort(lista):
         lista[j + 1] = atual            # encaixa no lugar
 ```
 
-É o mais rápido dos três quando a lista já está **quase ordenada** — caso comum na prática. Se
+É o mais rápido dos três quando a lista já está **quase ordenada** (caso comum na prática). Se
 estiver totalmente ordenada, ele só percorre uma vez e não move nada.
 
 ### Quick Sort: divida para conquistar
@@ -116,7 +116,7 @@ def quick_sort(lista):
 ```
 
 Repare que a função **chama a si mesma**. Isso se chama **recursão**, e é conteúdo além desta
-trilha — está aqui para você reconhecer, não para dominar. A ideia central é o que importa:
+trilha: está aqui para você reconhecer, não para dominar. A ideia central é o que importa:
 dividir o problema em dois menores é mais barato que atacar tudo de uma vez.
 
 ### Quanto custa: comparando com números
@@ -129,14 +129,14 @@ Ordenando a mesma lista `[64, 34, 25, 12, 22, 11, 90, 45, 78, 3]`:
 | Selection Sort | 45 | 10 |
 | Insertion Sort | 30 | 26 |
 
-Bubble e Selection comparam a mesma quantidade — os dois olham todos os pares. A diferença está nas
+Bubble e Selection comparam a mesma quantidade: os dois olham todos os pares. A diferença está nas
 trocas: o Selection faz **uma por passagem**, no máximo, enquanto o Bubble troca a cada par fora de
 ordem que encontra.
 
 O Insertion compara menos porque o `while` dele **para assim que acha o lugar certo**, sem varrer o
 resto.
 
-Estes números são reais, medidos pelo [exemplo 04](exemplos/04_comparando_custos.py) — que conta
+Estes números são reais, medidos pelo [exemplo 04](exemplos/04_comparando_custos.py), que conta
 para você ver, com qualquer lista que você inventar.
 
 O que muda tudo é a **escala**. Bubble, Selection e Insertion fazem, no pior caso, um número de
@@ -150,7 +150,7 @@ comparações proporcional a `n²`. Quick Sort faz proporcional a `n × log n`:
 | 10.000 | 100.000.000 | ~132.877 |
 
 Com 10 elementos, a diferença é irrelevante. Com 10 mil, é a diferença entre instantâneo e
-inviável. **É por isso que a escolha do algoritmo importa** — e por isso ninguém usa Bubble Sort
+inviável. **É por isso que a escolha do algoritmo importa**, e por isso ninguém usa Bubble Sort
 para valer.
 
 ### E na vida real, o que usar?
@@ -160,7 +160,7 @@ para valer.
 O Python usa um algoritmo chamado Timsort, escrito em C, testado por milhares de pessoas ao longo de
 décadas, que reconhece trechos já ordenados e se adapta. Nada que você escreva vai chegar perto.
 
-Então por que estudar os outros? Porque a habilidade que fica não é "escrever um sort" — é **saber
+Então por que estudar os outros? Porque a habilidade que fica não é "escrever um sort", é **saber
 que a mesma tarefa admite soluções com custos muito diferentes**, e reconhecer quando isso importa.
 Essa pergunta vai te acompanhar em todo problema daqui para frente.
 
@@ -182,12 +182,9 @@ python 01_bubble_sort.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-implementando-os-tres.md](exercicios/EXERCICIO-01-implementando-os-tres.md) —
-   *nível 1*: escrever Bubble, Selection e Insertion do zero.
-2. [EXERCICIO-02-contando-operacoes.md](exercicios/EXERCICIO-02-contando-operacoes.md) —
-   *nível 2*: instrumentar os três e comparar com números.
-3. [EXERCICIO-03-ordenando-registros.md](exercicios/EXERCICIO-03-ordenando-registros.md) —
-   *nível 3*: ordenar uma tabela por qualquer coluna.
+1. [EXERCICIO-01-implementando-os-tres.md](exercicios/EXERCICIO-01-implementando-os-tres.md) (nível 1): escrever Bubble, Selection e Insertion do zero.
+2. [EXERCICIO-02-contando-operacoes.md](exercicios/EXERCICIO-02-contando-operacoes.md) (nível 2): instrumentar os três e comparar com números.
+3. [EXERCICIO-03-ordenando-registros.md](exercicios/EXERCICIO-03-ordenando-registros.md) (nível 3): ordenar uma tabela por qualquer coluna.
 
 ## Auto-avaliação
 

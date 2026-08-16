@@ -20,10 +20,10 @@ ano, e a regra do ano bissexto tem três condições encadeadas que quase todo m
    - o mês está entre 1 e 12
    - o dia é positivo e não passa do número de dias daquele mês, naquele ano
 4. Descubra quantos dias tem o mês informado. Use `match/case` para agrupar os meses de 31 e de 30
-   dias — este é o caso em que ele lê melhor que `elif`.
+   dias: este é o caso em que ele lê melhor que `elif`.
 5. Implemente a regra do ano bissexto **corretamente** (ela está abaixo).
 6. Exiba: se a data é válida, quantos dias tem o mês, se o ano é bissexto e o nome do mês.
-7. Quando inválida, diga **qual** regra falhou — não basta "data inválida".
+7. Quando inválida, diga **qual** regra falhou: não basta "data inválida".
 
 **Restrição:** sem laços, sem listas, sem `try`. Só condicionais.
 
@@ -43,7 +43,7 @@ Consequências que servem de teste:
 | 2000 | **Sim** | divisível por 400 |
 | 2023 | Não | não é divisível por 4 |
 
-Se o seu código disser que 1900 foi bissexto, a regra está incompleta — e esse é o erro mais comum.
+Se o seu código disser que 1900 foi bissexto, a regra está incompleta, e esse é o erro mais comum.
 
 ## Exemplo de saída
 
@@ -85,21 +85,20 @@ Data INVÁLIDA: fevereiro de 1900 tem apenas 28 dias
 
 ## A ordem dos testes importa
 
-Antes de perguntar "o dia cabe no mês?", você precisa saber **qual mês** — e um mês 13 não tem
+Antes de perguntar "o dia cabe no mês?", você precisa saber **qual mês**, e um mês 13 não tem
 número de dias. Se você testar o dia antes de validar o mês, seu programa vai tentar decidir quantos
 dias tem o mês 13.
 
-Esse encadeamento — validar uma coisa antes de poder validar a próxima — é o mesmo padrão do
+Esse encadeamento (validar uma coisa antes de poder validar a próxima) é o mesmo padrão do
 validador de e-mail do módulo 07, e vai reaparecer em todo formulário que você escrever.
 
 ## Desafio dentro do desafio
 
 Acrescente: dado que a data é válida, diga em que **estação do ano** ela cai (hemisfério sul). As
-fronteiras não são no dia 1º — o verão começa em 21 de dezembro, por exemplo. Repare que a condição
+fronteiras não são no dia 1º: o verão começa em 21 de dezembro, por exemplo. Repare que a condição
 do verão é a mais difícil das quatro, porque ela **atravessa a virada do ano**. Escreva-a e explique
 por que ela precisa de `or` onde as outras usam `and`.
 
 ---
 
-Gabarito: [gabaritos/modulo-04-ex03-validador-de-data/](../../gabaritos/modulo-04-ex03-validador-de-data/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-04-ex03-validador-de-data/](../../gabaritos/modulo-04-ex03-validador-de-data/), depois de tentar, não antes.

@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Implementar as três operações básicas de matriz — soma, transposta e multiplicação por escalar —
+Implementar as três operações básicas de matriz (soma, transposta e multiplicação por escalar),
 cada uma como uma função.
 
 ## Requisitos
@@ -19,10 +19,10 @@ cada uma como uma função.
 | `somar_matrizes(a, b)` | duas matrizes de mesmo tamanho | a soma, elemento a elemento |
 | `transpor(matriz)` | uma matriz | linhas viram colunas |
 | `multiplicar_por_escalar(matriz, numero)` | matriz e número | cada elemento multiplicado |
-| `mostrar_matriz(matriz)` | uma matriz | nada — imprime formatado |
+| `mostrar_matriz(matriz)` | uma matriz | nada: imprime formatado |
 
 3. Use as matrizes de teste abaixo e mostre o resultado de cada operação.
-4. Nenhuma função pode alterar a matriz que recebeu — confira imprimindo a original no fim.
+4. Nenhuma função pode alterar a matriz que recebeu (confira imprimindo a original no fim).
 
 ```python
 A = [[1, 2, 3],
@@ -89,5 +89,4 @@ produzir resultado errado ou quebrar. O que ela deveria devolver nesse caso?
 
 ---
 
-Gabarito: [gabaritos/modulo-09-ex01-operacoes-com-matrizes/](../../gabaritos/modulo-09-ex01-operacoes-com-matrizes/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-09-ex01-operacoes-com-matrizes/](../../gabaritos/modulo-09-ex01-operacoes-com-matrizes/), depois de tentar, não antes.

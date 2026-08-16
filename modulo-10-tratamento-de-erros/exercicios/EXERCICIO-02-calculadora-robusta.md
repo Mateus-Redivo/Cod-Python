@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Pegar a calculadora do módulo 04 — que morria com qualquer digitação estranha — e torná-la
+Pegar a calculadora do módulo 04 (que morria com qualquer digitação estranha) e torná-la
 inquebrável. É a mesma ideia do exercício de refatoração do módulo 08: mesmo programa, agora sem os
 buracos.
 
@@ -20,7 +20,7 @@ Ela tem três defeitos que você não tinha como resolver naquele momento:
 
 1. Digitar letra na opção mata o programa.
 2. Digitar letra num dos números mata o programa.
-3. Depois de uma conta, o programa encerra — não dá para fazer outra.
+3. Depois de uma conta, o programa encerra: não dá para fazer outra.
 
 ## Requisitos
 
@@ -77,12 +77,12 @@ Este é o ponto do exercício. Nem tudo é `try`:
 | Letra no número | `try` | o `float()` pode explodir |
 | Divisão por zero | `if` | você **sabe** que zero não serve; prevenir é melhor |
 
-Se você usou `try` para a divisão por zero, funciona — mas releia a seção "Quando não capturar" do
+Se você usou `try` para a divisão por zero, funciona, mas releia a seção "Quando não capturar" do
 README e decida se prefere.
 
 ## Critérios de aceitação
 
-- [ ] Nenhuma sequência de digitação derruba o programa — teste com letras, vazio e símbolos
+- [ ] Nenhuma sequência de digitação derruba o programa: teste com letras, vazio e símbolos
 - [ ] O menu repete até a opção 0
 - [ ] Cada erro tem mensagem própria, dizendo o que fazer
 - [ ] A divisão por zero é **prevenida** com `if`, não capturada
@@ -92,11 +92,10 @@ README e decida se prefere.
 
 ## Desafio opcional
 
-Guarde o resultado da última conta e ofereça a opção de usá-lo como primeiro número da próxima —
+Guarde o resultado da última conta e ofereça a opção de usá-lo como primeiro número da próxima,
 como fazem as calculadoras de verdade. O que acontece na primeira conta, quando ainda não há
 resultado anterior?
 
 ---
 
-Gabarito: [gabaritos/modulo-10-ex02-calculadora-robusta/](../../gabaritos/modulo-10-ex02-calculadora-robusta/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-10-ex02-calculadora-robusta/](../../gabaritos/modulo-10-ex02-calculadora-robusta/), depois de tentar, não antes.

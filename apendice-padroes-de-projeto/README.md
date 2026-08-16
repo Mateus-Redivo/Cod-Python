@@ -3,7 +3,7 @@
 > **Isto está fora da trilha.** Não é lógica de programação para iniciantes, e estudar daqui antes
 > de terminar o módulo 14 vai confundir mais que ajudar.
 >
-> Se você chegou aqui por curiosidade, tudo bem — mas volte para a
+> Se você chegou aqui por curiosidade, tudo bem, mas volte para a
 > [trilha principal](../README.md) e siga a ordem.
 
 ## Para quem terminou o módulo 14
@@ -12,7 +12,7 @@ Padrões de projeto são soluções conhecidas para problemas que aparecem repet
 de código. Eles não são recursos da linguagem: são **formas de arranjar** o que você já sabe.
 
 Os arquivos aqui usam **classes e objetos**, que a trilha não cobre. Você vai reconhecer as funções
-e a lógica, e vai estranhar a sintaxe — isso é esperado.
+e a lógica, e vai estranhar a sintaxe: isso é esperado.
 
 | Arquivo | Padrão | Resolve |
 | --- | --- | --- |

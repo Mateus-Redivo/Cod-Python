@@ -10,7 +10,7 @@ que todo mundo faz na primeira semana: **como instalo**, **como rodo** e **como 
 ### Windows
 
 1. Vá em [python.org/downloads](https://www.python.org/downloads/) e baixe a versão mais recente.
-2. Abra o instalador e — isto é importante — **marque a caixa "Add Python to PATH"** antes de clicar
+2. Abra o instalador e (isto é importante) **marque a caixa "Add Python to PATH"** antes de clicar
    em *Install Now*. Se você esquecer, o terminal vai dizer que não conhece o comando `python` e
    você vai achar que a instalação falhou. Ela não falhou; só ficou escondida.
 3. Termine a instalação e feche tudo.
@@ -30,7 +30,7 @@ python --version
 ```
 
 Você deve ver algo como `Python 3.14.0`. Use a versão **3.14 ou superior**, que é a usada em aula.
-O material ainda roda a partir da **3.10** — abaixo disso não, porque o módulo de condicionais usa
+O material ainda roda a partir da **3.10**: abaixo disso não, porque o módulo de condicionais usa
 `match/case`, que só existe da 3.10 em diante.
 
 Se aparecer erro, tente `python3 --version`. Em vários sistemas o comando é esse, e aí é `python3`
@@ -70,7 +70,7 @@ python 01_while.py
 ```
 
 O `cd` (*change directory*) entra na pasta. O `python` executa o arquivo. Se você errar o nome do
-arquivo, o Python avisa com `No such file or directory` — não é um erro grave, é só um endereço
+arquivo, o Python avisa com `No such file or directory`: não é um erro grave, é só um endereço
 errado.
 
 ### Dois atalhos que valem ouro
@@ -91,7 +91,7 @@ A ordem importa. Cada módulo assume o anterior, e pular etapa cobra o preço de
 3. **Quebre o exemplo de propósito.** Todo exemplo termina com uma seção *Experimento*, pedindo
    para você mudar alguma coisa e ver o programa reagir. Faça. Ler código não ensina; mexer, sim.
 4. **Faça os exercícios** sem olhar gabarito. Erro é a parte do processo em que o aprendizado
-   acontece — não é o obstáculo, é o caminho.
+   acontece: não é o obstáculo, é o caminho.
 5. **Marque a auto-avaliação** no fim do README. Se sobrar caixinha desmarcada, volte para o
    exemplo correspondente antes de seguir.
 
@@ -115,7 +115,7 @@ Vai travar. Faz parte. A ordem certa de socorro é esta:
    mesmo?".
 5. **Tente por mais 20 minutos** antes de abrir [gabaritos/](gabaritos/). Sério: o gabarito é para
    conferir uma solução que você já tem, não para começar uma que você não tem.
-6. **Pergunte** — traga o código e a mensagem de erro completa, não só "não funcionou".
+6. **Pergunte**: traga o código e a mensagem de erro completa, não só "não funcionou".
 
 ---
 

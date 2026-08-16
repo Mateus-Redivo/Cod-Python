@@ -14,7 +14,7 @@ usuário pede algo impossível.
 1. Crie um arquivo `calculadora_com_menu.py`.
 2. Exiba um menu com quatro operações: soma, subtração, multiplicação e divisão.
 3. Peça a opção (1 a 4) e depois os dois números.
-4. Use **`match/case`** para escolher a operação — este é o caso em que ele lê melhor que `elif`.
+4. Use **`match/case`** para escolher a operação: este é o caso em que ele lê melhor que `elif`.
 5. Na divisão, **verifique se o segundo número é zero antes de dividir**. Avise em vez de quebrar.
 6. Trate a opção inválida com `case _`.
 7. Exiba o resultado com duas casas decimais, mostrando a conta completa.
@@ -69,7 +69,7 @@ Opção inválida. Escolha entre 1 e 4.
 
 ## Sobre a ordem das perguntas
 
-Repare que o exemplo pede os números **mesmo quando a opção é inválida**. Isso é meio bobo — o
+Repare que o exemplo pede os números **mesmo quando a opção é inválida**. Isso é meio bobo: o
 ideal seria só perguntar depois de validar a opção. Faça funcionar primeiro do jeito simples;
 depois, se quiser, reorganize. E note a limitação: você consegue **avisar** que a opção é inválida,
 mas não consegue **perguntar de novo**. Repetir é assunto do módulo 05.
@@ -82,5 +82,4 @@ menos?
 
 ---
 
-Gabarito: [gabaritos/modulo-04-ex02-calculadora-com-menu/](../../gabaritos/modulo-04-ex02-calculadora-com-menu/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-04-ex02-calculadora-com-menu/](../../gabaritos/modulo-04-ex02-calculadora-com-menu/), depois de tentar, não antes.

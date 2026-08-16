@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Calcular o IMC de uma pessoa e classificá-lo em faixas — o exercício clássico para treinar a ordem
+Calcular o IMC de uma pessoa e classificá-lo em faixas: o exercício clássico para treinar a ordem
 correta de uma cadeia de `elif`.
 
 ## Requisitos
@@ -47,26 +47,25 @@ Altura inválida: não é possível calcular o IMC.
 
 ## Critérios de aceitação
 
-- [ ] Nenhum `elif` fica inalcançável — teste com um valor de cada faixa
+- [ ] Nenhum `elif` fica inalcançável (teste com um valor de cada faixa)
 - [ ] Nenhuma condição repete a faixa anterior (nada de `elif imc >= 25 and imc < 30`)
 - [ ] Altura zero é tratada e o programa não quebra
 - [ ] O IMC sai com exatamente duas casas decimais
 - [ ] Testei os valores de fronteira: 18.5, 25.0, 30.0 e 40.0
-- [ ] A altura é lida com `float()` — digitar `1.75` não pode quebrar
+- [ ] A altura é lida com `float()` (digitar `1.75` não pode quebrar)
 
 ## Armadilha conhecida
 
 As fronteiras são onde este exercício morde. Com IMC exatamente `25.0`, sua cadeia responde
-"Peso normal" ou "Sobrepeso"? Decida olhando a tabela — `25.0` pertence ao Sobrepeso — e confira se
+"Peso normal" ou "Sobrepeso"? Decida olhando a tabela (`25.0` pertence ao Sobrepeso) e confira se
 seus operadores (`>=` ou `>`) fazem o que você quer nesse ponto exato.
 
 ## Desafio opcional
 
 Um IMC negativo ou absurdo (peso 5000) passa sem reclamar. Acrescente uma validação de faixa para o
-peso e para a altura. Você vai perceber que só dá para **avisar** e encerrar — para **insistir** na
+peso e para a altura. Você vai perceber que só dá para **avisar** e encerrar. Para **insistir** na
 pergunta até vir um valor válido, falta o `while` do módulo 05.
 
 ---
 
-Gabarito: [gabaritos/modulo-04-ex01-classificador-de-imc/](../../gabaritos/modulo-04-ex01-classificador-de-imc/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-04-ex01-classificador-de-imc/](../../gabaritos/modulo-04-ex01-classificador-de-imc/), depois de tentar, não antes.

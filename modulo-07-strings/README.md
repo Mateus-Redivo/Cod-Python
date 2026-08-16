@@ -1,7 +1,7 @@
 # Módulo 07 — Strings
 
 Texto é o tipo de dado que mais aparece nos seus programas: nome, cidade, opção de menu, tudo que
-vem do `input()`. Até aqui você tratou strings como blocos fechados — imprimia e comparava. Agora
+vem do `input()`. Até aqui você tratou strings como blocos fechados: imprimia e comparava. Agora
 vai **abrir** esse bloco: pegar pedaços, transformar, procurar e dividir.
 
 E vai resolver um problema que já te incomodou: por que `"SIM"` e `"sim"` não são a mesma coisa.
@@ -38,7 +38,7 @@ if resposta == "sim":
 Parece certo. Mas o usuário digita `"Sim"`. Ou `"SIM"`. Ou `" sim"` com um espaço que entrou sem
 querer. Nos três casos, seu programa responde que não.
 
-Não é o usuário que está errado — é o programa que está frágil. Este módulo é sobre deixá-lo
+Não é o usuário que está errado. É o programa que está frágil. Este módulo é sobre deixá-lo
 robusto.
 
 ### String é uma sequência, como a lista
@@ -90,8 +90,8 @@ print(nome)             # agora sim: "ANA"
 ```
 
 > Repare que aqui a regra é o **oposto** do que você viu em listas. Lá, `notas.sort()` modificava a
-> lista e devolvia `None` — guardar o retorno era o erro. Aqui, `nome.upper()` não modifica nada e
-> devolve o resultado — **não** guardar é o erro. A pergunta que resolve os dois casos: "este método
+> lista e devolvia `None`: guardar o retorno era o erro. Aqui, `nome.upper()` não modifica nada e
+> devolve o resultado: **não** guardar é o erro. A pergunta que resolve os dois casos: "este método
 > altera o objeto ou cria um novo?"
 
 ### Transformar
@@ -137,7 +137,7 @@ frase.endswith("gem")       # True
 Use `in` quando você só quer saber **se** existe; `find()` quando precisa saber **onde**.
 
 > Cuidado com `find()`: quando não encontra, ele devolve `-1`, não um erro. E `-1` é um índice
-> válido em Python (o último caractere) — por isso nunca use o resultado direto sem testar.
+> válido em Python (o último caractere), por isso nunca use o resultado direto sem testar.
 
 ### Dividir e juntar
 
@@ -151,7 +151,7 @@ data = "30/07/2026".split("/")      # ['30', '07', '2026']
 "-".join(["30", "07", "2026"])      # "30-07-2026"
 ```
 
-`split()` devolve uma **lista** — é a ponte entre este módulo e o anterior. E `join()` é o caminho
+`split()` devolve uma **lista**: é a ponte entre este módulo e o anterior. E `join()` é o caminho
 de volta. A escrita do `join` estranha à primeira vista: o separador vem primeiro, e a lista vai
 dentro dos parênteses.
 
@@ -189,12 +189,12 @@ python 01_indices_e_fatias.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-analisador-de-frases.md](exercicios/EXERCICIO-01-analisador-de-frases.md) —
-   *nível 1*: contar, transformar e dividir.
-2. [EXERCICIO-02-validador-de-cadastro.md](exercicios/EXERCICIO-02-validador-de-cadastro.md) —
-   *nível 2*: limpar e conferir dados digitados.
-3. [EXERCICIO-03-cifra-de-cesar.md](exercicios/EXERCICIO-03-cifra-de-cesar.md) —
-   *nível 3*: criptografia com `ord`, `chr` e aritmética modular.
+1. [EXERCICIO-01-analisador-de-frases.md](exercicios/EXERCICIO-01-analisador-de-frases.md)
+   (nível 1): contar, transformar e dividir.
+2. [EXERCICIO-02-validador-de-cadastro.md](exercicios/EXERCICIO-02-validador-de-cadastro.md)
+   (nível 2): limpar e conferir dados digitados.
+3. [EXERCICIO-03-cifra-de-cesar.md](exercicios/EXERCICIO-03-cifra-de-cesar.md)
+   (nível 3): criptografia com `ord`, `chr` e aritmética modular.
 
 ## Auto-avaliação
 

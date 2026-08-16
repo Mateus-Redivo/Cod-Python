@@ -34,7 +34,7 @@ proponha um nome melhor:
 A última linha chama `p([30, 60, 100])`. Sem rodar, percorra o código e responda:
 
 **a)** Quantas voltas o laço dá?
-**b)** Para cada item da lista, qual ramo do `if` é usado — o do `isinstance` ou o `else`?
+**b)** Para cada item da lista, qual ramo do `if` é usado: o do `isinstance` ou o `else`?
 **c)** Qual o valor de cada item no resultado final?
 **d)** Escreva a lista que será impressa.
 
@@ -48,7 +48,7 @@ sinal da tabela do README ela representa.
 ## Parte 4 — A pergunta difícil
 
 O parâmetro `t` começa em 10 e diminui a cada chamada recursiva. Ele nunca é usado para calcular
-nada — só para decidir quando parar.
+nada, só para decidir quando parar.
 
 **Para que ele serve?** E o que aconteceria se ele não existisse?
 
@@ -63,10 +63,9 @@ nada — só para decidir quando parar.
 ## Depois de terminar
 
 Abra o [_depois.py](../exemplos/01_calculo_precos_depois.py) e compare com os nomes que você
-propôs. Onde você acertou? Onde a versão oficial escolheu diferente — e qual das duas você acha
+propôs. Onde você acertou? Onde a versão oficial escolheu diferente, e qual das duas você acha
 melhor?
 
 ---
 
-Gabarito: [gabaritos/modulo-12-ex01-lendo-codigo-alheio/](../../gabaritos/modulo-12-ex01-lendo-codigo-alheio/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-12-ex01-lendo-codigo-alheio/](../../gabaritos/modulo-12-ex01-lendo-codigo-alheio/), depois de tentar, não antes.

@@ -1,6 +1,6 @@
 # Resumo de sintaxe Python
 
-Cola de consulta rápida. Não é material de estudo — é o que você abre no meio de um exercício
+Cola de consulta rápida. Não é material de estudo. É o que você abre no meio de um exercício
 quando esqueceu **como se escreve**. Para saber *o que significa*, use o [Glossário](../GLOSSARIO.md).
 
 ---
@@ -212,10 +212,10 @@ except ValueError:
 
 | Exceção | Acontece quando |
 | --- | --- |
-| `ValueError` | `int("abc")` — o texto não vira número |
+| `ValueError` | `int("abc")`: o texto não vira número |
 | `ZeroDivisionError` | divisão por zero |
 | `IndexError` | `lista[10]` numa lista de 3 itens |
-| `TypeError` | `"3" + 5` — tipos incompatíveis |
+| `TypeError` | `"3" + 5`: tipos incompatíveis |
 | `NameError` | usou uma variável que não existe (quase sempre erro de digitação) |
 
 ## Comentários

@@ -4,7 +4,7 @@ Até aqui seus programas cresceram para baixo: cada recurso novo virava mais lin
 arquivo. Funciona até uns cinquenta, cem, duzentos… e então você já não acha nada, muda uma coisa e
 quebra outra.
 
-Este módulo muda a direção do crescimento. Em vez de mais linhas, **blocos com nome** — pedaços que
+Este módulo muda a direção do crescimento. Em vez de mais linhas, **blocos com nome**, pedaços que
 você escreve uma vez, entende de uma vez, e usa quantas vezes quiser.
 
 ## Objetivos de aprendizagem
@@ -22,7 +22,7 @@ Ao final deste módulo você será capaz de:
 ## Pré-requisitos
 
 [Módulo 07 — Strings](../modulo-07-strings/) concluído. Você vai transformar em função os programas
-que já escreveu nos módulos anteriores — vale ter os exercícios de listas e laços à mão.
+que já escreveu nos módulos anteriores, vale ter os exercícios de listas e laços à mão.
 
 ## Conceito
 
@@ -38,8 +38,8 @@ media_2 = sum(notas_turma_2) / len(notas_turma_2)
 print(f"Média turma 2: {media_2}")
 ```
 
-Repare no que aconteceu: a fórmula da média aparece duas vezes. Se ela mudar — passar a descartar a
-menor nota, por exemplo — você tem que lembrar dos dois lugares. Com dez turmas, dez lugares.
+Repare no que aconteceu: a fórmula da média aparece duas vezes. Se ela mudar (passar a descartar a
+menor nota, por exemplo), você tem que lembrar dos dois lugares. Com dez turmas, dez lugares.
 
 **Código repetido não é feio: é frágil.** Cada cópia é uma chance de esquecer uma.
 
@@ -114,10 +114,10 @@ total = dobrar_e_mostrar(3) + dobrar_e_mostrar(4)   # TypeError!
 ```
 
 A regra prática: **uma função que calcula deve `return`, não `print`.** Quem chamou decide o que
-fazer com o valor — mostrar, somar, guardar. Uma função que imprime já tomou essa decisão por você,
+fazer com o valor: mostrar, somar, guardar. Uma função que imprime já tomou essa decisão por você,
 e não dá para desfazer.
 
-> Toda função devolve alguma coisa. Se você não escrever `return`, ela devolve `None` — o mesmo
+> Toda função devolve alguma coisa. Se você não escrever `return`, ela devolve `None`, o mesmo
 > `None` que apareceu no módulo 06, quando `lista.sort()` era atribuído por engano. Agora você sabe
 > de onde ele vem.
 
@@ -131,7 +131,7 @@ saudar("Ana")                   # Olá, Ana!
 saudar("João", "Bom dia")       # Bom dia, João!
 ```
 
-O parâmetro com padrão vira opcional. Ele precisa vir **depois** dos obrigatórios — o contrário dá
+O parâmetro com padrão vira opcional. Ele precisa vir **depois** dos obrigatórios: o contrário dá
 `SyntaxError`.
 
 ### Escopo: onde a variável existe
@@ -146,7 +146,7 @@ print(desconto)                 # NameError: name 'desconto' is not defined
 ```
 
 Variável criada dentro da função é **local**: existe só durante a chamada e some no fim. Isso não é
-limitação, é proteção — você pode usar `i`, `total`, `resultado` dentro de dez funções diferentes
+limitação, é proteção: você pode usar `i`, `total`, `resultado` dentro de dez funções diferentes
 sem que uma atrapalhe a outra.
 
 ### O `global` e por que evitá-lo
@@ -169,7 +169,7 @@ def incrementar():
     contador = contador + 1     # UnboundLocalError!
 ```
 
-O Python vê a atribuição e decide que `contador` é local — aí tenta ler uma local que ainda não
+O Python vê a atribuição e decide que `contador` é local, aí tenta ler uma local que ainda não
 existe. A palavra `global` resolve:
 
 ```python
@@ -194,7 +194,7 @@ Entra valor, sai valor. Nada escondido.
 ### Como quebrar um programa em funções
 
 O sinal mais confiável: **se você precisa de um comentário para explicar o que um bloco faz, esse
-bloco quer ser uma função** — e o comentário é o nome dela.
+bloco quer ser uma função**, e o comentário é o nome dela.
 
 ```python
 # calcula a média das notas          ->   def calcular_media(notas):
@@ -222,12 +222,12 @@ python 01_primeira_funcao.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-caixa-de-ferramentas.md](exercicios/EXERCICIO-01-caixa-de-ferramentas.md) —
-   *nível 1*: escrever funções pequenas com `return`.
-2. [EXERCICIO-02-boletim-com-funcoes.md](exercicios/EXERCICIO-02-boletim-com-funcoes.md) —
-   *nível 2*: reescrever um programa antigo, agora em funções.
-3. [EXERCICIO-03-quebrando-o-monolito.md](exercicios/EXERCICIO-03-quebrando-o-monolito.md) —
-   *nível 3*: decompor um programa longo sem mudar o que ele faz.
+1. [EXERCICIO-01-caixa-de-ferramentas.md](exercicios/EXERCICIO-01-caixa-de-ferramentas.md)
+   (nível 1): escrever funções pequenas com `return`.
+2. [EXERCICIO-02-boletim-com-funcoes.md](exercicios/EXERCICIO-02-boletim-com-funcoes.md)
+   (nível 2): reescrever um programa antigo, agora em funções.
+3. [EXERCICIO-03-quebrando-o-monolito.md](exercicios/EXERCICIO-03-quebrando-o-monolito.md)
+   (nível 3): decompor um programa longo sem mudar o que ele faz.
 
 ## Auto-avaliação
 

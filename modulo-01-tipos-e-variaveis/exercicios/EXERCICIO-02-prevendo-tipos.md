@@ -14,7 +14,7 @@ mental de tipos, que é o que evita metade dos erros dos próximos módulos.
 Para cada linha da tabela, escreva sua previsão: **o resultado** e **o tipo** dele. Se você achar
 que dá erro, escreva qual erro. Só depois de preencher tudo, rode e compare.
 
-Onde você errou é onde está o aprendizado — anote o motivo, não só a correção.
+Onde você errou é onde está o aprendizado: anote o motivo, não só a correção.
 
 ## Parte 1 — Preveja resultado e tipo
 
@@ -73,5 +73,4 @@ como texto. Explique quando cada uma faria sentido.
 
 ---
 
-Gabarito: [gabaritos/modulo-01-ex02-prevendo-tipos/](../../gabaritos/modulo-01-ex02-prevendo-tipos/) —
-depois de tentar, não antes. Ler a resposta antes de prever esvazia o exercício por completo.
+Gabarito: [gabaritos/modulo-01-ex02-prevendo-tipos/](../../gabaritos/modulo-01-ex02-prevendo-tipos/), depois de tentar, não antes. Ler a resposta antes de prever esvazia o exercício por completo.

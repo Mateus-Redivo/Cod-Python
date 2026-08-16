@@ -1,7 +1,7 @@
 # Módulo 04 — Condicionais
 
 Seu programa já pergunta e já calcula. Mas ele ainda faz **sempre a mesma coisa**: a sequência de
-linhas é fixa, do começo ao fim. Agora ele vai aprender a **decidir** — a tomar um caminho ou outro
+linhas é fixa, do começo ao fim. Agora ele vai aprender a **decidir**: a tomar um caminho ou outro
 conforme o que encontrar.
 
 É o módulo em que o código deixa de ser uma receita e vira um programa de verdade.
@@ -27,7 +27,7 @@ tem o que testar. Se a armadilha do intervalo (`and` vs `or`) ainda te confunde,
 
 ### O problema: o programa que não sabe dizer não
 
-No módulo anterior você escreveu um divisor de contas. Ele funciona — até alguém digitar `0` no
+No módulo anterior você escreveu um divisor de contas. Ele funciona, até alguém digitar `0` no
 número de pessoas:
 
 ```python
@@ -50,7 +50,7 @@ Três detalhes de escrita que valem o módulo:
 
 1. **Dois-pontos** no fim da linha do `if`. Esquecer dá `SyntaxError`.
 2. **Indentação** de 4 espaços no bloco de dentro. É ela que diz o que está sujeito à condição.
-3. A condição é uma expressão que dá `True` ou `False` — exatamente as do módulo 02.
+3. A condição é uma expressão que dá `True` ou `False`, exatamente as do módulo 02.
 
 ### Indentação é sintaxe, não enfeite
 
@@ -78,7 +78,7 @@ else:
     print("Está frio!")
 ```
 
-O `else` não tem condição — ele é o "em todos os outros casos". Sempre exatamente um dos dois blocos
+O `else` não tem condição: ele é o "em todos os outros casos". Sempre exatamente um dos dois blocos
 executa; nunca os dois, nunca nenhum.
 
 ### `if/elif/else`: várias faixas
@@ -111,10 +111,10 @@ Com nota 10, o primeiro `if` já é verdadeiro e o programa imprime "Conceito C"
 nunca roda para valor nenhum.
 
 **Regra prática: em faixas numéricas, comece pela ponta mais restritiva.** Da maior nota para a
-menor, ou da menor para a maior — mas sempre em ordem.
+menor, ou da menor para a maior, mas sempre em ordem.
 
 Repare também que o segundo teste não precisa repetir a faixa anterior. Não é preciso escrever
-`elif nota >= 7 and nota < 9:` — se o programa chegou no `elif`, é porque o `if` de cima já foi
+`elif nota >= 7 and nota < 9:`. Se o programa chegou no `elif`, é porque o `if` de cima já foi
 falso. O `elif` já carrega esse "senão" embutido.
 
 ### Condicionais aninhadas
@@ -159,7 +159,7 @@ else:
     print(f"Cada um paga R$ {total / numero_de_pessoas:.2f}")
 ```
 
-Repare que a divisão está **dentro do `else`**. Testar não basta — a operação perigosa precisa
+Repare que a divisão está **dentro do `else`**. Testar não basta: a operação perigosa precisa
 ficar no caminho onde já se sabe que é segura.
 
 ### `match/case`: quando o teste é "qual das opções"
@@ -190,7 +190,7 @@ O `case _` faz o papel do `else`.
 | Combinar condições com `and`/`or` | `if/elif` |
 | Testar variáveis diferentes em cada ramo | `if/elif` |
 
-`match/case` não substitui o `if` — ele resolve melhor um caso só, que é o menu de opções. Tudo que
+`match/case` não substitui o `if`: ele resolve melhor um caso só, que é o menu de opções. Tudo que
 ele faz, o `if/elif` também faz; o argumento é de legibilidade.
 
 ## Exemplos guiados
@@ -211,12 +211,9 @@ python 01_if_else.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-classificador-de-imc.md](exercicios/EXERCICIO-01-classificador-de-imc.md) —
-   *nível 1*: faixas com `elif`, na ordem certa.
-2. [EXERCICIO-02-calculadora-com-menu.md](exercicios/EXERCICIO-02-calculadora-com-menu.md) —
-   *nível 2*: menu com `match/case` e proteção contra divisão por zero.
-3. [EXERCICIO-03-validador-de-data.md](exercicios/EXERCICIO-03-validador-de-data.md) —
-   *nível 3*: ano bissexto e validação em cadeia.
+1. [EXERCICIO-01-classificador-de-imc.md](exercicios/EXERCICIO-01-classificador-de-imc.md) (nível 1): faixas com `elif`, na ordem certa.
+2. [EXERCICIO-02-calculadora-com-menu.md](exercicios/EXERCICIO-02-calculadora-com-menu.md) (nível 2): menu com `match/case` e proteção contra divisão por zero.
+3. [EXERCICIO-03-validador-de-data.md](exercicios/EXERCICIO-03-validador-de-data.md) (nível 3): ano bissexto e validação em cadeia.
 
 ## Auto-avaliação
 

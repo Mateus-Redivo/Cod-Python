@@ -63,7 +63,7 @@ def e_par(numero):
         return False
 ```
 
-Funciona. Mas repare que `numero % 2 == 0` **já é** `True` ou `False` — o `if` está comparando um
+Funciona. Mas repare que `numero % 2 == 0` **já é** `True` ou `False`: o `if` está comparando um
 booleano para devolver o mesmo booleano. A versão direta é:
 
 ```python
@@ -74,9 +74,8 @@ def e_par(numero):
 ## Desafio opcional
 
 Escreva `calcular_media` de forma que ela não quebre com uma lista vazia. O que ela deveria devolver
-nesse caso? Não existe resposta única — escolha uma e justifique em um comentário.
+nesse caso? Não existe resposta única: escolha uma e justifique em um comentário.
 
 ---
 
-Gabarito: [gabaritos/modulo-08-ex01-caixa-de-ferramentas/](../../gabaritos/modulo-08-ex01-caixa-de-ferramentas/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-08-ex01-caixa-de-ferramentas/](../../gabaritos/modulo-08-ex01-caixa-de-ferramentas/), depois de tentar, não antes.

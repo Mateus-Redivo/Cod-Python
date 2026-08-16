@@ -52,7 +52,7 @@ Depois de rodar, responda em comentários no próprio arquivo:
 **a)** Por que Bubble e Selection fazem exatamente o mesmo número de comparações, sempre?
 
 **b)** Com a lista **já ordenada**, o Insertion faz muito menos comparações que os outros dois.
-Explique o mecanismo — o que exatamente ele deixa de fazer?
+Explique o mecanismo: o que exatamente ele deixa de fazer?
 
 **c)** O Selection faz 10 trocas mesmo na lista já ordenada. Por quê? Como você evitaria essas
 trocas inúteis?
@@ -73,11 +73,10 @@ Explique por que o fator é 4 e não 2.
 ## Cuidado com a medição
 
 Se você passar a mesma lista para os três algoritmos sem copiá-la, o primeiro a rodar deixa a lista
-ordenada — e os outros dois vão medir o cenário errado. Use `lista[:]` para trabalhar com uma cópia.
+ordenada, e os outros dois vão medir o cenário errado. Use `lista[:]` para trabalhar com uma cópia.
 
 Esse é um erro clássico de medição, e ele produz números que parecem plausíveis.
 
 ---
 
-Gabarito: [gabaritos/modulo-11-ex02-contando-operacoes/](../../gabaritos/modulo-11-ex02-contando-operacoes/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-11-ex02-contando-operacoes/](../../gabaritos/modulo-11-ex02-contando-operacoes/), depois de tentar, não antes.

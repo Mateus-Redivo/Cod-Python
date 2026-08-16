@@ -21,7 +21,7 @@ Rode [01_sistema_notas.py](../exemplos/01_sistema_notas.py) e faça, nesta ordem
 6. Liste de novo
 7. Tente quebrar: opção inválida, aluno que não existe, letra onde se pede número
 
-Anote **o que aconteceu** em cada passo — principalmente no 7.
+Anote **o que aconteceu** em cada passo (principalmente no 7).
 
 ## Parte 2 — O mapa
 

@@ -14,7 +14,7 @@ Escrever, do zero, o seu primeiro programa Python e conseguir rodá-lo pelo term
 2. O programa deve mostrar na tela: seu nome, sua cidade e uma frase sobre por que você está
    estudando programação.
 3. Use uma linha em branco (`print()`) para separar o nome do resto.
-4. Escreva pelo menos um comentário explicando alguma escolha sua — não vale comentar o óbvio.
+4. Escreva pelo menos um comentário explicando alguma escolha sua: não vale comentar o óbvio.
 5. Rode o arquivo **pelo terminal**, com `python cartao_de_visita.py`. O botão do VS Code também
    funciona, mas o objetivo aqui é você conseguir pelos dois caminhos.
 
@@ -42,10 +42,9 @@ em branco.
 
 ## Desafio opcional
 
-Provoque um erro de propósito no seu programa — apague uma aspa, por exemplo. Anote em um
+Provoque um erro de propósito no seu programa: apague uma aspa, por exemplo. Anote em um
 comentário: qual linha o Python apontou e qual foi o tipo do erro. Depois conserte.
 
 ---
 
-Gabarito: [gabaritos/modulo-00-ex01-cartao-de-visita/](../../gabaritos/modulo-00-ex01-cartao-de-visita/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-00-ex01-cartao-de-visita/](../../gabaritos/modulo-00-ex01-cartao-de-visita/), depois de tentar, não antes.

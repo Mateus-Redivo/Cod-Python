@@ -2,7 +2,7 @@
 
 Seu programa já guarda valores. Agora ele vai **fazer contas** com eles, **compará-los** e
 **combinar** essas comparações. Os operadores deste módulo são a matéria-prima das decisões que
-você vai escrever no módulo 04 — sem eles, o `if` não teria o que testar.
+você vai escrever no módulo 04: sem eles, o `if` não teria o que testar.
 
 ## Objetivos de aprendizagem
 
@@ -18,7 +18,7 @@ Ao final deste módulo você será capaz de:
 ## Pré-requisitos
 
 [Módulo 01 — Tipos e variáveis](../modulo-01-tipos-e-variaveis/) concluído. Você precisa saber a
-diferença entre `int`, `float` e `str` — o mesmo operador se comporta de um jeito com cada tipo.
+diferença entre `int`, `float` e `str`: o mesmo operador se comporta de um jeito com cada tipo.
 
 ## Conceito
 
@@ -60,14 +60,14 @@ Guarde o primeiro: "par ou ímpar" é `% 2` e vai aparecer em quase todo módulo
 
 Python segue a ordem da matemática:
 
-1. `()` — parênteses
-2. `**` — potência
+1. `()`: parênteses
+2. `**`: potência
 3. `*`, `/`, `//`, `%`
 4. `+`, `-`
 
 Você não precisa decorar isso. Precisa de um hábito melhor: **na dúvida, use parênteses.** Eles não
-custam nada, não deixam o programa mais lento e poupam quem for ler o código depois — inclusive
-você.
+custam nada, não deixam o programa mais lento e poupam quem for ler o código depois (inclusive
+você).
 
 ```python
 media = nota1 + nota2 / 2       # ERRADO: divide só a nota2
@@ -87,7 +87,7 @@ Esse erro específico derruba muita gente na primeira lista de exercícios.
 | `>=` | maior ou igual? |
 | `<=` | menor ou igual? |
 
-Toda comparação devolve `True` ou `False` — um `bool`, o tipo do módulo 01. E isso significa que
+Toda comparação devolve `True` ou `False`: um `bool`, o tipo do módulo 01. E isso significa que
 você pode guardá-la numa variável:
 
 ```python
@@ -99,7 +99,7 @@ print(eh_maior_de_idade)
 Essa variável de nome descritivo é o que vai deixar seu `if` legível no módulo 04.
 
 > **`=` guarda, `==` pergunta.** É o erro mais frequente do módulo. Em Python, escrever
-> `if idade = 18:` nem roda: dá `SyntaxError`. É uma gentileza da linguagem — em outras, isso
+> `if idade = 18:` nem roda: dá `SyntaxError`. É uma gentileza da linguagem. Em outras, isso
 > compila e produz um bug silencioso.
 
 ### Comparação também funciona com texto
@@ -141,7 +141,7 @@ numero >= 1 and numero <= 5
 numero < 1 or numero > 5
 ```
 
-Trocar um pelo outro produz um programa que **roda sem erro e faz a coisa errada** — o pior tipo
+Trocar um pelo outro produz um programa que **roda sem erro e faz a coisa errada**: o pior tipo
 de bug. `numero < 1 and numero > 5` é impossível de satisfazer: nada é menor que 1 e maior que 5 ao
 mesmo tempo.
 
@@ -189,12 +189,9 @@ python 01_aritmeticos.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-calculadora-de-tempo.md](exercicios/EXERCICIO-01-calculadora-de-tempo.md) —
-   *nível 1*: `//` e `%` resolvendo um problema real.
-2. [EXERCICIO-02-regras-de-acesso.md](exercicios/EXERCICIO-02-regras-de-acesso.md) —
-   *nível 2*: traduzir regras em português para expressões lógicas.
-3. [EXERCICIO-03-anatomia-de-um-numero.md](exercicios/EXERCICIO-03-anatomia-de-um-numero.md) —
-   *nível 3*: desmontar um número só com aritmética.
+1. [EXERCICIO-01-calculadora-de-tempo.md](exercicios/EXERCICIO-01-calculadora-de-tempo.md) (nível 1): `//` e `%` resolvendo um problema real.
+2. [EXERCICIO-02-regras-de-acesso.md](exercicios/EXERCICIO-02-regras-de-acesso.md) (nível 2): traduzir regras em português para expressões lógicas.
+3. [EXERCICIO-03-anatomia-de-um-numero.md](exercicios/EXERCICIO-03-anatomia-de-um-numero.md) (nível 3): desmontar um número só com aritmética.
 
 ## Auto-avaliação
 

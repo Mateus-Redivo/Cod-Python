@@ -23,7 +23,7 @@ Ao final deste módulo você será capaz de:
 ## Pré-requisitos
 
 [Módulo 09 — Matrizes](../modulo-09-matrizes/) concluído. Na prática, o que mais importa é o
-módulo 05 — a validação com `while` que você já sabe fazer é metade da solução daqui.
+módulo 05: a validação com `while` que você já sabe fazer é metade da solução daqui.
 
 ## Conceito
 
@@ -36,7 +36,7 @@ Você conviveu com as duas desde o módulo 00, sem separá-las:
 | **Erro de sintaxe** | antes de rodar; o Python nem começa | Não. Você conserta o código. |
 | **Exceção** | durante a execução, numa situação específica | **Sim.** É disso que trata este módulo. |
 
-`SyntaxError` é gramática errada — não há o que tratar. Já `ValueError` só acontece se o usuário
+`SyntaxError` é gramática errada. Não há o que tratar. Já `ValueError` só acontece se o usuário
 digitar texto onde se esperava número: o código está certo, a situação é que deu errado.
 
 ### O problema: validar não resolve tudo
@@ -50,7 +50,7 @@ while nota < 0 or nota > 10:
     nota = float(input("Nota: "))
 ```
 
-Isso protege contra `15`. Mas não protege contra `"abc"` — o programa morre **na primeira linha**,
+Isso protege contra `15`. Mas não protege contra `"abc"`: o programa morre **na primeira linha**,
 antes de chegar ao `while`. O `float()` explode antes de haver o que validar.
 
 **Validação cuida do valor. Exceção cuida do tipo.** São problemas diferentes, e você precisa dos
@@ -83,7 +83,7 @@ except ValueError:          # bom: você sabe o que está tratando
 except:                     # ruim: engole TUDO, inclusive o Ctrl+C
 ```
 
-O `except` pelado captura qualquer coisa — inclusive erros de digitação seus, que passam a sumir em
+O `except` pelado captura qualquer coisa, inclusive erros de digitação seus, que passam a sumir em
 silêncio em vez de aparecer. Um bug escondido é pior que um programa que quebra.
 
 Se precisar tratar mais de um tipo:
@@ -97,16 +97,16 @@ except ZeroDivisionError:
     print("Não dá para dividir por zero.")
 ```
 
-Cada erro com sua mensagem — é isso que torna o programa utilizável.
+Cada erro com sua mensagem: é isso que torna o programa utilizável.
 
 ### As cinco que você já encontrou
 
 | Exceção | Acontece quando | Você viu no |
 | --- | --- | --- |
-| `ValueError` | `int("abc")` — o texto não vira número | módulo 03 |
+| `ValueError` | `int("abc")`: o texto não vira número | módulo 03 |
 | `ZeroDivisionError` | divisão por zero | módulo 03 |
 | `IndexError` | `lista[10]` numa lista de 3 | módulo 06 |
-| `TypeError` | `"3" + 5` — tipos incompatíveis | módulo 01 |
+| `TypeError` | `"3" + 5`: tipos incompatíveis | módulo 01 |
 | `NameError` | usou variável que não existe | módulo 00 |
 
 Nenhuma é nova. O que muda é que agora você pode **reagir** a elas.
@@ -144,9 +144,9 @@ finally:
     print("Isto roda sempre.")          # com ou sem erro
 ```
 
-- **`else`** — para o código que só faz sentido quando deu certo. Serve para manter o `try` curto,
+- **`else`**: para o código que só faz sentido quando deu certo. Serve para manter o `try` curto,
   com apenas a linha que pode falhar.
-- **`finally`** — para limpeza que precisa acontecer de qualquer jeito (fechar arquivo, encerrar
+- **`finally`**: para limpeza que precisa acontecer de qualquer jeito (fechar arquivo, encerrar
   conexão). Você usará pouco agora; saiba que existe.
 
 ### Quando **não** capturar
@@ -168,7 +168,7 @@ Duas perguntas antes de escrever um `except`:
 1. **Eu sei o que fazer neste caso?** Se a resposta honesta é "não, mas quero que pare de quebrar",
    não capture.
 2. **Dá para evitar em vez de capturar?** `if quantidade > 0` é melhor que `except
-   ZeroDivisionError` — prevenir lê melhor que remediar.
+   ZeroDivisionError`: prevenir lê melhor que remediar.
 
 Use `try` quando o erro depende de algo **fora do seu controle**: o que o usuário digitou, um
 arquivo que pode não existir, uma rede que pode cair. Para o que está sob seu controle, use `if`.
@@ -191,12 +191,9 @@ python 01_try_except.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-entrada-a-prova-de-tudo.md](exercicios/EXERCICIO-01-entrada-a-prova-de-tudo.md) —
-   *nível 1*: funções de leitura que não quebram.
-2. [EXERCICIO-02-calculadora-robusta.md](exercicios/EXERCICIO-02-calculadora-robusta.md) —
-   *nível 2*: a calculadora do módulo 04, agora inquebrável.
-3. [EXERCICIO-03-auditoria-de-erros.md](exercicios/EXERCICIO-03-auditoria-de-erros.md) —
-   *nível 3*: decidir onde tratar, onde prevenir e onde deixar quebrar.
+1. [EXERCICIO-01-entrada-a-prova-de-tudo.md](exercicios/EXERCICIO-01-entrada-a-prova-de-tudo.md) (nível 1): funções de leitura que não quebram.
+2. [EXERCICIO-02-calculadora-robusta.md](exercicios/EXERCICIO-02-calculadora-robusta.md) (nível 2): a calculadora do módulo 04, agora inquebrável.
+3. [EXERCICIO-03-auditoria-de-erros.md](exercicios/EXERCICIO-03-auditoria-de-erros.md) (nível 3): decidir onde tratar, onde prevenir e onde deixar quebrar.
 
 ## Auto-avaliação
 

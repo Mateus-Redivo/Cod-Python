@@ -28,7 +28,7 @@ def buscar_aluno():
         print("Nenhum aluno encontrado.")
 ```
 
-**Decisões:** o `.strip().lower()` nos dois lados é a receita do módulo 07 — sem ele, procurar "ana"
+**Decisões:** o `.strip().lower()` nos dois lados é a receita do módulo 07: sem ele, procurar "ana"
 não acha "Ana Silva". O `in` funciona com trecho, não só nome exato, que é o que o enunciado pede. E
 o contador `encontrados` existe para poder avisar quando não houve resultado: um silêncio deixaria o
 usuário sem saber se buscou errado ou se não existe.
@@ -66,7 +66,7 @@ def relatorio_da_turma():
     print(f"Acima da média:    {acima}")
 ```
 
-**Decisões:** as médias são calculadas **uma vez** e guardadas numa lista — recalculá-las em cada
+**Decisões:** as médias são calculadas **uma vez** e guardadas numa lista: recalculá-las em cada
 laço seria o defeito que o módulo 12 aponta. E são necessários dois laços: o de "acima da média" só
 pode rodar depois de a média existir, exatamente como no boletim do módulo 06.
 
@@ -94,7 +94,7 @@ def excluir_aluno():
     print("Aluno excluído.")
 ```
 
-**Decisões:** a confirmação vem **depois** de validar o índice — não faz sentido perguntar "confirma
+**Decisões:** a confirmação vem **depois** de validar o índice: não faz sentido perguntar "confirma
 excluir?" sobre um aluno que não existe. E o teste é `!= "s"`, não `== "n"`: qualquer coisa que não
 seja um "sim" explícito cancela. Em operação destrutiva, o silêncio deve significar não.
 
@@ -128,7 +128,7 @@ def cadastrar_aluno():
 ```
 
 **Decisões:** `nome_ja_existe` é função separada porque a pergunta pode reaparecer (na alteração de
-nome, por exemplo). A checagem de nome vazio veio junto — ela não estava nos requisitos, mas o
+nome, por exemplo). A checagem de nome vazio veio junto: ela não estava nos requisitos, mas o
 exercício 03 a lista como defeito, e resolvê-la aqui custa duas linhas.
 
 O `notas.append([])` é o que mantém as duas listas do mesmo tamanho. Esquecê-lo é o caminho mais
@@ -155,7 +155,7 @@ def listar_por_media():
 ```
 
 **Decisões:** a chave do exercício é **não destruir a ordem de cadastro**. Por isso o ranking é uma
-estrutura nova, montada a partir das listas originais — que continuam intactas. Um
+estrutura nova, montada a partir das listas originais, que continuam intactas. Um
 `alunos.sort()` resolveria a listagem e quebraria todo o resto do sistema, porque os índices
 deixariam de casar com `notas`.
 
@@ -175,20 +175,20 @@ def calcular_media_aluno(indice):
     return sum(notas[indice]) / len(notas[indice])
 ```
 
-Isso não estava nos requisitos — apareceu porque o código pediu. É o sinal "código repetido" do
+Isso não estava nos requisitos: apareceu porque o código pediu. É o sinal "código repetido" do
 módulo 12 aparecendo enquanto você trabalha, e atendê-lo na hora é mais barato do que depois.
 
 > O `return 0` para aluno sem notas está aqui porque é o que o sistema original faz. O exercício 03
-> discute se essa é a decisão certa — e eu acho que não é. Mas mudá-la agora violaria a regra de não
+> discute se essa é a decisão certa, e eu acho que não é. Mas mudá-la agora violaria a regra de não
 > alterar comportamento existente enquanto se acrescenta funcionalidade.
 
 ## Sobre o `global`
 
 Nenhuma dessas funções declara `global`, e mesmo assim altera `alunos` e `notas`. Isso funciona
-porque `append` e `pop` **modificam** a lista existente em vez de criar uma nova — e o módulo 08
+porque `append` e `pop` **modificam** a lista existente em vez de criar uma nova, e o módulo 08
 explicou que ler uma global não exige declaração, só reatribuí-la exige.
 
-Se alguma função tentasse `alunos = []`, aí sim precisaria de `global` — e aí sim valeria repensar a
+Se alguma função tentasse `alunos = []`, aí sim precisaria de `global`, e aí sim valeria repensar a
 arquitetura.
 
 ## Desafio opcional: desfazer a exclusão
@@ -215,5 +215,5 @@ def desfazer_exclusao():
 
 Aqui o `global` é inevitável, porque `ultimo_excluido` é **reatribuído**. E repare no detalhe: o
 aluno restaurado volta para o **fim** da lista, não para a posição original. Restaurar a posição
-exigiria guardar o índice também — e decidir o que fazer se outros alunos tiverem sido cadastrados
+exigiria guardar o índice também, e decidir o que fazer se outros alunos tiverem sido cadastrados
 no meio-tempo. É mais decisão de projeto do que de código.

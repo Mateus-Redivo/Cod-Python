@@ -1,7 +1,7 @@
 # Módulo 05 — Laços de repetição
 
 No módulo anterior seu programa aprendeu a **decidir**. Agora ele vai aprender a **insistir**:
-fazer a mesma coisa dez, mil ou "quantas vezes o usuário quiser" — sem você escrever dez linhas
+fazer a mesma coisa dez, mil ou "quantas vezes o usuário quiser", sem você escrever dez linhas
 iguais.
 
 ## Objetivos de aprendizagem
@@ -18,7 +18,7 @@ Ao final deste módulo você será capaz de:
 ## Pré-requisitos
 
 [Módulo 04 — Condicionais](../modulo-04-condicionais/) concluído, exercícios feitos. Você precisa
-estar confortável com `if/elif/else` e com os operadores `and`, `or` e `not` — dentro de um laço,
+estar confortável com `if/elif/else` e com os operadores `and`, `or` e `not`, dentro de um laço,
 tudo isso aparece de novo.
 
 ## Conceito
@@ -35,7 +35,7 @@ print(f"7 x 3 = {7 * 3}")
 ```
 
 Funciona. Mas e se a tabuada tiver que ir até 100? E se o usuário escolher o número? E se você
-precisar mudar o formato da saída — vai editar dez linhas iguais, uma por uma, sem esquecer
+precisar mudar o formato da saída: vai editar dez linhas iguais, uma por uma, sem esquecer
 nenhuma?
 
 Sempre que você se pegar copiando uma linha e trocando um detalhe, **é um laço pedindo para
@@ -66,8 +66,8 @@ for contador in range(1, 11):
     print(f"7 x {contador} = {7 * contador}")
 ```
 
-As três responsabilidades acima viraram uma linha só. O `for` inicializa, testa e atualiza sozinho
-— por isso é impossível esquecer o incremento. Por isso a regra prática:
+As três responsabilidades acima viraram uma linha só. O `for` inicializa, testa e atualiza sozinho,
+por isso é impossível esquecer o incremento. Por isso a regra prática:
 
 | Situação | Use |
 | --- | --- |
@@ -162,9 +162,9 @@ Todo exemplo termina com uma seção **Experimento**. Ela não é opcional: é o
 
 ## Exercícios
 
-1. [EXERCICIO-01-tabuada.md](exercicios/EXERCICIO-01-tabuada.md) — *nível 1*: fixação de `for` e `range`.
-2. [EXERCICIO-02-media-com-validacao.md](exercicios/EXERCICIO-02-media-com-validacao.md) — *nível 2*: `while` a serviço da validação.
-3. [EXERCICIO-03-analise-de-codigo.md](exercicios/EXERCICIO-03-analise-de-codigo.md) — *nível 3*: prever saída e caçar bug em código dos outros.
+1. [EXERCICIO-01-tabuada.md](exercicios/EXERCICIO-01-tabuada.md) (nível 1): fixação de `for` e `range`.
+2. [EXERCICIO-02-media-com-validacao.md](exercicios/EXERCICIO-02-media-com-validacao.md) (nível 2): `while` a serviço da validação.
+3. [EXERCICIO-03-analise-de-codigo.md](exercicios/EXERCICIO-03-analise-de-codigo.md) (nível 3): prever saída e caçar bug em código dos outros.
 
 Quer mais prática? [banco-de-exercicios/nivel-2-intermediario/EXERCICIO-acumulador-com-sentinela.md](../banco-de-exercicios/nivel-2-intermediario/EXERCICIO-acumulador-com-sentinela.md)
 
@@ -178,7 +178,7 @@ Quer mais prática? [banco-de-exercicios/nivel-2-intermediario/EXERCICIO-acumula
 - [ ] Escrevo uma validação com `while` sem que ela vire loop infinito
 
 Sobrou caixinha em branco? Volte ao exemplo correspondente antes de seguir para o
-[módulo 06](../modulo-06-listas/) — listas são percorridas com laço, e um `for` mal entendido cobra
+[módulo 06](../modulo-06-listas/): listas são percorridas com laço, e um `for` mal entendido cobra
 o preço lá.
 
 ## Erros comuns

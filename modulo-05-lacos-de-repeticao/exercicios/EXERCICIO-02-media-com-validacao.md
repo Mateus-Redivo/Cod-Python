@@ -12,7 +12,7 @@ Ler 5 notas do usuário, recusando qualquer valor fora do intervalo permitido, e
 
 1. Peça ao usuário 5 notas, uma por vez.
 2. Uma nota válida é um valor entre 0 e 10, inclusive os extremos.
-3. Se a nota for inválida, avise e **peça de novo** — quantas vezes for preciso. O usuário pode
+3. Se a nota for inválida, avise e **peça de novo**, quantas vezes for preciso. O usuário pode
    errar cinco vezes seguidas na mesma nota; o programa não pode desistir nem seguir em frente com
    o valor ruim.
 4. Ao final, mostre a média das 5 notas com duas casas decimais.
@@ -59,5 +59,4 @@ Conte quantas tentativas inválidas o usuário fez no total e mostre esse númer
 
 ---
 
-Gabarito: [gabaritos/modulo-05-ex02-media-com-validacao/](../../gabaritos/modulo-05-ex02-media-com-validacao/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-05-ex02-media-com-validacao/](../../gabaritos/modulo-05-ex02-media-com-validacao/), depois de tentar, não antes.

@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Encontrar os defeitos de um sistema que **funciona**. Não há erro de sintaxe, não há tela vermelha —
+Encontrar os defeitos de um sistema que **funciona**. Não há erro de sintaxe, não há tela vermelha,
 e mesmo assim há problemas. Achá-los é a diferença entre "roda" e "está pronto".
 
 ## Parte 1 — Quebre o sistema
@@ -28,15 +28,15 @@ acontece:
 | Digitar letra na opção do menu | | |
 | Fechar e abrir o programa de novo | | |
 
-Marque como defeito o que **surpreenderia um usuário** — não só o que dá erro.
+Marque como defeito o que **surpreenderia um usuário**, não só o que dá erro.
 
 ## Parte 2 — Classifique
 
 Separe o que você achou em três grupos:
 
-- **Bug** — o programa faz errado o que promete
-- **Falta de validação** — aceita dado que não deveria
-- **Decisão de projeto discutível** — funciona como foi feito, mas talvez não devesse
+- **Bug**: o programa faz errado o que promete
+- **Falta de validação**: aceita dado que não deveria
+- **Decisão de projeto discutível**: funciona como foi feito, mas talvez não devesse
 
 Para cada item, justifique o grupo em uma frase.
 
@@ -68,7 +68,7 @@ Escreva um relatório curto, de até uma página, para o autor do sistema:
 2. Para cada um, o que aconteceria com um usuário real
 3. Uma recomendação de por onde começar a consertar
 
-Escreva como se fosse para alguém que vai ler e agir — não como lista de reclamações.
+Escreva como se fosse para alguém que vai ler e agir, não como lista de reclamações.
 
 ## Critérios de aceitação
 
@@ -82,7 +82,7 @@ Escreva como se fosse para alguém que vai ler e agir — não como lista de rec
 ## Uma observação
 
 Este sistema não foi escrito para ser ruim. Ele foi escrito para funcionar, por alguém que estava
-aprendendo — provavelmente com menos recursos do que você tem agora.
+aprendendo, provavelmente com menos recursos do que você tem agora.
 
 Auditar código alheio exige separar "está errado" de "eu faria diferente". As duas coisas aparecem
 neste exercício, e distingui-las é metade do trabalho. Um relatório que trata preferência pessoal
@@ -90,5 +90,4 @@ como defeito perde a credibilidade para apontar os defeitos de verdade.
 
 ---
 
-Gabarito: [gabaritos/modulo-13-ex03-auditoria-do-sistema/](../../gabaritos/modulo-13-ex03-auditoria-do-sistema/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-13-ex03-auditoria-do-sistema/](../../gabaritos/modulo-13-ex03-auditoria-do-sistema/), depois de tentar, não antes.

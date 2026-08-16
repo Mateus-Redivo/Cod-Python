@@ -38,7 +38,7 @@ nota5 = float(input("Nota 5: "))
 media = (nota1 + nota2 + nota3 + nota4 + nota5) / 5
 ```
 
-Funciona. Agora faça para trinta alunos. Ou para "quantos o usuário quiser" — e aí simplesmente não
+Funciona. Agora faça para trinta alunos. Ou para "quantos o usuário quiser", e aí simplesmente não
 dá, porque você teria que escrever as variáveis antes de saber quantas serão.
 
 **Quando você numera nomes de variáveis, é uma lista pedindo para nascer.**
@@ -76,7 +76,7 @@ cores[-2]     # "verde"
 Esta é a fonte de metade dos erros do módulo, e vale entender em vez de decorar.
 
 O índice não diz "qual elemento", diz **"quantos elementos pular"**. O primeiro não pula nenhum,
-então é `0`. Numa lista de 4 itens, os índices válidos vão de `0` a `3` — **nunca** `4`.
+então é `0`. Numa lista de 4 itens, os índices válidos vão de `0` a `3`: **nunca** `4`.
 
 ```python
 cores[4]      # IndexError: list index out of range
@@ -95,7 +95,7 @@ max(notas)      # 10    o maior
 min(notas)      # 6     o menor
 ```
 
-No módulo 05 você somou com um acumulador e um `for`. Continua valendo — e continua sendo o que
+No módulo 05 você somou com um acumulador e um `for`. Continua valendo, e continua sendo o que
 você vai escrever quando a soma tiver alguma condição. Mas para somar tudo, `sum()` resolve.
 
 ### `in`: está na lista?
@@ -109,14 +109,14 @@ Devolve `True` ou `False`, e serve direto num `if`. Bem mais legível que percor
 
 ### Percorrer: as duas formas
 
-**Por valor** — quando você só precisa do conteúdo:
+**Por valor**, quando você só precisa do conteúdo:
 
 ```python
 for nota in notas:
     print(nota)
 ```
 
-**Por índice** — quando você precisa saber a posição, ou vai alterar a lista:
+**Por índice**, quando você precisa saber a posição, ou vai alterar a lista:
 
 ```python
 for i in range(len(notas)):
@@ -126,7 +126,7 @@ for i in range(len(notas)):
 A primeira é mais limpa e deve ser sua escolha padrão. Use a segunda só quando a posição importar
 de verdade.
 
-> Repare no `range(len(notas))`: `len` dá 4, e `range(4)` produz 0, 1, 2, 3 — exatamente os índices
+> Repare no `range(len(notas))`: `len` dá 4, e `range(4)` produz 0, 1, 2, 3, exatamente os índices
 > válidos. Não é coincidência; é o motivo de o índice começar em zero.
 
 ### Modificar a lista
@@ -174,7 +174,7 @@ numeros[2:]      # [30, 40, 50]  até o fim
 numeros[-2:]     # [40, 50]      os dois últimos
 ```
 
-O limite final é exclusivo — a mesma regra do `range()` do módulo 05. Não é coincidência: é a mesma
+O limite final é exclusivo: a mesma regra do `range()` do módulo 05. Não é coincidência: é a mesma
 ideia de "vai até, sem incluir".
 
 ## Exemplos guiados
@@ -195,12 +195,12 @@ python 01_criando_e_acessando.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-manipulando-listas.md](exercicios/EXERCICIO-01-manipulando-listas.md) —
-   *nível 1*: previsão de saída e caça ao bug.
-2. [EXERCICIO-02-boletim.md](exercicios/EXERCICIO-02-boletim.md) —
-   *nível 2*: ler notas para uma lista e resumi-las.
-3. [EXERCICIO-03-apuracao-de-votos.md](exercicios/EXERCICIO-03-apuracao-de-votos.md) —
-   *nível 3*: contar votos, achar o vencedor e detectar empate.
+1. [EXERCICIO-01-manipulando-listas.md](exercicios/EXERCICIO-01-manipulando-listas.md)
+   (nível 1): previsão de saída e caça ao bug.
+2. [EXERCICIO-02-boletim.md](exercicios/EXERCICIO-02-boletim.md)
+   (nível 2): ler notas para uma lista e resumi-las.
+3. [EXERCICIO-03-apuracao-de-votos.md](exercicios/EXERCICIO-03-apuracao-de-votos.md)
+   (nível 3): contar votos, achar o vencedor e detectar empate.
 
 ## Auto-avaliação
 

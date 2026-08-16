@@ -24,7 +24,7 @@ compensar um que ficou pela metade.
 
 ## O cardápio
 
-Escolha **uma** das nove propostas. Todas têm o mesmo peso e a mesma dificuldade — escolha a que te
+Escolha **uma** das nove propostas. Todas têm o mesmo peso e a mesma dificuldade: escolha a que te
 interessa, porque você vai passar algumas horas com ela.
 
 | Proposta | Do que se trata |
@@ -40,7 +40,7 @@ interessa, porque você vai passar algumas horas com ela.
 | [Lista de Tarefas](propostas/Sistema_TodoList.md) | tarefas, prioridades e conclusão |
 
 > Se escolher **Sistema de Notas** ou **Controle de Produtos**, saiba que existe uma implementação
-> pronta no [módulo 13](../modulo-13-estudo-de-caso-crud/exemplos/). Você pode escolhê-las — mas
+> pronta no [módulo 13](../modulo-13-estudo-de-caso-crud/exemplos/). Você pode escolhê-las, mas
 > então a entrega precisa ir **além** do que o exemplo faz, e você deve dizer no relatório o que
 > acrescentou. Copiar o exemplo não é entrega.
 
@@ -53,7 +53,7 @@ Independentemente da proposta escolhida, o sistema precisa ter:
 - [ ] Menu principal em laço, com opção de sair
 - [ ] As quatro operações CRUD: cadastrar, listar, alterar e excluir
 - [ ] Pelo menos **dois relatórios** com informação calculada (totais, médias, contagens, rankings)
-- [ ] Dados guardados em lista de registros — **não** em listas paralelas
+- [ ] Dados guardados em lista de registros, **não** em listas paralelas
 
 **Qualidade**
 
@@ -102,18 +102,18 @@ livros = [
 Escreva o menu completo, com todas as opções, e funções vazias que só imprimem "ainda não
 implementado". Rode. Navegue por todas as opções.
 
-Você terá um programa que não faz nada — e que **funciona**. A partir daqui, cada função preenchida
+Você terá um programa que não faz nada, e que **funciona**. A partir daqui, cada função preenchida
 é um progresso testável.
 
 ### Fase 3 — Uma operação por vez (3–4 h)
 
 Nesta ordem, e testando cada uma antes de passar à seguinte:
 
-1. **Cadastrar** — sem ela, não há o que listar
-2. **Listar** — sem ela, você não vê se o cadastro funcionou
-3. **Excluir** — mais simples que alterar
-4. **Alterar** — a mais trabalhosa
-5. **Relatórios** — precisam de dados, que agora existem
+1. **Cadastrar**: sem ela, não há o que listar
+2. **Listar**: sem ela, você não vê se o cadastro funcionou
+3. **Excluir**: mais simples que alterar
+4. **Alterar**: a mais trabalhosa
+5. **Relatórios**: precisam de dados, que agora existem
 
 Acrescente as validações **junto** com cada operação, não no fim. Deixar para depois significa
 revisitar tudo.
@@ -147,7 +147,7 @@ adiantado que um que acha o trabalho perfeito.
 Pela [rubrica de avaliação](../material-apoio/rubrica-avaliacao.md), com os pesos de sempre:
 funciona (40), lógica (20), legibilidade (20), uso dos conceitos (10), tratamento de entrada (10).
 
-O relatório de decisões entra na nota de legibilidade — ele é parte de comunicar o seu trabalho.
+O relatório de decisões entra na nota de legibilidade: ele é parte de comunicar o seu trabalho.
 
 ## Auto-avaliação
 
@@ -161,7 +161,7 @@ Marque antes de entregar. Cada caixa em branco é um ponto a perder na rubrica.
 - [ ] Sei apontar pelo menos um defeito que deixei no sistema
 - [ ] O relatório de decisões está escrito, incluindo a pergunta 4
 
-> Este módulo não tem seção de *Exemplos guiados* nem lista de *Exercícios* — e é a única exceção
+> Este módulo não tem seção de *Exemplos guiados* nem lista de *Exercícios*, e é a única exceção
 > da trilha. O motivo é simples: o projeto **é** o exercício, e os exemplos são os sistemas que
 > você leu no [módulo 13](../modulo-13-estudo-de-caso-crud/). A partir daqui, o material sai da
 > frente.
@@ -185,9 +185,9 @@ Marque antes de entregar. Cada caixa em branco é um ponto a perder na rubrica.
 
 Você terminou a trilha. O que vem a seguir, se quiser continuar:
 
-- **[Banco de exercícios](../banco-de-exercicios/)** — prática extra por nível
-- **[Projetos](../projetos/)** — jogos e calculadoras, para se divertir com o que aprendeu
-- **[Apêndice: padrões de projeto](../apendice-padroes-de-projeto/)** — fora do escopo de lógica
+- **[Banco de exercícios](../banco-de-exercicios/)**: prática extra por nível
+- **[Projetos](../projetos/)**: jogos e calculadoras, para se divertir com o que aprendeu
+- **[Apêndice: padrões de projeto](../apendice-padroes-de-projeto/)**: fora do escopo de lógica
   básica, e agora ao seu alcance
 
 ---

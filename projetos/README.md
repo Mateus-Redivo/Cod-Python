@@ -1,7 +1,7 @@
 # Projetos
 
 Programas completos e divertidos, feitos para você **usar**, não só estudar. Nada aqui é obrigatório
-— e é justamente por isso que costuma ser a parte de que as pessoas mais gostam.
+, e é justamente por isso que costuma ser a parte de que as pessoas mais gostam.
 
 ## Calculadoras
 
@@ -44,7 +44,7 @@ Duas formas de aproveitá-los:
    descrever o que faz sem rodar, e apontar o que melhoraria.
 
 O jogo da velha tem uma implementação comentada como
-[gabarito do módulo 09](../gabaritos/modulo-09-ex03-jogo-da-velha/) — compare as duas.
+[gabarito do módulo 09](../gabaritos/modulo-09-ex03-jogo-da-velha/): compare as duas.
 
 ---
 

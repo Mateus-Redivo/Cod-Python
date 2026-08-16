@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Ler várias notas para dentro de uma lista e produzir um resumo — o programa que era impossível de
+Ler várias notas para dentro de uma lista e produzir um resumo: o programa que era impossível de
 escrever antes deste módulo, porque a quantidade de notas é decidida pelo usuário.
 
 ## Requisitos
@@ -17,7 +17,7 @@ escrever antes deste módulo, porque a quantidade de notas é decidida pelo usu�
 4. Valide cada nota: só aceite valores de 0 a 10, insistindo com `while` até vir um válido.
 5. Exiba um resumo com: a lista completa, a quantidade, a soma, a média (2 casas), a maior e a menor
    nota.
-6. Exiba também quantas notas ficaram **acima da média** — isso exige um segundo `for`, depois de a
+6. Exiba também quantas notas ficaram **acima da média**: isso exige um segundo `for`, depois de a
    média existir.
 7. Classifique a turma: média `>= 7.0` é "Aprovada", `>= 5.0` é "Recuperação", abaixo disso
    "Reprovada".
@@ -46,7 +46,7 @@ Acima da média: 2
 Situação: Aprovada
 ```
 
-Confira na mão: a média é 8.2, e só o 9.0 e o 10.0 estão acima dela. O 8.0 fica **abaixo** — é o
+Confira na mão: a média é 8.2, e só o 9.0 e o 10.0 estão acima dela. O 8.0 fica **abaixo**: é o
 tipo de detalhe que só aparece quando você confere em vez de confiar.
 
 ## Critérios de aceitação
@@ -55,13 +55,13 @@ tipo de detalhe que só aparece quando você confere em vez de confiar.
 - [ ] Uma nota inválida não entra na lista e a pergunta se repete
 - [ ] Digitar `0` como quantidade não gera `ZeroDivisionError`
 - [ ] A média sai com duas casas decimais
-- [ ] A contagem de "acima da média" está correta — confira na mão
+- [ ] A contagem de "acima da média" está correta (confira na mão)
 - [ ] O programa funciona para 1 nota e para 20 notas, sem mudar o código
 
 ## Armadilha conhecida
 
 Você **não consegue** contar quantas notas estão acima da média dentro do mesmo laço que lê as
-notas — porque a média só existe depois de todas terem sido lidas. São necessariamente dois laços:
+notas, porque a média só existe depois de todas terem sido lidas. São necessariamente dois laços:
 um para coletar, outro para comparar. Perceber isso é metade do exercício.
 
 ## Desafio opcional
@@ -71,5 +71,4 @@ Cuidado: `notas.sort()` modifica a lista no lugar. Qual é a função que devolv
 
 ---
 
-Gabarito: [gabaritos/modulo-06-ex02-boletim/](../../gabaritos/modulo-06-ex02-boletim/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-06-ex02-boletim/](../../gabaritos/modulo-06-ex02-boletim/), depois de tentar, não antes.

@@ -1,7 +1,7 @@
 # Módulo 01 — Tipos e variáveis
 
 No módulo anterior você conseguiu rodar um programa. Mas ele era só um papagaio: mostrava textos
-fixos e esquecia tudo. Agora seu programa ganha **memória** — a capacidade de guardar um valor,
+fixos e esquecia tudo. Agora seu programa ganha **memória**: a capacidade de guardar um valor,
 dar um nome a ele e usá-lo mais adiante.
 
 ## Objetivos de aprendizagem
@@ -18,7 +18,7 @@ Ao final deste módulo você será capaz de:
 ## Pré-requisitos
 
 [Módulo 00 — Preparação](../modulo-00-preparacao/) concluído. Você precisa conseguir rodar um
-arquivo `.py` e ler uma mensagem de erro — as duas coisas vão ser usadas o tempo todo aqui.
+arquivo `.py` e ler uma mensagem de erro: as duas coisas vão ser usadas o tempo todo aqui.
 
 ## Conceito
 
@@ -32,7 +32,7 @@ print("Com 10% de desconto: 44.91")
 print("Em 3x de 14.97")
 ```
 
-Funciona — até o preço mudar. Aí você tem que achar e ajustar três números diferentes, sem esquecer
+Funciona, até o preço mudar. Aí você tem que achar e ajustar três números diferentes, sem esquecer
 nenhum e sem errar as contas. **Um valor que aparece em mais de um lugar quer virar variável.**
 
 ```python
@@ -53,7 +53,7 @@ idade = 20
 ```
 
 não afirma que "idade é igual a 20". É uma **ordem**: "guarde o valor 20 e chame isso de idade".
-Lê-se da direita para a esquerda — primeiro o valor existe, depois recebe o nome.
+Lê-se da direita para a esquerda: primeiro o valor existe, depois recebe o nome.
 
 Por isso esta linha, que na matemática seria absurda, é perfeitamente normal:
 
@@ -92,7 +92,7 @@ print(type(altura))         # <class 'float'>
 
 ### O tipo vem do valor, e pode mudar
 
-Em Python você não declara o tipo — ele é deduzido do que você guardou:
+Em Python você não declara o tipo. Ele é deduzido do que você guardou:
 
 ```python
 dado = 25            # agora é int
@@ -100,7 +100,7 @@ dado = "vinte e cinco"   # agora é str, e o Python aceita numa boa
 ```
 
 Isso é conveniente e é uma armadilha. Conveniente porque você escreve menos. Armadilha porque
-ninguém te avisa quando o tipo muda por engano — e o erro só aparece lá na frente, quando você
+ninguém te avisa quando o tipo muda por engano, e o erro só aparece lá na frente, quando você
 tenta fazer uma conta com o que virou texto.
 
 ### O mesmo `+` faz duas coisas diferentes
@@ -121,7 +121,7 @@ quando o usuário digita um número.
 
 **Regras** (quebrar dá erro):
 
-- Só letras, números e `_` — nada de espaço nem hífen
+- Só letras, números e `_` (nada de espaço nem hífen)
 - Não pode começar com número: `2nome` é inválido, `nome2` é válido
 - Não pode ser palavra reservada: `class`, `if`, `for`, `return`…
 - Maiúscula e minúscula são diferentes: `idade` e `Idade` são duas variáveis
@@ -134,7 +134,7 @@ quando o usuário digita um número.
 | Constante | `MAIUSCULO_COM_UNDERLINE` | `TAXA_JUROS`, `PI` |
 | Acentuação | sem acento no **nome**; com acento no **texto** | `preco_medio = "média"` |
 
-> Sobre acento: `preço = 10` **funciona** em Python 3 — não é erro. A escolha de não usar é
+> Sobre acento: `preço = 10` **funciona** em Python 3, não é erro. A escolha de não usar é
 > convenção deste material, por um motivo prático: teclado trocado, terminal antigo e colega em
 > outro sistema operacional transformam isso em dor de cabeça. Dentro das aspas, acentue normalmente.
 
@@ -173,11 +173,11 @@ python 01_tipos_basicos.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-ficha-cadastral.md](exercicios/EXERCICIO-01-ficha-cadastral.md) — *nível 1*: criar
+1. [EXERCICIO-01-ficha-cadastral.md](exercicios/EXERCICIO-01-ficha-cadastral.md) (nível 1): criar
    variáveis dos quatro tipos e exibi-las formatadas.
-2. [EXERCICIO-02-prevendo-tipos.md](exercicios/EXERCICIO-02-prevendo-tipos.md) — *nível 2*: prever
+2. [EXERCICIO-02-prevendo-tipos.md](exercicios/EXERCICIO-02-prevendo-tipos.md) (nível 2): prever
    tipo e resultado antes de rodar.
-3. [EXERCICIO-03-simulador-de-troco.md](exercicios/EXERCICIO-03-simulador-de-troco.md) — *nível 3*:
+3. [EXERCICIO-03-simulador-de-troco.md](exercicios/EXERCICIO-03-simulador-de-troco.md) (nível 3):
    por que dinheiro não se guarda em `float`.
 
 ## Auto-avaliação

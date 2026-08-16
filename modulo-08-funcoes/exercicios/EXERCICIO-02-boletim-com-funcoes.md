@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Pegar o boletim que você escreveu no módulo 06 e reescrevê-lo em funções — **sem mudar o que ele
+Pegar o boletim que você escreveu no módulo 06 e reescrevê-lo em funções, **sem mudar o que ele
 faz**. É a sua primeira refatoração de verdade.
 
 ## Ponto de partida
@@ -39,7 +39,7 @@ estão acima da média, decide a situação e imprime tudo.
 ## O critério que define o exercício
 
 Refatorar significa mudar a estrutura **sem mudar o comportamento**. Se a saída mudou, não foi
-refatoração — foi um programa novo, e provavelmente com bug.
+refatoração, foi um programa novo, e provavelmente com bug.
 
 Rode os dois programas com as mesmas notas e compare a saída linha por linha.
 
@@ -67,5 +67,4 @@ padrão 0 e 10. Assim ela serve para notas de 0 a 10 **e** para notas de 0 a 100
 
 ---
 
-Gabarito: [gabaritos/modulo-08-ex02-boletim-com-funcoes/](../../gabaritos/modulo-08-ex02-boletim-com-funcoes/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-08-ex02-boletim-com-funcoes/](../../gabaritos/modulo-08-ex02-boletim-com-funcoes/), depois de tentar, não antes.

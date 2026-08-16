@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Receber uma frase e produzir um relatório sobre ela — juntando o que você sabe de strings, listas e
+Receber uma frase e produzir um relatório sobre ela, juntando o que você sabe de strings, listas e
 laços.
 
 ## Requisitos
@@ -49,20 +49,20 @@ simples         7 letras
 ```
 
 Confira as vogais na mão: **o** (Python) + **e** + **u,a** (uma) + **i,u,a,e** (linguagem) +
-**i,e** (simples) = 1+1+2+4+2 = 10. O `y` de "Python" não conta: não está em `"aeiou"`. Não precisa acertar o plural de "1 letras" — isso exigiria um `if` que o
+**i,e** (simples) = 1+1+2+4+2 = 10. O `y` de "Python" não conta: não está em `"aeiou"`. Não precisa acertar o plural de "1 letras": isso exigiria um `if` que o
 enunciado não pede.
 
 ## Dicas
 
 - Para contar vogais, percorra a frase com `for letra in frase` e teste se a letra está em
-  `"aeiou"` — lembrando de passar a frase para minúsculas antes.
+  `"aeiou"`, lembrando de passar a frase para minúsculas antes.
 - Para a palavra mais longa, use o padrão do "maior valor" do módulo 06: comece com a primeira e
   compare `len()` a cada volta.
 - Para inverter, a fatia com passo `-1` resolve em uma linha.
 
 ## Critérios de aceitação
 
-- [ ] A contagem sem espaços realmente ignora os espaços — confira na mão
+- [ ] A contagem sem espaços realmente ignora os espaços (confira na mão)
 - [ ] A contagem de vogais funciona com a frase digitada em maiúsculas
 - [ ] A palavra mais longa está correta mesmo quando é a primeira ou a última
 - [ ] Frase vazia não gera erro
@@ -73,7 +73,7 @@ enunciado não pede.
 
 Se você digitar "é", a contagem de vogais **não** vai incluí-lo, porque `"é" in "aeiou"` é `False`.
 Isso está tecnicamente correto para o enunciado como escrito. Se quiser tratar acentos, acrescente
-os caracteres acentuados na sua string de vogais — e note quanto trabalho isso dá. Textos com
+os caracteres acentuados na sua string de vogais, e note quanto trabalho isso dá. Textos com
 acento são mais complicados do que parecem.
 
 ## Desafio opcional
@@ -83,5 +83,4 @@ Use `.isalpha()` para checar se o caractere é mesmo uma letra.
 
 ---
 
-Gabarito: [gabaritos/modulo-07-ex01-analisador-de-frases/](../../gabaritos/modulo-07-ex01-analisador-de-frases/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-07-ex01-analisador-de-frases/](../../gabaritos/modulo-07-ex01-analisador-de-frases/), depois de tentar, não antes.

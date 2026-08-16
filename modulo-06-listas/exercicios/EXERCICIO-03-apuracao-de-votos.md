@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Apurar uma votação: contar votos, calcular percentuais, achar o vencedor e — a parte difícil —
+Apurar uma votação: contar votos, calcular percentuais, achar o vencedor e (a parte difícil)
 **detectar empate**. É o exercício em que a lista deixa de ser depósito de números e vira estrutura
 de um problema com regras próprias.
 
@@ -22,7 +22,7 @@ votos = [0, 0, 0, 0]
 
 3. Leia votos repetidamente: o usuário digita o **número** do candidato (1 a 4), `0` para branco,
    ou `-1` para encerrar a apuração.
-4. Voto fora dessa faixa é **nulo** — conte-o à parte e avise, sem encerrar.
+4. Voto fora dessa faixa é **nulo**: conte-o à parte e avise, sem encerrar.
 5. Ao final, exiba:
    - a tabela de candidatos com votos e percentual sobre os **votos válidos**
    - total de votos válidos, brancos, nulos e o total geral
@@ -67,11 +67,11 @@ Sem maioria absoluta.
 ## As três partes difíceis
 
 **Listas paralelas.** `candidatos[i]` e `votos[i]` se referem à mesma pessoa. Toda a apuração
-depende dessa correspondência — e o módulo 08 vai mostrar por que isso é frágil. Por ora, mantenha
+depende dessa correspondência, e o módulo 08 vai mostrar por que isso é frágil. Por ora, mantenha
 o cuidado.
 
 **O empate.** Achar o maior valor é fácil (`max(votos)`). Descobrir **quantos** candidatos têm esse
-valor exige percorrer de novo, contando. Se mais de um tiver, é empate — e você precisa listar
+valor exige percorrer de novo, contando. Se mais de um tiver, é empate, e você precisa listar
 todos, não só o primeiro.
 
 **O percentual sobre válidos.** Brancos e nulos entram no total geral, mas **não** no denominador
@@ -84,23 +84,22 @@ do percentual. Um candidato com 2 de 4 válidos tem 50%, mesmo que o total geral
 - [ ] Os percentuais somam 100% (ou muito perto, por arredondamento)
 - [ ] O empate do exemplo acima é detectado e lista os **dois** nomes
 - [ ] Um vencedor único é anunciado sem falar em empate
-- [ ] Maioria absoluta é detectada corretamente — teste com 3 votos para um só
+- [ ] Maioria absoluta é detectada corretamente (teste com 3 votos para um só)
 - [ ] Encerrar sem nenhum voto válido não gera `ZeroDivisionError`
 - [ ] As colunas ficam alinhadas
 
 ## Confira o caso do empate
 
 Com os votos do exemplo: Ana 2, Carla 2, Bruno 0, Diego 0. O maior é 2, e **dois** candidatos o
-têm — então é empate. Se o seu programa anunciar só "Ana venceu", ele está pegando o primeiro que
+têm, então é empate. Se o seu programa anunciar só "Ana venceu", ele está pegando o primeiro que
 encontrou e ignorando a regra.
 
 ## Desafio dentro do desafio
 
-Em eleição real, empate na primeira colocação se resolve por critério de desempate — o mais velho,
-por exemplo. Acrescente uma lista `idades` e use-a para desempatar. E responda em um comentário: com
+Em eleição real, empate na primeira colocação se resolve por critério de desempate (o mais velho,
+por exemplo). Acrescente uma lista `idades` e use-a para desempatar. E responda em um comentário: com
 três listas paralelas em vez de duas, quanto mais fácil ficou errar? O módulo 09 resolve isso.
 
 ---
 
-Gabarito: [gabaritos/modulo-06-ex03-apuracao-de-votos/](../../gabaritos/modulo-06-ex03-apuracao-de-votos/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-06-ex03-apuracao-de-votos/](../../gabaritos/modulo-06-ex03-apuracao-de-votos/), depois de tentar, não antes.

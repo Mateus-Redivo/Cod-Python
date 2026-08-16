@@ -7,7 +7,7 @@
 ## Objetivo
 
 Ler cinco mensagens de erro e consertar os programas que as produziram. É a habilidade mais útil da
-primeira semana — e a que ninguém ensina de propósito.
+primeira semana, e a que ninguém ensina de propósito.
 
 > **Este é o último exercício do módulo.** Ele não tem nível 3: o módulo 00 só ensina `print`,
 > comentários e leitura de erro, e um terceiro exercício aqui seria enchimento. Os níveis 3 começam
@@ -95,10 +95,9 @@ antes do erro, e em quais não apareceu.
 ## Dica sobre o Programa E
 
 O Python 3.14 é gentil neste caso: além de dizer o que está errado, ele **sugere** o que você
-provavelmente quis escrever. Leia a mensagem inteira, até o fim — muita gente para na primeira
+provavelmente quis escrever. Leia a mensagem inteira, até o fim. Muita gente para na primeira
 linha e perde a ajuda.
 
 ---
 
-Gabarito: [gabaritos/modulo-00-ex02-decifrando-erros/](../../gabaritos/modulo-00-ex02-decifrando-erros/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-00-ex02-decifrando-erros/](../../gabaritos/modulo-00-ex02-decifrando-erros/), depois de tentar, não antes.

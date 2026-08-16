@@ -12,7 +12,7 @@ quebrado. Essa é a habilidade que separa quem escreve código de quem entende c
 ## Como fazer
 
 Responda cada questão **antes** de executar qualquer coisa. Escreva sua previsão, depois rode e
-compare. Onde você errou é exatamente onde está o aprendizado — anote esses pontos.
+compare. Onde você errou é exatamente onde está o aprendizado: anote esses pontos.
 
 Entregue as respostas em um arquivo `respostas.md` (ou no formato que o professor pedir), com o
 código das questões que pedem implementação.
@@ -140,6 +140,5 @@ else:
 
 ---
 
-Gabarito: [gabaritos/modulo-05-ex03-analise-de-codigo/](../../gabaritos/modulo-05-ex03-analise-de-codigo/) —
-depois de tentar, não antes. Este exercício em particular perde todo o valor se você ler a resposta
+Gabarito: [gabaritos/modulo-05-ex03-analise-de-codigo/](../../gabaritos/modulo-05-ex03-analise-de-codigo/), depois de tentar, não antes. Este exercício em particular perde todo o valor se você ler a resposta
 primeiro: o objetivo é justamente descobrir onde a sua leitura de código falha.

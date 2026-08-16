@@ -13,8 +13,8 @@ centavo.
 ## Requisitos
 
 1. Crie um arquivo `simulador_de_troco.py`.
-2. Defina duas variáveis fixas no código: `valor_da_compra` e `valor_pago`. Ainda não use `input()`
-   — ele é do módulo 03.
+2. Defina duas variáveis fixas no código: `valor_da_compra` e `valor_pago`. Ainda não use `input()`,
+   ele é do módulo 03.
 3. Calcule o troco.
 4. Decomponha o troco em: notas de 50, 20, 10, 5 e 2; moedas de 1 real, 50, 25, 10, 5 e 1 centavo.
 5. Exiba apenas as denominações cuja quantidade for maior que zero.
@@ -51,7 +51,7 @@ centavos = int(troco * 100)
 
 Rode isso e confira o resultado: sai **1998**, não 1999.
 
-O motivo é a poeirinha dos decimais que você viu no módulo 02 — `19.99 * 100` dá
+O motivo é a poeirinha dos decimais que você viu no módulo 02: `19.99 * 100` dá
 `1998.9999999999998`. E o `int()` **corta** em vez de arredondar, então o centavo desaparece em
 silêncio. Não dá erro, não dá aviso: o programa só entrega um resultado errado.
 
@@ -74,7 +74,7 @@ inteiros, e não em `float`.
 ## Dica para o requisito 5
 
 Sem `if`, você não consegue esconder as linhas com quantidade zero. Faça o programa completo
-primeiro, exibindo todas as denominações — inclusive as zeradas. Depois, em um comentário, escreva
+primeiro, exibindo todas as denominações (inclusive as zeradas). Depois, em um comentário, escreva
 qual `if` você usaria. O módulo 04 fecha essa lacuna.
 
 ## Critérios de aceitação
@@ -90,10 +90,9 @@ qual `if` você usaria. O módulo 04 fecha essa lacuna.
 ## Desafio dentro do desafio
 
 E se o valor pago for **menor** que a compra? Hoje seu programa calcula um troco negativo e
-distribui notas negativas, sem reclamar. Escreva em um comentário o que deveria acontecer — e qual
+distribui notas negativas, sem reclamar. Escreva em um comentário o que deveria acontecer, e qual
 recurso, de qual módulo, você precisa para tratar isso.
 
 ---
 
-Gabarito: [gabaritos/modulo-01-ex03-simulador-de-troco/](../../gabaritos/modulo-01-ex03-simulador-de-troco/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-01-ex03-simulador-de-troco/](../../gabaritos/modulo-01-ex03-simulador-de-troco/), depois de tentar, não antes.

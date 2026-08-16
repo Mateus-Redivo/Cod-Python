@@ -7,7 +7,7 @@
 ## Objetivo
 
 Escrever quatro funções de leitura que **não quebram**, aconteça o que acontecer com o teclado.
-Elas viram a sua biblioteca pessoal — você vai copiá-las para todos os programas seguintes.
+Elas viram a sua biblioteca pessoal. Você vai copiá-las para todos os programas seguintes.
 
 ## Requisitos
 
@@ -21,7 +21,7 @@ Elas viram a sua biblioteca pessoal — você vai copiá-las para todos os progr
 | `ler_decimal(mensagem)` | um `float` |
 | `ler_sim_ou_nao(mensagem)` | `True` para sim, `False` para não |
 
-3. Cada função captura o erro **específico** — nada de `except` pelado.
+3. Cada função captura o erro **específico**: nada de `except` pelado.
 4. As mensagens de erro devem dizer ao usuário **o que fazer**, não só "erro".
 5. `ler_sim_ou_nao` aceita `sim`, `s`, `nao`, `não`, `n`, em qualquer combinação de maiúsculas e com
    espaços sobrando (lembre da receita `.strip().lower()` do módulo 07).
@@ -50,7 +50,7 @@ Confirmado!
 
 ## Critérios de aceitação
 
-- [ ] Nenhuma função quebra com qualquer coisa que você digite — teste com letras, símbolos e vazio
+- [ ] Nenhuma função quebra com qualquer coisa que você digite: teste com letras, símbolos e vazio
 - [ ] `ler_inteiro` recusa `25.5` (é decimal, não inteiro)
 - [ ] `ler_decimal` aceita `1.75` **e** `7`
 - [ ] `ler_inteiro_na_faixa` trata os dois problemas: tipo errado e valor fora da faixa
@@ -60,7 +60,7 @@ Confirmado!
 
 ## A pegadinha do vazio
 
-Aperte Enter sem digitar nada. O `input()` devolve `""`, e `int("")` levanta `ValueError` — então
+Aperte Enter sem digitar nada. O `input()` devolve `""`, e `int("")` levanta `ValueError`, então
 suas funções já tratam isso de graça. Confirme que sim.
 
 ## Desafio opcional
@@ -71,5 +71,4 @@ a regra do módulo: nem todo problema de entrada é exceção.
 
 ---
 
-Gabarito: [gabaritos/modulo-10-ex01-entrada-a-prova-de-tudo/](../../gabaritos/modulo-10-ex01-entrada-a-prova-de-tudo/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-10-ex01-entrada-a-prova-de-tudo/](../../gabaritos/modulo-10-ex01-entrada-a-prova-de-tudo/), depois de tentar, não antes.

@@ -26,7 +26,7 @@ LISTAS_DE_TESTE = [
 ```
 
 5. Para cada lista e cada algoritmo, mostre antes e depois.
-6. Confirme que o resultado bate com `sorted()` — sem usá-lo dentro das funções, só na conferência.
+6. Confirme que o resultado bate com `sorted()`, sem usá-lo dentro das funções, só na conferência.
 
 ## Exemplo de saída
 
@@ -51,9 +51,9 @@ LISTAS_DE_TESTE = [
 
 - [ ] As três funções ordenam corretamente as quatro listas
 - [ ] Nenhuma usa `sort`, `sorted`, `min` ou `max`
-- [ ] As três ordenam **no lugar** — a lista original passada muda
+- [ ] As três ordenam **no lugar**: a lista original passada muda
 - [ ] A lista de um elemento só não quebra nenhuma
-- [ ] A lista vazia `[]` também não quebra — teste
+- [ ] A lista vazia `[]` também não quebra: teste
 - [ ] A conferência com `sorted()` passa nas 12 combinações
 
 ## Desafio opcional
@@ -64,5 +64,4 @@ ordenada.
 
 ---
 
-Gabarito: [gabaritos/modulo-11-ex01-implementando-os-tres/](../../gabaritos/modulo-11-ex01-implementando-os-tres/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-11-ex01-implementando-os-tres/](../../gabaritos/modulo-11-ex01-implementando-os-tres/), depois de tentar, não antes.

@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Implementar a cifra de César — o método de criptografia que Júlio César usava para mensagens
+Implementar a cifra de César: o método de criptografia que Júlio César usava para mensagens
 militares. Cada letra é deslocada um número fixo de posições no alfabeto.
 
 É o exercício que junta strings, aritmética modular e a construção de texto caractere a caractere.
@@ -22,7 +22,7 @@ X -> A      Y -> B      Z -> C      <- dá a volta no alfabeto
 
 `PYTHON` com deslocamento 3 vira `SBWKRQ`.
 
-Para decifrar, desloque no sentido contrário — ou, mais elegante, cifre de novo com `26 - 3`.
+Para decifrar, desloque no sentido contrário (ou, mais elegante, cifre de novo com `26 - 3`).
 
 ## As duas funções novas
 
@@ -49,7 +49,7 @@ essa tabela que explicou, no módulo 02, por que `"Zebra" < "ana"`.
 6. Mostre um teste automático: para os 25 deslocamentos possíveis, cifrar e decifrar deve devolver
    o texto original. Exiba se todos passaram.
 
-**Restrição:** sem funções (módulo 08) — ou, se preferir, use-as e considere isto um aquecimento
+**Restrição:** sem funções (módulo 08), ou, se preferir, use-as e considere isto um aquecimento
 para o próximo módulo.
 
 ## Exemplo de saída
@@ -86,7 +86,7 @@ o `ord()` não funciona, porque a tabela não começa em zero.
 - [ ] `Z` com deslocamento 3 vira `C`, e `z` vira `c`
 - [ ] Espaços, pontuação e números saem inalterados
 - [ ] Maiúsculas e minúsculas mantêm a caixa original
-- [ ] Decifrar devolve exatamente a mensagem original — compare com `==`
+- [ ] Decifrar devolve exatamente a mensagem original (compare com `==`)
 - [ ] O teste dos 25 deslocamentos passa em todos
 - [ ] Deslocamento fora de 1 a 25 é recusado
 
@@ -96,10 +96,9 @@ A cifra de César é trivial de quebrar: só há 25 chaves possíveis. Escreva u
 mostre as 25 decifragens possíveis de uma mensagem, para o usuário identificar a legível a olho.
 
 Depois pense: como um programa poderia escolher **sozinho** a decifragem certa, sem um humano olhar?
-Escreva a ideia em um comentário — não precisa implementar. (Dica: em português, algumas letras são
+Escreva a ideia em um comentário: não precisa implementar. (Dica: em português, algumas letras são
 muito mais frequentes que outras.)
 
 ---
 
-Gabarito: [gabaritos/modulo-07-ex03-cifra-de-cesar/](../../gabaritos/modulo-07-ex03-cifra-de-cesar/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-07-ex03-cifra-de-cesar/](../../gabaritos/modulo-07-ex03-cifra-de-cesar/), depois de tentar, não antes.

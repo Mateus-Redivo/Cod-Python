@@ -16,7 +16,7 @@ valor de cada tipo básico.
    ativa (`bool`).
 3. Crie uma constante para alguma taxa ou limite (por exemplo `IDADE_MINIMA = 18`), respeitando a
    convenção de constantes.
-4. Exiba a ficha formatada com f-strings — nada de concatenar com `+`.
+4. Exiba a ficha formatada com f-strings: nada de concatenar com `+`.
 5. Ao final, exiba o **tipo** de cada variável usando `type()`.
 6. Todos os nomes devem seguir `snake_case` e dizer o que guardam. Nada de `a`, `b`, `x1`.
 
@@ -50,9 +50,8 @@ ativa  -> bool
 ## Desafio opcional
 
 Acrescente uma variável `imc` calculada a partir de peso e altura (`peso / altura ** 2`) e exiba-a
-com duas casas decimais — a formatação é `{imc:.2f}`.
+com duas casas decimais: a formatação é `{imc:.2f}`.
 
 ---
 
-Gabarito: [gabaritos/modulo-01-ex01-ficha-cadastral/](../../gabaritos/modulo-01-ex01-ficha-cadastral/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-01-ex01-ficha-cadastral/](../../gabaritos/modulo-01-ex01-ficha-cadastral/), depois de tentar, não antes.

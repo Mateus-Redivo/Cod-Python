@@ -1,7 +1,7 @@
 # Módulo 03 — Entrada e saída
 
 Até aqui todos os seus programas eram monólogos: os valores estavam fixos no código e o resultado
-era sempre o mesmo. Agora o programa vai **perguntar** — e é aí que ele deixa de ser um exercício e
+era sempre o mesmo. Agora o programa vai **perguntar**, e é aí que ele deixa de ser um exercício e
 começa a servir para alguma coisa.
 
 Este módulo junta dois assuntos que só fazem sentido juntos: ler o que o usuário digitou e
@@ -21,7 +21,7 @@ Ao final deste módulo você será capaz de:
 ## Pré-requisitos
 
 [Módulo 02 — Operadores](../modulo-02-operadores/) concluído. Você vai calcular com os valores que
-o usuário digitar, então precisa dos operadores na ponta da língua — e da lembrança do `TypeError`
+o usuário digitar, então precisa dos operadores na ponta da língua, e da lembrança do `TypeError`
 do módulo 01, que vai reaparecer aqui em forma de dor real.
 
 ## Conceito
@@ -35,7 +35,7 @@ print(f"Área: {largura * altura}")
 ```
 
 Esse programa calcula a área de exatamente um retângulo. Para outro, você edita o código. Um
-programa que precisa ser editado para dar outra resposta não é um programa — é uma conta escrita de
+programa que precisa ser editado para dar outra resposta não é um programa: é uma conta escrita de
 um jeito complicado.
 
 ### `input()`: o programa pergunta
@@ -58,7 +58,7 @@ print(type(idade))                      # <class 'str'>
 print(idade + 10)                       # TypeError!
 ```
 
-Aquele `TypeError: can only concatenate str (not "int") to str` do módulo 01 volta aqui — e agora
+Aquele `TypeError: can only concatenate str (not "int") to str` do módulo 01 volta aqui, e agora
 com consequência prática. O Python não tem como saber se você quer somar ou concatenar, então ele
 para.
 
@@ -70,15 +70,15 @@ print(idade + 10)                           # funciona
 ```
 
 Leia de dentro para fora: primeiro o `input()` roda e devolve texto, depois o `int()` transforma
-esse texto em número. As duas funções numa linha só — este é o padrão que você vai escrever
+esse texto em número. As duas funções numa linha só: este é o padrão que você vai escrever
 centenas de vezes.
 
 ### Qual conversão usar
 
 | Função | Converte para | Use quando |
 | --- | --- | --- |
-| `int()` | inteiro | idade, quantidade, ano — coisas que não têm meio |
-| `float()` | decimal | preço, altura, nota — coisas que têm casas decimais |
+| `int()` | inteiro | idade, quantidade, ano: coisas que não têm meio |
+| `float()` | decimal | preço, altura, nota: coisas que têm casas decimais |
 | `str()` | texto | juntar um número a um texto sem f-string |
 
 Na dúvida entre `int` e `float`, pergunte: **"faz sentido meio disso?"** Meia pessoa não faz;
@@ -94,7 +94,7 @@ float("texto")  # ValueError: could not convert string to float: 'texto'
 
 O segundo caso surpreende todo mundo: `"3.14"` **é** um número, mas não é a escrita de um
 **inteiro**. O Python não arredonda por conta própria porque arredondar seria adivinhar sua
-intenção — 3 ou 4?
+intenção: 3 ou 4?
 
 Se você precisa mesmo do inteiro a partir de `"3.14"`, o caminho tem duas etapas:
 
@@ -144,7 +144,7 @@ print("Esta linha", end="")         # não pula linha no fim
 print(" continua aqui")             # Esta linha continua aqui
 ```
 
-O `end=""` é o que permite montar uma saída aos poucos — você vai usá-lo no módulo 05 para imprimir
+O `end=""` é o que permite montar uma saída aos poucos: você vai usá-lo no módulo 05 para imprimir
 valores lado a lado dentro de um laço.
 
 ### O esqueleto de todo programa deste ponto em diante
@@ -181,17 +181,14 @@ cd modulo-03-entrada-e-saida/exemplos
 python 01_print.py
 ```
 
-Os exemplos 03, 04 e 05 pedem coisas digitadas. Responda de verdade — e depois responda errado de
+Os exemplos 03, 04 e 05 pedem coisas digitadas. Responda de verdade, e depois responda errado de
 propósito, que é onde o aprendizado mora.
 
 ## Exercícios
 
-1. [EXERCICIO-01-conversor-de-medidas.md](exercicios/EXERCICIO-01-conversor-de-medidas.md) —
-   *nível 1*: ler, calcular e formatar.
-2. [EXERCICIO-02-nota-fiscal.md](exercicios/EXERCICIO-02-nota-fiscal.md) —
-   *nível 2*: formatação alinhada e escolha de tipos.
-3. [EXERCICIO-03-planejador-de-viagem.md](exercicios/EXERCICIO-03-planejador-de-viagem.md) —
-   *nível 3*: sete entradas, nove cálculos e um relatório em três blocos.
+1. [EXERCICIO-01-conversor-de-medidas.md](exercicios/EXERCICIO-01-conversor-de-medidas.md) (nível 1): ler, calcular e formatar.
+2. [EXERCICIO-02-nota-fiscal.md](exercicios/EXERCICIO-02-nota-fiscal.md) (nível 2): formatação alinhada e escolha de tipos.
+3. [EXERCICIO-03-planejador-de-viagem.md](exercicios/EXERCICIO-03-planejador-de-viagem.md) (nível 3): sete entradas, nove cálculos e um relatório em três blocos.
 
 ## Auto-avaliação
 

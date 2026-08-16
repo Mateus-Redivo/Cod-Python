@@ -6,14 +6,14 @@
 
 ## Objetivo
 
-Converter uma quantidade de segundos em horas, minutos e segundos — o problema que a dupla `//` e
+Converter uma quantidade de segundos em horas, minutos e segundos: o problema que a dupla `//` e
 `%` resolve melhor que qualquer outra ferramenta.
 
 ## Requisitos
 
 1. Crie um arquivo `calculadora_de_tempo.py`.
 2. Defina uma variável com um total de segundos (por exemplo, `10000`). Ainda não é preciso pedir
-   ao usuário — `input()` é assunto do módulo 03.
+   ao usuário: `input()` é assunto do módulo 03.
 3. Calcule quantas **horas**, **minutos** e **segundos** completos esse total representa.
 4. Use apenas `//` e `%`. Nada de `if`, e nada de arredondar com `round()`.
 5. Exiba o resultado no formato do exemplo, e também no formato `HH:MM:SS`.
@@ -56,5 +56,4 @@ Acrescente o cálculo de **dias**. E responda em um comentário: o que acontece 
 
 ---
 
-Gabarito: [gabaritos/modulo-02-ex01-calculadora-de-tempo/](../../gabaritos/modulo-02-ex01-calculadora-de-tempo/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-02-ex01-calculadora-de-tempo/](../../gabaritos/modulo-02-ex01-calculadora-de-tempo/), depois de tentar, não antes.

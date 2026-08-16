@@ -2,8 +2,8 @@
 
 Cada exercício aqui tem dois arquivos com o mesmo tema:
 
-- `EXn.py` — código funcionando, mas mal escrito (repetição, nomes ruins, sem funções)
-- `EXn_refatorado.py` — versão corrigida, mostrando como o código deveria ser
+- `EXn.py`: código funcionando, mas mal escrito (repetição, nomes ruins, sem funções)
+- `EXn_refatorado.py`: versão corrigida, mostrando como o código deveria ser
 
 ## Como usar
 
@@ -15,8 +15,8 @@ Cada exercício aqui tem dois arquivos com o mesmo tema:
 ## O que procurar em cada exercicio
 
 - Blocos de código copiados e colados (o sinal mais comum de que precisa de função)
-- Variáveis numeradas: `nome1`, `nome2`, `nome3` — sinal de que precisa de lista + loop
-- Valores mágicos espalhados: `0.15`, `160`, `828.39` — deveriam ser constantes com nome
+- Variáveis numeradas: `nome1`, `nome2`, `nome3` (sinal de que precisa de lista + loop)
+- Valores mágicos espalhados: `0.15`, `160`, `828.39` (deveriam ser constantes com nome)
 - Ausência de `try/except` em conversões de tipo
 
 ## Temas dos exercicios

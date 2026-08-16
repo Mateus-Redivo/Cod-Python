@@ -7,7 +7,7 @@
 ## Objetivo
 
 Um programa que lê sete dados, faz nove cálculos encadeados e produz um relatório formatado em três
-blocos. É o maior programa da trilha até aqui — e o teste real de se você consegue organizar
+blocos. É o maior programa da trilha até aqui, e o teste real de se você consegue organizar
 entrada, processamento e saída sem se perder.
 
 ## Requisitos
@@ -26,7 +26,7 @@ entrada, processamento e saída sem se perder.
    - custo por quilômetro
    - percentual do custo que é pedágio
    - quantos litros sobram de um tanque de 50 litros
-5. Exiba um relatório em três blocos — **Rota**, **Custos** e **Rateio** — com valores alinhados à
+5. Exiba um relatório em três blocos: **Rota**, **Custos** e **Rateio**, com valores alinhados à
    direita e duas casas decimais no dinheiro.
 6. Use constantes para o tamanho do tanque e para os minutos por hora.
 
@@ -78,11 +78,11 @@ o resto de uma divisão com `float` também é `float` (e `20.0min` fica feio), 
 vez de arredondar**.
 
 Depois de pronto, confira: sua resposta deu `5h20min` ou `5h19min`? Se deu 19, não está "quase
-certo" — está errado, e vale descobrir por quê antes de olhar o gabarito. Rastreie a conta passo a
+certo": está errado, e vale descobrir por quê antes de olhar o gabarito. Rastreie a conta passo a
 passo imprimindo cada resultado intermediário.
 
 **O percentual.** `pedagio / total * 100` dá `12.769...`. A f-string tem um formato próprio para
-porcentagem (`:.1%`), mas ele **multiplica por 100 sozinho** — usar os dois é erro comum. Escolha
+porcentagem (`:.1%`), mas ele **multiplica por 100 sozinho**: usar os dois é erro comum. Escolha
 um.
 
 **O alinhamento.** Os três blocos precisam ficar retos na vertical, com rótulos de tamanhos bem
@@ -92,22 +92,21 @@ linhas.
 ## Critérios de aceitação
 
 - [ ] Os sete dados são lidos com o tipo certo, e a escolha está justificada em comentário
-- [ ] Todos os cálculos conferem — refaça três deles na calculadora
+- [ ] Todos os cálculos conferem (refaça três deles na calculadora)
 - [ ] A duração aparece nos dois formatos, e os minutos são inteiros
 - [ ] O rateio bate: `custo por pessoa × pessoas` volta ao custo total (com até 1 centavo de
       diferença por arredondamento)
 - [ ] As colunas ficam alinhadas nos três blocos
-- [ ] O destino aparece em maiúsculas no título — sem você digitá-lo em maiúsculas
+- [ ] O destino aparece em maiúsculas no título, sem você digitá-lo em maiúsculas
 - [ ] Nenhum `if`, laço ou lista no arquivo
 
 ## Sobre o centavo que sobra
 
-`270.10 / 3 = 90.0333...`, que arredonda para `90.03`. Mas `90.03 × 3 = 270.09` — falta um centavo.
+`270.10 / 3 = 90.0333...`, que arredonda para `90.03`. Mas `90.03 × 3 = 270.09`: falta um centavo.
 
 Isso não é bug: é a mesma questão do gabarito da nota fiscal. Escreva em um comentário quem, na sua
-opinião, deveria pagar esse centavo a mais — e por quê. Não há resposta técnica.
+opinião, deveria pagar esse centavo a mais, e por quê. Não há resposta técnica.
 
 ---
 
-Gabarito: [gabaritos/modulo-03-ex03-planejador-de-viagem/](../../gabaritos/modulo-03-ex03-planejador-de-viagem/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-03-ex03-planejador-de-viagem/](../../gabaritos/modulo-03-ex03-planejador-de-viagem/), depois de tentar, não antes.

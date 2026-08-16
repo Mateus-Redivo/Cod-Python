@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Receber um programa longo, escrito por outra pessoa, e reorganizá-lo em funções — sem alterar o
+Receber um programa longo, escrito por outra pessoa, e reorganizá-lo em funções, sem alterar o
 comportamento e sem ter escrito uma linha dele. É o trabalho real de manutenção de software.
 
 ## O código de partida
@@ -65,12 +65,12 @@ print("=" * 46)
 ## Requisitos
 
 1. Crie `estoque_refatorado.py` com a versão em funções.
-2. Extraia, no mínimo, estas funções — todas com `return`, exceto as de exibição:
-   - `calcular_valor_em_estoque(precos, estoque)` — o valor total
-   - `classificar_situacao(quantidade)` — devolve `"SEM ESTOQUE"`, `"CRITICO"` ou `"OK"`
-   - `contar_por_situacao(estoque, situacao)` — quantos produtos estão naquela situação
-   - `encontrar_mais_caro(produtos, precos)` — devolve nome e preço
-   - `calcular_preco_medio(precos)` — a média
+2. Extraia, no mínimo, estas funções, todas com `return`, exceto as de exibição:
+   - `calcular_valor_em_estoque(precos, estoque)`: o valor total
+   - `classificar_situacao(quantidade)`: devolve `"SEM ESTOQUE"`, `"CRITICO"` ou `"OK"`
+   - `contar_por_situacao(estoque, situacao)`: quantos produtos estão naquela situação
+   - `encontrar_mais_caro(produtos, precos)`: devolve nome e preço
+   - `calcular_preco_medio(precos)`: a média
    - `mostrar_cabecalho()`, `mostrar_linha_produto(...)`, `mostrar_resumo(...)`
 3. O corpo principal deve virar uma sequência legível de chamadas.
 4. A saída tem que ser **byte a byte idêntica** à do original.
@@ -78,7 +78,7 @@ print("=" * 46)
 
 ## Três problemas escondidos no código original
 
-Encontre-os durante a refatoração e escreva sobre cada um em um comentário. Não os conserte ainda —
+Encontre-os durante a refatoração e escreva sobre cada um em um comentário. Não os conserte ainda:
 o objetivo desta etapa é **preservar o comportamento**, incluindo os defeitos.
 
 1. O último bloco recalcula a média com um laço manual, embora exista uma função pronta para isso
@@ -90,7 +90,7 @@ o objetivo desta etapa é **preservar o comportamento**, incluindo os defeitos.
 
 ## Critérios de aceitação
 
-- [ ] As duas saídas são idênticas — conferidas linha por linha
+- [ ] As duas saídas são idênticas (conferidas linha por linha)
 - [ ] Existem pelo menos as oito funções pedidas
 - [ ] Funções de cálculo não têm `print`; funções de exibição não têm cálculo
 - [ ] Nenhum `global`
@@ -119,5 +119,4 @@ como você guardaria esses dados de um jeito mais seguro. O módulo 09 dá uma p
 
 ---
 
-Gabarito: [gabaritos/modulo-08-ex03-quebrando-o-monolito/](../../gabaritos/modulo-08-ex03-quebrando-o-monolito/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-08-ex03-quebrando-o-monolito/](../../gabaritos/modulo-08-ex03-quebrando-o-monolito/), depois de tentar, não antes.

@@ -3,7 +3,7 @@
 Enunciado: [EXERCICIO-02-prevendo-tipos.md](../../modulo-01-tipos-e-variaveis/exercicios/EXERCICIO-02-prevendo-tipos.md)
 
 > Se você chegou aqui sem ter preenchido a tabela primeiro, feche. O exercício mede onde o seu
-> modelo mental de tipos falha — ler a resposta antes apaga exatamente a informação que ele
+> modelo mental de tipos falha: ler a resposta antes apaga exatamente a informação que ele
 > produziria.
 
 ---
@@ -49,7 +49,7 @@ conforme os números escolhidos. Se você quer o inteiro, o operador é `//`, co
 As duas partem de `"7"`, mas fazem perguntas diferentes:
 
 - Linha 4 (`"7" + "3"`) trata os dois como **texto**: o `+` gruda, e o resultado é `'73'`. Ninguém
-  somou nada — é o mesmo mecanismo de `"bom" + "dia"`.
+  somou nada: é o mesmo mecanismo de `"bom" + "dia"`.
 - Linha 8 (`int("7") + 3`) **converte** o texto para número antes. Aí o `+` soma de verdade, e o
   resultado é `10`.
 
@@ -57,11 +57,11 @@ A lição: o `+` não tem um significado só. Quem decide o que ele faz é o **t
 
 **c) Por que a linha 10 quebra e a 9 não?**
 
-O nome da função é a resposta. `int()` converte para **inteiro** — e `"7.5"` não é a escrita de um
+O nome da função é a resposta. `int()` converte para **inteiro**, e `"7.5"` não é a escrita de um
 inteiro. O Python não arredonda por conta própria: arredondar seria adivinhar sua intenção
 (7? 8?), e ele prefere reclamar.
 
-`float()` converte para **decimal**, e `"7"` é uma escrita perfeitamente válida de decimal — vira
+`float()` converte para **decimal**, e `"7"` é uma escrita perfeitamente válida de decimal, vira
 `7.0`. Converter "para mais preciso" funciona; "para menos preciso" exige que você diga como.
 
 Se você quisesse mesmo o inteiro a partir de `"7.5"`, a conversão é em duas etapas:
@@ -72,7 +72,7 @@ int(float("7.5"))       # 7 — descarta a parte decimal
 
 **d) O que a linha 12 revela sobre `bool`?**
 
-Que `bool` é um `int` disfarçado. Em Python, `True` vale 1 e `False` vale 0 — literalmente, a ponto
+Que `bool` é um `int` disfarçado. Em Python, `True` vale 1 e `False` vale 0: literalmente, a ponto
 de `True + True` dar `2` e `type(True + True)` ser `int`.
 
 Isso não é curiosidade inútil: a partir do módulo 05 é um atalho comum para contar quantas vezes
@@ -96,7 +96,7 @@ O problema é `primeiro_valor = "10"` estar entre aspas: é o texto `"10"`, não
 
 **b) Duas correções**
 
-Tratando como **números** — provavelmente o que se queria:
+Tratando como **números** (provavelmente o que se queria):
 
 ```python
 primeiro_valor = "10"
@@ -116,15 +116,15 @@ print("Total:", total)          # Total: 105
 
 **Quando cada uma faz sentido?**
 
-A primeira, sempre que os valores representam **quantidades** — preços, notas, idades. É o caso
+A primeira, sempre que os valores representam **quantidades**: preços, notas, idades. É o caso
 esmagadoramente mais comum, e é o que você vai fazer no módulo 03 com tudo que vier do `input()`.
 
 A segunda, quando os valores são **rótulos que só parecem números**: código de produto, CPF, CEP,
-número de telefone. Aí somar não faz sentido nenhum — ninguém quer o resultado de somar dois CEPs.
+número de telefone. Aí somar não faz sentido nenhum: ninguém quer o resultado de somar dois CEPs.
 O sinal de alerta é: "faz sentido calcular a média disso?" Se não faz, é texto.
 
 Repare que as duas versões rodam sem erro e dão respostas completamente diferentes: `15` e `105`.
-O Python não tinha como escolher por você — por isso ele parou e perguntou.
+O Python não tinha como escolher por você. Por isso ele parou e perguntou.
 
 ---
 
@@ -134,6 +134,6 @@ O Python não tinha como escolher por você — por isso ele parou e perguntou.
 | --- | --- |
 | Linhas 2, 3, 6 | seção "Os quatro tipos básicos" do [README](../../modulo-01-tipos-e-variaveis/) |
 | Linhas 4, 5, 7, 11 | [exemplos/04_somando_tipos.py](../../modulo-01-tipos-e-variaveis/exemplos/04_somando_tipos.py) |
-| Linhas 8, 9, 10 | as conversões voltam com força no módulo 03 — vale reler depois de estudá-lo |
+| Linhas 8, 9, 10 | as conversões voltam com força no módulo 03: vale reler depois de estudá-lo |
 | Linha 12 | Experimento 3 do [exemplos/04_somando_tipos.py](../../modulo-01-tipos-e-variaveis/exemplos/04_somando_tipos.py) |
 | Parte 3 | seção "O mesmo `+` faz duas coisas diferentes" do [README](../../modulo-01-tipos-e-variaveis/) |

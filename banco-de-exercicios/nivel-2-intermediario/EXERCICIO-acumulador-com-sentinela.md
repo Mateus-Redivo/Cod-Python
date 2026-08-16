@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Ler números do usuário por tempo indeterminado — quem decide quando parar é ele — e resumir o que
+Ler números do usuário por tempo indeterminado (quem decide quando parar é ele) e resumir o que
 foi digitado.
 
 ## Requisitos
@@ -52,7 +52,7 @@ Nenhum número informado.
 ## Armadilha conhecida
 
 A média é `soma / quantidade`. Se a quantidade for zero, o Python levanta `ZeroDivisionError` e o
-programa morre. Teste a contagem **antes** de dividir — é exatamente o que o quinto requisito está
+programa morre. Teste a contagem **antes** de dividir: é exatamente o que o quinto requisito está
 pedindo.
 
 ## Desafio opcional
@@ -62,7 +62,7 @@ começar ambas em zero dá resposta errada se o usuário digitar só negativos.
 
 ---
 
-Gabarito: [gabaritos/banco-acumulador-com-sentinela/](../../gabaritos/banco-acumulador-com-sentinela/) —
+Gabarito: [gabaritos/banco-acumulador-com-sentinela/](../../gabaritos/banco-acumulador-com-sentinela/),
 depois de tentar, não antes.
 
 Pré-requisito: [Módulo 05 — Laços de repetição](../../modulo-05-lacos-de-repeticao/).

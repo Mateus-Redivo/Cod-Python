@@ -4,7 +4,7 @@ Prática extra, para quando os três exercícios de um módulo não bastaram.
 
 Estes exercícios **não fazem parte da trilha**. Nenhum módulo depende deles, e ninguém precisa
 fazê-los para avançar. Eles existem para quem terminou um módulo e quer mais repetição antes de
-seguir — ou para quem voltou meses depois e quer se testar.
+seguir, ou para quem voltou meses depois e quer se testar.
 
 ## Como estão organizados
 

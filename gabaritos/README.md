@@ -25,7 +25,7 @@ Por exemplo, a resolução do exercício 01 do módulo 05 está em
 
 ## Se a sua solução ficou diferente da minha
 
-Ótimo — e provavelmente está certa também. Programação não tem resposta única. Compare pelos
+Ótimo, e provavelmente está certa também. Programação não tem resposta única. Compare pelos
 critérios que importam, nesta ordem:
 
 1. **O resultado é o mesmo** para as mesmas entradas, inclusive nos casos-limite?

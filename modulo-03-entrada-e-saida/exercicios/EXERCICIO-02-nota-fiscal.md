@@ -6,14 +6,14 @@
 
 ## Objetivo
 
-Montar uma nota fiscal simples com alinhamento de colunas — o exercício em que a formatação deixa
+Montar uma nota fiscal simples com alinhamento de colunas: o exercício em que a formatação deixa
 de ser enfeite e vira requisito.
 
 ## Requisitos
 
 1. Crie um arquivo `nota_fiscal.py`.
 2. Pergunte, para **três** produtos: nome, quantidade e preço unitário.
-3. Escolha o tipo certo em cada conversão. Quantidade e preço não são o mesmo tipo de coisa —
+3. Escolha o tipo certo em cada conversão. Quantidade e preço não são o mesmo tipo de coisa:
    justifique sua escolha em um comentário.
 4. Calcule o subtotal de cada produto (quantidade x preço) e o total geral.
 5. Aplique 10% de desconto sobre o total. Use uma constante para a taxa.
@@ -78,11 +78,10 @@ retas na vertical.
 ## Desafio opcional
 
 O desconto de 10% sobre 175.29 dá 17.529, que arredondado vira 17.53. Mas 175.29 - 17.53 = 157.76,
-enquanto 175.29 x 0.9 = 157.761, que arredonda para 157.76 também. Neste caso bateu — mas nem sempre
+enquanto 175.29 x 0.9 = 157.761, que arredonda para 157.76 também. Neste caso bateu, mas nem sempre
 bate. Encontre um valor de total em que as duas formas de calcular deem resultados **diferentes** na
 segunda casa, e escreva em um comentário qual das duas você escolheria.
 
 ---
 
-Gabarito: [gabaritos/modulo-03-ex02-nota-fiscal/](../../gabaritos/modulo-03-ex02-nota-fiscal/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-03-ex02-nota-fiscal/](../../gabaritos/modulo-03-ex02-nota-fiscal/), depois de tentar, não antes.

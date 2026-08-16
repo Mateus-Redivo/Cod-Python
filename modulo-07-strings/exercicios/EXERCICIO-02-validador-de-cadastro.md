@@ -6,7 +6,7 @@
 
 ## Objetivo
 
-Limpar e conferir dados digitados por uma pessoa real — que erra o tamanho da caixa, deixa espaços
+Limpar e conferir dados digitados por uma pessoa real, que erra o tamanho da caixa, deixa espaços
 sobrando e digita de qualquer jeito.
 
 ## Requisitos
@@ -72,7 +72,7 @@ telefone.replace(" ", "")   # encadeie um replace para cada caractere
 ```
 
 Para o resumo final, guarde o resultado de cada validação em uma variável `bool` e junte tudo com
-`and` — é o módulo 02 voltando.
+`and`: é o módulo 02 voltando.
 
 ## Critérios de aceitação
 
@@ -87,7 +87,7 @@ Para o resumo final, guarde o resultado de cada validação em uma variável `bo
 ## Sobre validar e-mail de verdade
 
 O que você vai escrever aqui é uma verificação simplificada, e é assim de propósito. Validar e-mail
-corretamente é notoriamente difícil — `a@b` é tecnicamente válido, e endereços reais podem ter
+corretamente é notoriamente difícil: `a@b` é tecnicamente válido, e endereços reais podem ter
 caracteres que surpreendem. Em programa de verdade, o teste que vale é mandar uma mensagem de
 confirmação. O objetivo aqui é treinar `find`, `split` e `count`, não escrever um validador para
 produção.
@@ -95,10 +95,9 @@ produção.
 ## Desafio opcional
 
 Você validou, mas não consegue **pedir de novo**. Escreva em um comentário como esse programa
-mudaria se você pudesse repetir a pergunta até o dado ficar bom — e diga qual estrutura do módulo
+mudaria se você pudesse repetir a pergunta até o dado ficar bom, e diga qual estrutura do módulo
 05 faria isso.
 
 ---
 
-Gabarito: [gabaritos/modulo-07-ex02-validador-de-cadastro/](../../gabaritos/modulo-07-ex02-validador-de-cadastro/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-07-ex02-validador-de-cadastro/](../../gabaritos/modulo-07-ex02-validador-de-cadastro/), depois de tentar, não antes.

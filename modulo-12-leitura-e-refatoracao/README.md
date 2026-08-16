@@ -1,7 +1,7 @@
 # Módulo 12 — Leitura e refatoração
 
 Você passou onze módulos aprendendo a **escrever** código. Na vida profissional, você vai gastar
-muito mais tempo **lendo** — código dos outros, e código seu de seis meses atrás, que dá no mesmo.
+muito mais tempo **lendo**: código dos outros, e código seu de seis meses atrás, que dá no mesmo.
 
 Este módulo é sobre as duas habilidades que decorrem disso: entender um código que você não
 escreveu, e melhorá-lo **sem quebrá-lo**.
@@ -12,7 +12,7 @@ Ao final deste módulo você será capaz de:
 
 - [ ] Ler um código ruim e descrever o que ele faz, sem executá-lo
 - [ ] Nomear os sinais de código que pede refatoração
-- [ ] Refatorar preservando comportamento — e provar que preservou
+- [ ] Refatorar preservando comportamento, e provar que preservou
 - [ ] Explicar por que refatorar e corrigir bugs não devem andar juntos
 - [ ] Escrever comentários que envelhecem bem
 - [ ] Decidir quando **não** vale a pena refatorar
@@ -29,7 +29,7 @@ usa tudo: você não consegue melhorar um código sem entender listas, laços, c
 > **Refatorar é mudar a estrutura do código sem mudar o que ele faz.**
 
 As duas metades importam igualmente. Se o código não melhorou, você perdeu tempo. Se o
-comportamento mudou, você não refatorou — introduziu uma alteração, possivelmente um bug.
+comportamento mudou, você não refatorou: introduziu uma alteração, possivelmente um bug.
 
 Isso leva à regra mais importante do módulo:
 
@@ -70,14 +70,14 @@ Nenhum é erro. Todos são **atrito**: o código funciona, mas custa caro para e
 ### O que a refatoração não é
 
 - **Não é reescrever do zero.** Reescrever joga fora todas as correções silenciosas que o código
-  acumulou — inclusive as que ninguém lembra por que existem.
+  acumulou, inclusive as que ninguém lembra por que existem.
 - **Não é deixar mais curto.** Menos linhas nem sempre é mais claro.
 - **Não é adicionar recursos.** Isso é outra tarefa, em outro commit.
 
 ### O caso dos cinco pares
 
 A pasta `exemplos/` tem cinco programas em duas versões: `_antes.py` e `_depois.py`. Eles vieram do
-material antigo deste repositório e são reais — não foram fabricados para a aula.
+material antigo deste repositório e são reais, não foram fabricados para a aula.
 
 Rodando o `diff` nos cinco pares, o resultado surpreende:
 
@@ -91,7 +91,7 @@ Rodando o `diff` nos cinco pares, o resultado surpreende:
 
 Três dos cinco mudaram a saída. **Isso significa que não foram refatorações?**
 
-Não necessariamente — e é aí que o módulo fica interessante. Olhando de perto:
+Não necessariamente, e é aí que o módulo fica interessante. Olhando de perto:
 
 - No **05**, a função devolve exatamente `50.0` nas duas versões. O que mudou foi o `print` final,
   que passou a usar `:.2f` e exibe `50.00`. O **cálculo** é idêntico; a **apresentação** mudou.
@@ -99,7 +99,7 @@ Não necessariamente — e é aí que o módulo fica interessante. Olhando de pe
 - No **02**, a versão nova acrescentou casos de teste que não existiam antes.
 
 Ou seja: as **funções** foram refatoradas de verdade. O que mudou foi o bloco de demonstração no fim
-do arquivo, que não é o programa — é o teste dele.
+do arquivo, que não é o programa, é o teste dele.
 
 Isso levanta a pergunta que você vai levar para o resto da carreira: **o que exatamente conta como
 "comportamento"?** A resposta prática é: o que o usuário do seu código observa. Se ele chama uma
@@ -160,12 +160,9 @@ desconfortável de propósito: é assim que se chega num código na vida real.
 
 ## Exercícios
 
-1. [EXERCICIO-01-lendo-codigo-alheio.md](exercicios/EXERCICIO-01-lendo-codigo-alheio.md) —
-   *nível 1*: descrever o que um código faz sem rodá-lo.
-2. [EXERCICIO-02-refatorando-com-prova.md](exercicios/EXERCICIO-02-refatorando-com-prova.md) —
-   *nível 2*: refatorar e provar que a saída não mudou.
-3. [EXERCICIO-03-auditoria-de-refatoracao.md](exercicios/EXERCICIO-03-auditoria-de-refatoracao.md) —
-   *nível 3*: julgar refatorações alheias, incluindo as deste módulo.
+1. [EXERCICIO-01-lendo-codigo-alheio.md](exercicios/EXERCICIO-01-lendo-codigo-alheio.md) (nível 1): descrever o que um código faz sem rodá-lo.
+2. [EXERCICIO-02-refatorando-com-prova.md](exercicios/EXERCICIO-02-refatorando-com-prova.md) (nível 2): refatorar e provar que a saída não mudou.
+3. [EXERCICIO-03-auditoria-de-refatoracao.md](exercicios/EXERCICIO-03-auditoria-de-refatoracao.md) (nível 3): julgar refatorações alheias, incluindo as deste módulo.
 
 ## Auto-avaliação
 

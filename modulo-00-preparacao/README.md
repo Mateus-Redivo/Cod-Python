@@ -4,7 +4,7 @@
 
 Antes de aprender a programar, você precisa conseguir **rodar** um programa. Este módulo existe
 para resolver isso e mais nada: no fim dele você terá o Python instalado, um arquivo seu
-funcionando e — o que mais importa — não terá medo da tela vermelha de erro.
+funcionando e (o que mais importa) não terá medo da tela vermelha de erro.
 
 É o módulo mais curto da trilha. Também é o único que, se você pular, trava todos os outros.
 
@@ -19,14 +19,14 @@ modulo-NN-nome-do-tema/
 └── exercicios/     <- Enunciados para VOCÊ escrever. Nunca a resposta.
 ```
 
-E as respostas ficam em [gabaritos/](../gabaritos/), fora da pasta do módulo — de propósito, para
+E as respostas ficam em [gabaritos/](../gabaritos/), fora da pasta do módulo, de propósito, para
 você não esbarrar nelas sem querer.
 
 **O ciclo de cada módulo, na ordem:**
 
 1. **Leia o `README.md` inteiro.** A aula está ali, não no código. Não pule para os arquivos `.py`.
 2. **Rode os exemplos** na ordem numerada, um por vez.
-3. **Faça o *Experimento*** que fecha cada exemplo — ele pede que você quebre o código de
+3. **Faça o *Experimento*** que fecha cada exemplo: ele pede que você quebre o código de
    propósito. Essa é a parte que mais ensina, e é a que todo mundo pula.
 4. **Resolva os exercícios** sem abrir o gabarito. Cada módulo tem três, em dificuldade crescente:
    nível 1 fixa, nível 2 aplica, nível 3 desafia. (Este módulo 00 é a exceção: tem dois.)
@@ -55,7 +55,7 @@ Ao final deste módulo você será capaz de:
 
 Nenhum. Este é o começo.
 
-Só é preciso ter o Python e o VS Code instalados — o passo a passo está no
+Só é preciso ter o Python e o VS Code instalados: o passo a passo está no
 [Guia do aluno](../GUIA-DO-ALUNO.md), seções 1 e 2. Faça a instalação antes de continuar.
 
 ## Conceito
@@ -63,7 +63,7 @@ Só é preciso ter o Python e o VS Code instalados — o passo a passo está no
 ### O que é, afinal, "rodar" um programa
 
 Um arquivo `.py` é texto puro. Você poderia abri-lo no Bloco de Notas: não tem mágica nem nada
-compilado dentro. O que dá vida a ele é o **interpretador** — o programa chamado `python`, que você
+compilado dentro. O que dá vida a ele é o **interpretador**: o programa chamado `python`, que você
 instalou.
 
 Quando você digita `python ola.py`, acontece o seguinte:
@@ -71,9 +71,9 @@ Quando você digita `python ola.py`, acontece o seguinte:
 1. O interpretador abre o arquivo e lê a **primeira linha**
 2. Executa o que ela manda
 3. Passa para a linha seguinte
-4. Repete até acabar o arquivo — ou até encontrar um erro
+4. Repete até acabar o arquivo, ou até encontrar um erro
 
-Esse detalhe — **de cima para baixo, uma linha por vez** — explica quase todo comportamento
+Esse detalhe (**de cima para baixo, uma linha por vez**) explica quase todo comportamento
 estranho que você vai encontrar no começo. Se uma variável "não existe", quase sempre é porque a
 linha que a cria está *abaixo* da linha que a usa.
 
@@ -84,7 +84,7 @@ print("Olá, mundo!")
 ```
 
 Uma linha. `print` é uma **função**: um comando pronto que já vem com o Python. O que estiver entre
-os parênteses é mostrado na tela. As aspas dizem "isto é texto" — sem elas, o Python tentaria
+os parênteses é mostrado na tela. As aspas dizem "isto é texto". Sem elas, o Python tentaria
 entender `Olá, mundo!` como nomes de variáveis e reclamaria.
 
 ### O erro não é o inimigo
@@ -107,7 +107,7 @@ SyntaxError: unterminated string literal
 | `^` | o ponto exato que confundiu o interpretador |
 | `SyntaxError: ...` | **o quê** aconteceu |
 
-Leia sempre a **última linha primeiro** — é ela que nomeia o problema. Depois suba para achar a
+Leia sempre a **última linha primeiro**: é ela que nomeia o problema. Depois suba para achar a
 linha. Nesse exemplo: faltou fechar as aspas.
 
 Vale decorar dois nomes que você vai ver muito:
@@ -136,7 +136,7 @@ idade = 18          # atribui 18 a idade
 idade = 18          # idade mínima exigida pela legislação
 ```
 
-No começo você vai comentar demais, e tudo bem — comentar demais é fase, e ensina a pensar sobre o
+No começo você vai comentar demais, e tudo bem: comentar demais é fase, e ensina a pensar sobre o
 próprio código.
 
 ### Quando o programa trava
@@ -163,17 +163,15 @@ python 01_ola_mundo.py
 ```
 
 Se `python` não for reconhecido, tente `python3`. Se nenhum funcionar, a instalação não colocou o
-Python no PATH — volte à seção 1 do [Guia do aluno](../GUIA-DO-ALUNO.md).
+Python no PATH: volte à seção 1 do [Guia do aluno](../GUIA-DO-ALUNO.md).
 
 ## Exercícios
 
-1. [EXERCICIO-01-cartao-de-visita.md](exercicios/EXERCICIO-01-cartao-de-visita.md) —
-   *nível 1*: seu primeiro programa escrito do zero.
-2. [EXERCICIO-02-decifrando-erros.md](exercicios/EXERCICIO-02-decifrando-erros.md) —
-   *nível 2*: ler cinco mensagens de erro e consertar os programas.
+1. [EXERCICIO-01-cartao-de-visita.md](exercicios/EXERCICIO-01-cartao-de-visita.md) (nível 1): seu primeiro programa escrito do zero.
+2. [EXERCICIO-02-decifrando-erros.md](exercicios/EXERCICIO-02-decifrando-erros.md) (nível 2): ler cinco mensagens de erro e consertar os programas.
 
 Este é o único módulo com dois exercícios em vez de três. Ele ensina `print`, comentários e leitura
-de erro — um terceiro nível aqui seria enchimento. Os desafios de nível 3 começam no módulo 01.
+de erro: um terceiro nível aqui seria enchimento. Os desafios de nível 3 começam no módulo 01.
 
 ## Auto-avaliação
 
@@ -192,7 +190,7 @@ de erro — um terceiro nível aqui seria enchimento. Os desafios de nível 3 co
 | `No such file or directory` | você está na pasta errada, ou digitou o nome do arquivo diferente do real |
 | `SyntaxError: unterminated string literal` | faltou fechar aspas |
 | `SyntaxError: '(' was never closed` | faltou fechar parêntese |
-| `NameError: name 'primt' is not defined` | erro de digitação; o Python ainda completa com `Did you mean: 'print'?` — leia até o fim |
+| `NameError: name 'primt' is not defined` | erro de digitação; o Python ainda completa com `Did you mean: 'print'?`, leia até o fim |
 | Acentos saem trocados no terminal do Windows | o `cmd.exe` antigo não usa UTF-8; use o terminal do VS Code ou o Windows Terminal |
 | Salvou o arquivo com `.txt` no fim | o Windows esconde extensões; confira se é mesmo `.py` |
 

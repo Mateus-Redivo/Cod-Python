@@ -1,7 +1,7 @@
 # Módulo 09 — Matrizes
 
-No módulo 08 você terminou com um incômodo: três listas paralelas — `produtos`, `precos`,
-`estoque` — que precisavam ficar sempre na mesma ordem. Basta alguém acrescentar um item e esquecer
+No módulo 08 você terminou com um incômodo: três listas paralelas (`produtos`, `precos`,
+`estoque`) que precisavam ficar sempre na mesma ordem. Basta alguém acrescentar um item e esquecer
 o preço para tudo desalinhar.
 
 A matriz resolve isso. Ela é o que você usa quando os dados têm **duas dimensões**: uma tabela, um
@@ -23,7 +23,7 @@ Ao final deste módulo você será capaz de:
 
 [Módulo 08 — Funções](../modulo-08-funcoes/) concluído. E os módulos 05 e 06 bem assentados: uma
 matriz é uma lista de listas percorrida com laços dentro de laços. Se `for` e índice ainda te
-confundem, volte antes — aqui tudo dobra.
+confundem, volte antes: aqui tudo dobra.
 
 ## Conceito
 
@@ -36,7 +36,7 @@ estoque = [40, 12, 3]
 ```
 
 O preço da mochila é `precos[2]` porque a mochila é `produtos[2]`. Essa correspondência não está
-escrita em lugar nenhum — é uma **combinação** que só existe na cabeça de quem escreveu. Acrescente
+escrita em lugar nenhum: é uma **combinação** que só existe na cabeça de quem escreveu. Acrescente
 um produto sem acrescentar o preço e o programa passa a mentir, ou quebra com `IndexError`.
 
 ```python
@@ -75,7 +75,7 @@ matriz[2][1]    # 8  — linha 2, coluna 1
 ```
 
 Leia da esquerda para a direita: `matriz[1]` devolve a lista `[4, 5, 6]`; o `[2]` seguinte pega o
-elemento 2 **dessa** lista. Não há mágica nova — é o índice do módulo 06 aplicado duas vezes.
+elemento 2 **dessa** lista. Não há mágica nova: é o índice do módulo 06 aplicado duas vezes.
 
 **Linha primeiro, coluna depois.** Trocar a ordem não dá erro; dá o elemento errado.
 
@@ -98,7 +98,7 @@ for linha in range(len(matriz)):
 ```
 
 O laço de **fora** anda pelas linhas; o de **dentro**, pelas colunas de cada linha. O `print()`
-vazio, entre os dois, é o que faz a saída sair em formato de tabela — ele pertence ao laço externo.
+vazio, entre os dois, é o que faz a saída sair em formato de tabela. Ele pertence ao laço externo.
 
 Esse desenho é o mesmo do exemplo de laço aninhado que você analisou no módulo 05. Agora ele tem um
 propósito.
@@ -137,7 +137,7 @@ matriz[0][0] = 9
 print(matriz)               # [[9, 0, 0], [9, 0, 0], [9, 0, 0]]
 ```
 
-Mudou **as três linhas** de uma vez. O motivo: `* 3` não faz três cópias da lista — faz três
+Mudou **as três linhas** de uma vez. O motivo: `* 3` não faz três cópias da lista: faz três
 referências **à mesma** lista. Alterar uma altera todas, porque são a mesma.
 
 A forma segura é a do bloco anterior, criando uma lista nova a cada volta.
@@ -177,19 +177,19 @@ python 01_criando_e_acessando.py
 
 ## Exercícios
 
-1. [EXERCICIO-01-operacoes-com-matrizes.md](exercicios/EXERCICIO-01-operacoes-com-matrizes.md) —
-   *nível 1*: soma, transposta e multiplicação por escalar.
-2. [EXERCICIO-02-boletim-bimestral.md](exercicios/EXERCICIO-02-boletim-bimestral.md) —
-   *nível 2*: notas de vários alunos em vários bimestres.
-3. [EXERCICIO-03-jogo-da-velha.md](exercicios/EXERCICIO-03-jogo-da-velha.md) —
-   *nível 3*: tabuleiro, jogadas e detecção de vitória.
+1. [EXERCICIO-01-operacoes-com-matrizes.md](exercicios/EXERCICIO-01-operacoes-com-matrizes.md)
+   (nível 1): soma, transposta e multiplicação por escalar.
+2. [EXERCICIO-02-boletim-bimestral.md](exercicios/EXERCICIO-02-boletim-bimestral.md)
+   (nível 2): notas de vários alunos em vários bimestres.
+3. [EXERCICIO-03-jogo-da-velha.md](exercicios/EXERCICIO-03-jogo-da-velha.md)
+   (nível 3): tabuleiro, jogadas e detecção de vitória.
 
 ## Para ir além
 
 Estes assuntos ficam fora da trilha, mas o material existe e vale a curiosidade:
 
-- **Matriz espelhada e valores extremos** — variações dos exercícios acima.
-- **NumPy** — a biblioteca que faz tudo isto em uma linha, e que profissionais usam para valer.
+- **Matriz espelhada e valores extremos**: variações dos exercícios acima.
+- **NumPy**: a biblioteca que faz tudo isto em uma linha, e que profissionais usam para valer.
   Fora do escopo porque o objetivo aqui é entender o mecanismo, não terceirizá-lo. Depois do módulo
   14, olhe.
 

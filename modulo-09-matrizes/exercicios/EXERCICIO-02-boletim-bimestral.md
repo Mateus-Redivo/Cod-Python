@@ -35,7 +35,7 @@ notas = [
 | `media_do_bimestre(notas, bimestre)` | a média de uma coluna |
 | `situacao(media)` | `"Aprovado"` (>= 7), `"Recuperação"` (>= 5) ou `"Reprovado"` |
 | `melhor_aluno(alunos, notas)` | o nome de quem tem a maior média |
-| `mostrar_boletim(alunos, notas)` | nada — imprime a tabela |
+| `mostrar_boletim(alunos, notas)` | nada: imprime a tabela |
 
 4. A tabela deve mostrar, por aluno: as quatro notas, a média e a situação.
 5. No rodapé, a média da turma em cada bimestre e o melhor aluno.
@@ -58,17 +58,17 @@ Melhor aluno: Carla (9.25)
 
 ## A diferença que o exercício ensina
 
-- A média de um **aluno** é a média de uma **linha** — e a linha já é uma lista, então `sum()`
+- A média de um **aluno** é a média de uma **linha**, e a linha já é uma lista, então `sum()`
   resolve.
-- A média de um **bimestre** é a média de uma **coluna** — e a coluna não existe como lista, então
+- A média de um **bimestre** é a média de uma **coluna**, e a coluna não existe como lista, então
   é preciso um laço que colete `notas[linha][bimestre]` de cada linha.
 
 Se as duas funções ficaram parecidas demais, releia: elas percorrem a matriz em direções diferentes.
 
 ## Critérios de aceitação
 
-- [ ] As médias por aluno estão corretas — confira a da Ana na calculadora
-- [ ] As médias por bimestre estão corretas — confira a do 1º bimestre
+- [ ] As médias por aluno estão corretas (confira a da Ana na calculadora)
+- [ ] As médias por bimestre estão corretas (confira a do 1º bimestre)
 - [ ] As colunas ficam alinhadas na vertical
 - [ ] Nenhuma função usa os números 4 ou 5 fixos; tudo com `len()`
 - [ ] Acrescentar um quinto aluno funciona sem mudar nenhuma função
@@ -76,11 +76,10 @@ Se as duas funções ficaram parecidas demais, releia: elas percorrem a matriz e
 
 ## Desafio opcional
 
-Acrescente uma coluna "Faltas" — mas note o problema: faltas não são notas, e misturá-las na mesma
+Acrescente uma coluna "Faltas", mas note o problema: faltas não são notas, e misturá-las na mesma
 matriz obrigaria a lembrar que "a última coluna é diferente". Escreva em um comentário como você
 guardaria as faltas sem essa armadilha.
 
 ---
 
-Gabarito: [gabaritos/modulo-09-ex02-boletim-bimestral/](../../gabaritos/modulo-09-ex02-boletim-bimestral/) —
-depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-09-ex02-boletim-bimestral/](../../gabaritos/modulo-09-ex02-boletim-bimestral/), depois de tentar, não antes.
