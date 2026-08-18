@@ -118,7 +118,7 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 | 2 | Pedro Baldani | Sabado Manha |
 | 3 | Miguel Machado | Sabado Manha |
 | 4 | Gabriel Castro | Sexta Manha |
-| 5 | | |
+| 5 | Murilo Fink | Sexta Tarde |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra o enigma do Kelpie.
@@ -223,4 +223,9 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 ## Grupo 5 — fora das estações
 
-Pedro Silva, Pedro Ming, Richard e Luiz Fellipe não vão participar como grupo do evento. Eles vão fazer um trabalho separado, com um sistema próprio.
+Pedro Silva Quinta e Sexta Dia inteiro
+Pedro Ming  
+Richard Todos os dias
+Luiz Fellipe Quinta Inteiro e Sabado
+
+não vão participar como grupo do evento. Eles vão fazer um trabalho separado, com um sistema próprio.
