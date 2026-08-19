@@ -38,11 +38,13 @@ Cada integrante escolhe um dos turnos abaixo para ficar na estação. Anote o tu
 
 | Turno | Horário |
 | --- | --- |
+| Quinta de manhã | 8h às 12h |
+| Quinta à tarde | 13h às 17h |
 | Sexta de manhã | 8h às 12h |
 | Sexta à tarde | 13h às 17h |
 | Sábado de manhã | 8h às 12h |
 
-A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre os três horários.
+A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre os cinco horários.
 
 ---
 

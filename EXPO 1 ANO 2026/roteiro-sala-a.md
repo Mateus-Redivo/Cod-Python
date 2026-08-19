@@ -38,11 +38,13 @@ Cada integrante escolhe um dos turnos abaixo para ficar na estação. Anote o tu
 
 | Turno | Horário |
 | --- | --- |
+| Quinta de manhã | 8h às 12h |
+| Quinta à tarde | 13h às 17h |
 | Sexta de manhã | 8h às 12h |
 | Sexta à tarde | 13h às 17h |
 | Sábado de manhã | 8h às 12h |
 
-A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre os três horários.
+A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre os cinco horários.
 
 ---
 
@@ -54,11 +56,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Victor Nascimento | Sexta Manha |
-| 2 | Victor Carmo | Sexta Tarde |
-| 3 | Cauã Ballarin | Sabado Manha |
-| 4 | Daniel Souza | Sexta Tarde |
-| 5 | Erick Shaft | Sexta Manha |
+| 1 | Victor Nascimento | Quinta Manha + Sexta Manha |
+| 2 | Victor Carmo | Quinta Tarde + Sexta Tarde |
+| 3 | Cauã Ballarin | Sexta Tarde + Sabado Manha |
+| 4 | Daniel Souza | Quinta Tarde + Sabado Manha |
+| 5 | Erick Shaft | Quinta Manha + Sexta Manha |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra como o Guardião do Brejo; os outros cuidam do computador e recebem o próximo visitante.
@@ -87,11 +89,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Eduardo Almeida | Sexta Tarde |
-| 2 | Lucas Mascia | Sabado Manha |
-| 3 | João Davi | Sexta Manha |
-| 4 | Davi Campos | Sexta Tarde |
-| 5 | Vinicius Gouvea | Sabado Manha |
+| 1 | Eduardo Almeida | Quinta Manha + Sexta Manha |
+| 2 | Lucas Mascia | Quinta Tarde + Sabado Manha |
+| 3 | João Davi | Quinta Tarde + Sexta Tarde |
+| 4 | Davi Campos | Quinta Manha + Sexta Tarde |
+| 5 | Vinicius Gouvea | Sexta Manha + Sabado Manha |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra como serviçal do castelo que cuidava do quarto de Nessa.
@@ -214,11 +216,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Matheus Rezende | Sexta Tarde - Sabado Manha |
-| 2 | Guilherme Capozzi | Sabado Manha |
-| 3 | Gabriel Coimbra | Sexta Manha |
-| 4 | Gabriel Ferraz | Sexta Manha |
-| 5 | Giovani Pereira | Sexta Tarde |
+| 1 | Matheus Rezende | Sexta Tarde + Sabado Manha |
+| 2 | Guilherme Capozzi | Quinta Tarde + Sabado Manha |
+| 3 | Gabriel Coimbra | Quinta Manha + Sexta Manha |
+| 4 | Gabriel Ferraz | Quinta Manha + Sexta Manha |
+| 5 | Giovani Pereira | Quinta Tarde + Sexta Tarde |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra a cena; outro pode interpretar "a mulher ao longe".
