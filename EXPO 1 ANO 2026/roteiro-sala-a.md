@@ -89,11 +89,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Eduardo Almeida | Quinta Manha + Sexta Manha |
+| 1 | Eduardo Almeida | Quinta Manha + Sexta Tarde |
 | 2 | Lucas Mascia | Quinta Tarde + Sabado Manha |
-| 3 | João Davi | Quinta Tarde + Sexta Tarde |
-| 4 | Davi Campos | Quinta Manha + Sexta Tarde |
-| 5 | Vinicius Gouvea | Sexta Manha + Sabado Manha |
+| 3 | João Davi | Quinta Tarde + Sexta Manha |
+| 4 | Davi Campos | Quinta Tarde + Sexta Manha |
+| 5 | Vinicius Gouvea | Sexta Tarde + Sabado Manha |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra como serviçal do castelo que cuidava do quarto de Nessa.
@@ -122,10 +122,10 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Vinicius Henrique Santos | Sexta Manha |
-| 2 | Rihan Alves | Sexta Manha |
-| 3 | Miguel Capriolli | |
-| 4 | Caio Henrique | |
+| 1 | Vinicius Henrique Santos | Sexta Manha + Sexta Tarde |
+| 2 | Rihan Alves | Quinta Manha + Sexta Manha |
+| 3 | Miguel Capriolli |  Quinta Manha + Quinta Tarde|
+| 4 | Caio Henrique | Quinta Manha + Sabado Manha|
 | 5 | | |
 | 6 | | |
 
@@ -154,11 +154,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Matheus Favaro | Sexta Manha |
-| 2 | Enzo Barufi | Sabado Manha |
-| 3 | João Geraldes | Sexta Manha |
+| 1 | Matheus Favaro | Quinta Manha + Sexta Manha |
+| 2 | Enzo Barufi | Quinta Tarde + Sabado Manha |
+| 3 | João Geraldes | Quinta Manha + Sexta Manha |
 | 4 | Lucas Morais | Sexta Tarde |
-| 5 | Murilo Rossini | Sabado Manha |
+| 5 | Murilo Rossini | Quinta Tarde + Sabado Manha |
 | 6 | | |
 
 **Personagem do grupo:** um integrante interpreta a própria Bean Nigh — tom baixo, teatral, quase sussurrando.
@@ -186,10 +186,10 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Artur Ramaloh | Sabado Manha |
-| 2 | Vinicius Hiroshi | Sabado Manha |
-| 3 | Nayran Paes | Sexta Manha - Tarde |
-| 4 | Luan Figueiredo | Sexta Manha - Tarde |
+| 1 | Artur Ramalho | Quinta Tarde + Sabado Manha |
+| 2 | Vinicius Hiroshi | Quinta Tarde + Sabado Manha |
+| 3 | Nayran Paes | Quinta Manha + Sexta Manha + Sexta Tarde |
+| 4 | Luan Figueiredo | Quinta Manha + Sexta Manha + Sexta Tarde |
 | 5 | | |
 | 6 | | |
 
