@@ -124,8 +124,8 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 | --- | --- | --- |
 | 1 | Vinicius Henrique Santos | Sexta Manha + Sexta Tarde |
 | 2 | Rihan Alves | Quinta Manha + Sexta Manha |
-| 3 | Miguel Capriolli |  Quinta Manha + Quinta Tarde|
-| 4 | Caio Henrique | Quinta Manha + Sabado Manha|
+| 3 | Miguel Capriolli | Quinta Manha + Quinta Tarde |
+| 4 | Caio Henrique | Quinta Manha + Sabado Manha |
 | 5 | | |
 | 6 | | |
 
