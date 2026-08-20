@@ -190,7 +190,7 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 | 2 | Vinicius Hiroshi | Quinta Tarde + Sabado Manha |
 | 3 | Nayran Paes | Quinta Manha + Sexta Manha + Sexta Tarde |
 | 4 | Luan Figueiredo | Quinta Manha + Sexta Manha + Sexta Tarde |
-| 5 | | |
+| 5 | Murilo Fink | Quinta Manha + Sexta Manha |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra como zelador do castelo.
