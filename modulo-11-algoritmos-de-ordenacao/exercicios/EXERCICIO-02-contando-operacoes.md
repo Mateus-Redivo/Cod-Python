@@ -79,4 +79,4 @@ Esse é um erro clássico de medição, e ele produz números que parecem plaus�
 
 ---
 
-Gabarito: [gabaritos/modulo-11-ex02-contando-operacoes/](../../gabaritos/modulo-11-ex02-contando-operacoes/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-11/ex02-contando-operacoes/](../../gabaritos/modulo-11/ex02-contando-operacoes/), depois de tentar, não antes.

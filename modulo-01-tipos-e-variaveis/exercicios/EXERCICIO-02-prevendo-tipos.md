@@ -73,4 +73,4 @@ como texto. Explique quando cada uma faria sentido.
 
 ---
 
-Gabarito: [gabaritos/modulo-01-ex02-prevendo-tipos/](../../gabaritos/modulo-01-ex02-prevendo-tipos/), depois de tentar, não antes. Ler a resposta antes de prever esvazia o exercício por completo.
+Gabarito: [gabaritos/modulo-01/ex02-prevendo-tipos/](../../gabaritos/modulo-01/ex02-prevendo-tipos/), depois de tentar, não antes. Ler a resposta antes de prever esvazia o exercício por completo.

@@ -1,6 +1,6 @@
 # Gabarito — Módulo 13, Exercício 03: Auditoria do sistema
 
-Enunciado: [EXERCICIO-03-auditoria-do-sistema.md](../../modulo-13-estudo-de-caso-crud/exercicios/EXERCICIO-03-auditoria-do-sistema.md)
+Enunciado: [EXERCICIO-03-auditoria-do-sistema.md](../../../modulo-13-estudo-de-caso-crud/exercicios/EXERCICIO-03-auditoria-do-sistema.md)
 
 > Rode as 11 tentativas antes de ler. Uma auditoria que você leu não treina nada; uma que você fez
 > muda a forma como você olha código para sempre.

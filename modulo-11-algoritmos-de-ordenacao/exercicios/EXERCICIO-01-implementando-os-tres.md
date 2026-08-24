@@ -64,4 +64,4 @@ ordenada.
 
 ---
 
-Gabarito: [gabaritos/modulo-11-ex01-implementando-os-tres/](../../gabaritos/modulo-11-ex01-implementando-os-tres/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-11/ex01-implementando-os-tres/](../../gabaritos/modulo-11/ex01-implementando-os-tres/), depois de tentar, não antes.

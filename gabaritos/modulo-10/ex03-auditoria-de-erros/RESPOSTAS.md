@@ -1,6 +1,6 @@
 # Gabarito — Módulo 10, Exercício 03: Auditoria de erros
 
-Enunciado: [EXERCICIO-03-auditoria-de-erros.md](../../modulo-10-tratamento-de-erros/exercicios/EXERCICIO-03-auditoria-de-erros.md)
+Enunciado: [EXERCICIO-03-auditoria-de-erros.md](../../../modulo-10-tratamento-de-erros/exercicios/EXERCICIO-03-auditoria-de-erros.md)
 
 > Forme a sua opinião antes de ler a minha. Este exercício é sobre julgamento, e julgamento não se
 > aprende lendo: se aprende decidindo e depois conferindo.

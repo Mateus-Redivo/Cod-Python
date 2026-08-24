@@ -15,13 +15,15 @@ começar. Cada resolução está comentada explicando as decisões, não só o r
 
 ## Como as pastas são nomeadas
 
+A pasta espelha a estrutura do curso: um diretório por módulo, e dentro dele um por exercício.
+
 ```text
-gabaritos/modulo-NN-exNN-tema/          <- exercícios dos módulos
-gabaritos/banco-tema/                   <- exercícios do banco de exercícios
+gabaritos/modulo-NN/exNN-tema/                 <- exercícios dos módulos
+gabaritos/banco-de-exercicios/nivel-N-nome/tema/   <- exercícios do banco
 ```
 
 Por exemplo, a resolução do exercício 01 do módulo 05 está em
-[modulo-05-ex01-tabuada/](modulo-05-ex01-tabuada/).
+[modulo-05/ex01-tabuada/](modulo-05/ex01-tabuada/).
 
 ## Se a sua solução ficou diferente da minha
 

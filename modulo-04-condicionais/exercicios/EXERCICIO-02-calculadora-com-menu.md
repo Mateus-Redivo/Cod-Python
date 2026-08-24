@@ -82,4 +82,4 @@ menos?
 
 ---
 
-Gabarito: [gabaritos/modulo-04-ex02-calculadora-com-menu/](../../gabaritos/modulo-04-ex02-calculadora-com-menu/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-04/ex02-calculadora-com-menu/](../../gabaritos/modulo-04/ex02-calculadora-com-menu/), depois de tentar, não antes.

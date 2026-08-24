@@ -88,4 +88,4 @@ que qualquer exercício em que tudo fecha certinho.
 
 ---
 
-Gabarito: [gabaritos/modulo-12-ex03-auditoria-de-refatoracao/](../../gabaritos/modulo-12-ex03-auditoria-de-refatoracao/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-12/ex03-auditoria-de-refatoracao/](../../gabaritos/modulo-12/ex03-auditoria-de-refatoracao/), depois de tentar, não antes.

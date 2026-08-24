@@ -140,5 +140,5 @@ else:
 
 ---
 
-Gabarito: [gabaritos/modulo-05-ex03-analise-de-codigo/](../../gabaritos/modulo-05-ex03-analise-de-codigo/), depois de tentar, não antes. Este exercício em particular perde todo o valor se você ler a resposta
+Gabarito: [gabaritos/modulo-05/ex03-analise-de-codigo/](../../gabaritos/modulo-05/ex03-analise-de-codigo/), depois de tentar, não antes. Este exercício em particular perde todo o valor se você ler a resposta
 primeiro: o objetivo é justamente descobrir onde a sua leitura de código falha.

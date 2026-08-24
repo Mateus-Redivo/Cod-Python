@@ -1,6 +1,6 @@
 # Gabarito — Módulo 12, Exercício 01: Lendo código alheio
 
-Enunciado: [EXERCICIO-01-lendo-codigo-alheio.md](../../modulo-12-leitura-e-refatoracao/exercicios/EXERCICIO-01-lendo-codigo-alheio.md)
+Enunciado: [EXERCICIO-01-lendo-codigo-alheio.md](../../../modulo-12-leitura-e-refatoracao/exercicios/EXERCICIO-01-lendo-codigo-alheio.md)
 
 ---
 

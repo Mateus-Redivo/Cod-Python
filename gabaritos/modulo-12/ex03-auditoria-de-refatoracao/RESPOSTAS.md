@@ -1,6 +1,6 @@
 # Gabarito — Módulo 12, Exercício 03: Auditoria de refatoração
 
-Enunciado: [EXERCICIO-03-auditoria-de-refatoracao.md](../../modulo-12-leitura-e-refatoracao/exercicios/EXERCICIO-03-auditoria-de-refatoracao.md)
+Enunciado: [EXERCICIO-03-auditoria-de-refatoracao.md](../../../modulo-12-leitura-e-refatoracao/exercicios/EXERCICIO-03-auditoria-de-refatoracao.md)
 
 > Este exercício é sobre julgamento. Ler a minha resposta antes de formar a sua troca o aprendizado
 > por uma opinião emprestada.

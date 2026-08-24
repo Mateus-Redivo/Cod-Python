@@ -102,4 +102,4 @@ três listas paralelas em vez de duas, quanto mais fácil ficou errar? O módulo
 
 ---
 
-Gabarito: [gabaritos/modulo-06-ex03-apuracao-de-votos/](../../gabaritos/modulo-06-ex03-apuracao-de-votos/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-06/ex03-apuracao-de-votos/](../../gabaritos/modulo-06/ex03-apuracao-de-votos/), depois de tentar, não antes.

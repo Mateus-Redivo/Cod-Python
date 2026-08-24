@@ -67,4 +67,4 @@ padrão 0 e 10. Assim ela serve para notas de 0 a 10 **e** para notas de 0 a 100
 
 ---
 
-Gabarito: [gabaritos/modulo-08-ex02-boletim-com-funcoes/](../../gabaritos/modulo-08-ex02-boletim-com-funcoes/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-08/ex02-boletim-com-funcoes/](../../gabaritos/modulo-08/ex02-boletim-com-funcoes/), depois de tentar, não antes.

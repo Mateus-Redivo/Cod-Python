@@ -102,4 +102,4 @@ comportamento congelado. Depois comportamento, com estrutura já limpa.
 
 ---
 
-Gabarito: [gabaritos/modulo-12-ex02-refatorando-com-prova/](../../gabaritos/modulo-12-ex02-refatorando-com-prova/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-12/ex02-refatorando-com-prova/](../../gabaritos/modulo-12/ex02-refatorando-com-prova/), depois de tentar, não antes.

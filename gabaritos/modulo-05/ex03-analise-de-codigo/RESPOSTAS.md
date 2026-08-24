@@ -1,6 +1,6 @@
 # Gabarito — Módulo 05, Exercício 03: Análise de código
 
-Enunciado: [EXERCICIO-03-analise-de-codigo.md](../../modulo-05-lacos-de-repeticao/exercicios/EXERCICIO-03-analise-de-codigo.md)
+Enunciado: [EXERCICIO-03-analise-de-codigo.md](../../../modulo-05-lacos-de-repeticao/exercicios/EXERCICIO-03-analise-de-codigo.md)
 
 > Se você chegou aqui sem ter escrito suas previsões primeiro, feche este arquivo. Este exercício
 > mede onde a sua leitura de código falha: ler a resposta antes apaga justamente a informação que
@@ -191,8 +191,8 @@ continuar procurando é trabalho jogado fora. Para 1.000.000 a diferença é vis
 
 | Errou na questão | Volte para |
 | --- | --- |
-| 1 | [exemplos/03_break_continue.py](../../modulo-05-lacos-de-repeticao/exemplos/03_break_continue.py) |
-| 2 | seção "O padrão acumulador" do [README do módulo](../../modulo-05-lacos-de-repeticao/) |
+| 1 | [exemplos/03_break_continue.py](../../../modulo-05-lacos-de-repeticao/exemplos/03_break_continue.py) |
+| 2 | seção "O padrão acumulador" do [README do módulo](../../../modulo-05-lacos-de-repeticao/) |
 | 3 e 4 | seção "Validar entrada com `while`" do README: as duas são o mesmo erro com roupas diferentes |
-| 5 | [exemplos/01_while.py](../../modulo-05-lacos-de-repeticao/exemplos/01_while.py), com atenção às três partes |
-| 6 | [exemplos/03_break_continue.py](../../modulo-05-lacos-de-repeticao/exemplos/03_break_continue.py) e a tabela de erros comuns |
+| 5 | [exemplos/01_while.py](../../../modulo-05-lacos-de-repeticao/exemplos/01_while.py), com atenção às três partes |
+| 6 | [exemplos/03_break_continue.py](../../../modulo-05-lacos-de-repeticao/exemplos/03_break_continue.py) e a tabela de erros comuns |

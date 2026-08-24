@@ -84,4 +84,4 @@ segunda casa, e escreva em um comentário qual das duas você escolheria.
 
 ---
 
-Gabarito: [gabaritos/modulo-03-ex02-nota-fiscal/](../../gabaritos/modulo-03-ex02-nota-fiscal/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-03/ex02-nota-fiscal/](../../gabaritos/modulo-03/ex02-nota-fiscal/), depois de tentar, não antes.

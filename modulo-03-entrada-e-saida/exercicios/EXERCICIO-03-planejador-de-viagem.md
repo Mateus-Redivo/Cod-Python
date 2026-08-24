@@ -109,4 +109,4 @@ opinião, deveria pagar esse centavo a mais, e por quê. Não há resposta técn
 
 ---
 
-Gabarito: [gabaritos/modulo-03-ex03-planejador-de-viagem/](../../gabaritos/modulo-03-ex03-planejador-de-viagem/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-03/ex03-planejador-de-viagem/](../../gabaritos/modulo-03/ex03-planejador-de-viagem/), depois de tentar, não antes.

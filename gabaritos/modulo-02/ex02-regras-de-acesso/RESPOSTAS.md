@@ -1,6 +1,6 @@
 # Gabarito — Módulo 02, Exercício 02: Regras de acesso
 
-Enunciado: [EXERCICIO-02-regras-de-acesso.md](../../modulo-02-operadores/exercicios/EXERCICIO-02-regras-de-acesso.md)
+Enunciado: [EXERCICIO-02-regras-de-acesso.md](../../../modulo-02-operadores/exercicios/EXERCICIO-02-regras-de-acesso.md)
 
 > Preencha as três partes antes de abrir. A Parte 2 em especial só ensina se a previsão vier
 > primeiro.
@@ -151,8 +151,8 @@ matemática, e não dá margem para trocar o operador lógico, porque não há n
 
 | Errou em | Volte para |
 | --- | --- |
-| Parte 1, regras 4 e 8 | seção "A armadilha do intervalo" do [README](../../modulo-02-operadores/) |
-| Parte 1, regra 5 (usou `== True`) | seção "Comparação" do [README](../../modulo-02-operadores/) |
-| Parte 2, itens 1 a 4 | [exemplos/04_logicos.py](../../modulo-02-operadores/exemplos/04_logicos.py), bloco de precedência |
+| Parte 1, regras 4 e 8 | seção "A armadilha do intervalo" do [README](../../../modulo-02-operadores/) |
+| Parte 1, regra 5 (usou `== True`) | seção "Comparação" do [README](../../../modulo-02-operadores/) |
+| Parte 2, itens 1 a 4 | [exemplos/04_logicos.py](../../../modulo-02-operadores/exemplos/04_logicos.py), bloco de precedência |
 | Parte 2, item 5 | curto-circuito: está explicado só aqui; vale reler antes do módulo 06 |
-| Parte 3 | [exemplos/04_logicos.py](../../modulo-02-operadores/exemplos/04_logicos.py), variável `nunca` |
+| Parte 3 | [exemplos/04_logicos.py](../../../modulo-02-operadores/exemplos/04_logicos.py), variável `nunca` |

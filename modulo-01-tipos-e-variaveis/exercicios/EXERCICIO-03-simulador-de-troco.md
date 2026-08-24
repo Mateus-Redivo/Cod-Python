@@ -95,4 +95,4 @@ recurso, de qual módulo, você precisa para tratar isso.
 
 ---
 
-Gabarito: [gabaritos/modulo-01-ex03-simulador-de-troco/](../../gabaritos/modulo-01-ex03-simulador-de-troco/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-01/ex03-simulador-de-troco/](../../gabaritos/modulo-01/ex03-simulador-de-troco/), depois de tentar, não antes.

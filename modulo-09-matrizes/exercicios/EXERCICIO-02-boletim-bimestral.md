@@ -82,4 +82,4 @@ guardaria as faltas sem essa armadilha.
 
 ---
 
-Gabarito: [gabaritos/modulo-09-ex02-boletim-bimestral/](../../gabaritos/modulo-09-ex02-boletim-bimestral/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-09/ex02-boletim-bimestral/](../../gabaritos/modulo-09/ex02-boletim-bimestral/), depois de tentar, não antes.

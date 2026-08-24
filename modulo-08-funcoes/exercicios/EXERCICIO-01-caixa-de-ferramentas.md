@@ -78,4 +78,4 @@ nesse caso? Não existe resposta única: escolha uma e justifique em um comentá
 
 ---
 
-Gabarito: [gabaritos/modulo-08-ex01-caixa-de-ferramentas/](../../gabaritos/modulo-08-ex01-caixa-de-ferramentas/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-08/ex01-caixa-de-ferramentas/](../../gabaritos/modulo-08/ex01-caixa-de-ferramentas/), depois de tentar, não antes.

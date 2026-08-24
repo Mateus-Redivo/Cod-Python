@@ -54,4 +54,4 @@ com duas casas decimais: a formatação é `{imc:.2f}`.
 
 ---
 
-Gabarito: [gabaritos/modulo-01-ex01-ficha-cadastral/](../../gabaritos/modulo-01-ex01-ficha-cadastral/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-01/ex01-ficha-cadastral/](../../gabaritos/modulo-01/ex01-ficha-cadastral/), depois de tentar, não antes.

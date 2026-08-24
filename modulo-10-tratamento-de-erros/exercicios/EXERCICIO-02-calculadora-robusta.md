@@ -98,4 +98,4 @@ resultado anterior?
 
 ---
 
-Gabarito: [gabaritos/modulo-10-ex02-calculadora-robusta/](../../gabaritos/modulo-10-ex02-calculadora-robusta/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-10/ex02-calculadora-robusta/](../../gabaritos/modulo-10/ex02-calculadora-robusta/), depois de tentar, não antes.

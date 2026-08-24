@@ -77,4 +77,4 @@ print("Nota válida?", nota_valida)
 
 ---
 
-Gabarito: [gabaritos/modulo-02-ex02-regras-de-acesso/](../../gabaritos/modulo-02-ex02-regras-de-acesso/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-02/ex02-regras-de-acesso/](../../gabaritos/modulo-02/ex02-regras-de-acesso/), depois de tentar, não antes.

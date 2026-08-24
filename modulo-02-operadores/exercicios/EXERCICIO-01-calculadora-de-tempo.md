@@ -56,4 +56,4 @@ Acrescente o cálculo de **dias**. E responda em um comentário: o que acontece 
 
 ---
 
-Gabarito: [gabaritos/modulo-02-ex01-calculadora-de-tempo/](../../gabaritos/modulo-02-ex01-calculadora-de-tempo/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-02/ex01-calculadora-de-tempo/](../../gabaritos/modulo-02/ex01-calculadora-de-tempo/), depois de tentar, não antes.

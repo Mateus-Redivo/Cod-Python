@@ -1,6 +1,6 @@
 # Gabarito — Módulo 06, Exercício 01: Manipulando listas
 
-Enunciado: [EXERCICIO-01-manipulando-listas.md](../../modulo-06-listas/exercicios/EXERCICIO-01-manipulando-listas.md)
+Enunciado: [EXERCICIO-01-manipulando-listas.md](../../../modulo-06-listas/exercicios/EXERCICIO-01-manipulando-listas.md)
 
 > Escreva as previsões antes de abrir. Sem isso, o exercício vira leitura passiva.
 
@@ -172,8 +172,8 @@ for numero in numeros:
 
 | Errou em | Volte para |
 | --- | --- |
-| Parte 1, itens 3 e 5 | [exemplos/03_modificando.py](../../modulo-06-listas/exemplos/03_modificando.py), bloco "remove é por valor, pop é por posição" |
-| Parte 2, itens 6 e 7 | [exemplos/04_fatiando.py](../../modulo-06-listas/exemplos/04_fatiando.py) e os Experimentos dele |
-| Parte 2, item 8 | seção "O índice começa em zero" do [README](../../modulo-06-listas/) |
-| Bug A | seção "Métodos que não devolvem nada" do [README](../../modulo-06-listas/) |
-| Bug B | [exemplos/02_percorrendo.py](../../modulo-06-listas/exemplos/02_percorrendo.py), Experimento 1 |
+| Parte 1, itens 3 e 5 | [exemplos/03_modificando.py](../../../modulo-06-listas/exemplos/03_modificando.py), bloco "remove é por valor, pop é por posição" |
+| Parte 2, itens 6 e 7 | [exemplos/04_fatiando.py](../../../modulo-06-listas/exemplos/04_fatiando.py) e os Experimentos dele |
+| Parte 2, item 8 | seção "O índice começa em zero" do [README](../../../modulo-06-listas/) |
+| Bug A | seção "Métodos que não devolvem nada" do [README](../../../modulo-06-listas/) |
+| Bug B | [exemplos/02_percorrendo.py](../../../modulo-06-listas/exemplos/02_percorrendo.py), Experimento 1 |

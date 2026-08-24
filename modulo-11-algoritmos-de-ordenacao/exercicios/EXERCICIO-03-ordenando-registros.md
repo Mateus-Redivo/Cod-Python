@@ -98,4 +98,4 @@ algoritmo estável, isso se resolve ordenando duas vezes, mas em qual ordem? Des
 
 ---
 
-Gabarito: [gabaritos/modulo-11-ex03-ordenando-registros/](../../gabaritos/modulo-11-ex03-ordenando-registros/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-11/ex03-ordenando-registros/](../../gabaritos/modulo-11/ex03-ordenando-registros/), depois de tentar, não antes.

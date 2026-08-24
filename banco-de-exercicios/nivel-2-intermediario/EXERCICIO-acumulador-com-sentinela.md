@@ -62,7 +62,7 @@ começar ambas em zero dá resposta errada se o usuário digitar só negativos.
 
 ---
 
-Gabarito: [gabaritos/banco-acumulador-com-sentinela/](../../gabaritos/banco-acumulador-com-sentinela/),
+Gabarito: [gabaritos/banco-de-exercicios/nivel-2-intermediario/acumulador-com-sentinela/](../../gabaritos/banco-de-exercicios/nivel-2-intermediario/acumulador-com-sentinela/),
 depois de tentar, não antes.
 
 Pré-requisito: [Módulo 05 — Laços de repetição](../../modulo-05-lacos-de-repeticao/).

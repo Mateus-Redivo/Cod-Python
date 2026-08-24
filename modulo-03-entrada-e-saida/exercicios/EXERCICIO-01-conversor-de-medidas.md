@@ -50,4 +50,4 @@ guarde a pergunta: "como eu escolheria entre eles?"
 
 ---
 
-Gabarito: [gabaritos/modulo-03-ex01-conversor-de-medidas/](../../gabaritos/modulo-03-ex01-conversor-de-medidas/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-03/ex01-conversor-de-medidas/](../../gabaritos/modulo-03/ex01-conversor-de-medidas/), depois de tentar, não antes.

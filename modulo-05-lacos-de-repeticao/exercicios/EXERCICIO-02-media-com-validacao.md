@@ -59,4 +59,4 @@ Conte quantas tentativas inválidas o usuário fez no total e mostre esse númer
 
 ---
 
-Gabarito: [gabaritos/modulo-05-ex02-media-com-validacao/](../../gabaritos/modulo-05-ex02-media-com-validacao/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-05/ex02-media-com-validacao/](../../gabaritos/modulo-05/ex02-media-com-validacao/), depois de tentar, não antes.

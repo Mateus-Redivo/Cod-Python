@@ -71,4 +71,4 @@ a regra do módulo: nem todo problema de entrada é exceção.
 
 ---
 
-Gabarito: [gabaritos/modulo-10-ex01-entrada-a-prova-de-tudo/](../../gabaritos/modulo-10-ex01-entrada-a-prova-de-tudo/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-10/ex01-entrada-a-prova-de-tudo/](../../gabaritos/modulo-10/ex01-entrada-a-prova-de-tudo/), depois de tentar, não antes.

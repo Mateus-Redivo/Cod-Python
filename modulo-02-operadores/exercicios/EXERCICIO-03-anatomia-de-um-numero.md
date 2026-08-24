@@ -94,4 +94,4 @@ quantas linhas você economizaria. Guarde o arquivo: vale reabri-lo depois do m�
 
 ---
 
-Gabarito: [gabaritos/modulo-02-ex03-anatomia-de-um-numero/](../../gabaritos/modulo-02-ex03-anatomia-de-um-numero/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-02/ex03-anatomia-de-um-numero/](../../gabaritos/modulo-02/ex03-anatomia-de-um-numero/), depois de tentar, não antes.

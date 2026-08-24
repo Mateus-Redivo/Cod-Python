@@ -56,10 +56,10 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Rafael Ignacio | Sexta Tarde |
-| 2 | Otavio Mendes | Sexta Manha |
-| 3 | Enzo Lima | Sexta Manha |
-| 4 | Leonardo Ramos | Sabado |
+| 1 | Rafael Ignacio | Sexta Tarde / Quinta Tarde |
+| 2 | Otavio Mendes | Sexta Manha / Quinta Manha |
+| 3 | Enzo Lima | Sexta Manha / Quinta Manha |
+| 4 | Leonardo Ramos | Sabado / Quinta Tarde |
 | 5 | | |
 | 6 | | |
 
@@ -86,11 +86,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Maryana Capellini | Sexta Manha - Tarde |
-| 2 | Emelly Silva | Sexta Manha - Tarde |
+| 1 | Maryana Capellini | Sexta Manha e Tarde / Quinta Manha |
+| 2 | Emelly Silva | Sexta Manha e Tarde / Quinta Manha |
 | 3 | Tayná Xavier | Sexta Manha |
-| 4 | Maria Cecília | Sabado |
-| 5 | Giovanna Borges | Sabado |
+| 4 | Maria Cecília | Sabado / Quinta Tarde |
+| 5 | Giovanna Borges | Sabado / Quinta Tarde |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra como o sábio da floresta.
@@ -116,11 +116,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Matheus Garcia | Sexta Tarde |
+| 1 | Matheus Garcia | Sexta Tarde / Sabado Manha |
 | 2 | Pedro Baldani | Sabado Manha |
 | 3 | Miguel Machado | Sabado Manha |
-| 4 | Gabriel Castro | Sexta Manha |
-| 5 | Murilo Fink | Sexta Tarde |
+| 4 | Gabriel Castro | Sexta Manha / Quinta Manha |
+| 5 | Murilo Fink | Sexta Manha / Quinta Tarde |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra o enigma do Kelpie.
@@ -145,8 +145,8 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Nicolah | Sabado Manha |
-| 2 | Nicolas | Sabado Manha |
+| 1 | Nicolah | Sabado Manha / Quinta Manha e Tarde |
+| 2 | Nicolas | Sabado Manha / Quinta Manha e Tarde |
 | 3 | Ricardo | Sexta Manha |
 | 4 | Victor Hugo | Sexta Manha |
 | 5 | Antonio Pedro | Sexta Tarde |
@@ -178,6 +178,8 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 | 4 | Victor Hugo | Sexta Manha |
 | 5 | Maryana | Sexta Tarde |
 | 6 | Emelly | Sexta Tarde |
+| 7 | Beatriz | Quinta Manha e Tarde |
+| 8 | Milena | Quinta Manha e Tarde |
 
 **Personagem do grupo:** um integrante narra como guardião da ponte.
 
@@ -201,12 +203,12 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 | Nº | Nome do integrante | Horário |
 | --- | --- | --- |
-| 1 | Beatriz | Sexta Tarde |
+| 1 | Beatriz | Sexta Tarde / Quinta Manha e Tarde |
 | 2 | Maria Eduarda | Sexta Manha |
 | 3 | Rafaella | Sabado Manha |
 | 4 | Gabriel | Sabado Manha |
 | 5 | Thaina Silva | Sexta Manha |
-| 6 | Milena | Sexta Tarde |
+| 6 | Milena | Sexta Tarde / Quinta Manha e Tarde |
 
 **Personagem do grupo:** um integrante narra como alquimista (segunda poção).
 

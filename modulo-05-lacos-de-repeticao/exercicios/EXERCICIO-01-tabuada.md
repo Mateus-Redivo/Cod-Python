@@ -46,4 +46,4 @@ Pergunte também até quanto a tabuada deve ir (até 10? até 20?) e respeite a 
 
 ---
 
-Gabarito: [gabaritos/modulo-05-ex01-tabuada/](../../gabaritos/modulo-05-ex01-tabuada/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-05/ex01-tabuada/](../../gabaritos/modulo-05/ex01-tabuada/), depois de tentar, não antes.

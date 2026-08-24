@@ -119,4 +119,4 @@ como você guardaria esses dados de um jeito mais seguro. O módulo 09 dá uma p
 
 ---
 
-Gabarito: [gabaritos/modulo-08-ex03-quebrando-o-monolito/](../../gabaritos/modulo-08-ex03-quebrando-o-monolito/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-08/ex03-quebrando-o-monolito/](../../gabaritos/modulo-08/ex03-quebrando-o-monolito/), depois de tentar, não antes.

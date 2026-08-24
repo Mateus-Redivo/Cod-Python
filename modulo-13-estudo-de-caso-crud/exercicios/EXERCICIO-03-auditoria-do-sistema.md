@@ -90,4 +90,4 @@ como defeito perde a credibilidade para apontar os defeitos de verdade.
 
 ---
 
-Gabarito: [gabaritos/modulo-13-ex03-auditoria-do-sistema/](../../gabaritos/modulo-13-ex03-auditoria-do-sistema/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-13/ex03-auditoria-do-sistema/](../../gabaritos/modulo-13/ex03-auditoria-do-sistema/), depois de tentar, não antes.

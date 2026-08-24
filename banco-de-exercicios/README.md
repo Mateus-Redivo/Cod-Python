@@ -10,11 +10,12 @@ seguir, ou para quem voltou meses depois e quer se testar.
 
 | Pasta | Para quem |
 | --- | --- |
-| `nivel-1-iniciante/` | terminou os módulos 01 a 04 |
-| [nivel-2-intermediario/](nivel-2-intermediario/) | terminou os módulos 05 a 07 |
-| `nivel-3-avancado/` | terminou os módulos 08 a 11 |
+| [nivel-1-iniciante/](nivel-1-iniciante/) | terminou os módulos 01 a 06 |
+| [nivel-2-intermediario/](nivel-2-intermediario/) | terminou os módulos 05 a 08 |
+| [nivel-3-avancado/](nivel-3-avancado/) | terminou os módulos 09 a 13 |
 
-Cada enunciado diz, no rodapé, qual módulo você precisa ter feito antes.
+O nível é uma indicação grossa. Quem manda é o **rodapé de cada enunciado**, que diz exatamente
+qual módulo você precisa ter feito antes daquele exercício.
 
 ## Antes de vir para cá
 

@@ -101,4 +101,4 @@ por que ela precisa de `or` onde as outras usam `and`.
 
 ---
 
-Gabarito: [gabaritos/modulo-04-ex03-validador-de-data/](../../gabaritos/modulo-04-ex03-validador-de-data/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-04/ex03-validador-de-data/](../../gabaritos/modulo-04/ex03-validador-de-data/), depois de tentar, não antes.

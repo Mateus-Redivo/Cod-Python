@@ -94,5 +94,5 @@ Cite pelo menos duas coisas diferentes que podem dar errado e que ele esconderia
 
 ---
 
-Gabarito: [gabaritos/modulo-10-ex03-auditoria-de-erros/](../../gabaritos/modulo-10-ex03-auditoria-de-erros/), depois de tentar, não antes. Este exercício é sobre julgamento; ler a resposta antes de formar a sua
+Gabarito: [gabaritos/modulo-10/ex03-auditoria-de-erros/](../../gabaritos/modulo-10/ex03-auditoria-de-erros/), depois de tentar, não antes. Este exercício é sobre julgamento; ler a resposta antes de formar a sua
 não ensina nada.

@@ -1,6 +1,6 @@
 # Gabarito — Módulo 13, Exercício 02: Estendendo o sistema
 
-Enunciado: [EXERCICIO-02-estendendo-o-sistema.md](../../modulo-13-estudo-de-caso-crud/exercicios/EXERCICIO-02-estendendo-o-sistema.md)
+Enunciado: [EXERCICIO-02-estendendo-o-sistema.md](../../../modulo-13-estudo-de-caso-crud/exercicios/EXERCICIO-02-estendendo-o-sistema.md)
 
 > Este gabarito traz **os trechos** de cada funcionalidade, não o sistema inteiro reescrito. O
 > motivo é o próprio exercício: o valor está em encaixar o novo no que já existe, e um arquivo

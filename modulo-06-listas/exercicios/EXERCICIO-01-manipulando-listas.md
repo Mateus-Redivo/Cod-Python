@@ -83,4 +83,4 @@ for i in range(len(numeros)):
 
 ---
 
-Gabarito: [gabaritos/modulo-06-ex01-manipulando-listas/](../../gabaritos/modulo-06-ex01-manipulando-listas/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-06/ex01-manipulando-listas/](../../gabaritos/modulo-06/ex01-manipulando-listas/), depois de tentar, não antes.

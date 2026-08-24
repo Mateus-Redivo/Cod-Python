@@ -68,4 +68,4 @@ pergunta até vir um valor válido, falta o `while` do módulo 05.
 
 ---
 
-Gabarito: [gabaritos/modulo-04-ex01-classificador-de-imc/](../../gabaritos/modulo-04-ex01-classificador-de-imc/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-04/ex01-classificador-de-imc/](../../gabaritos/modulo-04/ex01-classificador-de-imc/), depois de tentar, não antes.

@@ -69,4 +69,4 @@ acontece se o usuário pedir para desfazer sem ter excluído nada.
 
 ---
 
-Gabarito: [gabaritos/modulo-13-ex02-estendendo-o-sistema/](../../gabaritos/modulo-13-ex02-estendendo-o-sistema/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-13/ex02-estendendo-o-sistema/](../../gabaritos/modulo-13/ex02-estendendo-o-sistema/), depois de tentar, não antes.

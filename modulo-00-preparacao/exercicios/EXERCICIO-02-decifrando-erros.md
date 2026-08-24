@@ -100,4 +100,4 @@ linha e perde a ajuda.
 
 ---
 
-Gabarito: [gabaritos/modulo-00-ex02-decifrando-erros/](../../gabaritos/modulo-00-ex02-decifrando-erros/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-00/ex02-decifrando-erros/](../../gabaritos/modulo-00/ex02-decifrando-erros/), depois de tentar, não antes.

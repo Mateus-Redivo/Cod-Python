@@ -100,4 +100,4 @@ mudaria se você pudesse repetir a pergunta até o dado ficar bom, e diga qual e
 
 ---
 
-Gabarito: [gabaritos/modulo-07-ex02-validador-de-cadastro/](../../gabaritos/modulo-07-ex02-validador-de-cadastro/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-07/ex02-validador-de-cadastro/](../../gabaritos/modulo-07/ex02-validador-de-cadastro/), depois de tentar, não antes.

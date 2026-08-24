@@ -1,6 +1,6 @@
 # Gabarito — Módulo 01, Exercício 02: Prevendo tipos e resultados
 
-Enunciado: [EXERCICIO-02-prevendo-tipos.md](../../modulo-01-tipos-e-variaveis/exercicios/EXERCICIO-02-prevendo-tipos.md)
+Enunciado: [EXERCICIO-02-prevendo-tipos.md](../../../modulo-01-tipos-e-variaveis/exercicios/EXERCICIO-02-prevendo-tipos.md)
 
 > Se você chegou aqui sem ter preenchido a tabela primeiro, feche. O exercício mede onde o seu
 > modelo mental de tipos falha: ler a resposta antes apaga exatamente a informação que ele
@@ -132,8 +132,8 @@ O Python não tinha como escolher por você. Por isso ele parou e perguntou.
 
 | Errou em | Volte para |
 | --- | --- |
-| Linhas 2, 3, 6 | seção "Os quatro tipos básicos" do [README](../../modulo-01-tipos-e-variaveis/) |
-| Linhas 4, 5, 7, 11 | [exemplos/04_somando_tipos.py](../../modulo-01-tipos-e-variaveis/exemplos/04_somando_tipos.py) |
+| Linhas 2, 3, 6 | seção "Os quatro tipos básicos" do [README](../../../modulo-01-tipos-e-variaveis/) |
+| Linhas 4, 5, 7, 11 | [exemplos/04_somando_tipos.py](../../../modulo-01-tipos-e-variaveis/exemplos/04_somando_tipos.py) |
 | Linhas 8, 9, 10 | as conversões voltam com força no módulo 03: vale reler depois de estudá-lo |
-| Linha 12 | Experimento 3 do [exemplos/04_somando_tipos.py](../../modulo-01-tipos-e-variaveis/exemplos/04_somando_tipos.py) |
-| Parte 3 | seção "O mesmo `+` faz duas coisas diferentes" do [README](../../modulo-01-tipos-e-variaveis/) |
+| Linha 12 | Experimento 3 do [exemplos/04_somando_tipos.py](../../../modulo-01-tipos-e-variaveis/exemplos/04_somando_tipos.py) |
+| Parte 3 | seção "O mesmo `+` faz duas coisas diferentes" do [README](../../../modulo-01-tipos-e-variaveis/) |

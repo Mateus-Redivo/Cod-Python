@@ -101,4 +101,4 @@ muito mais frequentes que outras.)
 
 ---
 
-Gabarito: [gabaritos/modulo-07-ex03-cifra-de-cesar/](../../gabaritos/modulo-07-ex03-cifra-de-cesar/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-07/ex03-cifra-de-cesar/](../../gabaritos/modulo-07/ex03-cifra-de-cesar/), depois de tentar, não antes.

@@ -68,4 +68,4 @@ melhor?
 
 ---
 
-Gabarito: [gabaritos/modulo-12-ex01-lendo-codigo-alheio/](../../gabaritos/modulo-12-ex01-lendo-codigo-alheio/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-12/ex01-lendo-codigo-alheio/](../../gabaritos/modulo-12/ex01-lendo-codigo-alheio/), depois de tentar, não antes.

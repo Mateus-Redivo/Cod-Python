@@ -1,6 +1,6 @@
 # Gabarito — Módulo 00, Exercício 02: Decifrando erros
 
-Enunciado: [EXERCICIO-02-decifrando-erros.md](../../modulo-00-preparacao/exercicios/EXERCICIO-02-decifrando-erros.md)
+Enunciado: [EXERCICIO-02-decifrando-erros.md](../../../modulo-00-preparacao/exercicios/EXERCICIO-02-decifrando-erros.md)
 
 > Escreva suas previsões antes de abrir. Aqui o objetivo não é acertar: é descobrir onde a sua
 > leitura de mensagem de erro falha.
@@ -155,7 +155,7 @@ e depois quebrou, o problema está logo depois do último `print` que você viu.
 
 | Errou em | Volte para |
 | --- | --- |
-| A, D | seção "O erro não é o inimigo" do [README](../../modulo-00-preparacao/) |
-| B | tabela de tipos do [módulo 01](../../modulo-01-tipos-e-variaveis/): o `+` ambíguo |
-| C, E | [exemplos/03_lendo_o_erro.py](../../modulo-00-preparacao/exemplos/03_lendo_o_erro.py) |
-| A pergunta final | [exemplos/02_ordem_de_execucao.py](../../modulo-00-preparacao/exemplos/02_ordem_de_execucao.py) |
+| A, D | seção "O erro não é o inimigo" do [README](../../../modulo-00-preparacao/) |
+| B | tabela de tipos do [módulo 01](../../../modulo-01-tipos-e-variaveis/): o `+` ambíguo |
+| C, E | [exemplos/03_lendo_o_erro.py](../../../modulo-00-preparacao/exemplos/03_lendo_o_erro.py) |
+| A pergunta final | [exemplos/02_ordem_de_execucao.py](../../../modulo-00-preparacao/exemplos/02_ordem_de_execucao.py) |

@@ -47,4 +47,4 @@ comentário: qual linha o Python apontou e qual foi o tipo do erro. Depois conse
 
 ---
 
-Gabarito: [gabaritos/modulo-00-ex01-cartao-de-visita/](../../gabaritos/modulo-00-ex01-cartao-de-visita/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-00/ex01-cartao-de-visita/](../../gabaritos/modulo-00/ex01-cartao-de-visita/), depois de tentar, não antes.

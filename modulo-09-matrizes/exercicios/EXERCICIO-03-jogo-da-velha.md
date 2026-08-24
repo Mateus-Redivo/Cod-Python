@@ -99,4 +99,4 @@ código.
 
 ---
 
-Gabarito: [gabaritos/modulo-09-ex03-jogo-da-velha/](../../gabaritos/modulo-09-ex03-jogo-da-velha/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-09/ex03-jogo-da-velha/](../../gabaritos/modulo-09/ex03-jogo-da-velha/), depois de tentar, não antes.

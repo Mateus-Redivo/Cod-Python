@@ -89,4 +89,4 @@ produzir resultado errado ou quebrar. O que ela deveria devolver nesse caso?
 
 ---
 
-Gabarito: [gabaritos/modulo-09-ex01-operacoes-com-matrizes/](../../gabaritos/modulo-09-ex01-operacoes-com-matrizes/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-09/ex01-operacoes-com-matrizes/](../../gabaritos/modulo-09/ex01-operacoes-com-matrizes/), depois de tentar, não antes.

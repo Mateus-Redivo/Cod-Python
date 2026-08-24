@@ -83,4 +83,4 @@ Use `.isalpha()` para checar se o caractere é mesmo uma letra.
 
 ---
 
-Gabarito: [gabaritos/modulo-07-ex01-analisador-de-frases/](../../gabaritos/modulo-07-ex01-analisador-de-frases/), depois de tentar, não antes.
+Gabarito: [gabaritos/modulo-07/ex01-analisador-de-frases/](../../gabaritos/modulo-07/ex01-analisador-de-frases/), depois de tentar, não antes.
