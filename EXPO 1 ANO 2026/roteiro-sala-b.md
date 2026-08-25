@@ -1,14 +1,14 @@
-# A Lenda de Nessa — SALA B
+# A Lenda de Nessa · SALA B
 
 **Versão simplificada para a Mostra** · 6 estações · 3 físicas + 3 python, intercaladas
 
-Não há disputa entre salas — é uma sequência narrativa contínua, pensada para os visitantes conhecerem o trabalho dos alunos de forma envolvente. Cada visitante recebe (opcional) um pequeno "Diário do Aventureiro" na entrada. Em cada estação, um integrante do grupo veste o papel do guardião/criatura daquela cena e narra o desafio; ao resolver, o visitante ganha uma palavra-chave para anotar no diário, como um carimbo de progresso.
+Não há disputa entre salas. É uma sequência narrativa contínua, pensada para os visitantes conhecerem o trabalho dos alunos de forma envolvente. Cada visitante recebe (opcional) um pequeno "Diário do Aventureiro" na entrada. Em cada estação, um integrante do grupo veste o papel do guardião/criatura daquela cena e narra o desafio; ao resolver, o visitante ganha uma palavra-chave para anotar no diário, como um carimbo de progresso.
 
-**Ritmo:** cada estação deve durar cerca de 1 a 2 minutos por visitante. Se a pessoa travar, dê uma dica depois de ~20 segundos — o objetivo é engajar, não bloquear a fila.
+**Ritmo:** cada estação deve durar cerca de 1 a 2 minutos por visitante. Se a pessoa travar, dê uma dica depois de ~20 segundos. O objetivo é engajar, não bloquear a fila.
 
 ## Layout da sala (corredor)
 
-A sala é um corredor com computadores dos dois lados. Entrando pela porta, as mesas ficam intercaladas — uma de cada lado — e a última fica no fundo do corredor, fechando a passagem.
+A sala é um corredor com computadores dos dois lados. Entrando pela porta, as mesas ficam intercaladas, uma de cada lado, e a última fica no fundo do corredor, fechando a passagem.
 
 | Estação | Lado no corredor | Tema |
 | --- | --- | --- |
@@ -72,7 +72,7 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 1. **Abertura:** "Ness bloqueia seu caminho! Role o dado e mostre sua coragem."
 2. **Condução:** explique a regra (4, 5 ou 6 vence; 1, 2 ou 3 perde a tentativa) e deixe rolar até 3 vezes.
 3. **Se vencer:** "Vitória! Ness se acalma... aqui está a senha: **NESSLAGO**."
-4. **Se perder as 3 tentativas:** "Foi por pouco! De qualquer forma, aqui está sua senha — siga em frente." (não é preciso travar o visitante).
+4. **Se perder as 3 tentativas:** "Foi por pouco! De qualquer forma, aqui está sua senha, siga em frente." (não é preciso travar o visitante.)
 
 **Senha liberada: `NESSLAGO`**
 
@@ -120,7 +120,7 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 | 2 | Pedro Baldani | Sabado Manha |
 | 3 | Miguel Machado | Sabado Manha |
 | 4 | Gabriel Castro | Sexta Manha / Quinta Manha |
-| 5 | Murilo Fink | Sexta Manha / Quinta Tarde |
+| 5 | | |
 | 6 | | |
 
 **Personagem do grupo:** um integrante narra o enigma do Kelpie.
@@ -129,9 +129,10 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 **Roteiro de apresentação:**
 
-1. **Abertura (narrando):** "Um cavalo negro surge da névoa..." — leia o enigma em voz alta: *"Vivo no lago, tenho crina como um cavalo, mas arrasto quem me toca para o fundo da água. Quem sou eu?"*
-2. **Se travar:** "Pense em uma criatura escocesa que vive na água e tem crina."
-3. **Se acertar ("Kelpie"):** abra o envelope na frente do visitante. "Isso mesmo! Aqui está a senha: **KELPIE-LAGO**."
+1. **Abertura (narrando):** "Algo se move na névoa, bem na beira do lago..." Leia o enigma em voz alta: *"Vivo escondido nas águas do lago. Balanço uma crina quando nado, mas não sou peixe nem serpente. Quem toca no meu dorso não consegue mais soltar as mãos e é arrastado para o fundo. Quem sou eu?"*
+2. **Se travar (~20s, 1ª dica):** "Pense em um animal que as pessoas montam para cavalgar... agora imagine ele vivendo debaixo d'água."
+3. **Se ainda travar (2ª dica):** "O nome dessa criatura começa com 'K'."
+4. **Se acertar ("Kelpie"):** abra o envelope na frente do visitante. "Isso mesmo! Aqui está a senha: **KELPIE-LAGO**."
 
 **Senha liberada: `KELPIE-LAGO`**
 
@@ -158,8 +159,8 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 **Roteiro de apresentação:**
 
-1. **Abertura:** "Vamos preparar uma poção — mas primeiro, uma pergunta sobre as criaturas do lago."
-2. **Condução:** deixe o visitante escolher entre Kelpie / Nuckelavee / Bean Nigh.
+1. **Abertura:** "Vamos preparar uma poção. Mas o ingrediente certo só funciona se você lembrar direitinho o que acabou de ver lá na beira do lago."
+2. **Condução:** a tela pergunta qual das 3 criaturas (Kelpie / Nuckelavee / Bean Nigh) é a que tem crina e vive na água, a mesma que o visitante acabou de conhecer na estação anterior.
 3. **Se acertar (Kelpie):** "A poção borbulha! Senha: **ELIXIR1**."
 
 **Senha liberada: `ELIXIR1`**
@@ -187,9 +188,11 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 **Roteiro de apresentação:**
 
-1. **Abertura:** "Ninguém atravessa esta ponte sem resolver o enigma do Nuckelavee."
-2. **Condução:** leia o enigma: *"O Nuckelavee tem 3 pontos de vida. Cada flecha causa 1 dano. Quantas flechas você precisa disparar para derrotá-lo?"*
-3. **Se acertar (3 flechas):** "Isso mesmo! Senha: **PONTENUCK**."
+1. **Abertura:** "Ninguém atravessa esta ponte sem saber a regra do Nuckelavee."
+2. **Condução:** leia a regra: *"Diz a lenda que quem olha para trás nesta ponte nunca mais consegue atravessar. Para passar, o que você nunca deve fazer?"*
+3. **Se travar (~20s):** "Pense em histórias que você já ouviu sobre olhar para trás no meio de uma fuga."
+4. **Se acertar ("não olhar para trás"):** "Isso mesmo! Agora atravesse a ponte sem olhar para trás. Senha: **PONTENUCK**."
+5. **Se não souber mesmo com a dica:** revele a resposta com bom humor e siga em frente. Não é preciso travar o visitante.
 
 **Senha liberada: `PONTENUCK`**
 
@@ -216,8 +219,8 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 **Roteiro de apresentação:**
 
-1. **Abertura:** "A poção final precisa de uma última resposta..."
-2. **Condução:** deixe o visitante escolher entre Motherbomb / Monstro do musgo / Nuckelavee.
+1. **Abertura:** "A poção final precisa de um último ingrediente: uma criatura verde, cheia de musgo, que vive escondida no fundo do brejo."
+2. **Condução:** o visitante escolhe entre Motherbomb / Monstro do musgo / Nuckelavee qual criatura bate com a descrição que você acabou de contar.
 3. **Se acertar (Monstro do musgo):** entregue a senha: "A poção está pronta! Senha: **ELIXIR2**."
 4. **Encerramento da Sala B:** "Com a poção pronta, a história do Caminho do Quarto se encerra: Nessa está a salvo. Obrigado por participar!"
 
@@ -225,7 +228,7 @@ A estação não pode ficar vazia em nenhum turno, então dividam o grupo entre 
 
 ---
 
-## Grupo 5 — fora das estações
+## Grupo 5: fora das estações
 
 Pedro Silva Quinta e Sexta Dia inteiro
 Pedro Ming  
